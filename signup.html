@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sheltown - Live Like You Own It</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+
+    <link rel="icon" href="images/sheltown-logo-color.png" type="image/png" />
+    <link rel="shortcut icon" href="images/sheltown-logo-color.png" type="image/png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/be7475fd49.js" crossorigin="anonymous"></script>
+    <script  src="js/slider-script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("header").load("./components/navbar.html");
+        });
+        $(document).ready(function () {
+            $("footer").load("./components/footer.html");
+        });
+    </script>
+
+    <!--Boostrap Requirements-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <meta name=“google-site-verification” content=“BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w” />
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <style>
+      .create {
+        background-color: #ff971d;
+        text-align:center;
+        color:white;
+        font-weight: bolder;
+        padding:10px;
+      }
+      .create:hover,
+      .create:focus,
+      .create:active
+       {
+        background-color: #ff971d;
+        text-align:center;
+        color:white;
+        font-weight: bolder;
+        padding:12px;
+      }
+      .form{
+        margin-top: 70px;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      .signuptitle{
+        color: #ff971d;
+        text-align:center;
+        font-weight: bolder;
+      }
+      .loginlink:hover,
+      .loginlink:active,
+      .loginlink:focus,
+      .loginlink
+      {
+        color:black;
+        text-align: center;
+        margin-top:50px;
+        text-decoration: none;
+      }
+      .loginlink span{
+        color: #ff971d;
+      }
+      .join_btn{
+        border:none;
+        background-color:white;
+        text-align: center;
+      }
+      .join_btn i{
+        color:black;
+      }
+      .listbox{
+        margin-top: 115px;
+        margin-right:70px;
+        background-color:#ff971d;
+        color:white;
+        border:2px solid #ff971d;
+        border-radius: 8px;
+        font-weight: bolder;
+        font-size: 15px;
+        padding:20px;
+      }
+
+      .fa-check {
+        font-size: 15px;
+      }
+
+      ul li{
+        list-style-type: none;
+        padding: 10px;
+      }
+      i{
+        font-size:60px;
+        color:white;
+      }
+      .confirm-password-msg {
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      #joinform label{
+        margin-left:10px;
+        margin-right:10px;
+      }
+
+      .btn-joinus {
+        padding: 10px;
+        background-color: #fff;
+        border: 2px solid #ff9719;
+        border-radius: 8px;
+      }
+
+    </style>
+</head>
+<header class='row'>
+    </header>
+<body onload="myFunction()">
+
+  <div class="container">
+    <div class="row">
+
+
+      <!-- list  start -->
+      <div class="col-lg-6">
+        <div class="d-none d-lg-block">
+          <div class="listbox">
+            <ul>
+              <li>
+                <i class="fa fa-check"></i>
+                  Safety Guaranteed
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  No Brokerage
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  Ultimate Privacy
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  Good Ambience
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  Affordable
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  Laissez-faire Policy
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  SheltOwn Verified
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  All-in-Home Services
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                  Round-the-Clock Assistance
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- list ends -->
+
+      <!-- form start -->
+      <div class="col-lg-6 form">
+        <h3 class="signuptitle">Sign up</h3>
+        <form action="" autocomplete="on">
+          <div class="form-group">
+            <label for="fname"> First Name: </label>
+            <input type="text" class="form-control" placeholder="example: Zoe" name="fname" required/>
+          </div>
+          <div class="form-group">
+            <label> Last Name: </label>
+            <input type="text"  class="form-control" placeholder="example: Berry" name="lname" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" placeholder="someone@example.com" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="********" name="pswd" autocomplete="off" required >
+          </div>
+          <div class="form-group">
+            <label for="pwd">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm_password" placeholder="*********" name="conpswd" autocomplete="off" required>
+            <span id='message'></span>
+            <p class="confirm-password-msg">Enter the same password.</p>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="agree">By creating an account you agree to the terms and conditions and our privacy policy.
+            </label>
+          </div>
+          <div>
+          <center>
+            <button onclick="window.location.href='index2.html'" type="submit" class="btn create">Create an account</button>
+          </center>
+          </div>
+        </form>
+        <br>
+        <!-- form ends -->
+        <!-- join partner section -->
+        <div style="text-align:center;">
+          <button class="btn-joinus"><a onclick="join()" class="join_btn">Join as a partner<i style="font-size: 1.3rem;" class="las la-question-circle"></i></a></button>
+          <div id="joinform" style="display:none">
+            <form class="form-inline">
+              <label style="margin-left:70px">Join Us </label>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name="remember">&nbsp;Property Partner
+                </label>
+                <label>
+                  <input type="checkbox" name="remember">&nbsp;Service Partner
+                </label>
+              </div>
+            </form>
+          </div>
+          <br><br>
+          <a href="login.html" class="loginlink">Already have an account? <span>Login</span></a>
+          <br>
+          <br>
+        </div>
+        <!--  join partner section ends -->
+      </div>
+
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <script>
+    $('#password, #confirm_password').on('keyup', function () {
+      if ($('#password').val() == $('#confirm_password').val()) {
+        $('#message').html('Matching').css('color', 'green');
+      } else
+        $('#message').html('Not Matching').css('color', 'red');
+    });
+
+    function join() {
+      var x = document.getElementById("joinform");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
