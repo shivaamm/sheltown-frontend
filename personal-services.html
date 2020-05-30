@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sheltown - Live Like You Own It</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="google-site-verification” content=“BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w" />
+
+    <link rel="icon" href="images/sheltown-logo-color.png" type="image/png" />
+    <link rel="shortcut icon" href="images/sheltown-logo-color.png" type="image/png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/be7475fd49.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    
+    <script>
+        $(document).ready(function () {
+            $("header").load("./components/navbar.html");
+        });
+        $(document).ready(function () {
+            $("footer").load("./components/footer.html");
+        });
+    </script>
+
+    <!--Boostrap Requirements-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <!--Embedded Files-->
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/personal-services-style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script  src="js/slider-script.js"></script>
+
+</head>
+
+<body class="bg-grey-ps">
+
+<!--NAVBAR-->
+<header class="header"></header>
+
+
+<!--HEADER-->
+<div class="container" id="header-container">
+    <div class="row justify-content-center">
+        <div class="col-sm-7" id="header-text">
+            <table>
+                <tr><td>We take pride in sending</td></tr>
+                <tr><td><h1>VERIFIED SERVICEMEN</h1></td></tr>
+                <tr><td>* Book now in 3 steps</td></tr>
+            </table>
+        </div>    
+        <div class="col-sm-4">
+            <div class="slideshow-container" style="border: 1px solid black;">
+                <div class="mySlides fade align-items-center">
+                <img src="./images/services/air-conditioner.png" style="width:30vw; height: 30vh;">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="./images/services/carpenter.png" style="width:30vw; height: 30vh;">
+                </div>
+
+                <div class="mySlides fade">
+                <img src="./images/services/faucet.png" style="width:30vw; height: 30vh;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section><div class="overlay"></div></section>
+
+<!--SERVICES-->
+<div class="container" style="padding: 30px;">
+
+    <form>
+
+    <!--Select City-->
+    <div class="row justify-content-center"> 
+    <div class="input-wrapper">
+     <input id="search-bar-rental" placeholder="Search in City" type="text" required/>
+    </div>
+    </div>
+
+    <br>    
+
+    <!--Select Service-->
+    <div id="service-container" class="row justify-content-around"> 
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/air-conditioner.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser1" name="ser"> 
+            <label for="ser1">AC Service & Repair
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/beauty.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser2" name="ser"> 
+            <label for="ser2">Home Salon
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/clean.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser3" name="ser"> 
+            <label for="ser3">Cleaning & Pest Control
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/repair.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser4" name="ser"> 
+            <label for="ser4">Appliance Repair
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/electrician.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser5" name="ser"> 
+            <label for="ser5">Electrician 
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/faucet.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser6" name="ser"> 
+            <label for="ser6">Plumber
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/carpenter.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser7" name="ser"> 
+            <label for="ser6">Carpenter
+        </div>
+        <div class="col-sm-3" id="service-box">
+            <img src="./images/services/brush.png" class="img-thumbnail">
+            <br>
+            <input type="radio" id="ser8" name="ser"> 
+            <label for="ser8">Painter
+        </div>
+    </div>
+
+    <br>
+
+    <!--Details-->
+    <div id="service-container" class="row justify-content-center">
+        <br>
+        <table>
+            <tr>
+                <td style="text-align: center; padding:30px 0 30px;">FEED THE DETAILS</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; padding-bottom: 15px;"><textarea rows="4" placeholder="Enter Details of Service Required"  required style="width: 60vw; padding: 15px;"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: center; padding-bottom: 15px;"><input style="padding-bottom: 15px;" type="checkbox"> Request a Callback</td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <!--Confirm Appointment-->
+    <div id="service-container" class="row justify-content-center"> 
+        <table>
+            <tr>
+                <td style="text-align:center; padding:30px 0 30px;">CONFIRM YOUR APPOINTMENT</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; padding-bottom: 30px;">Enter Mobile No.
+                <input type="tel" placeholder="+91" minlength="0" maxlength="10" required>
+                <button>Book</button></td>
+            </tr>
+        </table>
+    </div>
+
+    </form>
+
+    <br>
+
+    <!--How we work-->
+    <div id="service-container" class="row justify-content-center">
+        <table style="margin: 20px;">
+            <tr>
+                <td style="text-align: center; padding:1rem;">HOW WE WORK</td>
+            </tr>
+            <tr>
+                <td style="text-align: justify; padding: 1rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; padding: 1rem;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <center>
+                            <img src="./images/blog-house.jpeg" class="img-thumbnail img-fluid">
+                            <br>
+                            hello
+                        </center>
+                        </div>
+                        <div class="col-sm-4">
+                        <center>
+                            <img src="./images/blog-house.jpeg" class="img-thumbnail img-fluid">
+                            <br>
+                            hello
+                        </center>
+                        </div>
+                        <div class="col-sm-4">
+                        <center>
+                            <img src="./images/blog-house.jpeg" class="img-thumbnail img-fluid">
+                            <br>
+                            hello
+                        </center>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>   
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer></footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html {
+  width: 100%;  
+} 
+
+body {width:100%; overflow-x:hidden;}
+
+p{
+      font-family: 'Comfortaa', cursive;
+      color: #ff971d;
+      
+    }
+
+    .city-search-left-section {
+      min-width: 84%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+      background: #ffffff;
+      border-radius: 8px;
+      margin: -176px 7% 40px 7%;
+      box-shadow: 0 15px 32px 0 rgba(0, 0, 0, 0.1);
+      overflow-y: visible;
+    }
+
+
+    .location-search-input {
+      width: 100%;
+      border: none !important;
+      z-index: 4;
+    }
+
+    .popular-property-text {
+      opacity: 0.7;
+      font-family: Apercu2;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      display: inline-block;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000000;
+    }
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+	font-family: "Raleway";
+}
+
+/*header style*/
+.heady{
+	position: relative;
+	background-image: url('../images/headerback.jpeg');
+  max-height: 380px;
+	background-size:cover ;
+	background-position: center;
+	
+}
+.overlay{
+	position: absolute;
+	min-height: 100rem;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+	text-align:center
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+
+}
+.description h1{
+	color:#F97300 ;
+	text-align:center
+}
+
+/*why style*/
+
+.why{
+	margin: 4em 0;
+	position: relative;	
+}
+.why h1{
+	color:#F97300;
+        padding-top:2em;
+		
+}
+.why .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.why .card img{
+	width: 100%;
+	height: 12em;
+}
+
+.why .card-title{
+	color:#F97300;
+	 
+}
+.why .card-body{
+	padding: 1em;
+}
+
+#t{
+
+	text-align: center;
+	font-family: "Raleway";
+	color:#F97300;
+}
+
+.contact-form{
+	margin: 6em 0;
+	position: relative;		
+}
+
+.contact-form h1{
+	padding:2em 1px;
+	color: #F97300; 
+}
+.contact-form .right{
+	max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+	background:  #F97300;
+	color: #fff;
+	border:0;
+}
+.contact-form .right .form-control::placeholder{
+	color: #888;
+	font-size: 16px;
+}

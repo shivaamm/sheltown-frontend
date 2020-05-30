@@ -1,0 +1,141 @@
+.bg-grey-ps {
+    background-color: rgb(236, 235, 235);
+}
+
+/* HEADER */
+#header-container {
+    z-index: 2; 
+    position: absolute; 
+    margin: 90px 30px;
+}
+section {
+    background-image:url('../images/services/home-service.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    width: 100vw;
+}
+
+.overlay{
+	height: 55vh;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(175, 174, 174, 0.79);
+	text-align:center
+} 
+
+#header-text {
+    color: white; 
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    #header-container {
+        z-index: 2; 
+        position: absolute; 
+        margin-top: 20px;
+        margin-left: 0!important;
+    }
+
+    #header-container table{
+        text-align:center;
+    }
+    section { 
+        background-image:url('../images/services/home-service.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 65vh;
+        width: 100vw;
+    }
+
+    .overlay{
+        height: 65vh;
+        min-width: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(175, 174, 174, 0.79);
+        text-align:center
+    } 
+  }
+
+/* OFFER SLIDESHOW */
+.slideshow-container {
+  max-width: 30rem;
+  position: relative;
+  margin-bottom: 30px;  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* SEARCH BAR */
+#search-bar-rental {
+    width: 50vw;
+    font-size: 1rem;
+    border: 1px solid #ff971d;
+    border-radius: 1rem;
+    padding: 10px 15px;  
+}
+
+.input-wrapper {
+    display:inline-block;
+    position: relative
+}
+.input-wrapper:after {
+    font-family: 'FontAwesome';
+    content: '\f002';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* SERVICE */
+#service-container {
+    padding: 20px 20px 10px 20px;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(172, 170, 170, 0.548); 
+}
+
+#service-box {
+    
+    text-align:center;
+}
+
+.img-thumbnail {
+    height: 5rem;
+    border:none;
+}
