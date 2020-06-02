@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SheltOwn</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .slideshow-container {
+    width:100%;
+    position: relative;
+    margin: auto;
+  }
+
+   #about {
+      background: #fff;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      padding: 60px 0 40px 0;
+    }
+
+    @media (min-width: 1024px) {
+      #about {
+        background-attachment: fixed;
+      }
+    }
+
+    #about:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #about h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ff9719;
+    }
+
+    #about h3 {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #ff9719;
+    }
+
+    #about p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color:black;
+    }
+
+  .column_ser {
+    float: left;
+    width: 20%;
+    height: 250px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row_ser:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column_ta {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 250px;
+   /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .row_ta:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card_ser {
+    padding: 16px;
+    text-align: center;
+    }
+
+  .zoomin img {
+        height: 50%;
+        width: 60%;
+
+        margin-left:5px;
+        margin-bottom:5px;
+        margin-top:20px;
+        -webkit-transition: all 2s ease;
+        -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+        transition: all 2s ease;
+      }
+      .zoomin img:hover {
+        width: 70%;
+        height:60%;
+      }
+  .dot_ser {
+    height:85px;
+    width: 85px;
+    background-color: #ffff;
+    border-radius:20px;
+    display: inline-block;
+  }
+
+  /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column_ta {
+      width: 100%;
+      margin:10px;
+      height:100%;
+    }
+    .column_ser {
+      width: 100%;
+      height:100%;
+    }
+
+  }
+
+
+  .testimonials {
+    background-color: #ff9719;
+    position: relative;
+    padding-top: 80px;
+  }
+  .testimonials:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+  }
+
+  #customers-testimonials .item-details {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: left;
+  }
+  #customers-testimonials .item-details h5 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  #customers-testimonials .item-details h5 span {
+    color: red;
+    float: right;
+    padding-right: 20px;
+  }
+  #customers-testimonials .item-details p {
+    font-size: 14px;
+  }
+  #customers-testimonials .item {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .owl-carousel .owl-nav [class*='owl-'] {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+  }
+
+  .owl-carousel {
+    position: relative;
+  }
+
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    font-size: 30px;
+    color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .owl-carousel .owl-prev {
+    left: -60px;
+  }
+
+  .owl-carousel .owl-next {
+    right: -60px;
+  }
+
+  .column_ser {
+    float: left;
+
+  }
+
+  input[type=text],input[type=email],input[type=number], select, textarea {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #fff;
+    color: #ff9719;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size:18px;
+
+  }
+
+  input[type=submit]:hover {
+    background-color: #ffff;
+  }
+
+  .containerr {
+    margin: 0 50px 0 50px;
+    border-radius: 5px;
+    background-color: #ff9719;
+    border-color:#ff9719;
+    padding: 16px;
+  }
+  @media all and (max-width: 1080px){
+    .containerr {
+    border-radius: 5px;
+    background-color: #ff9719;
+    border-color:#ff9719;
+    padding: 16px;
+  }
+  }
+  #contact {
+    padding: 30px 0;
+  }
+  #contact .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #contact .contact-info i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ff971d;
+  }
+  #contact .contact-info address,
+  #contact .contact-info p {
+    margin-bottom: 0;
+    color: #000;
+  }
+  #contact .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+  }
+  #contact .contact-info a {
+    color: #000;
+  }
+  #contact .contact-info a:hover {
+    color: #ff971d;
+  }
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    margin-bottom: 20px;
+  }
+  #contact #google-map {
+    height: 290px;
+    margin-bottom: 20px;
+  }
+
+  </style>
+</head>
+
+<body id="body" onload="myFunction()">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="#">Personalised Services</a></li>
+              <li><a href="frontend-master/rental.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="frontend-master/blog_description_page.html">Blogs</a></li>
+          <li><a href="login-user.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+   <section id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-justify">
+              <h1 style="font-family: 'Montserrat', sans-serif; color: #ff9719; font-size: 32px;">What Sheltown is about?</h1>
+              <p>In life, things happen around us, things happen to us, but the only thing that truly matters is how you choose to react to it and what you make out of it. Life is all about leaning, adopting and converting all the struggles that we experience into something positive. In life, things happen around us, things happen to us, but the only thing that truly matters is how you choose to react to it and what you make out of it. Life is all about leaning, adopting and converting all the struggles that we experience into something positive.</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+                  <iframe  src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0" style="float:right;height:310px;width:430px"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+  <h1 style="text-align:center;font-family: 'Montserrat', sans-serif;color: #ff9719; font-size: 32px;"> OUR SERVICES </h1>
+  <div class ="row_ta">
+   <div class="column_ta">
+   <div class="row_ser" style="background-color: #ff9719;border-radius:15px;">
+    <h2 style="text-align: center;padding-top:10px;">Rental Services</h2>
+    <div class="column_ser">
+      <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="bunk.png" >
+  </div>
+  </span>
+        <p>PG</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+  <div class="column_ser" >
+     <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin">
+   <img src="apartment.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Flat</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+     <div class="column_ser" >
+       <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" >
+   <img src="flat.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Apartment</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+    <div class="column_ser">
+      <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="house.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Houses</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+    <div class="column_ser" >
+       <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="flat.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Apartment</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+    </div>
+   </div>
+
+  <div class="column_ta" >
+   <div class="row_ser" style="background-color: #ff9719;border-radius:15px;">
+     <h2 style="text-align: center;padding-top:10px;">Personal Services</h2>
+   <div class="column_ser">
+      <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="bunk.png" >
+  </div>
+  </span>
+        <p>PG</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+  <div class="column_ser" >
+     <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin">
+   <img src="apartment.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Flat</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+     <div class="column_ser" >
+       <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" >
+   <img src="flat.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Apartment</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+    <div class="column_ser">
+      <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="house.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Houses</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+
+    <div class="column_ser" >
+       <div class="card_ser">
+        <span class="dot_ser">
+  <div class="zoomin" style>
+   <img src="flat.png" style="height:50%;width:60%">
+  </div>
+  </span>
+        <p>Apartment</p>
+        <p> some description about the services  </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+  <h1 style="text-align:center;font-family: 'Montserrat', sans-serif;color: #ff9719; font-size: 32px;"> OUR TEAM </h1>
+  <section class="testimonials">
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+  <div id="customers-testimonials" class="owl-carousel">
+
+  <div class="item">
+  <div class="shadow-effect">
+  <img class="img-responsive" src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg" alt="">
+  <div class="item-details">
+  <h5>Name <span>Edu</span></h5>
+  <p>Some Description about them and their contributions</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="shadow-effect">
+  <img class="img-responsive" src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg" alt="">
+  <div class="item-details">
+  <h5>Name <span>Edu</span></h5>
+  <p>Some Description about them and their contributions</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="shadow-effect">
+  <img class="img-responsive" src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg" alt="">
+  <div class="item-details">
+  <h5>Name <span>Edu</span></h5>
+  <p>Some Description about them and their contributions</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="shadow-effect">
+  <img class="img-responsive" src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg" alt="">
+  <div class="item-details">
+  <h5>Name <span>Edu</span></h5>
+  <p>Some Description about them and their contributions</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="item">
+  <div class="shadow-effect">
+  <img class="img-responsive" src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg" alt="">
+  <div class="item-details">
+  <h5>Name <span>Edu</span></h5>
+  <p>Some Description about them and their contributions</p>
+  </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+
+  <h1 style="text-align:center;font-family: 'Montserrat', sans-serif; font-size: 32px;"> Contact Us </h1>
+    <section id="contact" class="align-items-center d-flex justify-content-center">
+      <div class="container align-items-center d-flex justify-content-center">
+
+        <div class="row contact-info">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <div>
+                  <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3 style="font-family: 'Montserrat', sans-serif; color: #ff9719;">Address</h3>
+                    <address>India</address>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div>
+                  <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3 style="font-family: 'Montserrat', sans-serif; color: #ff9719;">Phone Number</h3>
+                    <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div>
+                  <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3 style="font-family: 'Montserrat', sans-serif; color: #ff9719;">Email</h3>
+                    <p><a href="mailto:info@sheltown.com">info@sheltown.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-items-center d-flex justify-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+              width="90%" height="380" frameborder="0" style="border:10px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6 align-items-center d-flex justify-content-center text-center">
+          <div class="containerr" style="height:585px;width:400px;margin:40px;">
+            <h style="text-align:center"> Send Us a Message! </h>
+                <br>
+                  <label for="fname">First Name</label><br>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <br>
+
+                    <label for="lname">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+                    <br>
+
+                    <label for="country">Contact No</label><br>
+                    <input type="number" id="fname" name="contact" placeholder="Your number..">
+                    <br>
+
+                    <label for="subject">Message</label><br>
+                    <textarea id="subject" name="subject" placeholder="Your text here" style="height:100px"></textarea>
+                      <br>
+                    <input type="submit" value="Submit">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--==========================
+    Footer
+  ============================-->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 about-text">
+            <h6>About</h6>
+            <p class="text-justify">We are strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.We are bound to provide you the best possible care and support which
+              helps you meet your
+              demands.We are with you whenever you are in need.</p>
+            <p>Accept our warm SheltOwn hug</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">SheltOwn Family+</a></li>
+              <li><a href="">Editor's Note</a></li>
+              <li><a href="">Blogs</a></li>
+              <li><a href="">Help</a></li>
+
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Guest</a></li>
+              <li><a href="#">Partner</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          </div>
+
+        </div>
+        <hr>
+      <div class="container">
+        <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+        <br>
+        <div class="mid" id="HiddenDiv" style="display: none;">
+          <div class="row" id="more">
+            <div class="col-lg-4">
+              <ul class="footer-links">
+                <li><a href="#">Room for rent in Mumbai</a></li>
+                <li><a href="#">Room for rent in Delhi</a></li>
+                <li><a href="#">Room for rent in Bangalore</a></li>
+                <li><a href="#">Room for rent in Hyderabad</a></li>
+                <li><a href="#">Room for rent in Ahmedabad</a></li>
+                <li><a href="#">Room for rent in Chennai</a></li>
+                <li><a href="#">Room for rent in Kolkata</a></li>
+                <li><a href="#">Room for rent in Surat</a></li>
+                <li><a href="#">Room for rent in Pune</a></li>
+                <li><a href="#">Room for rent in Jaipur</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="footer-links">
+                <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+                <li><a href="#">Room for rent in Nagpur</a></li>
+                <li><a href="#">Room for rent in Lucknow</a></li>
+                <li><a href="#">Room for rent in Kanpur</a></li>
+                <li><a href="#">Room for rent in Thane</a></li>
+                <li><a href="#">Room for rent in Bhopal</a></li>
+                <li><a href="#">Room for rent in Indore</a></li>
+                <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+                <li><a href="#">Room for rent in Patna</a></li>
+                <li><a href="#">Room for rent in Vadodara</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul class="footer-links">
+                <li><a href="#">Room for rent in Gaziabad</a></li>
+                <li><a href="#">Room for rent in Ludhiana</a></li>
+                <li><a href="#">Room for rent in Agra</a></li>
+                <li><a href="#">Room for rent in Nashik</a></li>
+                <li><a href="#">Room for rent in Faridabad</a></li>
+                <li><a href="#">Room for rent in Meerut</a></li>
+                <li><a href="#">Room for rent in Rajkot</a></li>
+                <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+                <li><a href="#">Room for rent in Vasai-Virar</a></li>
+                <li><a href="#">Room for rent in Varanasi</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <br>
+            <a href="#">info@sheltown.com</a>
+            <br>
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <br>
+            <ul class="social-icons">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- #footer -->
+
+      <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+      <script type="text/javascript">
+        // <![CDATA[
+        function ShowHide(divId) {
+          var atxt = document.getElementById("atext");
+          if (document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display = 'block';
+          } else {
+            document.getElementById(divId).style.display = 'none';
+          }
+        }
+        // ]]>
+      </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+      <script id="rendered-js">
+      jQuery(document).ready(function ($) {
+        "use strict";
+        $('#customers-testimonials').owlCarousel({
+          loop: true,
+          center: true,
+          items: 3,
+          margin: 30,
+          autoplay: true,
+          dots: true,
+          nav: true,
+          autoplayTimeout: 8500,
+          smartSpeed: 450,
+          navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+          responsive: {
+            0: {
+              items: 1 },
+
+            768: {
+              items: 2 },
+
+            1170: {
+              items: 3 } } });
+
+
+
+      });
+
+          </script>
+
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/superfish/hoverIntent.js"></script>
+      <script src="lib/superfish/superfish.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+      <script src="lib/sticky/sticky.js"></script>
+
+      <!-- Contact Form JavaScript File -->
+      <script src="contactform/contactform.js"></script>
+
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+
+</body>
+
+</html>
