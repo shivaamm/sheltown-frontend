@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ</title>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<style>
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+    /*--------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    #header {
+      padding: 20px 0;
+      height: 65px;
+      transition: all 0.5s;
+      z-index: 997;
+      background: #ff971d;
+      box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    #header #logo h1 {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+    }
+
+    #header #logo h1 a {
+      line-height: 1;
+      display: inline-block;
+    }
+
+    #header #logo img {
+      padding: 0;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+    /*--------------------------------------------------------------
+    # Navigation Menu
+    --------------------------------------------------------------*/
+    /* Nav Menu Essentials */
+    .nav-menu,
+    .nav-menu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu ul {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+    }
+
+    .nav-menu li {
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-menu>li {
+      float: left;
+    }
+
+    .nav-menu li:hover>ul,
+    .nav-menu li.sfHover>ul {
+      display: block;
+    }
+
+    .nav-menu ul ul {
+      top: 0;
+      left: 100%;
+    }
+
+    .nav-menu ul li {
+      min-width: 180px;
+    }
+
+    /* Nav Menu Arrows */
+    .sf-arrows .sf-with-ul {
+      padding-right: 22px;
+    }
+
+    .sf-arrows .sf-with-ul:after {
+      content: "\f107";
+      position: absolute;
+      right: 8px;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .sf-arrows ul .sf-with-ul:after {
+      content: "\f105";
+    }
+
+    /* Nav Meu Container */
+    #nav-menu-container {
+      float: right;
+      margin: 0;
+    }
+
+    /* Nav Meu Styling */
+    .nav-menu a {
+      padding: 10px 8px;
+      text-decoration: none;
+      display: inline-block;
+      color: #555;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .nav-menu li:hover>a,
+    .nav-menu .menu-active>a {
+      color: #fff;
+    }
+
+    .nav-menu>li {
+      margin-left: 10px;
+    }
+
+    .nav-menu ul {
+      margin: 2px 0 0 0;
+      padding: 5px;
+      box-shadow: 0px 0px 30px rgb(200, 200, 200);
+    }
+
+    .nav-menu ul li {
+      transition: 0.3s;
+    }
+
+    .nav-menu ul li a {
+      padding: 5px;
+      color: #333;
+      transition: 0.3s;
+      display: block;
+      font-size: 13px;
+      text-transform: none;
+    }
+
+    .nav-menu ul li:hover>a {
+      color: #ff971d;
+    }
+
+    .nav-menu ul ul {
+      margin: 0;
+    }
+
+    /* Mobile Nav Toggle */
+    #mobile-nav-toggle {
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 999;
+      margin: 20px 20px 0 0;
+      border: 0;
+      background: none;
+      font-size: 24px;
+      display: none;
+      transition: all 0.4s;
+      outline: none;
+      cursor: pointer;
+    }
+
+    #mobile-nav-toggle i {
+      color: #fff;
+    }
+
+    /* Mobile Nav Styling */
+    #mobile-nav {
+      position: fixed;
+      top: 0;
+      padding-top: 18px;
+      bottom: 0;
+      z-index: 998;
+      background: rgba(220, 220, 220, 0.9);
+      left: -260px;
+      width: 260px;
+      overflow-y: auto;
+      transition: 0.4s;
+    }
+
+    #mobile-nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #mobile-nav ul li {
+      position: relative;
+    }
+
+    #mobile-nav ul li a {
+      color: #000;
+      font-size: 16px;
+      overflow: hidden;
+      padding: 10px 22px 10px 15px;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      display: block;
+      outline: none;
+    }
+
+    #mobile-nav ul li a:hover {
+      color: #ff971d;
+    }
+
+    #mobile-nav ul li li {
+      padding-left: 30px;
+    }
+
+    #mobile-nav ul .menu-has-children i {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      padding: 15px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    #mobile-nav ul .menu-has-children i.fa-chevron-up {
+      color: #ff971d;
+    }
+
+    #mobile-nav ul .menu-item-active {
+      color: #ff971d;
+    }
+
+    #mobile-body-overly {
+      width: 100%;
+      height: 100%;
+      z-index: 997;
+      top: 0;
+      left: 0;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.08);
+      display: none;
+    }
+
+    /* Mobile Nav body classes */
+    body.mobile-nav-active {
+      overflow: hidden;
+    }
+
+    body.mobile-nav-active #mobile-nav {
+      left: 0;
+    }
+
+    body.mobile-nav-active #mobile-nav-toggle {
+      color: #fff;
+    }
+    /* ====== faq section  =========*/
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      margin-top: 20px;
+    }
+    #my {
+      width: 100%;
+      padding: 50px 0;
+      margin-top: 20px;
+    }
+    .faq_question {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+        width:100%;
+        border:2px solid #ff971d;
+        border-radius:5px;
+        padding:10px;
+        margin:10px;
+    }
+
+    .faq_answer_container {
+        display: none;
+        padding:10px;
+        margin:10px;
+    }
+    .faq_heading{
+        font-weight: bold;
+        color:#ff971d;
+        margin:20px;
+        text-align:center;
+    }
+    #faqtitle{
+        font-weight: bold;
+        color:#ff971d;
+        margin:20px 20px 0px 20px;
+        text-align:center;
+    }
+    .icon{
+        float:right;
+        color:#ff971d;
+    }
+    .card{
+        border:1px solid #ff971d;
+        border-radius: 5px;
+        padding:10px;
+        margin:10px;
+        box-shadow: 5px 5px #f1f1f2;
+    }
+    .card:hover{
+        box-shadow: 3px 3px #f1f1f1;
+    }
+    .card-title{
+        text-align: center;
+        text-transform: uppercase;
+        float:right;
+    }
+    .btn-orange{
+        background-color: #ff971d;
+        color:white;
+        font-weight: bold;
+        padding:5px 20px;
+        margin:10px;
+    }
+    .btn-orange:hover{
+        background-color: #ff971d;
+        color:white;
+        font-weight: bold;
+        padding:5px 20px;
+        margin:10px;
+    }
+    .image{
+        font-size:70px;
+        color:orange;
+    }
+    /* ====== testimonials =========*/
+    .testimonials{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .testimonials h2 {
+        color: #000;
+        font-size: 26px;
+        font-weight: 300;
+        position: relative;
+        margin: 0 0 50px 0;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .testimonials h2::after {
+        content: "";
+        width: 50%;
+        position: absolute;
+        height: 4px;
+        border-radius: 1px;
+        background: orange;
+        left: 0;
+        bottom: -20px;
+    }
+    .carousel {
+        margin: 50px auto;
+    }
+    .carousel .item {
+        color: #999;
+        overflow: hidden;
+        min-height: 120px;
+        font-size: 13px;
+    }
+    .carousel .media {
+        position: relative;
+        padding: 0 0 0 20px;
+        margin-left: 20px;
+    }
+    .carousel .media img {
+        width: 75px;
+        height: 75px;
+        display: block;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        border: 2px solid #fff;
+    }
+    .carousel .testimonial {
+        color: #fff;
+        position: relative;    
+        background: #9b9b9b;
+        padding: 15px;
+        margin: 0 0 20px 20px;
+    }
+    .carousel .testimonial::before, .carousel .testimonial::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+    }
+    .carousel .testimonial::before {
+        width: 20px;
+        height: 20px;
+        background: #9b9b9b;
+        box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+    }
+    .carousel .testimonial::after {
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        border-left-color: #fff;
+    }
+    .carousel .item .row > div:first-child .testimonial {
+        margin: 0 20px 20px 0;
+    }
+    .carousel .item .row > div:first-child .media {
+        margin-left: 0;
+    }
+    .carousel .testimonial p {
+        text-indent: 40px;
+        line-height: 21px;
+        margin: 0;
+    }
+    .carousel .testimonial p::before {
+        content: '\94';
+        color: #fff;
+        font-weight: bold;
+        font-size: 68px;
+        line-height: 70px;
+        position: absolute;
+        left: -25px;
+        top: 0;
+    }
+    .carousel .overview {
+        padding: 3px 0 0 15px;
+    }
+    .carousel .overview .details {
+        padding: 5px 0 8px;
+    }
+    .carousel .overview b {
+        text-transform: uppercase;
+        color: orange;
+    }
+    .carousel .carousel-control {
+        width: 30px;
+        height: 30px;
+        background: #666;
+        text-shadow: none;
+        top: 4px;
+    }
+    .carousel-control i {
+        font-size: 16px;
+    }
+    .carousel-control.left {
+        left: auto;
+        right: 40px;
+    }
+    .carousel-control.right {
+        left: auto;
+    }
+    .carousel-indicators {
+        bottom: -80px;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 18px;
+        height: 18px;
+        border-radius: 0;
+        margin: 1px 4px;
+    }
+    .carousel-indicators li {   
+        background: #e2e2e2;
+        border: 4px solid #fff;
+    }
+    .carousel-indicators li.active {
+        color: #fff;
+        background: orange;    
+        border: 5px double;    
+    }
+    .star-rating li {
+        padding: 0 2px;
+    }
+    .star-rating i {
+        font-size: 14px;
+        color: orange;
+    }
+    /* ====== footer =========*/
+    .site-footer
+    {
+      background-color:whitesmoke;
+      padding:45px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#737373;
+      margin-top:30px;
+    }
+    .site-footer hr
+    {
+      border-top-color:#bbb;
+      opacity:0.5
+    }
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h6
+    {
+      color:black;
+      font-size:16px;
+      text-transform:uppercase;
+      margin-top:5px;
+      letter-spacing:2px;
+    }
+
+    .site-footer a
+    {
+      color:gray;
+    }
+    .site-footer a:hover
+    {
+      color:coral;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:0;
+      list-style:none
+    }
+    .footer-links li
+    {
+      display:block
+    }
+    .footer-links a
+    {
+      color:#737373;
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:coral;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+    .site-footer .social-icons
+    {
+      text-align:right
+    }
+    .site-footer .social-icons a
+    {
+      width:40px;
+      height:40px;
+      line-height:40px;
+      margin-left:6px;
+      margin-right:0;
+      border-radius:100%;
+      background-color:#33353d
+    }
+    h1{
+    color: blue-violet;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .copyright-text
+    {
+      margin:0
+    }
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:30px
+      }
+    }
+    @media (max-width:367px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center
+      }
+    }
+    .social-icons
+    {
+      padding-left:0;
+      margin-bottom:0;
+      list-style:none
+    }
+    .social-icons li
+    {
+      display:inline-block;
+      margin-bottom:4px
+    }
+    .social-icons li.title
+    {
+      margin-right:15px;
+      text-transform:uppercase;
+      color:#96a2b2;
+      font-weight:700;
+      font-size:13px
+    }
+    .social-icons a{
+      background-color:#eceeef;
+      color:white;;
+      font-size:16px;
+      display:inline-block;
+      line-height:44px;
+      width:44px;
+      height:44px;
+      text-align:center;
+      margin-right:8px;
+      border-radius:100%;
+      -webkit-transition:all .2s linear;
+      -o-transition:all .2s linear;
+      transition:all .2s linear
+    }
+    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+    {
+      color:#fff;
+      background-color:#29aafe
+    }
+    .social-icons.size-sm a
+    {
+      line-height:34px;
+      height:34px;
+      width:34px;
+      font-size:14px
+    }
+    .social-icons a.facebook:hover
+    {
+      background-color:#3b5998
+    }
+    .social-icons a.twitter:hover
+    {
+      background-color:#00aced
+    }
+    .social-icons a.linkedin:hover
+    {
+      background-color:#007bb6
+    }
+    .social-icons a.dribbble:hover
+    {
+      background-color:#ea4c89
+    }
+    @media (max-width:767px)
+    {
+      .social-icons li.title
+      {
+        display:block;
+        margin-right:0;
+        font-weight:600
+      }
+    }
+</style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+            $(document).ready(function() {
+
+                $('.faq_question').click(function() {
+
+                    if ($(this).parent().is('.open')) {
+                        $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                        $(this).closest('.faq').removeClass('open');
+                        $(this).closest('.faq').find('.icon').removeClass('fa-minus');
+                        $(this).closest('.faq').find('.icon').addClass('fa-plus');
+                    } 
+                    else {
+                        $('.faq_answer_container').slideUp();
+                        $('.faq').removeClass('open');
+                        $('.icon').removeClass('fa-minus');
+                        $('.icon').addClass('fa-plus');
+                        $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                        $(this).closest('.faq').addClass('open');
+                        $(this).closest('.faq').find('.icon').removeClass('fa-plus');
+                        $(this).closest('.faq').find('.icon').addClass('fa-minus');
+                    }
+
+                });
+            });
+    </script>
+</head>
+<body>
+
+    <!-- navbar starts -->
+    <header id="header">
+        <div class="container">
+
+          <div id="logo" class="pull-left">
+            <h1>
+                <a href="index.html" class="scrollto"> 
+                    <img src="images/sheltown-logo.PNG" alt="logo"> 
+                </a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+          </div>
+
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="index.html">Home</a></li>
+              <li class="menu-has-children"><a href="">Our Services</a>
+                <ul>
+                  <li><a href="#">Personalised Services</a></li>
+                  <li><a href="frontend-master/rental.html">Rental Services</a></li>
+                </ul>
+              </li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="frontend-master/blog_description_page.html">Blogs</a></li>
+              <li><a href="login-user.html">Login</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+    </header> 
+    <!-- navbar ends -->
+
+    <!-- faq button -->
+    <h3 class="faq_heading">FAQ's</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="las la-wrench image"></i>
+                      <h4 class="card-title">Personal Services</h4>
+                      <center>
+                        <button class="btn btn-orange" onclick="myFunction()">FAQ's</button>
+                      </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="las la-home image"></i>
+                      <h4 class="card-title">Rental Services</h4>
+                      <center>
+                        <button class="btn btn-orange" onclick="myFun()">FAQ's</button>
+                      </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <!-- faq section -->
+    <h4 id="faqtitle">Personal Services</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <div id="myDIV">
+                </div>
+                <div id="my" style="display:none;">
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonials section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">         
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <h2>Customer <b>Testimonials</b></h2>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>   
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/1.jpg" alt="">                                       
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Naman</b></div>
+                                                    <div class="details">Web developer</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Nikheel</b></div>
+                                                    <div class="details">Web Developer</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>          
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/3.jpg" alt="">                                       
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>sravya</b></div>
+                                                    <div class="details">Web Developer</div>                                            
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/4.jpg" alt="">                                       
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Shivam</b></div>
+                                                    <div class="details">Web developer</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>          
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/5.jpg" alt="">                                       
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Anwesha</b></div>
+                                                    <div class="details">Web developer</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <img src="/examples/images/clients/6.jpg" alt="">                                       
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Shridhi</b></div>
+                                                    <div class="details">Web Designer</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>          
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer -->
+    <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h6>About</h6>
+                  <p class="text-justify">We are strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.We are bound to provide you the best possible care and support which helps you meet your demands.We are with you whenever you are in need.</p><p>Accept our warm SheltOwn hug</p>
+                </div>
+      
+                <div class="col-xs-6 col-md-3">
+                  <h6>Categories</h6>
+                  <ul class="footer-links">
+                    <li><a href="#">Know Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">SheltOwn Family+</a></li>
+                    <li><a href="">Editor's Note</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+    
+                    
+                  </ul>
+                </div>
+      
+                <div class="col-xs-6 col-md-3">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Guest</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Sitemap</a></li>
+          
+                  </ul>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <a href="#">info@sheltown.com</a>
+                  <br>
+                  <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+               
+                  </p>
+                </div>
+      
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+    <!-- footer ends -->
+<script>
+    function myFunction() {
+      let x = document.getElementById("myDIV");
+      let y = document.getElementById("my");
+      document.getElementById("faqtitle").innerHTML = "Personal Sevices";
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+    function myFun() {
+      let x = document.getElementById("myDIV");
+      let y = document.getElementById("my");
+      document.getElementById("faqtitle").innerHTML = "Rental Sevices";
+      y.style.display = "block";
+      x.style.display = "none";
+    }
+    var personal = [
+        {
+           question: "personal Question goes here",
+           answer:"Answer goes here"
+        },
+        {
+           question: "personal Question goes here",
+           answer:"Answer goes here"
+        },
+        {
+           question: "personal Question goes here",
+           answer:"Answer goes here"
+        }
+    ]
+    var rental = [
+        {
+           question: "rental Question goes here",
+           answer:"Answer goes here"
+        },
+        {
+           question: "rental Question goes here",
+           answer:"Answer goes here"
+        },
+        {
+           question: "rental Question goes here",
+           answer:"Answer goes here"
+        }
+    ]
+       for(let i=0;i<personal.length;i++)
+       {
+         // Create the HTML elements needed for a card
+            const faq = document.createElement("div");
+            const faq_question = document.createElement("div");
+            const faq_answer_container = document.createElement("div");
+            const faq_answer = document.createElement("div");
+
+            // find the body element so that the newly created eoements
+            // can be appended to it
+            const section = document.getElementById("myDIV");
+
+            // Append the elements to the DOM
+
+            // add the div to the body
+            section.append(faq);
+            faq.append(faq_question);
+            faq_answer_container.append(faq_answer);
+            faq.append(faq_answer_container);
+
+
+            faq.setAttribute('class', 'faq');
+            faq_question.setAttribute('class', 'faq_question');
+            faq_answer_container.setAttribute('class', 'faq_answer_container');
+            faq_answer.setAttribute('class', 'faq_answer');
+
+
+            faq_question.innerHTML = personal[i].question+'<i class="fa fa-plus icon"></i>';
+            faq_answer.innerHTML = personal[i].answer;
+        }
+        for(let i=0;i<rental.length;i++)
+       {
+         // Create the HTML elements needed for a card
+            const faq = document.createElement("div");
+            const faq_question = document.createElement("div");
+            const faq_answer_container = document.createElement("div");
+            const faq_answer = document.createElement("div");
+
+            // find the body element so that the newly created eoements
+            // can be appended to it
+            const section = document.getElementById("my");
+
+            // Append the elements to the DOM
+
+            // add the div to the body
+            section.append(faq);
+            faq.append(faq_question);
+            faq_answer_container.append(faq_answer);
+            faq.append(faq_answer_container);
+
+
+            faq.setAttribute('class', 'faq');
+            faq_question.setAttribute('class', 'faq_question');
+            faq_answer_container.setAttribute('class', 'faq_answer_container');
+            faq_answer.setAttribute('class', 'faq_answer');
+
+
+            faq_question.innerHTML = rental[i].question+'<i class="fa fa-plus icon"></i>';
+            faq_answer.innerHTML = rental[i].answer;
+        }
+    </script>
+</body>
+</html>
+
