@@ -140,102 +140,36 @@ h6 {
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 57vh;
+  height: 60vh;
   position: relative;
   background: url("../img/intro-carousel/1.jpg") no-repeat;
   background-size: cover;
 }
-
-#intro .intro-content {
-  position: absolute;
-  bottom: 0;
-  top: 2.5rem;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1,1,1,0.2);
 }
-
 #intro .intro-content h2 {
   color: #ff971d;
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top:20px;
 }
-
-#intro .intro-content h2 span {
-  color: #ff971d;
-}
-
-#intro .intro-content .btn-get-started {
-  background: #ff971d;
-  border: 2px solid #ff971d;
-}
-
-#intro .intro-content .btn-get-started:hover {
-  background: none;
-  color: #ff971d;
-}
-
-#intro .intro-content .btn-projects {
-  background: #ff971d;
-  border: 2px solid #ff971d;
-}
-
-#intro .intro-content .btn-projects:hover {
-  background: none;
-  color: #ff971d;
-}
-
-#intro #intro-carousel {
-  z-index: 8;
-
-}
-
-#intro .drop-down-search {
-  padding: 0px;
+#intro .intro-content p {
+  font-size:25px;
+  font-weight: 400;
 }
 
 #intro .row {
   margin: 0px;
 }
 
-#intro #intro-carousel::before {
-  content: '';
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 7;
-}
-
-#intro #intro-carousel .item {
-  width: 100%;
-  height: 57vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition-property: opacity;
+@media (max-width:350){
+  #intro .intro-content p {
+    font-size:10px;
+    font-weight: 400;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -495,29 +429,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .search-services{
-  width: 170px;
+  width: 100%;
   height: 30px;
   position: relative;
   transition: all 0.5s;
-  background-color: #f05d23;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 3px;
+  background-color: white ;
+  border: 2px solid #ff971d;
+  color: #ff971d;
+  border-radius: 5px;
+  margin-bottom:5px;
 }
 
 .search-city {
-  width: 150px;
+  width: 100%;
   height: 30px;
   position: relative;
   transition: all 0.5s;
-  background-color: #f05d23;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 3px;
+  background-color: white;
+  border: 2px solid #ff971d;
+  color:#ff971d;
+  border-radius: 5px;
+  margin-bottom:5px;
 }
 
 .search-box {
-  width: 25rem;
+  width: 100%;
   height: 30px;
   position: relative;
   transition: all 0.5s;
@@ -527,32 +463,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: scale(1.1);
 }
 
-.search-box input {
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
+.search-input{
+  width:100%;
+  font-size: 17px;
   padding: 0px 15px;
-  border: none;
+  border: 2px solid #ff971d;
+  color:black;
+  border-radius: 5px;
   outline: none;
   font-family: "Raleway", sans-serif;
-}
-
-.search-input {
-  padding: 0px;
 }
 
 .search-box i {
   position: absolute;
   top: 2px;
   right: 1px;
-  background-color: #f05d23;
+  background-color: #ff971d;
   color: white;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 26px;
   font-size: 20px;
-  padding-top: 3px;
+  padding: 3px;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid #ff971d;
+  border-radius: 5px;
   transition: all 0.3s;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -667,6 +601,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+@media (max-width: 350px) {
+  #portfolio .portfolio-info {
+    position: absolute;
+    bottom:0;
+    left: 22%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Testimonials Section
