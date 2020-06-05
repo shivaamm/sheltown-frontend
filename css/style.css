@@ -601,8 +601,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
 }
-/* ------------------------------
-Services Section
+/*------------------------------
+ Services Section
 --------------------------------*/
 #services {
   padding: 3px 0 0 0;
@@ -669,9 +669,11 @@ Services Section
 }
 @media (max-width:350px){
   #services{
+    padding: 3px 0 0 0;
     height: 27vh;
   }
   #services .box {
+    background: #fff;
     padding: 2px;
     margin-bottom: 10px;
     box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
@@ -682,6 +684,9 @@ Services Section
   #services .box .icon i {
     font-size: 40px;
     margin-top: 22px;
+    color: #444;
+    transition: 0.5s;
+    line-height: 0;
   }
   #services .box h4 {
     margin-left: auto;
@@ -697,6 +702,7 @@ Services Section
     line-height: 20px;
   }
 }
+
 /* ------------------------------
 Our Portfolio Section
 --------------------------------*/
