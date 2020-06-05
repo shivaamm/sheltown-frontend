@@ -765,11 +765,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 @media (max-width: 450px) {
   #portfolio .portfolio-info {
-    position: absolute;
-    bottom:0;
-    left: 25%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    left: 38%;
   }
   #portfolio .portfolio-item{
     padding:10px;
@@ -778,6 +774,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 10px;
     text-transform: capitalize;
     font-weight: bold;
+  }
+}
+@media (max-width: 400px) {
+  #portfolio .portfolio-info {
+    left: 35%;
+  }
+}
+@media (max-width: 370px) {
+  #portfolio .portfolio-info {
+    left: 28%;
+  }
+}
+@media (max-width: 280px) {
+  #portfolio .portfolio-info {
+    left: 22%;
   }
 }
 /* Testimonials Section
