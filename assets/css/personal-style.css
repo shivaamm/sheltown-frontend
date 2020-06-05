@@ -1,0 +1,20 @@
+.personal-container h3 {
+ font-weight: bold;
+}
+
+.personal-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.personal-container .form-title {
+  color: #ff9719;
+}
+
+#cards .personal-container .accordion .card .card-header .mb-0 button {
+  color: #ff9719;
+}
+
+#cards .personal-container .accordion .card .card-header .mb-0 button:hover {
+  text-decoration: none;
+}
