@@ -82,11 +82,11 @@ padding-left: 15px;
 width:1100px;
 }
 
-ul {
+ul_de {
   list-style: none;
 }
 
-ul li::before {
+ul_de li::before {
   content: "\2022";
   color: #ff9719;
   font-weight: bold;
