@@ -1169,6 +1169,52 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 0px;
   }
 }
+
+/* SheltOwnplus
+--------------------------------*/
+#background_image_sheltownplus {
+  background: url(../img/sheltownplus.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 70%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+}
+
+#background_image_familyplus {
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d24f4091015401.5e26dc6bd5a50.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 70%;
+  margin-bottom: 5%;
+  border-radius: 50px;
+}
+
+#content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2.5rem;
+  border-radius: 50px;
+}
+
+#content .btn-sheltownplus{
+  background-color: #ff0750;
+  border-color: #ff0750;
+}
+
+.btn-sheltownplus {
+  padding: 10px;
+  border: 1px solid #ff9719;
+  border-radius: 10px;
+  background-color: #ff971d;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
