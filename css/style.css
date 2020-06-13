@@ -655,6 +655,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   line-height: 24px;
 }
+
+#services .box button{
+  width: 120px;
+  margin-left: 150px;
+  text-align: center;
+}
 @media (max-width: 767px) {
  
   #services .box .box {
