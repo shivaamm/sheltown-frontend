@@ -933,20 +933,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #1ec96b;
 }
 
+.content-img {
+  position: relative;
+}
+
+.content-img img{
+  float: left;
+  width: 400px;
+  height:255px;
+}
+
 #content {
- /* background-color: rgba(8, 217, 214, 0.3);*/
   text-align: right;
   color: #ffffff;
   padding: 1.5rem;
-  border-radius: 10px;
-}
-
-#content img{
-  float: left;
-  width: 400px;
-  height:248px;
-  margin-top: -1.5rem;
-  margin-left: -1.4rem;
   border-radius: 10px;
 }
 
@@ -963,7 +963,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
