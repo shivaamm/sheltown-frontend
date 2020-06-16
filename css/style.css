@@ -702,7 +702,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 30px 30px;
   margin: 30px 15px;
   text-align: center;
   min-height: 350px;
@@ -729,18 +729,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   color: #ff971d;
   margin: 0;
-}
-
-#testimonials .testimonial-item .quote-sign-left {
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
-}
-
-#testimonials .testimonial-item .quote-sign-right {
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
 }
 
 #testimonials .testimonial-item p {
@@ -805,114 +793,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin:0px;
 }
 
-#offers .testimonial-item {
+#offers .offer-item {
   box-sizing: content-box;
-  padding: 30px 30px 30px 30px;
   margin: 10px 15px;
-  text-align: center;
   min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQL5vkwBh6ttvBKHV_tWDMgyscx3EB-YzsWeCn8elW9RXvbJO5j&usqp=CAU);
-}
-
-#offers .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-#offers .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-#offers .testimonial-item h4 {
-  font-size: 14px;
-  color: #ff971d;
-  margin: 0;
-}
-
-#offers .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-#offers .testimonial-item .las {
-  color: #ff971d;
-}
-
-#offers .owl-nav,
-#offers .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#offers .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#offers.owl-dot.active {
-  background-color: #ff971d;
-}
-
-.btn-offers {
-  padding: 10px; border: 1px solid #fff;
-  border-radius: 10px;
-  background-color: #ff971d; color:#fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-@media (max-width:450px){
-  #offers{
-    height:36vh;
-  }
-  #offers .owl-stage-outer{
-    height:130px;
-    border:1px solid #ddd;
-  }
-  #offers .card-body{
-    padding:5px;
-  }
-  #offers .testimonial-item {
-    padding: 5px;
-    margin: 5px 5px;
-    height: 50px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
-  }
-  #offers .testimonial-item .card-header {
-    padding: 0px 5px;
-    font-size:15px;
-  }
-  #offers .testimonial-item .card-text {
-    padding: 0px 5px;
-    font-size:10px;
-  }
-  #offers .testimonial-item .card-title {
-    padding: 0px 5px;
-    margin-bottom:0px;
-  }
-  #offers .owl-nav,
-  #offers .owl-dots {
-    margin-top: 0px;
-    text-align: center;
-  }
-  .btn-offers {
-    padding:5px;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    font-size:15px;
-    background-color: #ff971d; color:#fff;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 0px;
-  }
 }
 
 /* SheltOwnplus
