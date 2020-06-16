@@ -448,6 +448,56 @@ div[slider] > input[type=range]::-ms-tooltip {
   color: #ff971d;
 }
 
+
+/*RENTAL CARDS*/
+@media screen and (max-width: 1080px) {
+  .column_ta {
+    width: 100%;
+    margin:10px;
+    height:100%;
+  }
+
+  #rent-name{
+    text-align:center;
+  }
+
+  #rent-verified{
+    float: right !important;
+    text-align: right;
+  }
+
+  #rent-rating {
+    text-align: center;
+  }
+
+}
+
+#boxpref{
+  background-color: #ff971d;
+  width: 180px;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+}
+
+#rent-verified {
+  color: green; 
+  font-size: 12px;
+  float: right;
+}
+
+#menu li {
+  display:inline;
+  padding:0 10px;
+}
+
+
+
+
+
 /* COLOURS
 white: #ffffff
 light grey #f9f6f7

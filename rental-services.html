@@ -76,20 +76,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="assets/css/rental-style.css" rel="stylesheet">
   <link href="assets/css/rental-services-details.css" rel="stylesheet">
-
-  <style>
-  #boxpref{
-    background-color: #ff971d;
-    width: 180px;
-    margin: 10px auto;
-    text-align: center;
-    align-item: center;
-    font-size: 13px;
-    padding: 5px;
-    color: white;
-  }
-  </style>
-
 </head>
 
 <body id="body" onload="myFunction()">
@@ -369,40 +355,47 @@
   </div>
   
       <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
-      <figcaption style="text-align: center"><button style="background-color: blue;">Book Now</button></figcaption>
+      <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" style="font-size: 25px">SheltOwn PG 01234</div>
-              <div class="col-sm-4" style="color: green; font-size: 12px;"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
+              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
+              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
               </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-sm-3   ">
-                <button style="background-color: red; border-radius: 0px; margin: 5px 10px; ">4.7<i class="fa fa-star"></i></button>
-              </div>
-              <div class="col-sm-9" style="color: blue; padding: 10px 0px;">
-                400 Ratings 4382 Reviews
-              </div>          
+              <div class="col-sm-7" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+                <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
+              </div>      
             </div>
+            <br>
             <div class="row">
-              <p style="color: blue; padding: 10px 25px 0px 25px;">Nearby:</p>
-              <ul style=" padding: 10px 25px;">
+              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-            <div class="row" style="padding: 5px; margin-top: -10px;">
-              <div class="col-sm-2">
-                <p style="color: blue; padding: 10px 10px;">Details:</p>
-              </div>
-              <div class="col-sm-5" style="padding: 10px 25px 0px 25px; border-right: 0.5px solid lightgrey; font-size: 13px;">
-                <p class="fa fa-wifi"></p>  Wifi<br>
+
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p style="color: blue;">Details:</p>
+                  </div>
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                    <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
-                <p class="fa fa-graduation-cap"></p>  Study Table<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
-                <p style="color: green;">See Details <a href="#" class="fa fa-info-circle" style="color: green;"></a></p>
+                  </div>
+                </div>
+                <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                </div>
               </div>
               <div class="col-sm-5">
                 <div id="boxpref">Male Only</div>
@@ -410,11 +403,9 @@
                 <div id="boxpref">Fully Furnished</div>
               </div>
             </div>
-
           </div>
         </div>
         </div>
-
 
         <div id="rental-card">
       <div class="row">
@@ -464,40 +455,47 @@
   </div>
   
       <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
-      <figcaption style="text-align: center"><button style="background-color: blue;">Book Now</button></figcaption>
+      <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" style="font-size: 25px">SheltOwn PG 01234</div>
-              <div class="col-sm-4" style="color: green; font-size: 12px;"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
+              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
+              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
               </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-sm-3   ">
-                <button style="background-color: red; border-radius: 0px; margin: 5px 10px; ">4.7<i class="fa fa-star"></i></button>
-              </div>
-              <div class="col-sm-9" style="color: blue; padding: 10px 0px;">
-                400 Ratings 4382 Reviews
-              </div>          
+              <div class="col-sm-7" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+                <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
+              </div>      
             </div>
+            <br>
             <div class="row">
-              <p style="color: blue; padding: 10px 25px 0px 25px;">Nearby:</p>
-              <ul style=" padding: 10px 25px;">
+              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-            <div class="row" style="padding: 5px; margin-top: -10px;">
-              <div class="col-sm-2">
-                <p style="color: blue; padding: 10px 10px;">Details:</p>
-              </div>
-              <div class="col-sm-5" style="padding: 10px 25px 0px 25px; border-right: 0.5px solid lightgrey; font-size: 13px;">
-                <p class="fa fa-wifi"></p>  Wifi<br>
+
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p style="color: blue;">Details:</p>
+                  </div>
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                    <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
-                <p class="fa fa-graduation-cap"></p>  Study Table<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
-                <p style="color: green;">See Details <a href="#" class="fa fa-info-circle" style="color: green;"></a></p>
+                  </div>
+                </div>
+                <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                </div>
               </div>
               <div class="col-sm-5">
                 <div id="boxpref">Male Only</div>
@@ -505,14 +503,11 @@
                 <div id="boxpref">Fully Furnished</div>
               </div>
             </div>
-
           </div>
         </div>
         </div>
 
-
-
-      <div id="rental-card">
+        <div id="rental-card">
       <div class="row">
         <div class="col-sm-5">
           <div class="row_ta">
@@ -560,40 +555,47 @@
   </div>
   
       <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
-      <figcaption style="text-align: center"><button style="background-color: blue;">Book Now</button></figcaption>
+      <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" style="font-size: 25px">SheltOwn PG 01234</div>
-              <div class="col-sm-4" style="color: green; font-size: 12px;"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
+              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
+              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
               </div>
             </div>
+            <br>
             <div class="row">
-              <div class="col-sm-3   ">
-                <button style="background-color: red; border-radius: 0px; margin: 5px 10px; ">4.7<i class="fa fa-star"></i></button>
-              </div>
-              <div class="col-sm-9" style="color: blue; padding: 10px 0px;">
-                400 Ratings 4382 Reviews
-              </div>          
+              <div class="col-sm-7" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+                <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
+              </div>      
             </div>
+            <br>
             <div class="row">
-              <p style="color: blue; padding: 10px 25px 0px 25px;">Nearby:</p>
-              <ul style=" padding: 10px 25px;">
+              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-            <div class="row" style="padding: 5px; margin-top: -10px;">
-              <div class="col-sm-2">
-                <p style="color: blue; padding: 10px 10px;">Details:</p>
-              </div>
-              <div class="col-sm-5" style="padding: 10px 25px 0px 25px; border-right: 0.5px solid lightgrey; font-size: 13px;">
-                <p class="fa fa-wifi"></p>  Wifi<br>
+
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p style="color: blue;">Details:</p>
+                  </div>
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                    <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
-                <p class="fa fa-graduation-cap"></p>  Study Table<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
-                <p style="color: green;">See Details <a href="#" class="fa fa-info-circle" style="color: green;"></a></p>
+                  </div>
+                </div>
+                <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                </div>
               </div>
               <div class="col-sm-5">
                 <div id="boxpref">Male Only</div>
@@ -601,11 +603,12 @@
                 <div id="boxpref">Fully Furnished</div>
               </div>
             </div>
-
           </div>
         </div>
         </div>
-     
+
+
+
   </div>
   </div>
   </div>
