@@ -702,7 +702,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 30px 30px;
   margin: 30px 15px;
   text-align: center;
   min-height: 350px;
@@ -729,18 +729,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   color: #ff971d;
   margin: 0;
-}
-
-#testimonials .testimonial-item .quote-sign-left {
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
-}
-
-#testimonials .testimonial-item .quote-sign-right {
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
 }
 
 #testimonials .testimonial-item p {
