@@ -718,7 +718,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
 #testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -733,23 +732,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .testimonial-item .quote-sign-left {
-  margin-top: -15px;
   padding-right: 10px;
   display: inline-block;
   width: 37px;
 }
 
 #testimonials .testimonial-item .quote-sign-right {
-  margin-bottom: -15px;
   padding-left: 10px;
   display: inline-block;
   max-width: 100%;
-  width: 37px;
 }
 
 #testimonials .testimonial-item p {
   font-style: italic;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 10px auto;
 }
 
 #testimonials .testimonial-item .las {
