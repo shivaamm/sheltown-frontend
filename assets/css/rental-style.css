@@ -53,6 +53,14 @@ input[type="checkbox"] {
   padding: 1px;
 }
 
+input[type=number]{
+  width: 150px;
+} 
+
+input[type=date]{
+  width: 150px;
+} 
+
 /* BUTTON */
 
 input[type="button"] {
@@ -461,11 +469,6 @@ div[slider] > input[type=range]::-ms-tooltip {
     text-align:center;
   }
 
-  #rent-verified{
-    float: right !important;
-    text-align: right;
-  }
-
   #rent-rating {
     text-align: center;
   }
@@ -492,6 +495,25 @@ div[slider] > input[type=range]::-ms-tooltip {
 #menu li {
   display:inline;
   padding:0 10px;
+  font-size: 15px;
+}
+
+.cross {
+  position: relative;
+  display: inline-block;
+}
+.cross::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.cross::after {
+  border-bottom: 1.5px solid red;
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
 }
 
 

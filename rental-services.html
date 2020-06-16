@@ -2,47 +2,6 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <!-- map marker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-  <!-- style sheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="assets/css/rental-services-details.css">
-  <style>
-  </style>
-</head>
-
-<body>  
-  
-  
-
-
-  
-
-      
-
-  
-
-    
-    
-</body>
-
-</html>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <meta charset="utf-8">
   <title>SheltOwn</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -61,6 +20,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Libraries CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -184,47 +147,58 @@
                       <br>
                       <p id="filter-heading">Categories</p>
                       <div class="checkbox">
-                          <input type="checkbox" id="checkbox" name="" value="">
+                          <input type="checkbox" id="checkbox" onclick="pg()" name="" value="">
                           <label for="checkbox"><span>PG</span></label>
                       </div>
+                      <table id="pg-categories" style="display:none; margin-left: 5px;">
+                        <tr>
+                          <td style="padding: 5px;"><input type="radio" id="1mate" name="pg-mate" value="1mate">
+                          <label for="1mate">1 mate</label></td>
+                          <td style="padding: 5px;"><input type="radio" id="2mates" name="pg-mate" value="2mates">
+                          <label for="2mates">2 mates</label></td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 5px;"><input type="radio" id="3mates" name="pg-mate" value="3mates">
+                          <label for="3mates">3 mates</label></td>
+                          <td style="padding: 5px;" ><input type="radio" id="4mates" name="pg-mate" value="4mates">
+                          <label for="4mates">4 mates</label></td>
+                        </tr>
+                      </table>
+
                       <div class="checkbox">
-                          <input type="checkbox" id="checkbox2" name="" value="">
-                          <label for="checkbox2"><span>Renting Services</span></label>
+                          <input type="checkbox" id="checkbox2" onclick="flat()" name="" value="">
+                          <label for="checkbox2"><span>Flat/Apartment</span></label>
+                      </div>
+                      <table id="flat-categories" style="display:none; margin-left: 5px;">
+                        <tr>
+                          <td style="padding: 5px;"><input type="radio" id="1mate" name="pg-mate" value="1mate">
+                          <label for="1mate">1 BHK</label></td>
+                          <td style="padding: 5px;"><input type="radio" id="2mates" name="pg-mate" value="2mates">
+                          <label for="2mates">2 BHK</label></td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 5px;"><input type="radio" id="3mates" name="pg-mate" value="3mates">
+                          <label for="3mates">3 BHK</label></td>
+                        </tr>
+                      </table>
+
+                      <div class="checkbox">
+                          <input type="checkbox" id="checkbox3" name="" value="">
+                          <label for="checkbox3"><span>House</span></label>
                       </div>
                       <br>
                       <p id="filter-heading">Price Range</p>
-                      <div slider id="slider-distance">
-                        <div>
-                          <div inverse-left style="width:70%;"></div>
-                          <div inverse-right style="width:70%;"></div>
-                          <div range style="left:0%;right:0%;"></div>
-                          <span thumb style="left:0%;"></span>
-                          <span thumb style="left:100%;"></span>
-                          <div sign style="left:0%;">
-                            <span id="value">0</span>
-                          </div>
-                          <div sign style="left:100%;">
-                            <span id="value">100</span>
-                          </div>
-                        </div>
-                        <input type="range" value="0" max="100" min="0" step="1" oninput="
-                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
-                        let value = (this.value/parseInt(this.max))*100
-                        var children = this.parentNode.childNodes[1].childNodes;
-                        children[1].style.width=value+'%';
-                        children[5].style.left=value+'%';
-                        children[7].style.left=value+'%';children[11].style.left=value+'%';
-                        children[11].childNodes[1].innerHTML=this.value;" />
-                      
-                        <input type="range" value="100" max="100" min="0" step="1" oninput="
-                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
-                        let value = (this.value/parseInt(this.max))*100
-                        var children = this.parentNode.childNodes[1].childNodes;
-                        children[3].style.width=(100-value)+'%';
-                        children[5].style.right=(100-value)+'%';
-                        children[9].style.left=value+'%';children[13].style.left=value+'%';
-                        children[13].childNodes[1].innerHTML=this.value;" />
-                      </div>
+                        <table>
+                          <tr>
+                            <td style="padding: 5px;">From: </td>
+                            <td style="padding: 5px;"><input type="number" id="from" name="from" min="0" step="1000"></td> 
+                          </tr>
+                          <tr>
+                            <td style="padding: 5px;">To: </td>
+                            <td style="padding: 5px;"><input type="number" id="to" name="to" min="0" step="1000"></td> 
+                          </tr>
+                        </table>
+                      <br>
                       <p id="filter-heading">Preference</p>
                       <div class="checkbox">
                           <input type="checkbox" id="checkbox3" name="" value="">
@@ -238,61 +212,43 @@
                           <input type="checkbox" id="checkbox5" name="" value="">
                           <label for="checkbox5"><span>Female Only</span></label>
                       </div>
-                      <br>
-                      <p id="filter-heading">Availability</p>
                       <div class="checkbox">
                           <input type="checkbox" id="checkbox6" name="" value="">
-                          <label for="checkbox6"><span>ASAP</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox7" name="" value="">
-                          <label for="checkbox7"><span>In a Week</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox8" name="" value="">
-                          <label for="checkbox8"><span>In a Month</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox9" name="" value="">
-                          <label for="checkbox9"><span>Custom</span></label>
+                          <label for="checkbox6"><span>SheltOwn +</span></label>
                       </div>
                       <br>
-                      <p id="filter-heading">Sharing</p>
-                      <table>
+                      <p id="filter-heading">Price Range</p>
+                        <table>
                           <tr>
-                          <td id="data-left"><div class="checkbox">
-                              <input type="checkbox" id="checkbox10" name="" value="">
-                              <label for="checkbox10"><span>Room</span></label>
-                          </div></td>
-                          <td>
-                          <select id="check-option">
-                              <option>Mates</option>
-                              <option>Married</option>
-                              <option>Others</option>
-                          </select></td>
+                            <td style="padding: 5px;">Check in: </td>
+                            <td style="padding: 5px;"><input type="date" id="fromdate" name="fromdate"></td> 
                           </tr>
-                          <td><div class="checkbox">
-                              <input type="checkbox" id="checkbox12" name="" value="">
-                              <label for="checkbox12"><span>Flat</span></label>
-                          </div></td>
-                          <td>
-                          <select id="check-option">
-                              <option>BHK</option>
-                              <option>Married</option>
-                              <option>Others</option>
-                          </select></td>
+                          <tr>
+                            <td style="padding: 5px;">Check Out: </td>
+                            <td style="padding: 5px;"><input type="date" id="todate" name="todate"></td> 
                           </tr>
-                      </table><br>
-                  <div class='align-items-center'>
-                  <center>
-                  <input type="button" value="Fully Furnished"><br>
-                  <input type="button" value="Semi Furnished"><br>
-                  <input type="button" value="Both"><br>
-                  <input type="submit">
-              </form>
-              </div>
-          </div>
-      </div>
+                        </table>
+                      <br>
+                      <p id="filter-heading">Furnishing Type</p>
+                      <select id="check-option" style="margin: 10px;">
+                          <option>Fully Furnished</option>
+                          <option>Semi Furnished</option>
+                          <option>Unfurnished</option>
+                      </select>
+                      <br>
+                      <p id="filter-heading">Security Deposit</p>
+                      <select id="check-option" style="margin: 10px;">
+                          <option>None</option>
+                          <option>1 month</option>
+                          <option>2 months</option>
+                          <option>3 months</option>
+                          <option>4 months</option>
+                      </select>
+                      <br><br><center>
+                      <input type="submit"></center>
+                    </form>
+                  </div>
+                </div>
 
 
       <!--CARDS-->
@@ -300,12 +256,13 @@
       <br>
       <div><p>xxx Results Found
       <select id="check-option" style="float:right;">
-          <option>Relevance</option>
+          <option>Sort By</option>
           <option>Popularity</option>
           <option>Price high to low</option>
           <option>Price low to high</option>
       </select></p>
       </div>
+      
 
       <div id="rental-card">
       <div class="row">
@@ -354,50 +311,51 @@
     </div>
   </div>
   
-      <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
+      <div style="text-align:center;" >
+      <span>Rent:&nbsp</span>  
+      <p class="cross"><i class="fa fa-inr"></i>15,000 </p>&nbsp&nbsp<i class="fa fa-inr"></i>12,000
+    </div>
       <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
-              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
-              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-12" id="rent-name" style="font-size: 25px"><b>SheltOwn PG 01234 &nbsp&nbsp</b><font style="color: green; font-size: 12px;"><i class="fa fa-check"></i>SheltOwn Verified</font>
+              <br>
+              <div style="font-size: 15px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-sm-7" id="rent-rating">
-                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+              <div class="col-sm-9" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7&nbsp<i class="fa fa-star"></i></button>
                 <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
               </div>      
             </div>
-            <br>
             <div class="row">
-              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <p style="color: blue; padding-left: 15px; font-size: 15px;">Nearby:</p>
               <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-
             <div class="row">
               <div class="col-sm-7">
                 <div class="row">
                   <div class="col-sm-4">
-                    <p style="color: blue;">Details:</p>
+                    <p style="color: blue; font-size: 15px;">Details:</p>
                   </div>
-                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 15px;">
                     <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
                   </div>
                 </div>
                 <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
-                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 15px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
                 </div>
               </div>
-              <div class="col-sm-5">
+              <div class="col-sm-5" style="font-size: 15px;">
                 <div id="boxpref">Male Only</div>
                 <div id="boxpref">Available Now</div>
                 <div id="boxpref">Fully Furnished</div>
@@ -454,50 +412,51 @@
     </div>
   </div>
   
-      <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
+      <div style="text-align:center;" >
+      <span>Rent:&nbsp</span>  
+      <p class="cross"><i class="fa fa-inr"></i>15,000 </p>&nbsp&nbsp<i class="fa fa-inr"></i>12,000
+    </div>
       <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
-              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
-              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-12" id="rent-name" style="font-size: 25px"><b>SheltOwn PG 01234 &nbsp&nbsp</b><font style="color: green; font-size: 12px;"><i class="fa fa-check"></i>SheltOwn Verified</font>
+              <br>
+              <div style="font-size: 15px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-sm-7" id="rent-rating">
-                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+              <div class="col-sm-9" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7&nbsp<i class="fa fa-star"></i></button>
                 <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
               </div>      
             </div>
-            <br>
             <div class="row">
-              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <p style="color: blue; padding-left: 15px; font-size: 15px;">Nearby:</p>
               <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-
             <div class="row">
               <div class="col-sm-7">
                 <div class="row">
                   <div class="col-sm-4">
-                    <p style="color: blue;">Details:</p>
+                    <p style="color: blue; font-size: 15px;">Details:</p>
                   </div>
-                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 15px;">
                     <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
                   </div>
                 </div>
                 <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
-                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 15px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
                 </div>
               </div>
-              <div class="col-sm-5">
+              <div class="col-sm-5" style="font-size: 15px;">
                 <div id="boxpref">Male Only</div>
                 <div id="boxpref">Available Now</div>
                 <div id="boxpref">Fully Furnished</div>
@@ -554,50 +513,51 @@
     </div>
   </div>
   
-      <p style="text-align:center;">Rent: <i class="fa fa-inr"></i>12,000</p>
+      <div style="text-align:center;" >
+      <span>Rent:&nbsp</span>  
+      <p class="cross"><i class="fa fa-inr"></i>15,000 </p>&nbsp&nbsp<i class="fa fa-inr"></i>12,000
+    </div>
       <figcaption style="text-align: center"><a href="rental-services-details.html"><button style="background-color: blue;">Book Now</button></a></figcaption>
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-8" id="rent-name" style="font-size: 18px"><b>SheltOwn PG 01234</b><br>
-              <div style="font-size: 12px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div></div>
-              <div class="col-sm-4" id="rent-verified"><p class="fa fa-check"> SheltOwn Verified
+              <div class="col-sm-12" id="rent-name" style="font-size: 25px"><b>SheltOwn PG 01234 &nbsp&nbsp</b><font style="color: green; font-size: 12px;"><i class="fa fa-check"></i>SheltOwn Verified</font>
+              <br>
+              <div style="font-size: 15px;"><i class="fa fa-map-marker"></i> Bani Park, Jaipur</div>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-sm-7" id="rent-rating">
-                <button style="background-color: red; border-radius: 0px;">4.7<i class="fa fa-star"></i></button>
+              <div class="col-sm-9" id="rent-rating">
+                <button style="background-color: red; border-radius: 0px;">4.7&nbsp<i class="fa fa-star"></i></button>
                 <p style="color: blue; padding: 0px 5px; display: inline-block;">400 Ratings 4382 Reviews</p> 
               </div>      
             </div>
-            <br>
             <div class="row">
-              <p style="color: blue; padding-left: 15px;">Nearby:</p>
+              <p style="color: blue; padding-left: 15px; font-size: 15px;">Nearby:</p>
               <ul id="menu">
                 <li>Market</li>
                 <li>Metro</li>
                 <li>Mall</li>
               </ul>
             </div>
-
             <div class="row">
               <div class="col-sm-7">
                 <div class="row">
                   <div class="col-sm-4">
-                    <p style="color: blue;">Details:</p>
+                    <p style="color: blue; font-size: 15px;">Details:</p>
                   </div>
-                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 10px;">
+                  <div class="col-sm-8" style="border-right: 0.5px solid lightgrey; font-size: 15px;">
                     <p class="fa fa-wifi"></p>  Wifi<br>
                 <p class="fa fa-tv"></p>  TV<br>
                 <p class="fa fa-bed"></p>   Shared Room<br>2 BHK<br><br>
                   </div>
                 </div>
                 <div class="row" style="border-right: 0.5px solid lightgrey; padding-left: 15px;">
-                  <a href="rental-services-details.html"><p style="color: green; font-size: 13px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
+                  <a href="rental-services-details.html"><p style="color: green; font-size: 15px;">See More Details  <i class="fa fa-info-circle"></i></p></a>
                 </div>
               </div>
-              <div class="col-sm-5">
+              <div class="col-sm-5" style="font-size: 15px;">
                 <div id="boxpref">Male Only</div>
                 <div id="boxpref">Available Now</div>
                 <div id="boxpref">Fully Furnished</div>
@@ -607,8 +567,7 @@
         </div>
         </div>
 
-
-
+        
   </div>
   </div>
   </div>
@@ -738,18 +697,31 @@
       // ]]>
     </script>
 
-    <script type="text/javascript">
-      // <![CDATA[
-      function ShowHide(divId) {
-        var atxt = document.getElementById("atext");
-        if (document.getElementById(divId).style.display == 'none') {
-          document.getElementById(divId).style.display = 'block';
-        } else {
-          document.getElementById(divId).style.display = 'none';
-        }
-      }
-      // ]]>
-    </script>
+    <script>
+function flat() {
+  var checkBoxflat = document.getElementById("checkbox2");
+  var text = document.getElementById("flat-categories");
+  if (checkBoxflat.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+    <script>
+function pg() {
+  var checkBox = document.getElementById("checkbox");
+  var text = document.getElementById("pg-categories");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
