@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SheltOwn</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="assets/css/personal-style.css" rel="stylesheet">
+<style>
+.inv {
+    display: none;
+   
+}
+
+.column_ser {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row_ser:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column_ser {
+    width: 100%;
+    height:100%;
+  }
+ 
+}
+      
+.dropdown{
+  border: 1px solid #ff9719;
+  height:30px;
+  width:50%;
+  border-radius:10px;
+      }
+      
+.button_add{
+  border: none;
+  color: white;
+text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ cursor: pointer;
+ background-color:#ff9719;
+       height:30px;
+
+  width:50px;
+  border-radius:10px;
+  float:right;
+   
+      }
+
+.button_book{
+  border: none;
+  color: white;
+text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ cursor: pointer;
+ background-color:#ff9719;
+       height:30px;
+margin-left:500px;
+  width:150px;
+  border-radius:10px;
+
+  
+   
+      }
+</style>
+</head>
+
+<body id="body" onload="myFunction()">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rental-services.html">Rental Sevices</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+      Intro Section
+    ============================-->
+
+
+  <section id="intro">
+    <div class="overlay">
+      <div class="container">
+        <!-- row 1 -->
+        <div class="row intro-content">
+          <div class="col-md-12">
+            <center>
+              <h2>Personal Services</h2>
+              <p><strong>SheltOwn</strong> -Live Like You Own It</p>
+            </center>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row">
+          <div class="col-sm-6">
+            <select class="search-city">
+              <option value="ChooseCity">Choose City...</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Surat">Surat</option>
+              <option value="Pune">Pune</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Vishakhapatnam">Vishakhapatanam</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Kanput">Kanput</option>
+              <option value="Thane">Thane</option>
+              <option value="Bhopal">Bhopal</option>
+              <option value="Indore">Indore</option>
+              <option value="Patna">Patna</option>
+              <option value="Vadodara">Vadodara</option>
+              <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+              <option value="Gaziabad">Gaziabad</option>
+              <option value="Ludhiana">Ludhiana</option>
+              <option value="Agra">Agra</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Faridabad">Faridbad</option>
+              <option value="Meerut">Meerut</option>
+              <option value="Rajkot">Rajkot</option>
+              <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+              <option value="Vasai-Virar">Vasai-Virar</option>
+              <option value="Varanasi">Varanasi</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <div class="search-box">
+              <input list="browsers" class="search-input" id="global-search" type="text" placeholder="&#xF041;  Search for locality" style="font-family: Montserrat, FontAwesome">
+              <a href="#"><i class="las la-search"></i></a>
+              <span class="sr-only">Global Search</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- intro ends -->
+<br>
+<h3 style="margin-left:70px;">How we Work?</h3>
+<div class ="row_ser">
+ <div class="column_ser">
+<div class="container_work" style="margin-left:70px">
+<!---<h1>How it works</h1>
+<hr class="new1"> --->
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+ <p><b>Choose the Service</b></p>
+  <p>The services we provide</p>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+  <p><b>Choose the type of service</b></p>
+  <p>list the services</p>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+ <p><b>Choose your time slot</b></p>
+  <p>We service from 9AM to 6PM </p>
+  </div>
+  </div>
+  
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+  <p><b>Hassle-free Service</b></p>
+  <p>Our Professional will get in touch with you</p>
+  </div>
+  </div>
+ 
+</article>
+</div>
+</div>
+
+ <div class="column_ser">
+
+<div class="container_work">
+<!---<h1>How it works</h1>
+<hr class="new1"> --->
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+ <p><b>One Call Away</b></p>
+  <p>Submit your contact number</p>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <i class="fas fa-clock" style="font-size:40px;color:#ff9719;"></i>
+ </div>
+ <div class="column_work right_work">
+   <p><b>Hassle-free Service</b></p>
+  <p>Our Professional will get in touch</p>
+  </div>
+  </div>
+</article>
+</div>
+<div class="container_work">
+<div class="container personal-container">
+<div class="col-lg-6">
+          <h4>Confirm your Appointment</h4>
+          
+            <label class="form-title" for="phone"><b>Enter a phone number:</b></label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="99XXXXXXXX" pattern="[789][0-9]{9}" required>
+            <input type="submit" value="Submit"><br>
+            <small>Format:+91-XXXXXXXX</small>
+
+            <!---- <label class="form-title" for="feedback"><b>Send us your booking feedback:</b></label><br>
+            <textarea rows="4" cols="45" name="comment" form="usrform" placeholder="Enter.." id="feedback"></textarea><br>   --->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<h2 style="color:#ff9719;margin-left:70px;">Need an "Service" Expert for?</h2>
+
+      <p style="margin-left:70px;"> Select the Service </p>
+        <select id="target" class="dropdown" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_1">Option 1</option>
+            <option value="content_2">Option 2</option>
+            <option value="content_3">Option 3</option>
+        <select>
+         
+          
+        <div id="content_1" class="inv"><div class="container" >
+  <h2><br>Select the issue</h2>
+  <ul class="list-group">
+    <li class="list-group-item">First item ($40) <button class="button_add"> add </button></li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+    <li class="list-group-item">Fourth item</li> 
+  </ul>
+<a href="personal_services3.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+</div>
+</div>
+ <div id="content_2" class="inv"><div class="container">
+  <h2>Basic List Group</h2>
+  <ul class="list-group">
+    <li class="list-group-item">First item <button class="button_add"> add </button></li>
+    <li class="list-group-item">Second item <button class="button_add"> add </button></li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+</div></div>
+        <div id="content_3" class="inv"><div class="container">
+  <h2>Basic List Group</h2>
+  <ul class="list-group">
+    <li class="list-group-item">First item <button class="button_add"> add </button></li>
+    <li class="list-group-item">Second item <button class="button_add"> add </button></li>
+    <li class="list-group-item">Third item <button class="button_add"> add </button></li>
+  </ul>
+</div></div>
+<br>
+<br>
+<br>
+
+<h2 style="color:#ff9719;margin-left:70px;">Guest Reviews</h2>
+  <div class="container_revmain" style="margin-left:70px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
+      </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
+      </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
+      </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
+      </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
+      </div>
+      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than John Doe.</p>
+    </div>
+
+    <div class="pagination" style="margin-left:350px">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </div>
+
+ 
+  <!--==========================
+  Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.We are bound to provide you the best possible care and support which
+            helps you meet your
+            demands.We are with you whenever you are in need.</p>
+          <p>Accept our warm SheltOwn hug</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#">SheltOwn Family+</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Help</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Guest</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="#">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- #footer -->
+
+    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+    <script type="text/javascript">
+      // <![CDATA[
+      function ShowHide(divId) {
+        var atxt = document.getElementById("atext");
+        if (document.getElementById(divId).style.display == 'none') {
+          document.getElementById(divId).style.display = 'block';
+        } else {
+          document.getElementById(divId).style.display = 'none';
+        }
+      }
+      // ]]>
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+<script>
+            document
+                .getElementById('target')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv';
+                    }
+                    if (target !== null ) {
+                        target.className = 'vis';
+                    }
+            });
+        </script>
+
+</body>
+
+</html>
