@@ -71,7 +71,7 @@
   ============================-->
   <section id="intro">
     <div class="overlay">
-      <div class="container-fluid">
+      <div class="container">
         <!-- row 1 -->
         <div class="row">
           <div class="col-md-12 intro-content">
@@ -123,11 +123,21 @@
               <option value="Varanasi">Varanasi</option>
             </select>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-3">
+              <select class="search-city">
+              <option value="ChooseCity">Choose Locality...</option>
+              <option value="Mumbai">Chandni Chowk</option>
+              <option value="Delhi">Patel Nagar</option>
+              <option value="Bangalore">Kamla Nagar</option>
+              <option value="Hyderabad">Delhi Gate</option>
+              <option value="Ahmedabad">Kahmiri Gate</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
             <div class="search-box">
-              <input list="browsers" class="search-input" id="global-search" type="text" placeholder="&#xF041;  Search for locality" style="font-family: Montserrat, FontAwesome">
-              <a href="#"><i class="las la-search"></i></a>
-              <span class="sr-only">Global Search</span>
+              <center>
+                <a href="#" onclick="search()" class="search">Search  <i class="las la-search"></i></a>
+              </center>
             </div>
           </div>
         </div>
