@@ -18,3 +18,112 @@
 #cards .personal-container .accordion .card .card-header .mb-0 button:hover {
   text-decoration: none;
 }
+.container_revmain {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left:50px;
+  width:1100px;
+}
+.container_rev {
+  border: 2px solid #ff9719;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  width:800px;
+}
+
+.container_rev::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container_rev img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container_rev span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.container_star{
+width:25px;
+height:25px;
+background-color: #ff9719;
+border-radius:5px;
+float:right;
+
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #ff9719;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+  .container_rev {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+.container_work{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding:8px;
+  border-radius:6px;
+  width:360px;
+  z-index:1;
+  background-color: #fff;
+  border: 1px solid #ff971d;
+}
+.row_work:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_work {
+  float: left;
+  padding: 10px;
+  padding: 0 8px;
+}
+.left_work{
+width:15%;
+}
+.right_work{
+width:85%;
+}
+hr.new1 {
+  border-top: 1px solid #ff971d;
+  margin-left:50px;
+}
