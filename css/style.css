@@ -117,7 +117,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   padding: 20px 0;
-  height: 65px;
+  height: 70px;
   transition: all 0.5s;
   z-index: 997;
   background: #ff971d;
@@ -404,7 +404,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   position: relative;
   background-image: url("../img/intro-carousel/1.jpg");
   background-repeat: no-repeat;
@@ -416,7 +416,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: rgba(1,1,1,0.2);
 }
 #intro .intro-content h2 {
-  color: #ff971d;
   font-size: 60px;
   font-weight: bold;
   margin-top:20px;
@@ -424,7 +423,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .intro-content p {
   font-size:25px;
   font-weight: 400;
-  margin-bottom:100px;
+  margin-bottom:30px;
 }
 @media (max-width: 767px) {
   #intro .intro-content h2 {
@@ -466,7 +465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-header h2 {
   margin:20px;
   text-align:center;
-  font-size: 32px;
+  font-size: 28px;
   color: #ff971d;
   text-transform: uppercase;
   font-weight: 700;
@@ -720,13 +719,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 #testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
-  margin: 30px 15px;
+  margin: 30px 25px;
   text-align: center;
   min-height: 350px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
@@ -987,11 +986,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  background-color: #A7B2BB;
+  background-color: gray;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
-  color: #737373;
+  color: white;
 }
 
 .site-footer hr {
@@ -1016,11 +1015,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .site-footer a {
-  color: gray;
+  color: white;
 }
 
 .site-footer a:hover {
-  color: coral;
   text-decoration: none;
 }
 
@@ -1034,16 +1032,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-links a {
-  color: #737373;
+  color: white;
 }
 
 .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-  color: coral;
   text-decoration: none;
 }
 
 .footer-links.inline li {
   display: inline-block;
+}
+
+#footer-two {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer-two .footer-two-links li {
+  list-style-type: none;
+}
+
+#footer-two .footer-two-links a {
+  color: black;
 }
 
 .site-footer .social-icons {
@@ -1131,7 +1141,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .social-icons a {
-  background-color: #eceeef;
+  background-color: gray;
   color: white;
   font-size: 16px;
   display: inline-block;
