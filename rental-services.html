@@ -47,18 +47,21 @@
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <img src="img/favicon.png" alt="logo"><p>RENTAL SERVICES</p>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="personal-services.html">Personal Sevices</a></li>
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
           <li><a href="login-user.html">Log In</a></li>
@@ -72,66 +75,78 @@
       Intro Section
     ============================-->
     
-  <section id="intro">
-    <div class="overlay">
-      <div class="container">
-        <!-- row 1 -->
-        <div class="row intro-content">
-          <div class="col-md-12">
-            <center>
-              <h2>Rental Services</h2>
-              <p><strong>SheltOwn</strong> -Live Like You Own It</p>
-            </center>
-          </div>
-        </div>
-        <!-- row 2 -->
-        <div class="row">
-          <div class="col-sm-6">
-            <select class="search-city">
-              <option value="ChooseCity">Choose City...</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Bangalore">Bangalore</option>
-              <option value="Hyderabad">Hyderabad</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Chennai">Chennai</option>
-              <option value="Kolkata">Kolkata</option>
-              <option value="Surat">Surat</option>
-              <option value="Pune">Pune</option>
-              <option value="Jaipur">Jaipur</option>
-              <option value="Vishakhapatnam">Vishakhapatanam</option>
-              <option value="Nagpur">Nagpur</option>
-              <option value="Lucknow">Lucknow</option>
-              <option value="Kanput">Kanput</option>
-              <option value="Thane">Thane</option>
-              <option value="Bhopal">Bhopal</option>
-              <option value="Indore">Indore</option>
-              <option value="Patna">Patna</option>
-              <option value="Vadodara">Vadodara</option>
-              <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
-              <option value="Gaziabad">Gaziabad</option>
-              <option value="Ludhiana">Ludhiana</option>
-              <option value="Agra">Agra</option>
-              <option value="Nashik">Nashik</option>
-              <option value="Faridabad">Faridbad</option>
-              <option value="Meerut">Meerut</option>
-              <option value="Rajkot">Rajkot</option>
-              <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
-              <option value="Vasai-Virar">Vasai-Virar</option>
-              <option value="Varanasi">Varanasi</option>
-            </select>
-          </div>
-          <div class="col-sm-6">
-            <div class="search-box">
-              <input list="browsers" class="search-input" id="global-search" type="text" placeholder="&#xF041;  Search for locality" style="font-family: Montserrat, FontAwesome">
-              <a href="#"><i class="las la-search"></i></a>
-              <span class="sr-only">Global Search</span>
+    <section id="intro">
+      <div class="overlay">
+        <div class="container-fluid">
+          <!-- row 1 -->
+          <div class="row">
+            <div class="col-md-12 intro-content">
+              <!-- <h2>SheltOwn</h2> -->
+              
+              <p>Live Like You Own It</p>
             </div>
           </div>
+          <!-- row 2 -->
+          <div class="row boxes" id="search_top">
+            <div>
+              
+            </div>
+            <div>
+              <select class="search-city">
+                <option value="ChooseCity">Choose City...</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Surat">Surat</option>
+                <option value="Pune">Pune</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Vishakhapatnam">Vishakhapatanam</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kanput">Kanput</option>
+                <option value="Thane">Thane</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Indore">Indore</option>
+                <option value="Patna">Patna</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                <option value="Gaziabad">Gaziabad</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Agra">Agra</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Faridabad">Faridbad</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+                <option value="Vasai-Virar">Vasai-Virar</option>
+                <option value="Varanasi">Varanasi</option>
+              </select>
+            </div>
+            <div>
+                <select class="search-locality">
+                <option value="ChooseCity">Choose Locality...</option>
+                <option value="Mumbai">Chandni Chowk</option>
+                <option value="Delhi">Patel Nagar</option>
+                <option value="Bangalore">Kamla Nagar</option>
+                <option value="Hyderabad">Delhi Gate</option>
+                <option value="Ahmedabad">Kahmiri Gate</option>
+              </select>
+            </div>
+            <div>
+              <div class="search-box">
+                  <button class="btn search-btn">Search  <i class="las la-search"></i></a>
+              </div>
+            </div>
+  
+          </div><!-- row2 -->
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
   <!-- intro ends -->
   <br>   
 
