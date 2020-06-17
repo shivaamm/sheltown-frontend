@@ -436,7 +436,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 0px;
 }
 .boxes{
-  margin-left:230px;
+   margin-left:300px;
 }
 .boxes select{
   background: white;
@@ -757,6 +757,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 120px;
   margin-left: 150px;
   text-align: center;
+  background-color: #ff971d;
+  color:white;
+  font-weight: bold;
+}
+#services .box button:hover,
+#services .box button:focus,
+#services .box button:active
+{
+  width: 120px;
+  margin-left: 150px;
+  text-align: center;
+  color:white;
+  background-color: #ff971d;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
 
