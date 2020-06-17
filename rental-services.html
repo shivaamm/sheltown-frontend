@@ -146,8 +146,8 @@
                       <p id="filter-heading" style="text-decoration: underline;">FILTERS</p>
                       <br>
                       <p id="filter-heading">Categories</p>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox" onclick="pg()" name="" value="">
+                      <div class="radio">
+                          <input type="radio" id="checkbox" onclick="pg()" name="radio" value="">
                           <label for="checkbox"><span>PG</span></label>
                       </div>
                       <table id="pg-categories" style="display:none; margin-left: 5px;">
@@ -165,8 +165,8 @@
                         </tr>
                       </table>
 
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox2" onclick="flat()" name="" value="">
+                      <div class="radio">
+                          <input type="radio" id="checkbox2" onclick="flat()" name="radio" value="">
                           <label for="checkbox2"><span>Flat/Apartment</span></label>
                       </div>
                       <table id="flat-categories" style="display:none; margin-left: 5px;">
@@ -182,8 +182,8 @@
                         </tr>
                       </table>
 
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox3" name="" value="">
+                      <div class="radio">
+                          <input type="radio" id="checkbox3" name="radio" value="">
                           <label for="checkbox3"><span>House</span></label>
                       </div>
                       <br>
@@ -201,8 +201,8 @@
                       <br>
                       <p id="filter-heading">Preference</p>
                       <div class="checkbox">
-                          <input type="checkbox" id="checkbox3" name="" value="">
-                          <label for="checkbox3"><span>Family</span></label>
+                          <input type="checkbox" id="checkbox33" name="" value="">
+                          <label for="checkbox33"><span>Family</span></label>
                       </div>
                       <div class="checkbox">
                           <input type="checkbox" id="checkbox4" name="" value="">
@@ -231,6 +231,7 @@
                       <br>
                       <p id="filter-heading">Furnishing Type</p>
                       <select id="check-option" style="margin: 10px;">
+                          <option value="" disabled selected>Choose Furnished type</option>
                           <option>Fully Furnished</option>
                           <option>Semi Furnished</option>
                           <option>Unfurnished</option>
@@ -238,7 +239,7 @@
                       <br>
                       <p id="filter-heading">Security Deposit</p>
                       <select id="check-option" style="margin: 10px;">
-                          <option>None</option>
+                          <option value="" disabled selected>Choose Security Deposit</option>
                           <option>1 month</option>
                           <option>2 months</option>
                           <option>3 months</option>
