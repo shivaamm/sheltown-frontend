@@ -52,7 +52,7 @@ h6 {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
-#header #logo h1 {
+/*#header #logo h1 {
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -63,13 +63,20 @@ h6 {
 #header #logo h1 a {
   line-height: 1;
   display: inline-block;
-}
+}*/
 
+#header p{
+  color:white;
+  display:inline;
+  margin-left:5px;
+  font-size: 20px;
+  font-weight: bold;
+}
 #header #logo img {
   padding: 0px;
   margin-left: 20px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 @media (max-width: 768px) {
   #header {
@@ -350,9 +357,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #intro .intro-content p {
   text-align:center;
-  font-size:25px;
+  font-size:40px;
   font-weight: 400;
-  margin-bottom:60px;
+  margin-top:100px;
+  margin-bottom:40px;
   font-weight: bold;
   color: #000;
 }
