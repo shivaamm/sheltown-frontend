@@ -21,9 +21,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
 
   <!-- Libraries CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -34,6 +33,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -160,46 +160,62 @@
                   <form>
                       <p id="filter-heading" style="text-decoration: underline;">FILTERS</p>
                       <br>
-                      <p id="filter-heading">Categories</p>
-                      <div class="radio">
-                          <input type="radio" id="checkbox" onclick="pg()" name="radio" value="">
-                          <label for="checkbox"><span>PG</span></label>
-                      </div>
-                      <table id="pg-categories" style="display:none; margin-left: 5px;">
-                        <tr>
-                          <td style="padding: 5px;"><input type="radio" id="1mate" name="pg-mate" value="1mate">
-                          <label for="1mate">1 mate</label></td>
-                          <td style="padding: 5px;"><input type="radio" id="2mates" name="pg-mate" value="2mates">
-                          <label for="2mates">2 mates</label></td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 5px;"><input type="radio" id="3mates" name="pg-mate" value="3mates">
-                          <label for="3mates">3 mates</label></td>
-                          <td style="padding: 5px;" ><input type="radio" id="4mates" name="pg-mate" value="4mates">
-                          <label for="4mates">4 mates</label></td>
-                        </tr>
-                      </table>
+                      <p id="filter-heading">Categories</p><br>
+                      <div class="container">
 
-                      <div class="radio">
-                          <input type="radio" id="checkbox2" onclick="flat()" name="radio" value="">
-                          <label for="checkbox2"><span>Flat/Apartment</span></label>
-                      </div>
-                      <table id="flat-categories" style="display:none; margin-left: 5px;">
-                        <tr>
-                          <td style="padding: 5px;"><input type="radio" id="1mate" name="pg-mate" value="1mate">
-                          <label for="1mate">1 BHK</label></td>
-                          <td style="padding: 5px;"><input type="radio" id="2mates" name="pg-mate" value="2mates">
-                          <label for="2mates">2 BHK</label></td>
-                        </tr>
-                        <tr>
-                          <td style="padding: 5px;"><input type="radio" id="3mates" name="pg-mate" value="3mates">
-                          <label for="3mates">3 BHK</label></td>
-                        </tr>
-                      </table>
+                      <!-- partial:index.partial.html -->
+                      <form class="bs-example" action="">
+                        <div>
+                        <div class="panel-group" id="accordion">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <label for='r11' style='width: 350px;'>
+                                    <input type='radio' id='r11' name='occupation' value='Working' required /> PG
+                                    <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></p>
+                                  </label>
+                              </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                <input type="radio" id="1mate" name="pg-mate" value="1mate"><label for="1mate">&nbsp1 mate</label><br>
+                                <input type="radio" id="2mates" name="pg-mate" value="2mates"><label for="2mates">&nbsp2 mates</label><br>
+                                <input type="radio" id="3mates" name="pg-mate" value="3mates"><label for="3mates">&nbsp3 mates</label><br>
+                                <input type="radio" id="4mates" name="pg-mate" value="4mates"><label for="4mates">&nbsp4 mates</label><br>             
+                              </div>
+                            </div>
+                          </div>
 
-                      <div class="radio">
-                          <input type="radio" id="checkbox3" name="radio" value="">
-                          <label for="checkbox3"><span>House</span></label>
+                          <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <label for='r12' style='width: 350px;'>
+                                  <input type='radio' id='r12' name='occupation' value='Working' required /> Flat/Apartment
+                                  <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></p>
+                                </label>
+                            </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                              <input type="radio" id="1mate" name="pg-mate" value="1mate"><label for="1mate">&nbsp1 BHK</label><br>
+                              <input type="radio" id="2mates" name="pg-mate" value="2mates"><label for="2mates">&nbsp2 BHK</label><br>
+                              <input type="radio" id="3mates" name="pg-mate" value="3mates"><label for="3mates">&nbsp3 BHK</label>           
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                  <label for='r13' style='width: 350px;'>
+                                    <input type='radio' id='r13' name='occupation' value='Working' required /> House
+                                    <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></p>
+                                  </label>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                       </div>
                       <br>
                       <p id="filter-heading">Price Range</p>
@@ -215,22 +231,10 @@
                         </table>
                       <br>
                       <p id="filter-heading">Preference</p>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox33" name="" value="">
-                          <label for="checkbox33"><span>Family</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox4" name="" value="">
-                          <label for="checkbox4"><span>Male Only</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox5" name="" value="">
-                          <label for="checkbox5"><span>Female Only</span></label>
-                      </div>
-                      <div class="checkbox">
-                          <input type="checkbox" id="checkbox6" name="" value="">
-                          <label for="checkbox6"><span>SheltOwn +</span></label>
-                      </div>
+                      <input style="margin-left: 5px;" type="radio" id="family" name="pref" value="family"><label for="1mate">&nbspFamily</label><br>
+                      <input style="margin-left: 5px;"type="radio" id="male" name="pref" value="male"><label for="2mates">&nbspMale Only</label><br>
+                      <input style="margin-left: 5px;"type="radio" id="female" name="pref" value="female"><label for="3mates">&nbspFemale Only</label><br>
+                      <input style="margin-left: 5px;"type="radio" id="shel" name="pref" value="shel"><label for="4mates">&nbspSheltOwn +</label><br>
                       <br>
                       <p id="filter-heading">Price Range</p>
                         <table>
@@ -260,11 +264,13 @@
                           <option>3 months</option>
                           <option>4 months</option>
                       </select>
-                      <br><br><center>
-                      <input type="submit"></center>
+                      <br><br>
+                      <input type="submit">                      
                     </form>
                   </div>
                 </div>
+              </div>
+            
 
 
       <!--CARDS-->
@@ -699,45 +705,17 @@
       </div>
     </section><!-- #footer -->
 
-    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-    <script type="text/javascript">
-      // <![CDATA[
-      function ShowHide(divId) {
-        var atxt = document.getElementById("atext");
-        if (document.getElementById(divId).style.display == 'none') {
-          document.getElementById(divId).style.display = 'block';
-        } else {
-          document.getElementById(divId).style.display = 'none';
-        }
-      }
-      // ]]>
-    </script>
-
     <script>
-function flat() {
-  var checkBoxflat = document.getElementById("checkbox2");
-  var text = document.getElementById("flat-categories");
-  if (checkBoxflat.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
+$('#r11').on('click', function(){
+  $(this).parent().find('p').trigger('click')
+})
+$('#r12').on('click', function(){
+  $(this).parent().find('p').trigger('click')
+})
+$('#r13').on('click', function(){
+  $(this).parent().find('p').trigger('click')
+})
 </script>
-
-    <script>
-function pg() {
-  var checkBox = document.getElementById("checkbox");
-  var text = document.getElementById("pg-categories");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-}
-</script>
-
-
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
@@ -753,6 +731,14 @@ function pg() {
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/magnific-popup/magnific-popup.min.js"></script>
     <script src="lib/sticky/sticky.js"></script>
+
+    <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
