@@ -35,11 +35,6 @@
   <link href="css/style.css" rel="stylesheet">
   <title>SheltOwn</title>
   <style media="screen">
-    /* 1. Enable smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
     /* 2. Make nav sticky */
     main>nav {
       position: sticky;
@@ -58,18 +53,17 @@
     }
 
     .section-nav a:hover,
-    .section-nav a:focus {
+    .section-nav a.active {
       color: #fff;
       font-weight: 500;
       background-color: #157AF6;
-      padding: 10px;
+      padding: 7px;
       border: 2px solid white;
       border-radius: 7px;
     }
 
     /* Sidebar Navigation */
     .section-nav {
-      margin-top: 2.5em;
       margin-bottom: 2.5em;
       border-left: 2px solid #efefef;
     }
@@ -80,7 +74,7 @@
       color: #323232;
       transition: all 50ms ease-in-out;
       background-color: #eee;
-      padding: 10px;
+      padding: 7px;
       border: 2px solid white;
       border-radius: 7px;
       /* 💡 This small transition makes setting of the active state smooth */
@@ -123,14 +117,14 @@
     /** page layout **/
     main {
       display: grid;
-      grid-template-columns: 1fr 20em;
+      grid-template-columns: 1fr 25em;
       max-width: 100em;
       width: 95%;
       margin: 0 auto;
     }
 
     section {
-      padding-right: 2em;
+      padding-right: 2.5em;
     }
 
     table {
@@ -146,7 +140,7 @@
   </style>
 </head>
 
-<body id="body" onload="myFunction()">
+<body id="body" onload="TapButton(event, 'booking-tenant')">
 
   <!--==========================
     Header
@@ -155,7 +149,9 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/favicon.png" alt="logo"><p>SheltOwn</p></a>
+        <a href="index.html"><img src="img/favicon.png" alt="logo">
+          <p>SheltOwn</p>
+        </a>
       </div>
 
       <nav id="nav-menu-container">
@@ -180,7 +176,7 @@
     <div>
       <br>
       <h1>Privacy Policy</h1>
-      <section id="booking-tenant">
+      <section id="booking-tenant" class="tabcontent">
         <h2>Booking & Tenant</h2>
         <p>
         <ul>
@@ -240,7 +236,7 @@
         </ul>
         </p>
       </section>
-      <section id="notice-period-cancellation-refund">
+      <section id="notice-period" class="tabcontent">
         <h2>Notice Period &amp; Cancellation Refund</h2>
         <p>
         <ul>
@@ -289,7 +285,7 @@
         </ul>
         </p>
       </section>
-      <section id="renewal-inclusion">
+      <section id="renewal-inclusion" class="tabcontent">
         <h2>Renewal &amp; Inclusion</h2>
         <p>
         <ul>
@@ -314,55 +310,55 @@
         </ul>
         </p>
       </section>
-      <section id="theft-damage">
+      <section id="theft-damage" class="tabcontent">
         <h2>Theft &amp; Damages</h2>
         <p>
-          <ul>
-            <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
-            <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
-          </ul>
+        <ul>
+          <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
+          <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
+        </ul>
         </p>
       </section>
-      <section id="tenant-guest-policy">
+      <section id="tenant-guest-policy" class="tabcontent">
         <h2>Tenant's Guest Policy</h2>
         <p>
-          <ul>
-            <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own safety.</li>
-            <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
-            <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
-          </ul>
+        <ul>
+          <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own safety.</li>
+          <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
+          <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
+        </ul>
         </p>
       </section>
-      <section id="offers">
+      <section id="offers" class="tabcontent">
         <h2>Offers</h2>
         <p>…</p>
       </section>
-      <section id="refer-earn">
+      <section id="refer-earn" class="tabcontent">
         <h2>Refer &amp; Earn</h2>
         <p>…</p>
       </section>
-      <section id="safety-security">
+      <section id="safety-security" class="tabcontent">
         <h2>Safety &amp; Security</h2>
         <p>…</p>
       </section>
-      <section id="terms-of-use">
+      <section id="terms-of-use" class="tabcontent">
         <h2>Terms of Use</h2>
         <p>…</p>
       </section>
-      <section id="faq-tenants">
+      <section id="faq-tenants" class="tabcontent">
         <h2>FAQ Tenants</h2>
         <p>…</p>
       </section>
-      <section id="faq-partners">
+      <section id="faq-partners" class="tabcontent">
         <h2>FAQ Partners</h2>
         <p>…</p>
       </section>
       </section>
-      <section id="payment">
+      <section id="payment" class="tabcontent">
         <h2>Payment</h2>
         <p>…</p>
       </section>
-      <section id="Others">
+      <section id="Others" class="tabcontent">
         <h2>Others</h2>
         <p>…</p>
       </section>
@@ -370,20 +366,19 @@
     <nav class="section-nav">
       <br>
       <ol>
-        <li><a href="#booking-tenant">Booking & Tenant</a></li>
-        <li><a href="#notice-period-cancellation-refund">Notice Period &amp; Cancellation Refund</a></li>
-        <li><a href="#renewal-inclusion">Renewal &amp; Inclusion</a></li>
-        <li><a href="#theft-damage">Theft &amp; Damages</a></li>
-        <li><a href="#tenant-guest-policy">Tenant's Guest Policy</a></li>
-        <li><a href="#offers">Offers</a></li>
-        <li><a href="#refer-earn">Refer &amp; Earn</a></li>
-        <li><a href="#safety-security">Safety &amp; Security</a></li>
-        <li><a href="#terms-of-use">Terms of Use</a></li>
-        <li><a href="#faq-tenants">FAQ Tenants</a></li>
-        <li><a href="#faq-partners">FAQ Partners</a></li>
-        </li>
-        <li><a href="#payment">Payment</a></li>
-        <li><a href="#Others">Others</a></li>
+        <li><a class="tablinks active" onclick="TapButtonNav(event, 'booking-tenant')">Booking & Tenant</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'notice-period')">Notice Period &amp; Cancellation Refund</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'renewal-inclusion')">Renewal &amp; Inclusion</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'theft-damage')">Theft &amp; Damages</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'tenant-guest-policy')">Tenant's Guest Policy</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'offers')">Offers</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'refer-earn')">Refer &amp; Earn</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'safety-security')">Safety &amp; Security</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'terms-of-use')">Terms of Use</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'faq-tenants')">FAQ Tenants</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'faq-partners')">FAQ Partners</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'payment')">Payment</a></li>
+        <li><a class="tablinks" onclick="TapButtonNav(event, 'Others')">Others</a></li>
       </ol>
       <br>
     </nav>
@@ -407,7 +402,7 @@
 
             We are with you whenever you are in need!
           </p>
-          <p>Accept our warm SheltOwn hug</p>
+          <p>Accept our warm SheltOwn hug.</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
@@ -426,7 +421,7 @@
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="">Blogs</a></li>
             <li><a href="career.html">Careers</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
       </div>
@@ -507,38 +502,29 @@
     </div>
   </section><!-- #footer -->
 
-  <script type="text/javascript">
-    window.addEventListener('DOMContentLoaded', () => {
-
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const id = entry.target.getAttribute('id');
-          if (entry.intersectionRatio > 0) {
-            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-          } else {
-            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-          }
-        });
-      });
-
-      // Track all sections that have an `id` applied
-      document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-      });
-
-    });
-  </script>
-  <script type="text/javascript">
-    // <![CDATA[
-    function ShowHide(divId) {
-      var atxt = document.getElementById("atext");
-      if (document.getElementById(divId).style.display == 'none') {
-        document.getElementById(divId).style.display = 'block';
-      } else {
-        document.getElementById(divId).style.display = 'none';
-      }
+  <script>
+  function TapButton(evt, Click) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
     }
-    // ]]>
+    document.getElementById(Click).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+    function TapButtonNav(evt, Click) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(Click).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
   </script>
 
   <!-- JavaScript Libraries -->
