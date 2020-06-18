@@ -2,6 +2,11 @@ html{
   zoom: 100%;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
+
 /* SEARCH BAR */
 #search-bar-rental {
   width: 70vw;
@@ -47,7 +52,8 @@ s{
 #filter-heading {
   font-weight: bold;
   font-size: larger;
-  margin-bottom: 0;
+  margin-bottom: -2px;
+  padding: 5px;
 }
 
 input[type="checkbox"] {
@@ -59,24 +65,30 @@ input[type="checkbox"] {
 }
 
 input[type=number]{
-  width: 11em;
+  width: 7.5em;
 } 
 
 input[type=date]{
-  width: 9em;
+  width: 13em;
+  height: 2.5em;
+  font-size: 8px;
 } 
 
 #check-option{
-  width: 14em;
+  width: 17em;
 }
 
 .panel {
-  width: 15em;
+  width: 18em;
 }
 
+hr {
+  width: 100%;
+  margin: 5px -5px 5px 0; 
+  border: 0.75px solid #f2f2f2;
+}
 /* POPOVER */
 .bs-example2 {
-  margin-top: 1.5em;
   font-weight: bold;
   font-size: 1.25em;
   color: #FFF;
@@ -95,8 +107,7 @@ input[type=date]{
 
 /* BUTTON */
 input[type="button"] {
-  margin-bottom: 10px;
-  background: #ff971d;
+  background: blue!important;
   border-radius: 3rem;
   border: 1px solid white;
   padding: 5px 15px;
@@ -107,37 +118,37 @@ input[type="button"]:hover {
   margin-bottom: 10px;
   background: white;
   border-radius: 3rem;
-  border:1px solid #ff971d;
+  border:1px solid blue;
   padding: 5px 15px;
-  color: #ff971d;
+  color: blue;
 }
 
 input[type="button"]:focus {
   margin-bottom: 10px;
   background: white;
   border-radius: 3rem;
-  border:1px solid #ff971d;
+  border:1px solid #3578eb;
   padding: 5px 15px;
   color: #ff971d;
 }
 
 input[type="submit"] {
-  background-color: white;
-  padding: 0 20px;
-  border:1px solid #ff971d;
+  background-color: #3578eb;
+  padding: 5px 20px;
+  border:1px solid #3578eb;
   border-radius: 40px;
-  color: black;
+  color: white;
   text-align: center;
-  position: relative;
-  left: 3em;
+  margin: 5px 0 10px 5.7em;
 }
 
 input[type="submit"]:hover{
   background-color: #f9f6f7 ;
-  padding: 0 20px;
+  padding: 5px 20px;
   border:1px solid black;
   border-radius: 40px;
-  color: #ff971d;
+  color: #3578eb;
+  transition: .3s;
 }
 
 /* CHECKBOX */
@@ -208,8 +219,8 @@ input[type="submit"]:hover{
 }
 
 .container-cards button {
-  margin-bottom: 10px;
-  background: #ff971d;
+  margin-top: -4em;
+  background: blue;
   border-radius: 3rem;
   border: 1px solid white;
   padding: 5px 15px;
@@ -217,12 +228,11 @@ input[type="submit"]:hover{
 }
 
 .container-cards button:hover {
-  margin-bottom: 10px;
   background: white;
   border-radius: 3rem;
-  border:1px solid #ff971d;
+  border:1px solid blue;
   padding: 5px 15px;
-  color: #ff971d;
+  color: blue;
 }
 
 
@@ -243,6 +253,7 @@ input[type="submit"]:hover{
   }
 
 }
+
 
 #boxpref{
   background-color: #ff971d;
