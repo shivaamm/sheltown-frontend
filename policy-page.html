@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>SheltOwn</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="width=device-width, initial-scale=1 name=viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -33,7 +33,117 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <title>SheltOwn</title>
+  <style media="screen">
+    /* 1. Enable smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
 
+    /* 2. Make nav sticky */
+    main>nav {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+    }
+
+    /* 3. ScrollSpy active styles (see JS tab for activation) */
+    .section-nav li.active>a {
+      color: #fff;
+      font-weight: 500;
+      background-color: #157AF6;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 7px;
+    }
+
+    .section-nav a:hover,
+    .section-nav a:focus {
+      color: #fff;
+      font-weight: 500;
+      background-color: #157AF6;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 7px;
+    }
+
+    /* Sidebar Navigation */
+    .section-nav {
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+      border-left: 2px solid #efefef;
+    }
+
+    .section-nav a {
+      text-decoration: none;
+      display: block;
+      color: #323232;
+      transition: all 50ms ease-in-out;
+      background-color: #eee;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 7px;
+      /* 💡 This small transition makes setting of the active state smooth */
+    }
+
+    /** Poor man's reset **/
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      background: #fff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-left: 1rem;
+      line-height: 2rem;
+    }
+
+    h1 {
+      font-weight: bold;
+      color: #323232;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+
+    /** page layout **/
+    main {
+      display: grid;
+      grid-template-columns: 1fr 20em;
+      max-width: 100em;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    section {
+      padding-right: 2em;
+    }
+
+    table {
+      margin: 1em;
+      border: 1px solid;
+    }
+
+    th,
+    td {
+      padding: 1em 1em;
+      border: 1px solid;
+    }
+  </style>
 </head>
 
 <body id="body" onload="myFunction()">
@@ -42,20 +152,18 @@
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> SheltOwn</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
-              <li><a href="personal-services.html">Personalised Services</a></li>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
             </ul>
           </li>
@@ -67,241 +175,389 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  <br>
-  <h2 style="text-align:center;color:#ff9719;">Policy</h2>
-
-  <form action="/action_page.php" method="post">
-  <form action="/action_page.php" method="post">
-
-    <div class="container">
-      <style>
-        body {
-          position: relative;
-        }
-        ul.nav-pills {
-          top: 180px;
-          position: fixed;
-        }
-        div.col-8 div {
-          height: 500px;
-        }
-        </style>
-      </head>
-      <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
-      
-      <div class="container-fluid">
-        <div class="row">
-          <nav class="col-sm-3 col-4" id="myScrollspy">
-            <ul class="nav nav-pills flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#section1">Booking & Tenant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section2">Rent Agreements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#section3">Cancellation & Refund</a>
-              </li>
-              
-            </ul>
-          </nav>
-          <div class="col-sm-9 col-8">
-            <div id="section1" class="bg">    
-              <h4 style="color:#ff9719;">1. Booking & Tenant Policy </h4>
-            <ul>
-              <li>The Owner of the property has the right to accept or reject the booking of tenants. In such cases the tenant will get full refund of the booking amount. </li>
-              <li>In case any tenant presents any invalid documents, the owner has the right to deny him/her with the booking. Tenant must show his\her valid documents like Aadhar card, Voter id, Passport or other proofs of identity, on the day of check-in at the property. </li>
-              <li>The tenant will have to pay 1-month security deposits and pro-rata rent (rent calculated proportionally). In other word, Tenant will deposit rent based on the number of days he/she used the rental that month. we will make sure your stay is comfortable as we believe #livelikeyouownit. </li>
-              <li>We make sure that we or the owner, are not asking for long term commitment, so that there is no lock-in period for the Tenant. </li>
-              <li>Tenant must deposit the security amount a week prior to moving in, and KYC documents to be verified online by uploading scanned documents. </li>
-              <li>In case of cancellation by tenant, the Cancellation and Refund Policy will apply. </li>
-              <li>The tenant is required to deposit the rent before the due date as mentioned. </li>
-              <li>The tenant can make payment through online mediums by using SheltOwn payment options and which may include some special discounts</li>
-              <li>In case of delay in payment of rent our T&C allows us to charge Rs.50/day which will be charged till 15th of every month. Mandatory displacements will come into effect on the 16th day or 25% forfeit of security deposits, whichever comes earlier. </li>
-              
-            </ul>
-            </div>
-            <div id="section2" class="bg">
-              <li>In case of shared plans, Utility Usage Charges (i.e. Electricity, Water etc.) at common premises is apportioned on actuals to all the residents of the property. </li>
-              <li>Utility Usage Charges will be added in rental for Rs.500 in one-month advance and will be managed in the next billing month. </li>
-              <li>Any late payment will affect your tenant’s credit score. </li> 
-            <li>In case of bed-level bookings, we reserve the right to shift guests with bed-level bookings to other rooms at any time in the same property in case of availability of space. </li>
-              <li>As markets evolve, costs modify and so does rents. However, we do assure you of best deals than others and affordable prices throughout. </li>
-              <li>All residents are expected to acceptance by the local law of land. Residents or Property should not use premises for any commercial activity. </li>
-              <li>The tenant’s guests are welcome like our own guest as tradeline says live_like_you_own_it! And for your convenience and safety, we would take their KYC IDs proofs and keep records updated and we suggest you to keep us updated. We consider you responsible to make sure your guests follow all house rules. </li>
-              <li>Love your home to get your love back. We make sure you get loved back</li>
-              <li>A meal is something which should not be standardized at every Property. So, it depends on the tenants booking, whether they book or not. In all other conditions, meals are not included in the rent if there is no standardize menu available and owner has not mentioned about meals in the deal but where the meal can be standardized in menu and owner has mentioned in the deal, there it is included in the rent. </li>
-              <li>Do take care of your own belongings, we will also try to take care of your belongings but we are not responsible for any theft. </li>
-              <li>Any damages to property, amenities will come under Theft and Damage Policy and Tenant may be asked to pay for the same damages. </li>
-              <li>Our 24x7 care focuses on resolving your in-stay related issues, ensure you quick resolution each time. </li>
-              <h5 style="color:#ff9719;">In Case of Rent Agreements: </h5>
-            <ul>
-              <li>The renewal of rent agreement is required after each 12 months of stay. You don’t need to worry about that, we offer full assistance for that. </li>
-              <li>The tenant is required to pay for the rent agreement. </li>
-              <li>The rent includes fixed furnishing charges and apartment\society maintenance charges if there is any. </li>
-              <li>The rent doesn’t include Electricity, Water, Cooking, DTH and Internet charges, any additional furniture that is not a part of package, Club house charges, Cleaning and Maid charges. </li>
-              <li>The food charges are separate from rent charges and need to pay according to desired requirements. </li>
-            </ul>
-            </div>        
-            <div id="section3" class="bg">         
-              
-            </div>
-               
-            <div id="section3" class="bg">         
-              <h4 style="color:#ff9719;">2. Notice Period & Cancellation-Refund Policy  </h4>
-            <ul>
-              <li>Tenant has to inform the owner of the property prior to 1 month before moving out. If the tenant moves out without informing, the owner has the right to deny him with the security deposit. </li>
-              <li>Any unpaid utility bill and rent will be ducted from security deposits. </li>
-              <li>Payment for the full 30 days of notice period is mandatory. </li>
-              <li>Extension request of stay will be acceptable only on the basis of availability. </li>
-              <li>Any kind of outstanding amount payable by tenant will be deducted from security deposits. </li>
-              <li>If the tenants decide to cancel the booking through SheltOwn platform after paying online, then the amount will be refunded in customer account within 48 hours. In other cases, it will be collected through Owner. </li>
-              <li>Cancellation to all those confirmed bookings where tenant want to cancel a confirmed booking prior to 1-15 days of Move-In date, a charge of Rs. 2,999 per bed will be levied and full amount of booking amount will be refunded after deduction of Rs.500, In case tenant want to cancel 30 days prior to Move-In. </li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
+  <!-- policy scroll spy -->
+  <main>
+    <div>
+      <br>
+      <h1>Privacy Policy</h1>
+      <section id="booking-tenant">
+        <h2>Booking & Tenant</h2>
+        <p>
+        <ul>
+          <li>The Owner of the property has the right to accept or reject the booking of tenants. In such cases the tenant will get full refund of the booking amount.
+          </li>
+          <li>In case any tenant provides any invalid documents, the owner has the right to deny the booking. Tenant must show his\her valid documents like Aadhar card, Voter id, Passport or other proofs of identity, on the day of check-in at the
+            property.
+          </li>
+          <li>The tenant will have to pay 1-month security deposits and pro-rata rent (rent calculated proportionally). In other word, Tenant will deposit rent based on the number of days he/she used the rental that month. We will make sure your stay
+            is comfortable for you as we believe #livelikeyouownit. </li>
+          <li>We make sure that we or the owner, are not asking for long term commitment, so that there is <b>no lock-in period</b> for the Tenant. </li>
+          <li>Tenant must deposit the security amount a week prior to moving in, and KYC documents to be verified online by uploading scanned documents.
+          </li>
+          <li>In case of cancellation by tenant, the <b><a href="#notice-period-cancellation-refund">Cancellation and Refund Policy</a></b> will apply.
+          </li>
+          <li>The tenant is required to deposit the rent before the due date as mentioned.
+          </li>
+          <li>The tenant can make payment through online mediums by using SheltOwn payment options and they may earn discounts.
+          </li>
+          <li>In case of delay in payment of rent our T&C allows us to charge Rs.50/day which will be charged till 15th of every month. Mandatory displacements will come into effect on the 16th day or 25% forfeit of security deposits, whichever comes
+            earlier.
+          </li>
+          <li>In case of shared plans, <b>Utility Usage Charges</b> (i.e. Electricity, Water etc.) at common premises is apportioned on actuals to all the residents of the property.
+          </li>
+          <li>Utility Usage Charges will be added in rental for Rs.500 in one-month advance and will be managed in the next billing month.</li>
+          <li>Any late payment will affect your tenant’s credit score.
+          </li>
+          <li> In case of bed-level bookings, we reserve the right to shift guests with bed-level bookings to other rooms at any time in the same property in case of availability of space.
+          </li>
+          <li>As markets evolve, costs modify and so does rents. However, we do assure you of best deals than others and affordable prices throughout.
+          </li>
+          <li>All residents are expected to acceptance by the local law of land. Residents or Property should not use premises for any commercial activity.
+          </li>
+          <li>The tenant’s guests are welcome like our own guest as tradeline says <b>live_like_you_own_it</b>! And for your convenience and safety, we would take their KYC IDs proofs and keep records updated and we suggest you to keep us updated. We
+            consider you responsible to make sure your guests follow all house rules.
+          </li>
+          <li> Love your home to get your love back. We make sure it loves you more. </li>
+          <li>A meal is something which should not be standardized at every Property. So, it depends on the tenants booking, whether they book or not.
+            In all other conditions, meals are not included in the rent if there is no standardize menu available and owner has not mentioned about meals in the deal but where the meal can be standardized in menu and owner has mentioned in the deal,
+            there it is included in the rent.
+          </li>
+          <li>Do take care of your own belongings, we will also try to take care of your belongings but we are not responsible for any theft.</li>
+          <li>Any damages to property, amenities will come under <b> <a href="#theft-damage">Theft and Damage Policy</a> </b> and Tenant may be asked to pay for the same damages.
+          </li>
+          <li>Our 24x7 care focuses on resolving your in-stay related issues, ensure you quick resolution each time.
+          </li>
+          <ul>
+            <br>
+            <h4>In Case of Rent Agreements:</h4>
+            <li>The renewal of rent agreement is required after each 12 months of stay. You don’t need to worry about that, we offer full assistance for that.</li>
+            <li>The tenant is required to pay for the rent agreement.</li>
+            <li>The rent includes fixed furnishing charges and apartment\society maintenance
+              charges if there is any</li>
+            <li>The rent doesn’t include Electricity, Water, Cooking, DTH and Internet charges, any additional furniture that is not a part of package, Club house charges, Cleaning and Maid charges.</li>
+            <li>The food charges are separate from rent charges and need to pay according to desired requirements.</li>
+          </ul>
+        </ul>
+        </p>
+      </section>
+      <section id="notice-period-cancellation-refund">
+        <h2>Notice Period &amp; Cancellation Refund</h2>
+        <p>
+        <ul>
+          <li>
+            Tenant has to inform the owner of the property prior to 1 month before moving out. If the tenant moves out without informing, the owner has the right to deny him with the security deposit.
+          </li>
+          <li>
+            Any unpaid utility bill and rent will be ducted from security deposits.</li>
+          <li>
+            Payment for the full 30 days of notice period is mandatory.
+          </li>
+          <li>
+            Extension request of stay will be acceptable only on the basis of availability.
+          </li>
+          <li>
+            Any kind of outstanding amount payable by tenant will be deducted from security deposits.
+          </li>
+          <li>
+            If the tenants decide to cancel the booking through SheltOwn platform after paying online, then the amount will be refunded in customer account within 48 hours. In other cases, it will be collected through Owner.</li>
+          <li>
+            Cancellation to all those confirmed bookings where tenant want to cancel a confirmed booking prior to 1-15 days of Move-In date, a charge of Rs. 2,999 per bed will be levied and full amount of booking amount will be refunded after
+            deduction of Rs.500, In case tenant want to cancel 30 days prior to Move-In.
+          </li>
+          <li>
+            We consider your full refund only when you notify us before 1 month.
+            <br>
+            <table>
+              <tr>
+                <th>Notification days before move out</th>
+                <th>Considered amount of Refund</th>
+              </tr>
+              <tr>
+                <td>30 days</td>
+                <td>Full</td>
+              </tr>
+              <tr>
+                <td>15-30 days</td>
+                <td>40%</td>
+              </tr>
+              <tr>
+                <td>Less than 15 days</td>
+                <td>No Refund</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        </p>
+      </section>
+      <section id="renewal-inclusion">
+        <h2>Renewal &amp; Inclusion</h2>
+        <p>
+        <ul>
+          <li>
+            The renewal of rent agreement is required after 11 months of tenants stays.
+          </li>
+          <li>
+            The tenant is required to pay for the rent agreement.
+          </li>
+          <li>
+            The rent will start on the date mentioned in rent agreement err respective of tenant has move in or not.
+          </li>
+          <li>
+            The rent includes fixed furnishing charges and apartment\society maintenance charges if there is any.
+          </li>
+          <li>
+            The rent doesn’t include electricity, water, cooking, DTH and Internet charges, any additional furniture that is not a part of SheltOwn package, Club house charges, cleaning and maid charges.
+          </li>
+          <li>
+            The food charges are separate from rent charges and need to pay according to desired requirements.
+          </li>
+        </ul>
+        </p>
+      </section>
+      <section id="theft-damage">
+        <h2>Theft &amp; Damages</h2>
+        <p>
+          <ul>
+            <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
+            <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
+          </ul>
+        </p>
+      </section>
+      <section id="tenant-guest-policy">
+        <h2>Tenant's Guest Policy</h2>
+        <p>
+          <ul>
+            <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own safety.</li>
+            <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
+            <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
+          </ul>
+        </p>
+      </section>
+      <section id="offers">
+        <h2>Offers</h2>
+        <p>…</p>
+      </section>
+      <section id="refer-earn">
+        <h2>Refer &amp; Earn</h2>
+        <p>…</p>
+      </section>
+      <section id="safety-security">
+        <h2>Safety &amp; Security</h2>
+        <p>…</p>
+      </section>
+      <section id="terms-of-use">
+        <h2>Terms of Use</h2>
+        <p>…</p>
+      </section>
+      <section id="faq-tenants">
+        <h2>FAQ Tenants</h2>
+        <p>…</p>
+      </section>
+      <section id="faq-partners">
+        <h2>FAQ Partners</h2>
+        <p>…</p>
+      </section>
+      </section>
+      <section id="payment">
+        <h2>Payment</h2>
+        <p>…</p>
+      </section>
+      <section id="Others">
+        <h2>Others</h2>
+        <p>…</p>
+      </section>
+    </div>
+    <nav class="section-nav">
+      <br>
+      <ol>
+        <li><a href="#booking-tenant">Booking & Tenant</a></li>
+        <li><a href="#notice-period-cancellation-refund">Notice Period &amp; Cancellation Refund</a></li>
+        <li><a href="#renewal-inclusion">Renewal &amp; Inclusion</a></li>
+        <li><a href="#theft-damage">Theft &amp; Damages</a></li>
+        <li><a href="#tenant-guest-policy">Tenant's Guest Policy</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#refer-earn">Refer &amp; Earn</a></li>
+        <li><a href="#safety-security">Safety &amp; Security</a></li>
+        <li><a href="#terms-of-use">Terms of Use</a></li>
+        <li><a href="#faq-tenants">FAQ Tenants</a></li>
+        <li><a href="#faq-partners">FAQ Partners</a></li>
+        </li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#Others">Others</a></li>
+      </ol>
+      <br>
+    </nav>
+  </main>
   <!--==========================
     Footer
   ============================-->
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 about-text">
-            <h6>About</h6>
-            <p class="text-justify">We are strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.We are bound to provide you the best possible care and support which
-              helps you meet your
-              demands.We are with you whenever you are in need.</p>
-            <p>Accept our warm SheltOwn hug</p>
-          </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-          <div class="col-xs-6 col-md-3 category-text">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="">Blogs</a></li>
-            </ul>
-          </div>
+            We are bound to provide you the best possible care and support which helps you meet your demands.
 
-          <div class="col-xs-6 col-md-3 quick-text">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="policy-page.html">Policy</a></li>
-              <li><a href="career.html">Careers</a></li>
-              <li><a href="#">SheltOwn+</a></li>
-            </ul>
-          </div>
+            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+            We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+            We are with you whenever you are in need!
+          </p>
+          <p>Accept our warm SheltOwn hug</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <h6>Categories</h6>
+          <ul class="footer-payment">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="#">SheltOwn+</a></li>
+            <li><a href="#">SheltOwn Family+</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <h6>Quick payment</h6>
+          <ul class="footer-payment">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <section id="footer-two">
-      <div class="container">
-        <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
-        <br>
-        <div class="mid" id="HiddenDiv" style="display: none;">
-          <div class="row" id="more">
-            <div class="col-lg-4">
-              <ul class="footer-two-links">
-                <li><a href="#">Room for rent in Mumbai</a></li>
-                <li><a href="#">Room for rent in Delhi</a></li>
-                <li><a href="#">Room for rent in Bangalore</a></li>
-                <li><a href="#">Room for rent in Hyderabad</a></li>
-                <li><a href="#">Room for rent in Ahmedabad</a></li>
-                <li><a href="#">Room for rent in Chennai</a></li>
-                <li><a href="#">Room for rent in Kolkata</a></li>
-                <li><a href="#">Room for rent in Surat</a></li>
-                <li><a href="#">Room for rent in Pune</a></li>
-                <li><a href="#">Room for rent in Jaipur</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="footer-two-links">
-                <li><a href="#">Room for rent in Vishakhapatnam</a></li>
-                <li><a href="#">Room for rent in Nagpur</a></li>
-                <li><a href="#">Room for rent in Lucknow</a></li>
-                <li><a href="#">Room for rent in Kanpur</a></li>
-                <li><a href="#">Room for rent in Thane</a></li>
-                <li><a href="#">Room for rent in Bhopal</a></li>
-                <li><a href="#">Room for rent in Indore</a></li>
-                <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
-                <li><a href="#">Room for rent in Patna</a></li>
-                <li><a href="#">Room for rent in Vadodara</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
-              <ul class="footer-two-links">
-                <li><a href="#">Room for rent in Gaziabad</a></li>
-                <li><a href="#">Room for rent in Ludhiana</a></li>
-                <li><a href="#">Room for rent in Agra</a></li>
-                <li><a href="#">Room for rent in Nashik</a></li>
-                <li><a href="#">Room for rent in Faridabad</a></li>
-                <li><a href="#">Room for rent in Meerut</a></li>
-                <li><a href="#">Room for rent in Rajkot</a></li>
-                <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
-                <li><a href="#">Room for rent in Vasai-Virar</a></li>
-                <li><a href="#">Room for rent in Varanasi</a></li>
-              </ul>
-            </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-payment">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <br>
-            <a href="#">info@sheltown.com</a>
-            <br>
-            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
-
-            </p>
+          <div class="col-lg-4">
+            <ul class="footer-two-payment">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <br>
-            <ul class="social-icons">
-              <li><a href="#" class="fa fa-facebook"></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <div class="col-lg-4">
+            <ul class="footer-two-payment">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
             </ul>
           </div>
         </div>
       </div>
-    </section><!-- #footer -->
-    <script type="text/javascript">
-      // <![CDATA[
-      function ShowHide(divId) {
-        var atxt = document.getElementById("atext");
-        if (document.getElementById(divId).style.display == 'none') {
-          document.getElementById(divId).style.display = 'block';
-        } else {
-          document.getElementById(divId).style.display = 'none';
-        }
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="#">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', () => {
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          if (entry.intersectionRatio > 0) {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+          } else {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+          }
+        });
+      });
+
+      // Track all sections that have an `id` applied
+      document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+      });
+
+    });
+  </script>
+  <script type="text/javascript">
+    // <![CDATA[
+    function ShowHide(divId) {
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
       }
-      // ]]>
-    </script>
+    }
+    // ]]>
+  </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-    <script src="lib/sticky/sticky.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
 
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
