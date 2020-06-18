@@ -34,8 +34,12 @@
   border-top: 1px solid rgb(228, 227, 227);
 }
 
-/* FILTER COLUMN */
+s{
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
 
+/* FILTER COLUMN */
 #filter-heading {
   font-weight: bold;
   font-size: larger;
@@ -51,23 +55,41 @@ input[type="checkbox"] {
 }
 
 input[type=number]{
-  width: 10em;
+  width: 11em;
 } 
 
 input[type=date]{
-  width: 7em;
+  width: 9em;
 } 
 
 #check-option{
-  width: 12em;
+  width: 14em;
 }
 
 .panel {
-  width: 13em;
+  width: 15em;
+}
+
+/* POPOVER */
+.bs-example2 {
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #FFF;
+  text-shadow: 1.25px 1px #25282a;
+}
+
+#info-button {
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 3rem;
+  border: 1px solid white;
+  padding: 5px 15px;
+  color: black;
+  display: inline-block;
 }
 
 /* BUTTON */
-
 input[type="button"] {
   margin-bottom: 10px;
   background: #ff971d;
@@ -229,6 +251,29 @@ input[type="submit"]:hover{
   color: white;
 }
 
+#boxpref-maleonly{
+  background-color: #3578eb;
+  width: 180px;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+}
+
+#boxpref-availablenow{
+  background-color: #29e823;
+  width: 180px;
+  margin: 10px auto;
+  text-align: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px;
+  color: white;
+}
+
+
 #rent-verified {
   color: green; 
   font-size: 12px;
@@ -259,8 +304,33 @@ input[type="submit"]:hover{
   transform: skewY(10deg);
 }
 
-
-
+/*LOAD MORE*/
+.content {
+  display: none;
+}
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: .3s;
+}
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
 
 
 /* COLOURS
