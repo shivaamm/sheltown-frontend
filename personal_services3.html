@@ -129,18 +129,21 @@ span.price {
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <img src="img/favicon.png" alt="logo"><p>SheltOwn</p>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rental-services.html">Rental Sevices</a></li>
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
           <li><a href="login-user.html">Log In</a></li>
@@ -149,7 +152,6 @@ span.price {
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
   <!--==========================
       Intro Section
     ============================-->
