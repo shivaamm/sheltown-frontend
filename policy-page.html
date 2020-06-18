@@ -140,7 +140,7 @@
   </style>
 </head>
 
-<body id="body" onload="TapButtonNav(event, 'booking-tenant')">
+<body id="body" onload="TapButton(event, 'booking-tenant')">
 
   <!--==========================
     Header
@@ -503,6 +503,15 @@
   </section><!-- #footer -->
 
   <script>
+  function TapButton(evt, Click) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    document.getElementById(Click).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
     function TapButtonNav(evt, Click) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
