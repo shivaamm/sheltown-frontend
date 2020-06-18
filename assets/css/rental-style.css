@@ -1,3 +1,7 @@
+html{
+  zoom: 100%;
+}
+
 /* SEARCH BAR */
 #search-bar-rental {
   width: 70vw;
