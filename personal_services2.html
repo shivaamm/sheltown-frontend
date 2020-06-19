@@ -31,6 +31,8 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 
 
@@ -94,21 +96,36 @@ text-decoration: none;
       }
 
 .button_book{
+
   border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom:10px;
+  border-radius:10px;
+  color: white;
+  background-color: #29e823;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  float:right;
+}
+
+
+.button_book1{
+ border: none;
   color: white;
 text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+display: inline-block;
+font-size: 16px;
  cursor: pointer;
  background-color:#ff9719;
-       height:30px;
-margin-left:500px;
+
+background-color: #29e823;
   width:150px;
   border-radius:10px;
-
-  
-   
-      }
+  float:right;
+}
 
  input[type=number] {
   width: 100%;
@@ -162,10 +179,10 @@ margin-left:500px;
 
   <!-- intro ends -->
 <br>
-<h3 style="margin-left:70px;">How we Work?</h3>
-<div class ="row_ser">
+<h3 style="margin-left:80px;">How we Work?</h3>
+<div class ="row_ser" style="margin-left:60px">
  <div class="column_ser">
-<div class="container_work" style="margin-left:70px">
+<div class="container_work" >
 <!---<h1>How it works</h1>
 <hr class="new1"> --->
 <article>
@@ -212,7 +229,7 @@ margin-left:500px;
 
 <div class="container_work">
 <!---<h1>How it works</h1>
-<hr class="new1"> --->
+<hr class="new1"> ---->
 <article>
 <div class="row_work">
  <div class="column_work left_work"><br>
@@ -220,7 +237,7 @@ margin-left:500px;
  </div>
  <div class="column_work right_work"><br>
  
-  <h4><b>Hassle-free Service</b></h4>
+  <h4 style="margin-top:8px;"><b>Hassle-free Service</b></h4>
  
   </div>
   </div>
@@ -232,7 +249,7 @@ margin-left:500px;
  <i class="fas fa-phone-square" style="font-size:38px;color:#ff9719;"></i>
  </div>
  <div class="column_work right_work">
-  <h4><b>One Call Away</b></h4>
+  <h4 style="margin-top:8px;"><b>One Call Away</b></h4>
   </div>
   </div>
 </article>
@@ -243,7 +260,7 @@ margin-left:500px;
  <i class="fas fa-check-circle" style="font-size:38px;color:#ff9719;"></i>
  </div>
  <div class="column_work right_work">
-  <h4><b>Verified Servicemen </b></h4>
+  <h4 style="margin-top:8px;"><b>Verified Servicemen </b></h4>
   </div>
   </div>
 </article>
@@ -267,7 +284,7 @@ margin-left:500px;
 
 <div class ="row_ser">
  <div class="column_ser">
-<h2 style="color:#ff9719;margin-left:65px;">Need an "Service" Expert for? </h2></div>
+<h2 style="margin-left:65px;">Need an "Service" Expert for? </h2></div>
  <div class="column_ser">
  <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-115px;">
   <label for="myCheck" style="color:#ff9719;">Request a callback?</label> </div>
@@ -363,13 +380,16 @@ margin-left:500px;
 </div> 
 </div>
 
-<h2 style="color:#ff9719;margin-left:70px;">Guest Reviews</h2>
-  <div class="container_revmain" style="margin-left:70px;">
+<h2 style="margin-left:70px;">User Reviews</h2>
+  <div class="container_revmain" style="margin-left:50px;">
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -378,8 +398,11 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -387,8 +410,23 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+     <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -396,17 +434,11 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
-      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-      <p>John Doe saved us from a web disaster.</p>
-
-    </div>
-    <div class="container_rev">
-      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
-      <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Rebecca Flex.</span> CEO at Company.</p>
       <p>No one is better than John Doe.</p>
     </div>

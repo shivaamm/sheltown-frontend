@@ -70,7 +70,7 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
 
 /* Create an active/current "tab button" class */
 .tab button.active {
- background-color: rgba(187, 241, 200, 0.8);
+ background-color: #f5f5f5;
 }
 
 /* Style the tab content */
@@ -95,7 +95,7 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 25%;
   margin-bottom: 10px;
   padding: 0 8px;
 }
@@ -106,9 +106,8 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
   margin: 8px;
   border-radius:6px;
   z-index:1;
-  width:300px;
-  
-  background-color: rgba(187, 241, 200, 0.5);
+  width:240px;
+  background-color: #f0f0f0;
 }
 
 
@@ -134,7 +133,7 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
   margin-bottom:10px;
   border-radius:10px;
   color: white;
-  background-color: #ff9719;
+  background-color: #29e823;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -161,7 +160,7 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
   margin: 8px;
   padding:8px;
   border-radius:6px;
-width:360px;
+  width:360px;
   z-index:1;
   background-color: #fff;
   border: 1px solid #ff971d;
@@ -212,7 +211,7 @@ hr.new1 {
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <img src="img/favicon.png" alt="logo"><p>SheltOwn</p>
+        <img src="img/favicon.png" alt="logo" ><p>SheltOwn</p>
       </div>
 
       <nav id="nav-menu-container">
@@ -236,8 +235,8 @@ hr.new1 {
  
 <button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Personal Care</button>
 <button class="tablinks" onclick="openCity(event, 'HomeCare')" id="defaultOpen">Home Care</button>
-<button class="tablinks" onclick="openCity(event, 'Paris')" id="defaultOpen">Repair & Maintanance</button>
-<button class="tablinks" onclick="openCity(event, 'Delhi')" id="defaultOpen">Edumart</button>
+<button class="tablinks" onclick="openCity(event, 'Repair')" id="defaultOpen">Repair & Maintanance</button>
+<button class="tablinks" onclick="openCity(event, 'Edumart')" id="defaultOpen">Edumart</button>
 <button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Others</button>
 
 
@@ -249,7 +248,7 @@ hr.new1 {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/trainer.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/trainer.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
          <p class="title">FITNESS FOR MALE</p>
        
@@ -261,7 +260,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/trainer.jpeg" alt="Jane" style="width:100%;height:200px;">
+     <img src="img/perser/trainerwomen.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">FITNESS FOR WOMEN</p>
@@ -273,7 +272,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/salon.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/salon.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">SALON FOR WOMEN</p>
@@ -282,12 +281,11 @@ hr.new1 {
     </div>
   </div>
 </div>
-</div>
 
-<div class="row">
-  <div class="column">
+
+<div class="column">
     <div class="card">
-      <img src="img/costume.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/designer.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">COSTUME DESIGNER</p>
@@ -297,9 +295,13 @@ hr.new1 {
     </div>
   </div>
 
+</div>
+
+<div class="row">
+  
   <div class="column">
     <div class="card">
-      <img src="img/skincare.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/skincaremen.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
    
         <p class="title">SKINCARE FOR MEN</p>
@@ -311,10 +313,21 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/skincare.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/skincare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">SKINCARE FOR WOMEN</p>
+       <a href="personal_services2.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+<div class="column">
+    <div class="card">
+      <img src="img/perser/haircare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <div class="container">
+     
+        <p class="title">HAIRCARE FOR MEN</p>
        <a href="personal_services2.html" class="button">Book Now</a>
         </div>
       </div>
@@ -328,7 +341,7 @@ hr.new1 {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/plumber.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/plumber.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">Plumbers</p>
@@ -340,7 +353,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/carpenter.jpeg" alt="Jane" style="width:100%;height:200px;">
+     <img src="img/perser/carpenter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">Carpenters</p>
@@ -352,7 +365,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/electrician.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/electrician.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">Electricians</p>
@@ -361,11 +374,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="column">
+
+ <div class="column">
     <div class="card">
-      <img src="img/Deepcleaning.jpeg" alt="Jane" style="width:100%;height:200px;">
+      <img src="img/perser/Deepclean.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">Full House Deep Cleaning</p>
@@ -373,10 +385,13 @@ hr.new1 {
       </div>
     </div>
   </div>
+</div>
 
+
+<div class="row">
   <div class="column">
     <div class="card">
-     <img src="img/kitchencare.jpeg" alt="Jane" style="width:100%;height:200px;">
+     <img src="img/perser/kitchencare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">KitchenCare</p>
@@ -388,7 +403,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/bathroomcare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">Bathroom Care</p>
@@ -397,11 +412,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
-<div class="row">
+
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/sofacare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">Sofa and Carpet Care</p>
@@ -413,7 +427,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/pest.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">Pest control</p>
@@ -422,10 +436,13 @@ hr.new1 {
       </div>
     </div>
   </div>
+</div>
   
+
+<div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/maids.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">Maid</p>
@@ -434,11 +451,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
-<div class="row">
+
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/painter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">Painters</p>
@@ -450,7 +466,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/waste.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">Waste Management</p>
@@ -459,21 +475,17 @@ hr.new1 {
       </div>
     </div>
   </div>
-  
+  </div>
 </div>
-</div>
-
-
-
 
 <!---------------------------------------------------------Edumart ------------------------------------------------------------------------------------------>
 
-<div id="Delhi" class="tabcontent">
+<div id="Edumart" class="tabcontent">
  
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/tutionmale.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">HOME TUTION-MALE</p>
@@ -485,7 +497,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/tutionfemale.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">HOME TUTION-FEMALE</p>
@@ -497,7 +509,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/paper.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">PAPERS & MAGAZINES</p>
@@ -506,12 +518,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/digest.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">SHELTOWN DIGEST</p>
@@ -522,13 +532,13 @@ hr.new1 {
   </div>
 </div>
 </div>
-
-<div id="Paris" class="tabcontent">
+<!-------------------------------------------------------------------------Repair & Maintanance ---------------------------------------------------->
+<div id="Repair" class="tabcontent">
   
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/ac.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">AC</p>
@@ -540,7 +550,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/tv.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">TV</p>
@@ -552,7 +562,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/water.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">WATER PURIFIER</p>
@@ -561,11 +571,22 @@ hr.new1 {
       </div>
     </div>
   </div>
+<div class="column">
+    <div class="card">
+      <img src="img/perser/installation.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <div class="container">
+     
+        <p class="title">INSTALLATION</p>
+       <a href="personal_services2.html" class="button">Book Now</a>
+      </div>
+    </div>
+  </div>
 </div>
+
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/washin.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">WASHING MACHINE</p>
@@ -576,7 +597,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/fridge.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">REFRIGERATOR</p>
@@ -588,7 +609,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/microwave.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">MICROWAVE</p>
@@ -597,11 +618,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
-<div class="row">
+
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/geyser.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">GEYSER</p>
@@ -610,10 +630,12 @@ hr.new1 {
       </div>
     </div>
   </div>
+</div>
 
+<div class="row">
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/chimney.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">CHIMNEY</p>
@@ -625,7 +647,7 @@ hr.new1 {
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/aircooler.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">AIR COOLER</p>
@@ -634,11 +656,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
-<div class="row">
+
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/fan.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         
         <p class="title">FAN</p>
@@ -650,7 +671,7 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-     <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+     <img src="img/perser/mobile.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">MOBILE</p>
@@ -659,10 +680,12 @@ hr.new1 {
       </div>
     </div>
   </div>
+</div>
+<div class="row">
   
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/inverter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
      
         <p class="title">INVERTER & STABILIZER</p>
@@ -670,12 +693,10 @@ hr.new1 {
       </div>
     </div>
   </div>
-</div>
 
-<div class="row">
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/inverter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
       
         <p class="title">INVERTER BATTERY</p>
@@ -687,23 +708,12 @@ hr.new1 {
 
   <div class="column">
     <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
+      <img src="img/perser/fullhouse.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
    
         <p class="title">FULL HOUSE WIRING CHECK</p>
        
      <a href="personal_services2.html" class="button">Book Now</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="img/img_avatar2.png" alt="Jane" style="width:100%;height:140px;">
-      <div class="container">
-     
-        <p class="title">INSTALLATION</p>
-       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
