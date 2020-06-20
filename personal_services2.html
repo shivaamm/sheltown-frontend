@@ -31,6 +31,8 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 
 
@@ -94,21 +96,36 @@ text-decoration: none;
       }
 
 .button_book{
+
   border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom:10px;
+  border-radius:10px;
+  color: white;
+  background-color: #29e823;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  float:right;
+}
+
+
+.button_book1{
+ border: none;
   color: white;
 text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+display: inline-block;
+font-size: 16px;
  cursor: pointer;
  background-color:#ff9719;
-       height:30px;
-margin-left:500px;
+
+background-color: #29e823;
   width:150px;
   border-radius:10px;
-
-  
-   
-      }
+  float:right;
+}
 
  input[type=number] {
   width: 100%;
@@ -121,6 +138,14 @@ margin-left:500px;
  input[type=number]:focus {
   background-color: #ddd;
   outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 </style>
 </head>
@@ -162,16 +187,17 @@ margin-left:500px;
 
   <!-- intro ends -->
 <br>
-<h3 style="margin-left:70px;">How we Work?</h3>
-<div class ="row_ser">
+<h3 style="margin-left:80px;">How we Work?</h3>
+<div class ="row_ser" style="margin-left:60px">
  <div class="column_ser">
-<div class="container_work" style="margin-left:70px">
+<div class="container_work" >
 <!---<h1>How it works</h1>
 <hr class="new1"> --->
 <article>
 <div class="row_work">
  <div class="column_work left_work"><br>
- <i class="fas fa-gears" style="font-size:35px;color:#ff9719;"></i>
+<!---- <i class="fas fa-gears" style="font-size:35px;color:#ff9719;"></i>--->
+<img src="img/selection.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work"><br>
  <p><b>Choose the Personal Service</b></p>
@@ -183,7 +209,8 @@ margin-left:500px;
 <article>
 <div class="row_work">
  <div class="column_work left_work">
- <i class="fas fa-address-card" style="font-size:38px;color:#ff9719;"></i>
+ <!----<i class="fas fa-address-card" style="font-size:38px;color:#ff9719;"></i>------>
+  <img src="img/detail.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work">
   <p><b>Provide the appointement details</b></p>
@@ -195,7 +222,8 @@ margin-left:500px;
 <article>
 <div class="row_work">
  <div class="column_work left_work">
- <i class="fas fa-calendar" style="font-size:40px;color:#ff9719;"></i>
+<!---- <i class="fas fa-calendar" style="font-size:40px;color:#ff9719;"></i> ---->
+ <img src="img/clock.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work">
  <p><b>Confirm and Schedule booking</b></p>
@@ -212,15 +240,16 @@ margin-left:500px;
 
 <div class="container_work">
 <!---<h1>How it works</h1>
-<hr class="new1"> --->
+<hr class="new1"> ---->
 <article>
 <div class="row_work">
  <div class="column_work left_work"><br>
- <i class="fas fa-clock" style="font-size:38px;color:#ff9719;"></i>
+<!--- <i class="fas fa-clock" style="font-size:38px;color:#ff9719;"></i> --->
+<img src="img/door.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work"><br>
  
-  <h4><b>Hassle-free Service</b></h4>
+  <h4 style="margin-top:8px;"><b>Hassle-free Service</b></h4>
  
   </div>
   </div>
@@ -229,10 +258,11 @@ margin-left:500px;
 <article>
 <div class="row_work">
  <div class="column_work left_work">
- <i class="fas fa-phone-square" style="font-size:38px;color:#ff9719;"></i>
+<!--- <i class="fas fa-phone-square" style="font-size:38px;color:#ff9719;"></i>--------->
+ <img src="img/phone.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work">
-  <h4><b>One Call Away</b></h4>
+  <h4 style="margin-top:8px;"><b>One Call Away</b></h4>
   </div>
   </div>
 </article>
@@ -240,10 +270,11 @@ margin-left:500px;
 <article>
 <div class="row_work">
  <div class="column_work left_work">
- <i class="fas fa-check-circle" style="font-size:38px;color:#ff9719;"></i>
+<!---- <i class="fas fa-check-circle" style="font-size:38px;color:#ff9719;"></i>---->
+ <img src="img/checkmark.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work">
-  <h4><b>Verified Servicemen </b></h4>
+  <h4 style="margin-top:8px;"><b>Verified Servicemen </b></h4>
   </div>
   </div>
 </article>
@@ -251,10 +282,11 @@ margin-left:500px;
 <article>
 <div class="row_work">
  <div class="column_work left_work">
- <i class="fas fa-list-alt" style="font-size:38px;color:#ff9719;"></i>
+<!------- <i class="fas fa-list-alt" style="font-size:38px;color:#ff9719;"></i>--------->
+ <img src="img/help.png" alt="logo" style="width:40px;color:#ff9719;">
  </div>
  <div class="column_work right_work">
-  <h4><b>After Service Assistance</b></h4><br>
+  <h4><b>After Service Assistance</b></h4><br><br>
   </div>
   </div>
 </article>
@@ -267,7 +299,7 @@ margin-left:500px;
 
 <div class ="row_ser">
  <div class="column_ser">
-<h2 style="color:#ff9719;margin-left:65px;">Need an "Service" Expert for? </h2></div>
+<h2 style="margin-left:65px;">Need an "Service" Expert for? </h2></div>
  <div class="column_ser">
  <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-115px;">
   <label for="myCheck" style="color:#ff9719;">Request a callback?</label> </div>
@@ -287,7 +319,7 @@ margin-left:500px;
         <div class="modal-body">
           
           <label for="psw"><b>Enter your mobile number</b></label><br>
-          <input type="number" placeholder="Enter here" name="psw" required>
+          <input type="number"  class="noscroll"  placeholder="Enter here" name="psw" required>
            
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#ff9719;">Submit</button>
@@ -363,13 +395,16 @@ margin-left:500px;
 </div> 
 </div>
 
-<h2 style="color:#ff9719;margin-left:70px;">Guest Reviews</h2>
-  <div class="container_revmain" style="margin-left:70px;">
+<h2 style="margin-left:70px;">User Reviews</h2>
+  <div class="container_revmain" id="review1p" style="margin-left:50px;">
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -378,8 +413,11 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -387,8 +425,23 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+     <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
       <p>John Doe saved us from a web disaster.</p>
 
@@ -396,32 +449,67 @@ margin-left:500px;
     <div class="container_rev">
       <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
       <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
-      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-      <p>John Doe saved us from a web disaster.</p>
-
-    </div>
-    <div class="container_rev">
-      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
-      <div class="container_star">
-        <i class="fa fa-star" style="font-size:15px;color:#fff;padding:4px;"></i>
-      </div>
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>
       <p><span>Rebecca Flex.</span> CEO at Company.</p>
       <p>No one is better than John Doe.</p>
     </div>
+</div>
 
+<div class="container_revmain" id="review2p" style="margin-left:50px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+</div>
+
+<div class="container_revmain" id="review3p" style="margin-left:50px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+<div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+</div>
     <div class="pagination" style="margin-left:350px">
       <a href="#">&laquo;</a>
-      <a href="#" class="active">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
+      <!----<a href="#" class="active">1</a>--->
+      <a  class="tablinks" onclick="openCity(event, 'review1p')" id="defaultOpen">1</a>
+      <a class="tablinks" onclick="openCity(event, 'review2p')" id="defaultOpen">2</a>
+      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">3</a>
+      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">4</a>
       <a href="#">&raquo;</a>
     </div>
-  </div>
+  
 
   <footer class="site-footer">
     <div class="container">
@@ -438,7 +526,7 @@ margin-left:500px;
 
   We are with you whenever you are in need!
   </p>
-          <p>Accept our warm SheltOwn hug</p>
+          <p>Accept our warm SheltOwn hug.</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
@@ -457,7 +545,7 @@ margin-left:500px;
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="">Blogs</a></li>
             <li><a href="career.html">Careers</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
       </div>
@@ -632,6 +720,36 @@ margin-left:500px;
             });
         </script>
 
+
+<script>
+function openCity(evt, cityName) {
+  var i, container_revmain, tablinks;
+  container_revmain = document.getElementsByClassName("container_revmain");
+  for (i = 0; i < container_revmain.length; i++) {
+    container_revmain[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+  <script type="text/javascript">
+document.addEventListener("wheel", function(event) {
+  if (document.activeElement.type === "number" &&
+    document.activeElement.classList.contains("noscroll")) {
+    document.activeElement.blur();
+  }
+});
+
+</script>
 </body>
 
 </html>

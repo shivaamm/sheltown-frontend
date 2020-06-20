@@ -48,6 +48,12 @@ s{
 }
 
 /* FILTER COLUMN */
+.container-filter{
+  background-color: white;
+  margin-top:20px;
+  margin-left:30px;
+  margin-right:30px;
+}
 #filter-heading {
   font-weight: bold;
   font-size: larger;
@@ -78,7 +84,7 @@ input[type=date]{
 }
 
 .panel {
-  width: 18em;
+  width: 20em;
 }
 
 hr {
@@ -132,21 +138,23 @@ input[type="button"]:focus {
 }
 
 input[type="submit"] {
-  background-color: #3578eb;
+ background-color: #ff971d;
   padding: 5px 20px;
-  border:1px solid #3578eb;
+  border:1px solid #ff971d;
   border-radius: 40px;
   color: white;
+  font-weight: bold;
   text-align: center;
   margin: 5px 0 10px 5.7em;
 }
 
 input[type="submit"]:hover{
-  background-color: #f9f6f7 ;
+  background-color: white ;
   padding: 5px 20px;
-  border:1px solid black;
+  border:1px solid #ff971d;
   border-radius: 40px;
-  color: #3578eb;
+  color: #ff971d;
+  font-weight: bold;
   transition: .3s;
 }
 
@@ -216,22 +224,30 @@ input[type="submit"]:hover{
 #data-left {
   width: 100px;
 }
-
+.container-cards{
+  margin-top:20px;
+}
+.result-line{
+  padding-top:10px;
+  padding-bottom:10px;
+}
 .container-cards button {
   margin-top: -4em;
-  background: blue;
+  background: #29e823;
   border-radius: 3rem;
-  border: 1px solid white;
+  border: 1px solid #29e823;
   padding: 5px 15px;
+  font-weight: bold;
   color: white;
 }
 
 .container-cards button:hover {
   background: white;
   border-radius: 3rem;
-  border:1px solid blue;
+  border:1px solid #29e823;
   padding: 5px 15px;
-  color: blue;
+  color: #29e823;
+  font-weight: bold;
 }
 
 
@@ -253,38 +269,57 @@ input[type="submit"]:hover{
 
 }
 
-
+.strikeout {
+  line-height: 1em;
+  position: relative;
+}
+.strikeout::after {
+  border-bottom: 3px solid red;
+  content: "";
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
 #boxpref{
-  background-color: #ff971d;
+  background-color:white;
   width: 180px;
   margin: 10px auto;
   text-align: center;
   align-items: center;
   font-size: 13px;
   padding: 5px;
-  color: white;
+  color:#ff971d;
+   border:1px solid #ff971d;
+  border-radius: 100px;
 }
 
 #boxpref-maleonly{
-  background-color: #3578eb;
+  background-color:white;
   width: 180px;
   margin: 10px auto;
   text-align: center;
   align-items: center;
   font-size: 13px;
   padding: 5px;
-  color: white;
+  color: #3578eb;
+  border:1px solid #3578eb;
+  border-radius: 100px;
 }
 
 #boxpref-availablenow{
-  background-color: #29e823;
+  background-color:white;
   width: 180px;
   margin: 10px auto;
   text-align: center;
   align-items: center;
   font-size: 13px;
   padding: 5px;
-  color: white;
+  color:  #29e823;
+  border:1px solid  #29e823;
+  border-radius: 100px;
 }
 
 

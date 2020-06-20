@@ -20,6 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!-- Libraries CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -30,7 +31,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet"> 
@@ -38,7 +39,7 @@
 <style>
 .column_add {
   float: left;
-  width: 45%;
+  width: 50%;
   padding: 10px;
   /* Should be removed. Only for demonstration */
 }
@@ -77,7 +78,7 @@
  
 }
 .container_add {
-  background-color: #ffff;
+  background-color: #f5f5f5;
   padding: 5px 20px 15px 20px;
   border: 1px solid #ff9719;
   border-radius: 3px;
@@ -120,7 +121,93 @@ span.price {
   color: grey;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ff9719;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #fff;
+}
+
+.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ff9719;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
 
 <body id="body" onload="myFunction()">
@@ -214,9 +301,22 @@ span.price {
       <p>Product 2 <span class="price">$5</span></p>
       <p>Product 3 <span class="price">$8</span></p>
       <p>Product 4<span class="price">$2</span></p>
-      <p><a href="#">Appply Coupon?</a></p>
+      <p><a href="#popup1">Appply Coupon?</a></p>
       <hr>
       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+<div id="popup1" class="overlay">
+<div class="popup">
+<a class="close" href="#">&times;</a>
+<div class="content">
+<div class="example">
+  <input type="text" placeholder="Coupon code" name="search" style="margin:auto;max-width:270px">
+  <button>Apply</button>
+</div><br><br><br>
+<p>No Coupons available</p>
+</div>
+</div>
+</div>
+
     </div>
       <input type="submit" value="Pay Now" class="btn_add">
   </div>
@@ -239,10 +339,13 @@ span.price {
 
             <small>Office hours are 9am to 6pm</small></div>
             <label class="form-title"><b>Frequency?</b></label> 
-            <input type="radio" name="twohours"> 2 hours &nbsp;
-            <input type="radio" name="fourhours"> 4 hours &nbsp;
-            <input type="radio" name="sixhours"> 6 hours &nbsp;
-            <input type="radio" name="eighthours"> 8 hours &nbsp;
+            <input type="radio" id="2hrs" name="twohours"> 2 hours &nbsp;
+              
+            <input type="radio" id="2hrs" name="fourhours"> 4 hours &nbsp;
+               
+            <input type="radio" id="6hrs"  name="sixhours"> 6 hours &nbsp;
+            
+            <input type="radio" id="8hrs"  name="eighthours"> 8 hours &nbsp;
          
 
         </div>
@@ -250,115 +353,49 @@ span.price {
         </div>
 
 </div>
-  <!--==========================
-  cards
-  ============================-->
-<!------------  <section id="cards">
-    <div class="container personal-container">
-      <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Maintainance
-              </button>
-            </h2>
-          </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-              sunt
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Installation
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-              sunt
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Cleaning
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-              sunt
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Repair and service
-              </button>
-            </h2>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-              sunt
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>   ------------------>
-
+  
 
   <!--==========================
-  Footer
+    Footer
   ============================-->
-<footer class="site-footer">
+
+  <footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 about-text">
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-  We are bound to provide you the best possible care and support which helps you meet your demands.
+We are bound to provide you the best possible care and support which helps you meet your demands.
 
-  Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-  We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
 
-  We are with you whenever you are in need!
-  </p>
-          <p>Accept our warm SheltOwn hug</p>
+We are with you whenever you are in need!
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
-          <h6>Categories</h6>
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="testimonials.html">FAQs</a></li>
             <li><a href="#">SheltOwn+</a></li>
             <li><a href="#">SheltOwn Family+</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="col-xs-6 col-md-3 quick-text">
-          <h6>Quick Links</h6>
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="">Blogs</a></li>
-            <li><a href="career.html">Careers</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="">Join our Team</a></li>
+            <li><a href="">List your Property</a></li>
+            <li><a href="career.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
       </div>
@@ -419,7 +456,7 @@ span.price {
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <br>
-          <a href="#">info@sheltown.com</a>
+          <a href="mailto:sheltown2021@gmail.com">sheltown2021@gmail.com</a>
           <br>
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
 
@@ -438,7 +475,6 @@ span.price {
       </div>
     </div>
   </section><!-- #footer -->
-
 
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">

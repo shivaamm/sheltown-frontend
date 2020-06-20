@@ -24,85 +24,10 @@
     body {
         font-family: "Open Sans", sans-serif;
     }
-    /* ====== faq section  =========*/
-    #myDIV {
-      width: 100%;
-      padding: 50px 0;
-      margin-top: 20px;
-    }
-    #my {
-      width: 100%;
-      padding: 50px 0;
-      margin-top: 20px;
-    }
-    .faq_question {
-        display: inline-block;
-        cursor: pointer;
-        font-weight: bold;
-        width:100%;
-        border:2px solid #ff971d;
-        border-radius:5px;
-        padding:10px;
-        margin:10px;
-    }
-
-    .faq_answer_container {
-        display: none;
-        padding:10px;
-        margin:10px;
-    }
-    .faq_heading{
-        font-weight: bold;
-        color:#ff971d;
-        margin:20px;
-        text-align:center;
-    }
-    #faqtitle{
-        font-weight: bold;
-        color:#ff971d;
-        margin:20px 20px 0px 20px;
-        text-align:center;
-    }
-    .icon{
-        float:right;
-        color:#ff971d;
-    }
-    .card{
-        border:1px solid #ff971d;
-        border-radius: 5px;
-        padding:10px;
-        margin:10px;
-        box-shadow: 5px 5px #f1f1f2;
-    }
-    .card:hover{
-        box-shadow: 3px 3px #f1f1f1;
-    }
-    .card-title{
-        text-align: center;
-        text-transform: uppercase;
-        float:right;
-    }
-    .btn-orange{
-        background-color: #ff971d;
-        color:white;
-        font-weight: bold;
-        padding:5px 20px;
-        margin:10px;
-    }
-    .btn-orange:hover{
-        background-color: #ff971d;
-        color:white;
-        font-weight: bold;
-        padding:5px 20px;
-        margin:10px;
-    }
-    .image{
-        font-size:70px;
-        color:orange;
-    }
+    
     /* ====== testimonials =========*/
     .testimonials{
-        margin-top: 30px;
+        margin-top: 90px;
         margin-bottom: 30px;
     }
     .testimonials h2 {
@@ -130,7 +55,7 @@
     .carousel .item {
         color: #999;
         overflow: hidden;
-        min-height: 120px;
+        min-height: 120px;  
         font-size: 13px;
     }
     .carousel .media {
@@ -149,7 +74,7 @@
     .carousel .testimonial {
         color: #fff;
         position: relative;    
-        background: #9b9b9b;
+        background: #646363;
         padding: 15px;
         margin: 0 0 20px 20px;
     }
@@ -185,7 +110,7 @@
         margin: 0;
     }
     .carousel .testimonial p::before {
-        content: '\94';
+        
         color: #fff;
         font-weight: bold;
         font-size: 68px;
@@ -247,202 +172,9 @@
         color: orange;
     }
     /* ====== footer =========*/
-    .site-footer
-    {
-      background-color:whitesmoke;
-      padding:45px 0 20px;
-      font-size:15px;
-      line-height:24px;
-      color:#737373;
-      margin-top:30px;
-    }
-    .site-footer hr
-    {
-      border-top-color:#bbb;
-      opacity:0.5
-    }
-    .site-footer hr.small
-    {
-      margin:20px 0
-    }
-    .site-footer h6
-    {
-      color:black;
-      font-size:16px;
-      text-transform:uppercase;
-      margin-top:5px;
-      letter-spacing:2px;
-    }
-
-    .site-footer a
-    {
-      color:gray;
-    }
-    .site-footer a:hover
-    {
-      color:coral;
-      text-decoration:none;
-    }
-    .footer-links
-    {
-      padding-left:0;
-      list-style:none
-    }
-    .footer-links li
-    {
-      display:block
-    }
-    .footer-links a
-    {
-      color:#737373;
-    }
-    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
-    {
-      color:coral;
-      text-decoration:none;
-    }
-    .footer-links.inline li
-    {
-      display:inline-block
-    }
-    .site-footer .social-icons
-    {
-      text-align:right
-    }
-    .site-footer .social-icons a
-    {
-      width:40px;
-      height:40px;
-      line-height:40px;
-      margin-left:6px;
-      margin-right:0;
-      border-radius:100%;
-      background-color:#33353d
-    }
-    h1{
-    color: blue-violet;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .copyright-text
-    {
-      margin:0
-    }
-    @media (max-width:991px)
-    {
-      .site-footer [class^=col-]
-      {
-        margin-bottom:30px
-      }
-    }
-    @media (max-width:367px)
-    {
-      .site-footer
-      {
-        padding-bottom:0
-      }
-      .site-footer .copyright-text,.site-footer .social-icons
-      {
-        text-align:center
-      }
-    }
-    .social-icons
-    {
-      padding-left:0;
-      margin-bottom:0;
-      list-style:none
-    }
-    .social-icons li
-    {
-      display:inline-block;
-      margin-bottom:4px
-    }
-    .social-icons li.title
-    {
-      margin-right:15px;
-      text-transform:uppercase;
-      color:#96a2b2;
-      font-weight:700;
-      font-size:13px
-    }
-    .social-icons a{
-      background-color:#eceeef;
-      color:white;;
-      font-size:16px;
-      display:inline-block;
-      line-height:44px;
-      width:44px;
-      height:44px;
-      text-align:center;
-      margin-right:8px;
-      border-radius:100%;
-      -webkit-transition:all .2s linear;
-      -o-transition:all .2s linear;
-      transition:all .2s linear
-    }
-    .social-icons a:active,.social-icons a:focus,.social-icons a:hover
-    {
-      color:#fff;
-      background-color:#29aafe
-    }
-    .social-icons.size-sm a
-    {
-      line-height:34px;
-      height:34px;
-      width:34px;
-      font-size:14px
-    }
-    .social-icons a.facebook:hover
-    {
-      background-color:#3b5998
-    }
-    .social-icons a.twitter:hover
-    {
-      background-color:#00aced
-    }
-    .social-icons a.linkedin:hover
-    {
-      background-color:#007bb6
-    }
-    .social-icons a.dribbble:hover
-    {
-      background-color:#ea4c89
-    }
-    @media (max-width:767px)
-    {
-      .social-icons li.title
-      {
-        display:block;
-        margin-right:0;
-        font-weight:600
-      }
-    }
+    
 </style>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script>
-            $(document).ready(function() {
-
-                $('.faq_question').click(function() {
-
-                    if ($(this).parent().is('.open')) {
-                        $(this).closest('.faq').find('.faq_answer_container').slideUp();
-                        $(this).closest('.faq').removeClass('open');
-                        $(this).closest('.faq').find('.icon').removeClass('fa-minus');
-                        $(this).closest('.faq').find('.icon').addClass('fa-plus');
-                    } 
-                    else {
-                        $('.faq_answer_container').slideUp();
-                        $('.faq').removeClass('open');
-                        $('.icon').removeClass('fa-minus');
-                        $('.icon').addClass('fa-plus');
-                        $(this).closest('.faq').find('.faq_answer_container').slideDown();
-                        $(this).closest('.faq').addClass('open');
-                        $(this).closest('.faq').find('.icon').removeClass('fa-plus');
-                        $(this).closest('.faq').find('.icon').addClass('fa-minus');
-                    }
-
-                });
-            });
-    </script>
+  
 </head>
 <body>
 
@@ -451,7 +183,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
+        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo" style="margin-top: -1rem;"> </a></h1>
       </div>
 
       <nav id="nav-menu-container">
@@ -473,54 +205,7 @@
   </header><!-- #header --> 
     <!-- navbar ends -->
 
-    <!-- faq button -->
-    <h3 class="faq_heading">FAQ's</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                      <i class="las la-wrench image"></i>
-                      <h4 class="card-title">Personal Services</h4>
-                      <center>
-                        <button class="btn btn-orange" onclick="myFunction()">FAQ's</button>
-                      </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-body">
-                      <i class="las la-home image"></i>
-                      <h4 class="card-title">Rental Services</h4>
-                      <center>
-                        <button class="btn btn-orange" onclick="myFun()">FAQ's</button>
-                      </center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1">
-            </div>
-        </div>
-    </div>
-    <!-- faq section -->
-    <h4 id="faqtitle">Personal Services</h4>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-10">
-                <div id="myDIV">
-                </div>
-                <div id="my" style="display:none;">
-                </div>
-            </div>
-            <div class="col-md-1">
-            </div>
-        </div>
-    </div>
+    
 
     <!-- testimonials section -->
     <section class="testimonials">
@@ -528,7 +213,7 @@
             <div class="row">
                 <div class="col-sm-12">         
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <h2>Customer <b>Testimonials</b></h2>
+                        <h2>Customer <b>Reviews</b></h2>
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -541,11 +226,12 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            <p>The site really helps us to find good services in the least amount of time without any headache of brokerage. 
+                                                I was so scared in Pune due to the issues of high deposit as well as brokerage.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/1.jpg" alt="">                                       
+                                                <img src="img/team/naman.jpeg" alt="">                                       
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -566,11 +252,13 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            <p>
+                                                I have got a genuine and very quick response from the site. I am very happy with service of SheltOwn.
+                                                I've come here twice and everytime i'm satisfied with their service.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/2.jpg" alt="">
+                                                <img src="img/team/nikheel.jpeg" alt="">
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -595,11 +283,13 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            <p>Renting a property has always been frustrating for me because of no direct communication between the two parties. 
+                                                Brokers become inevitable who unfortunately in my experience are very unprofessional. 
+                                                SheltOwn did exactly the job I would have dreamt.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/3.jpg" alt="">                                       
+                                                <img src="img/team/sravya.jpeg" alt="">                                       
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -620,11 +310,13 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            <p>SheltOwn has changed my view of renting our property and choosing different personal services. 
+                                                The support i received was thorough and timely and my issue was addressed with a single interaction. 
+                                                Thank you so much for making it so easy.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/4.jpg" alt="">                                       
+                                                <img src="img/team/shivam.jpeg" alt="">                                       
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -649,11 +341,13 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                            <p>Absolutely the Best..!! I'm new to this city and was looking for personal services and 
+                                                I had no clue where to find help but then I found this amazing website sheltown 
+                                                The site speaks for itself. Truly Amazing.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/5.jpg" alt="">                                       
+                                                <img src="img/team/anwesha.jpeg" alt="">                                       
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -674,11 +368,15 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="testimonial">
-                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                            <p>It gives me great pleasure to say that I am very happy with the kind
+                                                of responses I am getting though
+                                                sheltown.com, The best part is the way they categories different
+                                                services and various cities. SheltOwn works in very organized way, with transparency. Keep up the
+                                                spirits SheltOwn! Excellent Job.</p>
                                         </div>
                                         <div class="media">
                                             <div class="media-left d-flex mr-3">
-                                                <img src="/examples/images/clients/6.jpg" alt="">                                       
+                                                <img src="img/team/shridhi.jpeg" alt="">                                       
                                             </div>
                                             <div class="media-body">
                                                 <div class="overview">
@@ -714,163 +412,127 @@
     </section>
 
     <!--footer -->
-    <!-- Site footer -->
-        <footer class="site-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <h6>About</h6>
-                  <p class="text-justify">We are strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.We are bound to provide you the best possible care and support which helps you meet your demands.We are with you whenever you are in need.</p><p>Accept our warm SheltOwn hug</p>
-                </div>
-      
-                <div class="col-xs-6 col-md-3 category-text">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="policy-page.html">Policy</a></li>
-              <li><a href="#">SheltOwn+</a></li>
-              <li><a href="#">SheltOwn Family+</a></li>
+    <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+We are with you whenever you are in need!
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="testimonials.html">FAQs</a></li>
+            <li><a href="#">SheltOwn+</a></li>
+            <li><a href="#">SheltOwn Family+</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Join our Team</a></li>
+            <li><a href="">List your Property</a></li>
+            <li><a href="career.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
             </ul>
           </div>
-
-          <div class="col-xs-6 col-md-3 quick-text">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li><a href="">Blogs</a></li>
-              <li><a href="career.html">Careers</a></li>
-              <li><a href="#">SiteMap</a></li>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
             </ul>
           </div>
-              </div>
-              <hr>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                  <a href="#">info@sheltown.com</a>
-                  <br>
-                  <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
-               
-                  </p>
-                </div>
-      
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <ul class="social-icons">
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </footer>
-    <!-- footer ends -->
-<script>
-    function myFunction() {
-      let x = document.getElementById("myDIV");
-      let y = document.getElementById("my");
-      document.getElementById("faqtitle").innerHTML = "Personal Sevices";
-      x.style.display = "block";
-      y.style.display = "none";
-    }
-    function myFun() {
-      let x = document.getElementById("myDIV");
-      let y = document.getElementById("my");
-      document.getElementById("faqtitle").innerHTML = "Rental Sevices";
-      y.style.display = "block";
-      x.style.display = "none";
-    }
-    var personal = [
-        {
-           question: "personal Question goes here",
-           answer:"Answer goes here"
-        },
-        {
-           question: "personal Question goes here",
-           answer:"Answer goes here"
-        },
-        {
-           question: "personal Question goes here",
-           answer:"Answer goes here"
-        }
-    ]
-    var rental = [
-        {
-           question: "rental Question goes here",
-           answer:"Answer goes here"
-        },
-        {
-           question: "rental Question goes here",
-           answer:"Answer goes here"
-        },
-        {
-           question: "rental Question goes here",
-           answer:"Answer goes here"
-        }
-    ]
-       for(let i=0;i<personal.length;i++)
-       {
-         // Create the HTML elements needed for a card
-            const faq = document.createElement("div");
-            const faq_question = document.createElement("div");
-            const faq_answer_container = document.createElement("div");
-            const faq_answer = document.createElement("div");
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:sheltown2021@gmail.com">sheltown2021@gmail.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
 
-            // find the body element so that the newly created eoements
-            // can be appended to it
-            const section = document.getElementById("myDIV");
+          </p>
+        </div>
 
-            // Append the elements to the DOM
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
 
-            // add the div to the body
-            section.append(faq);
-            faq.append(faq_question);
-            faq_answer_container.append(faq_answer);
-            faq.append(faq_answer_container);
-
-
-            faq.setAttribute('class', 'faq');
-            faq_question.setAttribute('class', 'faq_question');
-            faq_answer_container.setAttribute('class', 'faq_answer_container');
-            faq_answer.setAttribute('class', 'faq_answer');
-
-
-            faq_question.innerHTML = personal[i].question+'<i class="fa fa-plus icon"></i>';
-            faq_answer.innerHTML = personal[i].answer;
-        }
-        for(let i=0;i<rental.length;i++)
-       {
-         // Create the HTML elements needed for a card
-            const faq = document.createElement("div");
-            const faq_question = document.createElement("div");
-            const faq_answer_container = document.createElement("div");
-            const faq_answer = document.createElement("div");
-
-            // find the body element so that the newly created eoements
-            // can be appended to it
-            const section = document.getElementById("my");
-
-            // Append the elements to the DOM
-
-            // add the div to the body
-            section.append(faq);
-            faq.append(faq_question);
-            faq_answer_container.append(faq_answer);
-            faq.append(faq_answer_container);
-
-
-            faq.setAttribute('class', 'faq');
-            faq_question.setAttribute('class', 'faq_question');
-            faq_answer_container.setAttribute('class', 'faq_answer_container');
-            faq_answer.setAttribute('class', 'faq_answer');
-
-
-            faq_question.innerHTML = rental[i].question+'<i class="fa fa-plus icon"></i>';
-            faq_answer.innerHTML = rental[i].answer;
-        }
-    </script>
 </body>
 </html>
 
