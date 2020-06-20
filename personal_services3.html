@@ -120,7 +120,93 @@ span.price {
   color: grey;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ff9719;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #fff;
+}
+
+.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ff9719;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
 
 <body id="body" onload="myFunction()">
@@ -214,9 +300,22 @@ span.price {
       <p>Product 2 <span class="price">$5</span></p>
       <p>Product 3 <span class="price">$8</span></p>
       <p>Product 4<span class="price">$2</span></p>
-      <p><a href="#">Appply Coupon?</a></p>
+      <p><a href="#popup1">Appply Coupon?</a></p>
       <hr>
       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+<div id="popup1" class="overlay">
+<div class="popup">
+<a class="close" href="#">&times;</a>
+<div class="content">
+<div class="example">
+  <input type="text" placeholder="Coupon code" name="search" style="margin:auto;max-width:270px">
+  <button>Apply</button>
+</div><br><br><br>
+<p>No Coupons available</p>
+</div>
+</div>
+</div>
+
     </div>
       <input type="submit" value="Pay Now" class="btn_add">
   </div>
@@ -239,10 +338,13 @@ span.price {
 
             <small>Office hours are 9am to 6pm</small></div>
             <label class="form-title"><b>Frequency?</b></label> 
-            <input type="radio" name="twohours"> 2 hours &nbsp;
-            <input type="radio" name="fourhours"> 4 hours &nbsp;
-            <input type="radio" name="sixhours"> 6 hours &nbsp;
-            <input type="radio" name="eighthours"> 8 hours &nbsp;
+            <input type="radio" id="2hrs" name="twohours"> 2 hours &nbsp;
+              
+            <input type="radio" id="2hrs" name="fourhours"> 4 hours &nbsp;
+               
+            <input type="radio" id="6hrs"  name="sixhours"> 6 hours &nbsp;
+            
+            <input type="radio" id="8hrs"  name="eighthours"> 8 hours &nbsp;
          
 
         </div>
@@ -253,7 +355,7 @@ span.price {
   <!--==========================
   cards
   ============================-->
-<!------------  <section id="cards">
+<!------------ <section id="cards">
     <div class="container personal-container">
       <div class="accordion" id="accordionExample">
         <div class="card">
