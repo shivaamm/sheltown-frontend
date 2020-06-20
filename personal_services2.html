@@ -139,6 +139,14 @@ background-color: #29e823;
   background-color: #ddd;
   outline: none;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 </style>
 </head>
 
@@ -311,7 +319,7 @@ background-color: #29e823;
         <div class="modal-body">
           
           <label for="psw"><b>Enter your mobile number</b></label><br>
-          <input type="number" placeholder="Enter here" name="psw" required>
+          <input type="number"  class="noscroll"  placeholder="Enter here" name="psw" required>
            
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#ff9719;">Submit</button>
@@ -503,10 +511,6 @@ background-color: #29e823;
     </div>
   
 
-  <!--==========================
-    Footer
-  ============================-->
-
   <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -514,35 +518,33 @@ background-color: #29e823;
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+  We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+  Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+  We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
 
-We are with you whenever you are in need!
- </p>
-          <p>Accept our warm SheltOwn hug.</p>
+  We are with you whenever you are in need!
+  </p>
+          <p>Accept our warm SheltOwn hug</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
+          <h6>Categories</h6>
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
-            <li><a href="testimonials.html">FAQs</a></li>
             <li><a href="#">SheltOwn+</a></li>
             <li><a href="#">SheltOwn Family+</a></li>
-            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="col-xs-6 col-md-3 quick-text">
+          <h6>Quick Links</h6>
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="">Blogs</a></li>
-            <li><a href="">Join our Team</a></li>
-            <li><a href="">List your Property</a></li>
-            <li><a href="career.html">Become our Service Partner</a></li>
+            <li><a href="career.html">Careers</a></li>
             <li><a href="#">Sitemap</a></li>
           </ul>
         </div>
@@ -604,7 +606,7 @@ We are with you whenever you are in need!
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <br>
-          <a href="mailto:sheltown2021@gmail.com">sheltown2021@gmail.com</a>
+          <a href="#">info@sheltown.com</a>
           <br>
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
 
@@ -738,6 +740,16 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 
+
+  <script type="text/javascript">
+document.addEventListener("wheel", function(event) {
+  if (document.activeElement.type === "number" &&
+    document.activeElement.classList.contains("noscroll")) {
+    document.activeElement.blur();
+  }
+});
+
+</script>
 </body>
 
 </html>
