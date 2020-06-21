@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<body>
+<!-- Main -->
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SheltOwn</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/work-with-us.css">
+
+</head>
+<body id="body" onload="myFunction()">
+
+ <!--==========================
+    Header
+  ============================-->
+  <header id="header" >
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <img src="img/favicon.png" alt="logo"><p>CAREERS</p>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!-- Job Alerts -->
+<div class="container-fluid middle" style="padding: 10px;">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-sm-6">
+                <h3>Sign Up for Job Alerts!</h3>
+                <p>Not ready to apply? Take just a minute to sign up for job alerts</p>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <button id="alert" style="float: right; margin: 0 0 10px 0;"><i class="fa fa-bell"></i>&nbsp&nbspSign up for Job Alerts</button>
+                </div>
+                <div class="row">
+                    <button id="alert" onclick="help()" style="float: right;">Help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div id="myDIV" class="container middle" style="padding: 10px; margin-bottom: 20px;display:none;">
+    <h5>Contact US</h5>
+    <p style="font-size: 13px;">You can reach out to HR with any questions you have about the career.
+        Please note that OYO TSS' Recruitment Department sets all policies related to your Referral Program. 
+        If you are a current or former employee of OYO TSS, we suggest that you direct all policy-related questions to HR.
+    </p>
+</div>
+
+<!--Search Bar -->
+<div class="container">
+   <div class="row image-card" style="background-color: white;">
+        <img src="../img/hire.jpg" height="200" width="479">
+        <img src="../img/hire.jpg" height="200" width="479">
+   </div> 
+   <div id="search-bar" class="row justify-content-around">
+        <form>
+            <input class="job-keyword fa" type="text" placeholder="&#xF002; Find jobs by keyword">
+            <input class="job-keyword fa" type="text" placeholder='&#xf041; Location (e.g. "Delhi")'>
+            <input type="submit" id="search" value="Search">
+        </form>
+   </div>
+</div>
+
+<br>
+
+<!-- Jobs -->
+<div class="container">
+    <div class="row justify-content-between">
+        <div id="jobs-card" class="col-sm-8 middle">
+            <div id="heading" class="row" style="border-bottom: 1px solid #dee2e6;">
+                Featured Jobs
+            </div>
+            <div id="job" style="border-bottom: 1px solid #dee2e6;">
+                <div class="row">
+                    <p id="job-post"><b>Region Head - West</b></p>
+                </div>
+                <div class="row">
+                    <p id="job-place"><i class="fa fa-search"></i>  Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="row justify-content-between" id="job-details">
+                    <p class="col-sm-8">Duties and Responsibilities:· Responsible for P&L, cash flow and market share driven growth decision for the entire Region·Duties and Responsibilities:· Responsible for P&L, cash flow and market share driven growth decision for the entire Region·</p>
+                    <ul class="col-sm-4">
+                        <li><i class="fa fa-building "></i> Revenue and Pricing</li>
+                        <li><i class="fa fa-black-tie"></i> Relevant Experience: 1-4 Years</li>
+                        <li><i class="fa fa-calendar"></i> Apply by Jun 22, 2020</li>
+                        <button id="submission-btn" data-name="Region-Head-West" class="add-to-cart" style="margin-left: 0; margin-top: 5px;">Apply</button>
+                    </ul>
+                </div>
+            </div>
+            <div id="job" style="border-bottom: 1px solid #dee2e6;">
+                <div class="row">
+                    <p id="job-post"><b>Region Head - East</b></p>
+                </div>
+                <div class="row">
+                    <p id="job-place"><i class="fa fa-search"></i>  Mumbai, Maharashtra, India</p>
+                </div>
+                <div class="row justify-content-between" id="job-details">
+                    <p class="col-sm-8">Duties and Responsibilities:· Responsible for P&L, cash flow and market share driven growth decision for the entire Region·</p>
+                    <ul class="col-sm-4">
+                        <li><i class="fa fa-building "></i> Revenue and Pricing</li>
+                        <li><i class="fa fa-black-tie"></i> Relevant Experience: 1-4 Years</li>
+                        <li><i class="fa fa-calendar"></i> Apply by Jun 22, 2020</li>
+                        <button id="submission-btn" data-name="Region-Head-East" class="add-to-cart" style="margin-left: 0; margin-top: 5px;">Apply</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="middle row">
+                <div class="col">
+                    <div class="row" id="profile-heading">
+                        My Profile
+                    </div>
+                    <div class="row" id="profile-details">
+                       Upload resume here.
+                    </div>
+                    <div class="row">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>   
+            <br>
+            <div class="middle row">
+                <div class="col">
+                    <div class="row" id="profile-heading">
+                        My Applications
+                    </div>
+                    <div class="row" id="profile-details">
+                        Track Your Submissions
+                    </div>
+                    <div class="row">
+                        <button type="button" id="submission-btn" data-toggle="modal" data-target="#cart">My Applications</button></div>
+                    </div>
+                </div>
+            </div>   
+            <br>  
+        </div>
+    </div>
+</div>
+
+<br>  
+
+<!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Applications</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+We are with you whenever you are in need!
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="testimonials.html">FAQs</a></li>
+            <li><a href="#">SheltOwn+</a></li>
+            <li><a href="#">SheltOwn Family+</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Join our Team</a></li>
+            <li><a href="">List your Property</a></li>
+            <li><a href="career.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:sheltown2021@gmail.com">sheltown2021@gmail.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+  
+    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+    <script type="text/javascript">
+      // <![CDATA[
+      function ShowHide(divId) {
+        var atxt = document.getElementById("atext");
+        if (document.getElementById(divId).style.display == 'none') {
+          document.getElementById(divId).style.display = 'block';
+        } else {
+          document.getElementById(divId).style.display = 'none';
+        }
+      }
+      // ]]>
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+    <script>
+function help() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <script>
+var shoppingCart = (function() {
+  cart = [];
+  
+  // Constructor
+  function Item(name) {
+    this.name = name;
+  }
+  
+  // Save cart
+  function saveCart() {
+    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+  }
+  
+    // Load cart
+  function loadCart() {
+    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+  }
+  if (sessionStorage.getItem("shoppingCart") != null) {
+    loadCart();
+  }
+  
+
+  // =============================
+  // Public methods and propeties
+  // =============================
+  var obj = {};
+  
+  // Add to cart
+  obj.addItemToCart = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart[item].count ++;
+        saveCart();
+        return;
+      }
+    }
+    var item = new Item(name);
+    cart.push(item);
+    saveCart();
+  }
+  // Set count from item
+  obj.setCountForItem = function(name, count) {
+    for(var i in cart) {
+      if (cart[i].name === name) {
+        cart[i].count = count;
+        break;
+      }
+    }
+  };
+  // Remove item from cart
+  obj.removeItemFromCart = function(name) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count --;
+          if(cart[item].count === 0) {
+            cart.splice(item, 1);
+          }
+          break;
+        }
+    }
+    saveCart();
+  }
+
+  // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
+
+  // Clear cart
+  obj.clearCart = function() {
+    cart = [];
+    saveCart();
+  }
+
+  // Count cart 
+  obj.totalCount = function() {
+    var totalCount = 0;
+    for(var item in cart) {
+      totalCount += cart[item].count;
+    }
+    return totalCount;
+  }
+
+  // List cart
+  obj.listCart = function() {
+    var cartCopy = [];
+    for(i in cart) {
+      item = cart[i];
+      itemCopy = {};
+      for(p in item) {
+        itemCopy[p] = item[p];
+
+      }
+      itemCopy.total = Number(item.price * item.count).toFixed(2);
+      cartCopy.push(itemCopy)
+    }
+    return cartCopy;
+  }
+
+  return obj;
+})();
+
+
+// *****************************************
+// Triggers / Events
+// ***************************************** 
+// Add item
+$('.add-to-cart').click(function(event) {
+  event.preventDefault();
+  var name = $(this).data('name');
+  shoppingCart.addItemToCart(name, 1);
+  displayCart();
+});
+
+// Clear items
+$('.clear-cart').click(function() {
+  shoppingCart.clearCart();
+  displayCart();
+});
+
+
+function displayCart() {
+  var cartArray = shoppingCart.listCart();
+  var output = "";
+  for(var i in cartArray) {
+    output += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+  }
+  $('.show-cart').html(output);
+}
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
+displayCart();
+  </script>
+</body>
+</html>
