@@ -18,6 +18,10 @@
 #cards .personal-container .accordion .card .card-header .mb-0 button:hover {
   text-decoration: none;
 }
+
+.check{
+ float:right;
+}
 .container_revmain {
   margin: 16px 0;
   padding-right: 15px;
