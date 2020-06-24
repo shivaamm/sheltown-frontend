@@ -203,15 +203,14 @@ hr.new1 {
 </style>
 </head>
 <body id="body" onload="myFunction()">
-
-  <!--==========================
+ <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <img src="img/favicon.png" alt="logo" ><p>SheltOwn</p>
+        <img src="img/favicon.png" alt="logo"><p>SheltOwn</p>
       </div>
 
       <nav id="nav-menu-container">
@@ -231,6 +230,9 @@ hr.new1 {
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+  
+  
+
 <div class="tab" style="background-color:#fff;">
  
 <button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Personal Care</button>
@@ -719,27 +721,25 @@ hr.new1 {
   </div>
 </div>
 </div>
-
   <!--==========================
-    Footer
+  Footer
   ============================-->
-
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 about-text">
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+  We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+  Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+  We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
 
-We are with you whenever you are in need!
- </p>
-          <p>Accept our warm SheltOwn hug.</p>
+  We are with you whenever you are in need!
+  </p>
+          <p>Accept our warm SheltOwn hug</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
@@ -757,8 +757,8 @@ We are with you whenever you are in need!
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="">Blogs</a></li>
-            <li><a href="work-with-us.html">Join our Team</a></li>
-            <li><a href="">List your Property</a></li>
+            <li><a href="">Join our Team</a></li>
+            <li><a href="work-with-us.html">List your Property</a></li>
             <li><a href="career.html">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
@@ -821,7 +821,7 @@ We are with you whenever you are in need!
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <br>
-          <a href="mailto:sheltown2021@gmail.com">sheltown2021@gmail.com</a>
+          <a href="#">info@sheltown.com</a>
           <br>
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
 
@@ -868,25 +868,36 @@ We are with you whenever you are in need!
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
-  <!-- Template Main Javascript File -->
+  <!-- Optional JavaScript -->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict'
 
-  <!--Start of Tawk.to Script-->
-        <script src="js/main.js"></script>
-        <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-    <!--End of Tawk.to Script-->
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+      }, false)
+    }())
+  </script>
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
 <script>
 function openCity(evt, cityName) {
