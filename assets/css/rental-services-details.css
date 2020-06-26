@@ -1,7 +1,8 @@
 /* ============================ 
     property section css
  ===========================*/
-.container-fluid{
+
+ .container-fluid{
   margin-left:60px;
   margin-right:60px;
 }
@@ -268,7 +269,8 @@ ul_de li::before {
   margin-bottom:30px;
 }
 .container_revmain {
-  border: 2px solid #ccc;
+  width: 100rem;
+  
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
