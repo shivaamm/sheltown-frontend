@@ -342,6 +342,14 @@
         <h2>Refer &amp; Earn</h2>
         <p>…</p>
       </section>
+      <section id="sheltownplus" class="tabcontent">
+        <h2>SheltOwn+</h2>
+        <p>…</p>
+      </section>
+      <section id="sheltownfamilyplus" class="tabcontent">
+        <h2>SheltOwn Family+</h2>
+        <p>…</p>
+      </section>
       <section id="safety-security" class="tabcontent">
         <h2>Safety &amp; Security</h2>
         <p>…</p>
@@ -370,20 +378,22 @@
     </div>
     <nav class="section-nav">
       <br>
-      <ol>
-        <li><a class="tablinks active" onclick="TapButtonNav(event, 'booking-tenant')">Booking & Tenant</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'notice-period')">Notice Period &amp; Cancellation Refund</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'renewal-inclusion')">Renewal &amp; Inclusion</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'theft-damage')">Theft &amp; Damages</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'tenant-guest-policy')">Tenant's Guest Policy</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'offers')">Offers</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'refer-earn')">Refer &amp; Earn</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'safety-security')">Safety &amp; Security</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'terms-of-use')">Terms of Use</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'faq-tenants')">FAQ Tenants</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'faq-partners')">FAQ Partners</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'payment')">Payment</a></li>
-        <li><a class="tablinks" onclick="TapButtonNav(event, 'Others')">Others</a></li>
+      <ol id="myTab">
+        <li><a class="tablinks active" href="#booking-tenant" onclick="TapButtonNav(event, 'booking-tenant')">Booking & Tenant</a></li>
+        <li><a class="tablinks" id="noticeperiod" href="#notice-period" onclick="TapButtonNav(event, 'notice-period')">Notice Period &amp; Cancellation Refund</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'renewal-inclusion')">Renewal &amp; Inclusion</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'theft-damage')">Theft &amp; Damages</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'tenant-guest-policy')">Tenant's Guest Policy</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'offers')">Offers</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'refer-earn')">Refer &amp; Earn</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'sheltownplus')">SheltOwn+</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'sheltownfamilyplus')">SheltOwn Family+</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'safety-security')">Safety &amp; Security</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'terms-of-use')">Terms of Use</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'faq-tenants')">FAQ Tenants</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'faq-partners')">FAQ Partners</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'payment')">Payment</a></li>
+        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'Others')">Others</a></li>
       </ol>
       <br>
     </nav>
@@ -415,9 +425,9 @@ We are with you whenever you are in need!
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
-            <li><a href="policy-page.html">FAQs</a></li>
-            <li><a href="policy-page.html">SheltOwn+</a></li>
-            <li><a href="policy-page.html">SheltOwn Family+</a></li>
+            <li><a href="#top" onclick="TapButtonNav(event, 'faq-tenants')">FAQs</a></li>
+            <li><a href="#top" onclick="TapButtonNav(event, 'sheltownplus')">SheltOwn+</a></li>
+            <li><a href="#top" onclick="TapButtonNav(event, 'sheltownfamilyplus')">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
           </ul>
         </div>
@@ -427,8 +437,8 @@ We are with you whenever you are in need!
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
             <li><a href="work-with-us.html">Join our Team</a></li>
-            <li><a href="policy-page.html">List your Property</a></li>
-            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="#top" onclick="TapButtonNav(event, 'faq-partners')">List your Property</a></li>
+            <li><a href="#top" onclick="TapButtonNav(event, 'faq-tenants')">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
@@ -534,6 +544,19 @@ We are with you whenever you are in need!
       evt.currentTarget.className += " active";
     }
   </script>
+
+  <script >
+     var hash = document.location.hash;
+var prefix = "tab_";
+if (hash) {
+    $('.tablinks a[href="'+hash.replace(prefix,"")+'"]').tab('show');
+} 
+
+// Change hash for page-reload
+$('.tablinks a').on('shown', function (e) {
+    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+});
+    </script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

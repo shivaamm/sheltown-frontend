@@ -474,7 +474,7 @@ We are with you whenever you are in need!
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
             <li><a href="policy-page.html">FAQs</a></li>
-            <li><a href="policy-page.html">SheltOwn+</a></li>
+            <li><a onclick="redirect()">SheltOwn+</a></li>
             <li><a href="policy-page.html">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
           </ul>
@@ -581,6 +581,22 @@ We are with you whenever you are in need!
       }
     }
     // ]]>
+  </script>
+
+  <script>
+    function TapButtonNav(evt, Click) {
+      var i, tabcontent, tablinks;
+      location.replace("./policy-page.html");
+    }
+  </script>
+
+  <script>
+    function redirect(){
+      location.replace("./policy-page.html");
+      function TapButtonNav(evt, Click) {
+      var i, tabcontent, tablinks;
+      }
+    }
   </script>
 
   <!-- JavaScript Libraries -->
