@@ -1,65 +1,135 @@
-.column_ta {
-  float: left;
-  padding: 10px;
-   /* Should be removed. Only for demonstration */
+/* ============================ 
+    property section css
+ ===========================*/
+.container-fluid{
+  margin-left:60px;
+  margin-right:60px;
 }
-.middle_ta{
-width:22%;
+.property{
+  margin-top:20px;
+  margin-bottom:30px;
 }
-.right_ta{
-width:22%;
+.heading{
+  color:#ff9719;
+  font-size: 25px;
 }
-
-.left_ta{
-width:52%;
+.offers-carousel{
+  margin-top:77px;
 }
-/* Clear floats after the columns */
-.row_ta:after {
+.rent-price-box{
+  margin-top:50px;
+  border:1px solid #ff9719;
+  border-radius: 5px;
+  padding:20px;
+}
+.rent-price-box h4{
+  color:#ff9719;
+}
+#info-button {
+  background: white;
+  border-radius: 3rem;
+  border: 1px solid white;
+  padding: 5px 15px;
+  color: black;
+  display: inline-block;
+}
+.strikeout {
+  line-height: 1em;
+  position: relative;
+}
+.strikeout::after {
+  border-bottom: 3px solid red;
   content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column_ta {
-    width: 100%;
-    margin:10px;
-    height:100%;
-  }
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 .button_book {
-  border: none;
   color: white;
-  padding: 10px 20px;
+  padding:5px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-
-  cursor: pointer;
-  border-radius:10px;
+  font-size: 15px;
+  border-radius:100px;
   background-color: #ff9719;
+  border:1px solid #ff9719;
+}
+.button_book:hover,
+.button_book:focus,
+.button_book:active
+{
+  color: white;
+  padding:5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius:100px;
+  background-color: #ff9719;
+  border:1px solid #ff9719;
 }
 
-.groove {
-border-style: groove;
-border:1px solid orange;
-border-radius:5px;
-padding:10px;
-width:200px;
+/* ============================ 
+    description section css
+ ===========================*/
+
+.description{
+  margin-top:20px;
+  margin-bottom:30px;
+}
+.description p{
+  text-align:justify;
+}
+.info{
+  background-color:white;
+  width:150px;
+  margin: 10px;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+}
+.pg-info{
+  color: grey;
+  border:1px solid grey;
+  border-radius: 100px;
+}
+.sheltown-info{
+  color:#f76a8c;
+  border:1px solid #f76a8c;
+  border-radius: 100px;
+}
+.male-info{
+  color: #3578eb;
+  border:1px solid #3578eb;
+  border-radius: 100px;
+}
+.meal-info{
+  color: brown;
+  border:1px solid brown;
+  border-radius: 100px;
+}
+.furnished-info{
+  color:#ff971d;
+  border:1px solid #ff971d;
+  border-radius: 100px;
+}
+.available-info{
+  color:  #29e823;
+  border:1px solid  #29e823;
+  border-radius: 100px;
 }
 
-.text-box{
-width:1100px;
-text-align:justify;
-padding-right: 15px;
-padding-left: 15px;
-margin-left:50px;
+/* ============================ 
+    amenity section css
+ ===========================*/
 
+.amenity{
+  margin-top:20px;
+  margin-bottom:30px;
 }
-
-/* Create three equal columns that floats next to each other */
+ /* Create three equal columns that floats next to each other */
 .column_amn {
   float: left;
   width: 20%;
@@ -76,11 +146,38 @@ margin-left:50px;
 }
 
 .container_amn{
-margin-left:50px;
-padding-right: 15px;
-padding-left: 15px;
-width:1100px;
+  padding-right: 15px;
+  width:1000px;
 }
+
+/* ============================ 
+    know-section css
+ ===========================*/
+.know-section{
+  margin-top:20px;
+  margin-bottom:30px;
+}
+.know-section p{
+  margin:20px 0px 20px 0px;
+}
+.know-section span
+{
+  background-color:white;
+  color:#ff971d;
+  padding:5px 30px;
+  margin:5px;
+  border:1px solid #ff971d;
+  border-radius:100px;
+}
+/* ============================ 
+    policy  section css
+ ===========================*/
+
+
+.policy{
+  margin-top:20px;
+  margin-bottom:30px;
+} 
 
 ul_de {
   list-style: none;
@@ -96,17 +193,19 @@ ul_de li::before {
   margin-left: -1em;
 }
 
+
+/* ============================ 
+    user-rating  section css
+ ===========================*/
+.user-rating{
+  margin-top:20px;
+  margin-bottom:30px;
+} 
 .container_rat {
-  margin-left:50px;
   max-width: 800px; /* Max width */
   padding: 20px;
+  padding-left:0px;
 }
-
-.heading {
-  font-size: 25px;
-  margin-right: 25px;
-}
-
 .checked {
   color: orange;
 }
@@ -161,15 +260,20 @@ ul_de li::before {
   }
 }
 
+/* ============================ 
+    guest  section css
+ ===========================*/
+.guest{
+  margin-top:20px;
+  margin-bottom:30px;
+}
 .container_revmain {
   border: 2px solid #ccc;
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left:50px;
-  width:1100px;
+  padding-right:20px;
+  padding-left:20px;
 }
 .container_rev {
   border: 2px solid #ff9719;
@@ -179,7 +283,6 @@ ul_de li::before {
   margin: 16px 0;
   padding-right: 15px;
   padding-left: 15px;
-  width:800px;
 }
 
 .container_rev::after {
@@ -239,3 +342,64 @@ float:right;
       display: block;
   }
 }
+
+/* ============================ 
+    address  section css
+ ===========================*/
+.address{
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+
+/* ============================ 
+      end
+ ===========================*/
+
+
+/* ============================ 
+    not used css
+ ===========================*/
+/*
+.column_ta {
+  float: left;
+  padding: 10px;
+}
+.middle_ta{
+width:22%;
+}
+.right_ta{
+width:22%;
+}
+
+.left_ta{
+width:52%;
+}
+.row_ta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column_ta {
+    width: 100%;
+    margin:10px;
+    height:100%;
+  }
+}
+.groove {
+border-style: groove;
+border:1px solid orange;
+border-radius:5px;
+padding:10px;
+width:200px;
+}
+
+.text-box{
+width:1100px;
+text-align:justify;
+padding-right: 15px;
+padding-left: 15px;
+margin-left:50px;
+
+}*/
