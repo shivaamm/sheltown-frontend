@@ -64,7 +64,6 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
 }
 
 .card {
- 
   box-shadow:10px 10px 15px rgba(255, 146, 107, 0.7);
   margin: 8px;
   border-radius:6px;
@@ -86,6 +85,9 @@ body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
 
 .title {
   color:#000;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 
 .button {
