@@ -88,14 +88,14 @@ float:right;
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .container_rev{
       width:400px;
   }
  .mobile{
-      margin-left:185px;
-  }
+margin-left:168px;
+}
   .container img {
       margin: auto;
       float: none;
