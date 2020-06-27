@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SheltOwn</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--------------popup------------------------>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="assets/css/personal-style.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <style>
+.inv {
+    display: none;
+   
+}
+
+.column_ser {
+  float: left;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+.left{width: 40%;}
+.middle{width: 30%;}
+.right{width: 30%;}
+.column_serr {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row_ser:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column_ser {
+    width: 100%;
+    height:100%;
+  }
+ 
+}
+      
+.dropdown{
+  border: 1px solid #ff9719;
+  height:30px;
+  width:80%;
+  border-radius:10px;
+      }
+      
+.button_add{
+  border: none;
+  color: white;
+text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ cursor: pointer;
+ background-color:#ff9719;
+       height:30px;
+
+  width:50px;
+  border-radius:10px;
+  float:right;
+   
+      }
+
+.button_book{
+
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom:10px;
+  border-radius:10px;
+  color: white;
+  background-color: #29e823;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+ 
+}
+
+
+.button_book1{
+ border: none;
+  color: white;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+ cursor: pointer;
+ background-color:#ff9719;
+
+background-color: #29e823;
+  width:150px;
+  border-radius:10px;
+  float:right;
+}
+
+ input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+ input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.list-group {
+    padding-left: 0;
+    width:35%;
+}
+.list-group-item+.list-group-item {
+   border-top-width: 1px;
+}
+</style>
+</head>
+
+<body id="body" onload="myFunction()">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
+
+<div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+        <p >SheltOwn</p>
+        </a>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  
+ 
+  <!--==========================
+      Intro Section
+    ============================-->
+
+
+
+  <!-- intro ends -->
+<br>
+<div class ="row_ser">
+<div class="column_ser left">
+<h3 style="margin-left:65px;">Need an "Service Expert" for? </h2>
+ <div class="mobile" style="margin-left:180px;">
+ <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-115px;">
+   <label for="myCheck" style="color:#ff9719;">or Request a Call Back from our Executive</label> 
+</div>
+<p style="margin-left:70px;"> Select the Service </p>
+        <select id="target" class="dropdown" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_1">Refrigerator</option>
+            <option value="content_2">TV</option>
+            <option value="content_3">Washing Machine</option>
+            <option value="content_4">AC</option>
+            <option value="content_5">Water Purifier</option>
+           <option value="content_6">Microwave</option>
+           <option value="content_7">Geyser</option>
+            <option value="content_8">Chimney</option>
+<option value="content_9">Air Cooler</option>
+<option value="content_10">Fan</option>
+<option value="content_11">Mobile</option>
+<option value="content_12">Inverter & Stabilizer</option>
+<option value="content_13">Inverter Battery</option>
+<option value="content_14">Full House Wiring Check</option>
+<option value="content_15">Installation</option>
+        </select>
+         
+          
+        <div id="content_1" class="inv"><div class="container" style="margin-left:50px;">
+  <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Water Leakage($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">No/Less Cooling($40) 
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Ice formation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+</div>
+</div>
+ <div id="content_2" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+ <div id="content_3" class="inv"><div class="container" style="margin-left:50px;">
+ <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Not Starting($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Water Leakage($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Not Spinning ($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+</div>
+</div>
+<div id="content_4" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_5" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_6" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_7" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_8" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_9" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_10" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_11" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_12" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_13" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_14" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_15" class="inv"><div class="container" style="margin-left:50px;">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">Display/Screen($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Speaker/Sound($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Power($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Installation($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Others
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+</div>
+ <div class="column_ser middle">
+<div class="container_work" >
+<!---<h1>How it works</h1>
+<hr class="new1"> --->
+<article>
+<div class="row_work">
+ <div class="column_work left_work"><br>
+<!---- <i class="fas fa-gears" style="font-size:35px;color:#ff9719;"></i>--->
+<img src="img/selection.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work"><br>
+ <p><b>Choose the Personal Service</b></p>
+  <p>Personal Care,Home Care,Repairs & Maintananace,Edumart etc..</p>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+ <!----<i class="fas fa-address-card" style="font-size:38px;color:#ff9719;"></i>------>
+  <img src="img/detail.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work">
+  <p><b>Provide the appointement details</b></p>
+  <p>Submit basic details or request a callback;we will call you to know the details</p>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+<!---- <i class="fas fa-calendar" style="font-size:40px;color:#ff9719;"></i> ---->
+ <img src="img/clock.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work">
+ <p><b>Confirm and Schedule booking</b></p>
+  <p>Our Service partners will visit your door</p>
+  </div>
+  </div>
+  
+</article>
+
+</div>
+</div>
+
+ <div class="column_ser right">
+
+<div class="container_work">
+<!---<h1>How it works</h1>
+<hr class="new1"> ---->
+<article>
+<div class="row_work">
+ <div class="column_work left_work"><br>
+<!--- <i class="fas fa-clock" style="font-size:38px;color:#ff9719;"></i> --->
+<img src="img/door.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work"><br>
+ 
+  <h4 style="margin-top:8px;"><b>Hassle-free Service</b></h4>
+ 
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+<!--- <i class="fas fa-phone-square" style="font-size:38px;color:#ff9719;"></i>--------->
+ <img src="img/phone.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work">
+  <h4 style="margin-top:8px;"><b>One Call Away</b></h4>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+<!---- <i class="fas fa-check-circle" style="font-size:38px;color:#ff9719;"></i>---->
+ <img src="img/checkmark.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work">
+  <h4 style="margin-top:8px;"><b>Verified Servicemen </b></h4>
+  </div>
+  </div>
+</article>
+<hr class="new1">
+<article>
+<div class="row_work">
+ <div class="column_work left_work">
+<!------- <i class="fas fa-list-alt" style="font-size:38px;color:#ff9719;"></i>--------->
+ <img src="img/help.png" alt="logo" style="width:40px;color:#ff9719;">
+ </div>
+ <div class="column_work right_work">
+  <h4><b>After Service Assistance</b></h4><br><br>
+  </div>
+  </div>
+</article>
+</div>
+
+</div>
+</div>
+
+<br>
+
+<div class ="row_ser">
+<!----<div class="column_serr">
+<h2 style="margin-left:65px;">Need an "Service" Expert for? </h2></div>
+ <div class="column_serr"><div class="mobile">
+ <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-115px;">
+   <label for="myCheck" style="color:#ff9719;">Request a callback?</label> </div> </div>
+</div>--->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="float:left;">Request a call Back?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          
+          <label for="psw"><b>Enter your mobile number</b></label><br>
+          <input type="number"  class="noscroll"  placeholder="Enter here" name="psw" required>
+           
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#ff9719;">Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!--------------------------------------popup----------------------------------->
+<!---------------  <h2 style="color:#ff9719;margin-left:70px;">Need an "Service" Expert for?</h2> -------->
+
+
+      
+<br>
+<br>
+<br>
+
+<!----------------<div class="container_work" style="margin-left:75px;">
+<div class="container personal-container">
+<div class="col-lg-6">
+          <h4>Request a Callback</h4>
+          
+            <label class="form-title" for="phone"><b>Enter a phone number:</b></label><br>
+            <input type="tel" id="phone" name="phone" placeholder="99XXXXXXXX" pattern="[789][0-9]{9}" required>
+            <input type="submit" value="Submit"><br>
+            <small>Format:+91-XXXXXXXX</small>
+
+            <!---- <label class="form-title" for="feedback"><b>Send us your booking feedback:</b></label><br>
+            <textarea rows="4" cols="45" name="comment" form="usrform" placeholder="Enter.." id="feedback"></textarea><br>   --->
+</div>
+</div> 
+</div>
+
+<h2 style="margin-left:70px;">User Reviews</h2>
+  <div class="container_revmain" id="review1p" style="margin-left:50px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+     <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than John Doe.</p>
+    </div>
+</div>
+
+<div class="container_revmain" id="review2p" style="margin-left:50px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+</div>
+
+<div class="container_revmain" id="review3p" style="margin-left:50px;">
+    <div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+<div class="container_rev">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+      <div class="container_star">
+       <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> </div>
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+
+    </div>
+</div>
+    <div class="pagination" style="margin-left:350px">
+      <a href="#">&laquo;</a>
+      <!----<a href="#" class="active">1</a>--->
+      <a  class="tablinks" onclick="openCity(event, 'review1p')" id="defaultOpen">1</a>
+      <a class="tablinks" onclick="openCity(event, 'review2p')" id="defaultOpen">2</a>
+      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">3</a>
+      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">4</a>
+      <a href="#">&raquo;</a>
+    </div>
+  <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+We are with you whenever you are in need!
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="policy-page.html">FAQs</a></li>
+            <li><a href="policy-page.html">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn Family+</a></li>
+            <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog-description-page.html">Blogs</a></li>
+            <li><a href="work-with-us.html">Join our Team</a></li>
+            <li><a href="policy-page.html">List your Property</a></li>
+            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:info@sheltown.com">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+
+
+  <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+  <script type="text/javascript">
+    // <![CDATA[
+    function ShowHide(divId) {
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+    // ]]>
+  </script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+
+
+  <!-- Optional JavaScript -->
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict'
+
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+      }, false)
+    }())
+  </script>
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+ 
+
+  
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+<script>
+            document
+                .getElementById('target')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv';
+                    }
+                    if (target !== null ) {
+                        target.className = 'vis';
+                    }
+            });
+        </script>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, container_revmain, tablinks;
+  container_revmain = document.getElementsByClassName("container_revmain");
+  for (i = 0; i < container_revmain.length; i++) {
+    container_revmain[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+  <script type="text/javascript">
+document.addEventListener("wheel", function(event) {
+  if (document.activeElement.type === "number" &&
+    document.activeElement.classList.contains("noscroll")) {
+    document.activeElement.blur();
+  }
+});
+
+</script>
+</body>
+
+</html>
