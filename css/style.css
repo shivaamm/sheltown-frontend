@@ -1283,7 +1283,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
   color: #fff;
-  background-color: #29aafe
+  background-color: #062466;
 }
 
 .social-icons.size-sm a {
@@ -1302,11 +1302,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .social-icons a.linkedin:hover {
-  background-color: #007bb6
+  background-color: #0e76a8 
 }
 
 .social-icons a.dribbble:hover {
-  background-color: #ea4c89
+  background-color: #c41540
 }
 
 /* end of footer */
