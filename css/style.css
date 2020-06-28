@@ -352,7 +352,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(200, 200, 200, 0.6);
+  /*background-color: rgba(200, 200, 200, 0.6);*/
 }
 
 #intro .intro-content h2 {
@@ -1056,7 +1056,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   height: 70%;
   margin-bottom: 5%;
-  background-color: #272527;
+  background-color: #ff0073;
   color: white;
 }
 
@@ -1064,7 +1064,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   height: 50%;
   margin-bottom: 5%;
-  background-color: #1ec96b;
+  background-color: #00ff8c;
 }
 
 .content-img {
@@ -1073,8 +1073,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .content-img img {
   float: left;
-  width: 400px;
-  height: 263px;
+  width: 250px;
+  height: 170px;
 }
 
 #content {
@@ -1083,6 +1083,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 1.5rem;
   border-radius: 10px;
   font-size: 18px;
+  height: 170px;
 }
 
 #content .btn-sheltownplus {
