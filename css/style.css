@@ -416,6 +416,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 5px;
     padding-top: 5px;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -458,7 +459,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .boxes {
-  margin-left: 300px;
+  margin-left: 280px;
 }
 
 .boxes select {
@@ -561,7 +562,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width:992px) {
   .boxes {
-    margin-left: 100px;
+    margin-left: 13rem;
   }
 
   .search-services {
@@ -599,7 +600,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width:768px) {
   .boxes {
-    margin-left: 40px;
+    margin-left: 40rem;
   }
 
   .search-services {
@@ -645,7 +646,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width:576px) {
   .boxes {
-    margin-left: 10px;
+    margin-left: 25rem;
   }
 
   .search-services {
@@ -709,7 +710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .boxes {
-    margin-left: 20px;
+    margin-left: 15rem;
   }
 
   .search-services {
@@ -814,18 +815,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box button {
   width: 120px;
-  margin-left: 150px;
+  
   text-align: center;
   background-color: #ff8c00;
   color: white;
   font-weight: bold;
+  margin-left: 12.5rem;
 }
 
 #services .box button:hover,
 #services .box button:focus,
 #services .box button:active {
   width: 120px;
-  margin-left: 150px;
+  
   text-align: center;
   color: white;
   background-color: #ff8c00;
@@ -847,6 +849,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #services .box p {
     margin-left: 0;
     text-align: center;
+  }
+  #services .box button{
+    margin-left: 15rem;
   }
 }
 
@@ -892,7 +897,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #services .box button {
     width: 120px;
-    margin-left: 130px;
+    margin-left: 15rem;
     text-align: center;
   }
 }
@@ -926,7 +931,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-cards {
   display: inline-block;
   padding: 35px;
-  margin-right: 0rem;
+  
   text-align: center;
   background-color: rgba(187, 241, 200, 0.5);
   box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.3);
@@ -1008,6 +1013,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 767px) {
   #testimonials .testimonial-item {
     margin: 30px 10px;
+  }
+  #portfolio .portfolio-cards{
+    margin-right: 2rem;
   }
 }
 
