@@ -151,7 +151,6 @@ h6 {
 }
 
 .sf-arrows .sf-with-ul:after {
-  content: "\f107";
   position: absolute;
   right: 8px;
   font-family: FontAwesome;
