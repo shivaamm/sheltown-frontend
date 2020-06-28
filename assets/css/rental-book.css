@@ -1,0 +1,48 @@
+.sticky-topp {
+    position: -webkit-sticky;
+    position: sticky;
+    top:50px;
+    z-index:10;
+}
+.pay .container-fluid{
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-left:40px;
+    padding-right:40px;
+}
+.hotel-detail{
+    padding:40px;
+    border:1px solid #ff9719;
+    border-radius:10px;
+}
+.hotel-detail .heading{
+    color:#ff9719;
+    font-size:30px;
+}
+.rating{
+    border:1px solid #29e823;
+    border-radius:5px;
+    padding:5px;
+    color:#29e823;
+}
+.print .fa{
+    color:#ff9719;
+    font-size:20px;
+}
+.print .fas{
+    color:#ff9719;
+}
+.person-detail{
+    padding:40px;
+}
+.person-detail .heading{
+    color:#ff9719;
+}
+.btn-redeem{
+    color:white;
+    background-color:#ff9719;
+}
+.pay-btn{
+    color:white;
+    background-color:#ff9719;
+}
