@@ -1074,7 +1074,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .content-img img {
   float: left;
   width: 400px;
-  height: 255px;
+  height: 263px;
 }
 
 #content {
@@ -1082,6 +1082,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ffffff;
   padding: 1.5rem;
   border-radius: 10px;
+  font-size: 18px;
 }
 
 #content .btn-sheltownplus {
