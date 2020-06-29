@@ -68,6 +68,7 @@ float:right;
 
 .pagination {
   display: inline-block;
+  margin-left:350px;
 }
 
 .pagination a {
