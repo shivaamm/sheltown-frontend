@@ -342,6 +342,18 @@ input[type=submit]:hover {
   padding: 16px;
 }
 }
+@media all and (max-width: 600px){
+  #contactus{
+    margin-left: 0rem;
+  }
+  .containerr{
+    width: 400px;
+    margin-left: 0rem;
+    
+  }
+
+
+}
 @media all and (max-width: 375px){
   .containerr{
     width: 300px;
