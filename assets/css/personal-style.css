@@ -91,7 +91,8 @@ float:right;
 @media (max-width: 768px) {
 
   .container_rev{
-      width:400px;
+      width:350px;
+      margin-left:-50px;
   }
  .mobile{
 margin-left:168px;
