@@ -357,7 +357,7 @@ input[type=submit]:hover {
 @media all and (max-width: 375px){
   .containerr{
     width: 300px;
-    margin-left: 0rem;
+    margin-left: 2rem;
     
   }
   input[type=text],input[type=email],input[type=number], select, textarea{
