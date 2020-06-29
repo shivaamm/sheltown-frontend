@@ -102,6 +102,9 @@ margin-left:168px;
       float: none;
       display: block;
   }
+ .pagination {
+  margin-left:-300px;
+}
 }
 
 .container_work{
