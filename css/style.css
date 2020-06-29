@@ -322,7 +322,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #nav-menu-container {
     display: none;
   }
