@@ -76,7 +76,7 @@ h6 {
   font-style: italic;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #header {
     padding: 20px 0;
     height: 74px;
@@ -322,7 +322,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #nav-menu-container {
     display: none;
   }
@@ -1200,7 +1200,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-@media (max-width:991px) {
+@media (max-width:1000px) {
   .site-footer [class^=col-] {
     margin-bottom: 30px;
   }
@@ -1320,7 +1320,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* end of footer */
 /* end of css */
-@media (max-width:767px) {
+@media (max-width:1000px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
@@ -1329,7 +1329,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* footer end */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
   #contact .contact-address,
   #contact .contact-phone,
