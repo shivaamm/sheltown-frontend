@@ -116,6 +116,14 @@
     display: none;
    
 }
+.inv1 {
+    display: none;
+   
+}
+.inv2 {
+    display: none;
+   
+}
 
 .column_ser {
   float: left;
@@ -140,13 +148,19 @@
 }
 @media screen and (max-width: 600px) {
   .column_ser {
-    width: 100%;
+    width: 90%;
     height:100%;
   }
  
 }
       
 .dropdown{
+  border: 1px solid #ff9719;
+  height:30px;
+  width:80%;
+  border-radius:10px;
+      }
+.dropdown1{
   border: 1px solid #ff9719;
   height:30px;
   width:80%;
@@ -367,28 +381,64 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
- <div id="content_3" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_3" class="inv"><br>
+<select id="target1" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_3_1">Waxing</option>
+            <option value="content_3_1">Grooming</option>
+            <option value="content_3_1">Threading</option>
+            <option value="content_3_1">Hair Color</option>
+            <option value="content_3_1">Head Massage</option>
+           <option value="content_3_1">Before Party Hair Touchup</option>
+          
+        </select>
+</div>
+ <div id="content_3_1" class="inv1"><div class="container" style="margin-left:50px;">
  <h2 ><br>Select the issue</h2>
   <ul class="list-group">
-   <li class="list-group-item">Not Starting($40)
+   <li class="list-group-item">Full Legs($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Water Leakage($40)
+<li class="list-group-item">Full Arms($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Not Spinning ($40)
+<li class="list-group-item">Under Arms ($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Others
+<li class="list-group-item">Stomach($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Back($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Full Body Waxing($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Bikini Line($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Bikini Wax($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
@@ -528,7 +578,19 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
-<div id="content_6" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_6" class="inv"><br>
+<select id="target2" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_6_1">Facial</option>
+            <option value="content_6_1">Bleach</option>
+            <option value="content_6_1">Detan</option>
+            <option value="content_6_1">Manicure</option>
+            <option value="content_6_1">Pedicure</option>
+           <option value="content_6_1">Complete Beautify</option>
+          
+        </select>
+</div>
+<div id="content_6_1" class="inv2"><div class="container" style="margin-left:50px;">
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">Display/Screen($40)
@@ -570,8 +632,8 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
-
 </div>
+
  <div class="column_ser middle">
 <div class="container_work" >
 <!---<h1>How it works</h1>
@@ -1095,6 +1157,36 @@ We are with you whenever you are in need!
                     }
                     if (target !== null ) {
                         target.className = 'vis';
+                    }
+            });
+        </script>
+<script>
+            document
+                .getElementById('target1')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target1 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv1';
+                    }
+                    if (target1 !== null ) {
+                        target1.className = 'vis';
+                    }
+            });
+        </script>
+<script>
+            document
+                .getElementById('target2')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target2 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv2';
+                    }
+                    if (target2 !== null ) {
+                        target2.className = 'vis';
                     }
             });
         </script>
