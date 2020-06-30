@@ -124,6 +124,8 @@ td {
     text-align:center!important;
   }
   #legend{
+    margin: auto;
+    width: 50% !important;
     margin-bottom: 10px;
   }
   .card{
