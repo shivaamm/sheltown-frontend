@@ -32,185 +32,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <!----<link rel="stylesheet" href="css/per-ser-1.css">----->
-<style>
-     /** page layout **/
-    main {
-      display: grid;
-      grid-template-columns: 17% 83%;
-      max-width: 100em;
-      width: 100%;
-     
-    }
+  <link rel="stylesheet" href="css/per-ser-1.css">
 
-    section {
-      padding-right: 2.5em;
-    }
-
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;height:700px;overflow-x:hidden;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ff971d;
-  background-color:#fff ;
-  height:700px;
-}
-
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ffe8d6;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
- background-color: #f5f5f5;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ff971d;
-  background-color:#ffe8d6 ;
-  border-left: none;
-  height: 700px;
-  overflow-x:hidden;
-}
-
-.column_btn {
-  float: left;
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 0 2px;
-}
-
-
-.column {
-  float: left;
-  width: 25%;
-  margin-bottom: 10px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow:10px 10px 15px rgba(255, 146, 107, 0.7);
-  margin: 8px;
-  border-radius:6px;
-  z-index:1;
-  width:100%;
-  background-color: #f0f0f0;
-}
-
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color:#000;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 7px;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  margin-bottom:10px;
-  border-radius:10px;
-  color: white;
-  background-color: #29e823;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #fff;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-.column_btn {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-.container_work{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  padding:8px;
-  border-radius:6px;
-  width:360px;
-  z-index:1;
-  background-color: #fff;
-  border: 1px solid #ff971d;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column_work {
-  float: left;
-  padding: 10px;
-  padding: 0 8px;
-}
-.left{
-width:8%;
-}
-.right{
-float:left;
-}
-hr.new1 {
-  border-top: 1px solid #ff971d;
-  width:70%;
-}
-
-.demo-problem, .demo-solution {
-  font-size: 1em;
-  color:#ff9719;
-}
-
-.demo-solution--flexbox {
-  display: flex;
-  align-items: center;
-  
-}
-
-  
-  </style>
 </head>
 <body id="body" onload="myFunction()">
  <!--==========================
@@ -250,17 +73,15 @@ hr.new1 {
   
   
 
-
-
-<main>
 <div class="tab" style="background-color:#fff;">
 <button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Personal Care</button>
 <button class="tablinks" onclick="openCity(event, 'HomeCare')" id="defaultOpen">Home Care</button>
 <button class="tablinks" onclick="openCity(event, 'Repair')" id="defaultOpen">Repair & Maintanance</button>
 <button class="tablinks" onclick="openCity(event, 'Edumart')" id="defaultOpen">Edumart</button>
-<!-----<button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Others</button>----->
+<button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Others</button>
 </div>
-<section id="PersonalCare" class="tabcontent" style="padding-right: 30px;">
+
+<div id="PersonalCare" class="tabcontent" style="padding-right: 30px;">
   
 <div class="row">
   <div class="column">
@@ -268,7 +89,7 @@ hr.new1 {
       <img src="img/perser/trainer.jpeg" alt="Jane" style="width:100%;height: 200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
          <p class="title">FITNESS FOR MALE</p>
-          <a href="personal_services_personal.html" class="button">Book Now</a>
+          <a href="personal_services2.html" class="button">Book Now</a>
         </div>
     </div>
   </div>
@@ -280,7 +101,7 @@ hr.new1 {
       
         <p class="title">FITNESS FOR WOMEN</p>
        
-        <a href="personal_services_personal.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -292,7 +113,7 @@ hr.new1 {
      
         <p class="title">SALON FOR WOMEN</p>
        
-        <a href="personal_services_personal.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
     </div>
   </div>
 </div>
@@ -300,14 +121,15 @@ hr.new1 {
 
 <div class="column">
     <div class="card">
-      <img src="img/perser/haircare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <img src="img/perser/designer.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
-        <p class="title">HAIRCARE FOR MEN</p>
-       <a href="personal_services_personal.html" class="button">Book Now</a>
-        </div>
+      
+        <p class="title">COSTUME DESIGNER</p>
+       
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
+  </div>
 
 </div>
 
@@ -320,7 +142,7 @@ hr.new1 {
    
         <p class="title">SKINCARE FOR MEN</p>
        
-     <a href="personal_services_personal.html" class="button">Book Now</a>
+     <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -331,14 +153,23 @@ hr.new1 {
       <div class="container">
      
         <p class="title">SKINCARE FOR WOMEN</p>
-       <a href="personal_services_personal.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
         </div>
       </div>
     </div>
 
-
+<div class="column">
+    <div class="card">
+      <img src="img/perser/haircare.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <div class="container">
+     
+        <p class="title">HAIRCARE FOR MEN</p>
+       <a href="personal_services2.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
 <!--Home care-->
 <div id="HomeCare" class="tabcontent" style="padding-right: 30px;">
@@ -349,12 +180,7 @@ hr.new1 {
       <img src="img/perser/plumber.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         <p class="title">Plumbers</p>
-<<<<<<< Updated upstream
-        
-        <a href="personal_services_home.html" class="button">Book Now</a>
-=======
         <a href="personal_services2.html" class="button">Book Now</a>
->>>>>>> Stashed changes
       </div>
     </div>
   </div>
@@ -366,7 +192,7 @@ hr.new1 {
       
         <p class="title">Carpenters</p>
        
-       <a href="personal_services_home.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -378,7 +204,7 @@ hr.new1 {
      
         <p class="title">Electricians</p>
        
-        <a href="personal_services_home.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -389,7 +215,7 @@ hr.new1 {
       <div class="container">
         
         <p class="title">Full House Deep Cleaning</p>
-    <a href="personal_services_home.html" class="button">Book Now</a>
+    <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -403,7 +229,7 @@ hr.new1 {
       
         <p class="title">KitchenCare</p>
        
-       <a href="personal_services_home.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -415,7 +241,7 @@ hr.new1 {
      
         <p class="title">Bathroom Care</p>
       
-        <a href="personal_services_home.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -427,7 +253,7 @@ hr.new1 {
         
         <p class="title">Sofa and Carpet Care</p>
       
-       <a href="personal_services_home.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -439,7 +265,7 @@ hr.new1 {
       
         <p class="title">Pest control</p>
        
-      <a href="personal_services_home.html" class="button">Book Now</a>
+      <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -452,7 +278,7 @@ hr.new1 {
      
         <p class="title">Maid</p>
      
-        <a href="personal_services_home.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -464,7 +290,7 @@ hr.new1 {
         
         <p class="title">Painters</p>
         
-       <a href="personal_services_home.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -476,7 +302,7 @@ hr.new1 {
       
         <p class="title">Waste Management</p>
        
-       <a href="personal_services_home.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -497,7 +323,7 @@ hr.new1 {
         
         <p class="title">HOME TUTION-MALE</p>
         
-       <a href="personal_services_edu.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -509,7 +335,7 @@ hr.new1 {
       
         <p class="title">HOME TUTION-FEMALE</p>
        
-       <a href="personal_services_edu.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -521,7 +347,7 @@ hr.new1 {
      
         <p class="title">PAPERS & MAGAZINES</p>
        
-      <a href="personal_services_edu.html" class="button">Book Now</a>
+      <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -533,7 +359,7 @@ hr.new1 {
         
         <p class="title">SHELTOWN DIGEST</p>
        
-        <a href="personal_services_edu.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -550,7 +376,7 @@ hr.new1 {
         
         <p class="title">AC</p>
         
-        <a href="personal_services_repair.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -562,7 +388,7 @@ hr.new1 {
       
         <p class="title">TV</p>
        
-       <a href="personal_services_repair.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -574,18 +400,17 @@ hr.new1 {
      
         <p class="title">WATER PURIFIER</p>
        
-        <a href="personal_services_repair.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
- <div class="column">
+<div class="column">
     <div class="card">
-      <img src="img/perser/inverter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <img src="img/perser/installation.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
-        <p class="title">INVERTER BATTERY</p>
      
-      <a href="personal_services_repair.html" class="button">Book Now</a>
+        <p class="title">INSTALLATION</p>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -598,7 +423,7 @@ hr.new1 {
       <div class="container">
         
         <p class="title">WASHING MACHINE</p>
-    <a href="personal_services_repair.html" class="button">Book Now</a>
+    <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -610,7 +435,7 @@ hr.new1 {
       
         <p class="title">REFRIGERATOR</p>
        
-       <a href="personal_services_repair.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -622,7 +447,7 @@ hr.new1 {
      
         <p class="title">MICROWAVE</p>
       
-        <a href="personal_services_repair.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -634,7 +459,7 @@ hr.new1 {
         
         <p class="title">GEYSER</p>
       
-       <a href="personal_services_repair.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -648,7 +473,7 @@ hr.new1 {
       
         <p class="title">CHIMNEY</p>
        
-      <a href="personal_services_repair.html" class="button">Book Now</a>
+      <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -660,7 +485,7 @@ hr.new1 {
      
         <p class="title">AIR COOLER</p>
      
-        <a href="personal_services_repair.html" class="button">Book Now</a>
+        <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -672,7 +497,7 @@ hr.new1 {
         
         <p class="title">FAN</p>
         
-       <a href="personal_services_repair.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -684,7 +509,7 @@ hr.new1 {
       
         <p class="title">MOBILE</p>
        
-       <a href="personal_services_repair.html" class="button">Book Now</a>
+       <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
@@ -697,12 +522,22 @@ hr.new1 {
       <div class="container">
      
         <p class="title">INVERTER & STABILIZER</p>
-      <a href="personal_services_repair.html" class="button">Book Now</a>
+      <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
 
- 
+  <div class="column">
+    <div class="card">
+      <img src="img/perser/inverter.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+      <div class="container">
+      
+        <p class="title">INVERTER BATTERY</p>
+     
+      <a href="personal_services2.html" class="button">Book Now</a>
+      </div>
+    </div>
+  </div>
 
   <div class="column">
     <div class="card">
@@ -711,15 +546,12 @@ hr.new1 {
    
         <p class="title">FULL HOUSE WIRING CHECK</p>
        
-     <a href="personal_services_repair.html" class="button">Book Now</a>
+     <a href="personal_services2.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
 </div>
 </div>
-
-</main>
-
   <!--==========================
     Footer
   ============================-->
@@ -917,19 +749,7 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-    <script >
-     var hash = document.location.hash;
-var prefix = "tab_";
-if (hash) {
-    $('.tablinks a[href="'+hash.replace(prefix,"")+'"]').tab('show');
-} 
-
-// Change hash for page-reload
-$('.tablinks a').on('shown', function (e) {
-    window.location.hash = e.target.hash.replace("#", "#" + prefix);
-});
-    </script>
-
+   
 </body>
 </html> 
 
