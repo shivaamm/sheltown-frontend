@@ -1053,6 +1053,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #offers .card{
   height: 10rem;
+  margin:10px;
 }
 #offers img{
   width:100%;

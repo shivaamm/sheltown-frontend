@@ -142,6 +142,9 @@ jQuery(document).ready(function($) {
         items: 2
       },
       900: {
+        items: 2
+      },
+      1024: {
         items: 3
       }
     }
@@ -151,16 +154,22 @@ jQuery(document).ready(function($) {
   $(".offers-carousel").owlCarousel({
     autoplay: true,
     dots: true,
-    loop: true,
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        loop: true
       },
       768: {
-        items: 2
+        items: 2,
+        loop: true
       },
       900: {
-        items: 4
+        items: 2,
+        loop: true
+      },
+      1024: {
+        items: 4,
+        loop: false
       }
     }
   });
