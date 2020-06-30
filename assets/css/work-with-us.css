@@ -150,3 +150,36 @@ body {
         background-color: #e2e2e2;
         border-radius: 2px;
     }
+
+    #image-top{
+        height: 250px;
+        width: 478px;
+    }
+
+    @media screen and (max-width: 1080px){
+        .container{
+            width: 90%;
+        }
+        #image-top{
+            width: 100%;
+        }
+
+        #alert{
+            margin: 5px auto!important;
+        }
+
+        .job-keyword{
+            width: 100%;
+            margin: 5px auto;
+        }
+
+        #search{
+            margin-left: 40%;
+            margin-top: 5px;
+        }
+        #jobs-card{
+            width: 100%; 
+            flex: 0 0 100%; 
+            max-width: 100%;
+        }
+    }
