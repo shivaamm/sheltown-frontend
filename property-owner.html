@@ -70,20 +70,19 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  
-  
 
-<div class="tab" style="background-color:#fff;">
-<button class="tablinks" onclick="openCity(event, 'Properties')" id="defaultOpen">My Properties</button>
-<button class="tablinks" onclick="openCity(event, 'Tenants')" id="defaultOpen">My Tenants</button>
-<button class="tablinks" onclick="openCity(event, 'AddNew')" id="defaultOpen">Add New</button>
-<button class="tablinks" onclick="openCity(event, 'Booking')" id="defaultOpen">Edumart</button>
-</div>
+<ul id="tab-bar">
+  <li class="tab"><a onclick="openCity(event, 'Properties')" id="defaultOpen">My Properties</a></li>
+  <li class="tab"><a onclick="openCity(event, 'Tenants')" id="defaultOpen">My Tenants</a></li>
+  <li class="tab"><a onclick="openCity(event, 'AddNew')" id="defaultOpen">Add New Property</a></li>
+  <li class="tab"><a onclick="openCity(event, 'Booking')" id="defaultOpen">My Bookings</a></li>
+</ul>
+
 
 <!--------------------------My properties-------------------------------------------->
 <div id="Properties" class="tabcontent" style="padding: 40px;">
 <h2>My Properties</h2>
-<table>
+<table class="middler">
     <tr>
         <td style="padding-bottom: 0"><div class="green-status"style="float: left;"></div></td>
         <td style="padding-bottom: 0"><div class="red-status"style="float: left;"></div></td>
@@ -96,87 +95,116 @@
     </tr>
 </table>
 
-<br>
-
-<a href="#">
-<div class="column">
-    <div class="card">
+<br><br>
+<div class="row justify-content-center">
+<div class="col-sm-3">
+  <div class="card">
      <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
-     <div class="container">
         <table>
             <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
             <tr>
-                <td>Status</td>
-                <td><div class="green-status" style="float: right;"></div></td>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="green-status" style="float:left;"></div></td>
             </tr>
         </table>
-    </div>
-    </div>
+  </div>
 </div>
-</a>
 
-<a href="#">
-<div class="column">
-    <div class="card">
-     <img src="img/arch2.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
-     <div class="container">
+<div class="col-sm-3">
+  <div class="card">
+     <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
         <table>
             <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
             <tr>
-                <td>Status</td>
-                <td><div class="red-status" style="float: right;"></div></td>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="red-status" style="float:left;"></div></td>
             </tr>
         </table>
-    </div>
-    </div>
+  </div>
 </div>
-</a>
 
-<a href="#">
-<div class="column">
-    <div class="card">
-     <img src="img/arch3.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
-     <div class="container">
+<div class="col-sm-3">
+  <div class="card">
+     <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
         <table>
             <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
             <tr>
-                <td>Status</td>
-                <td><div class="black-status" style="float: right;"></div></td>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="black-status" style="float:left;"></div></td>
             </tr>
         </table>
-    </div>
-    </div>
-</div>
-</a>
-
+  </div>
 </div>
 
+<div class="col-sm-3">
+  <div class="card">
+     <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+        <table>
+            <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
+            <tr>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="black-status" style="float:left;"></div></td>
+            </tr>
+        </table>
+  </div>
+</div>
 
-<!---------------------------------------------------------My tenants------------------------------------------------------------------------------------------>
+<div class="col-sm-3">
+  <div class="card">
+     <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+        <table>
+            <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
+            <tr>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="red-status" style="float:left;"></div></td>
+            </tr>
+        </table>
+  </div>
+</div>
+
+<div class="col-sm-3">
+  <div class="card">
+     <img src="img/arch1.jpeg" alt="Jane" style="width:100%;height:200px;border-radius: 6px 6px 0px 0px ;">
+        <table>
+            <tr><td colspan="2" style="padding: 5px; font-size: 20px;">Property Name</td></tr>
+            <tr>
+                <td style=" width: 46%; text-align: right;">Status</td>
+                <td><div class="green-status" style="float:left;"></div></td>
+            </tr>
+        </table>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+<!-------------------------------My tenants-------------------------------------------------->
 
 <div id="Tenants" class="tabcontent" style="padding: 40px;">
-<h2>My Tenants</h2>
+<center><h2>My Tenants</h2></center>
 
-<div class="row">
-    <div class="col-sm-2"><img src="img/portfolio/1.jpg" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcd" data-html="true" data-content="Email: abcdefghijklmnop@gmail.com<br>Phone Number: 1234567890">
+<div class="row container middler justify-content-center">
+    <div class="col-sm-2"><img src="img/portfolio/1.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcd" data-html="true" data-content="Email: abcdefghijklmnop@gmail.com<br>Phone Number: 1234567890">
     </div>
-    <div class="col-sm-2"><img src="img/portfolio/2.jpg" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
+    <div class="col-sm-2"><img src="img/portfolio/2.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
     </div>
-    <div class="col-sm-2"><img src="img/portfolio/3.jpg" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
+    <div class="col-sm-2"><img src="img/portfolio/3.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
     </div>
-    <div class="col-sm-2"><img src="img/portfolio/4.jpg" id="tenant-pic"style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
+    <div class="col-sm-2"><img src="img/portfolio/4.jpg" class="mx-auto d-block"id="tenant-pic"style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email: abcdef@gmail.com<br>Phone Number: 1234567890">
     </div>
 </div>
 
-<br><br>
-<table class="tenant-table" border="2"bordercolor="lightgray" style=" width: 60vw;">
+<br>
+<div class="row middler container justify-content-center">
+<table class="tenant-table" border="2"bordercolor="lightgray">
     <tr>
         <th style="padding: 10px;"><h5>Ongoing Guests</h5></th>
         <th style="padding: 10px;"><h5>Previous Guests</h5></th>
     </tr>
     <tr>
         <td>
-            <table>
+            <table id="tenant-table-inner">
                 <tr>
                     <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
                     <td>Property Name</td>
@@ -205,7 +233,7 @@
         </td>
 
         <td>
-            <table>
+            <table id="tenant-table-inner">
                 <tr>
                     <td><img src="img/arch2.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
                     <td>Property Name</td>
@@ -236,7 +264,7 @@
 
     <tr>
         <td>
-            <table>
+            <table id="tenant-table-inner">
                 <tr>
                     <td><img src="img/arch3.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
                     <td>Property Name</td>
@@ -269,21 +297,36 @@
 
     </table>
 </div>
-<!-------------------------------------------------------------------------Repair & Maintanance ---------------------------------------------------->
+
+</div>
+
+<!-------------------Add New---------------------------------------------->
 <div id="AddNew" class="tabcontent" style="padding: 40px;">
-    <div class="row">
-        <div class="col">Property Name<input type="text"></div>
-        <div class="col">Address<input type="text"></div>
-        <div class="col">Photos<input type="file" multiple></div>
+    <div class="row middler justify-content-around">
+        <div class="col-sm-4">Property Name<br><input type="text"></div>
+        <div class="col-sm-4">Address<br><input type="text"></div>
+        <div class="col-sm-4">Photos<input type="file" multiple></div>
     </div>
     <br>
-    <div class="row">
+
+    <div class="row middler">
         Housing Type
-        <button>PG</button>
-        <button>Hostel</button>
-        <button>Flat</button>
-        <button>Apartment</button>
-        <button>House</button>
+        <div class="center-align"> 
+          <input type="radio" name="size" id="size_1" value="small" checked />
+          <label for="size_1">PG</label>
+  
+          <input type="radio" name="size" id="size_2" value="small" />
+          <label for="size_2">Hostel</label>
+  
+          <input type="radio" name="size" id="size_3" value="small" />
+          <label for="size_3">Flat</label>
+
+          <input type="radio" name="size" id="size_4" value="small" />
+          <label for="size_4">Apartment</label>
+
+          <input type="radio" name="size" id="size_5" value="small" />
+          <label for="size_5">House</label>
+        </div>
     </div>
     <br>
     <div class="row">
@@ -422,6 +465,126 @@
 </div>
 
 
+  <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities.
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="policy-page.html">FAQs</a></li>
+            <li><a onclick="redirect()">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn Family+</a></li>
+            <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog-description-page.html">Blogs</a></li>
+            <li><a href="work-with-us.html">Join our Team</a></li>
+            <li><a href="policy-page.html">List your Property</a></li>
+            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:info@sheltown.com">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/sheltown.india" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="https://twitter.com/OwnShelt?s=20"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://instagram.com/sheltown.india"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/sheltown"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+
+
 
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">
@@ -498,11 +661,15 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-<script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();   
-        });
-    </script>
+
+    <script>
+  $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'right',
+      trigger: 'hover'
+   });
+  });
+</script>
    
 </body>
 </html> 
