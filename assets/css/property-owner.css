@@ -9,7 +9,6 @@ body {
 
 h2 {
     font-family: 'PT Sans Narrow', sans-serif;
-    display: inline-block
 }
 
 .middler{
@@ -120,9 +119,9 @@ td {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1080px){
   #propheading{
-    margin-left: 20%;
+    text-align:center!important;
   }
   #legend{
     margin-bottom: 10px;
