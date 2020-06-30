@@ -121,6 +121,9 @@ td {
   #legend{
     margin-bottom: 10px;
   }
+  .card{
+    width: 100%;
+  }
 }
 
 
