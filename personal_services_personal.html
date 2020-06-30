@@ -243,7 +243,74 @@ input[type=number]::-webkit-outer-spin-button {
 .list-group-item+.list-group-item {
    border-top-width: 1px;
 }
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  top: 50%;
+  left: -200%;
+  
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.cardedu {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+background-color: #fff;
+}
+
+.cardedu:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_edu {
+  padding: 2px 16px;
+background-color: #fff;
+}
 </style>
 </head>
 
@@ -404,9 +471,21 @@ input[type=number]::-webkit-outer-spin-button {
    <li class="list-group-item">Full Legs($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
+ <div class="popup" onclick="popupedu()"><b>Package Details</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class ="container_edu">
+    
+    <p>Mask  & Gloves</p>
+
+    <p>Single use items</p>
+    <p>Sanatized</p>
+
+    <p>Honey Wax</p>
+</div>
+</div> 
+</div></div></div></li>
+        
 <li class="list-group-item">Full Arms($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
@@ -1267,6 +1346,13 @@ $('.responsive').slick({
   ] });
 //# sourceURL=pen.js
     </script>
+<script>
+// When the user clicks on div, open the popup
+function popupedu() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 </body>
 
 </html>
