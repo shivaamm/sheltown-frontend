@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<body>
-<!-- Main -->
-    
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,6 +24,8 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <!-- Libraries CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -41,12 +36,23 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/work-with-us.css">
-    <link rel="stylesheet" href="assets/css/property-owner.css">
+  <link rel="stylesheet" href="assets/css/property-owner.css">
 
+  <script>
+    $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'bottom',
+      trigger: 'hover'
+   });
+});
+  </script>
+  
 </head>
 <body id="body" onload="myFunction()">
 
@@ -95,17 +101,10 @@
 
 <br>
 
-<div id="myDIV" class="container middle" style="padding: 10px; margin-bottom: 20px;display:none;">
-    <h5>Contact US</h5>
-    <p style="font-size: 13px;">You can reach out to HR with any questions you have about the career.
-        Contact HR at #1234448254
-    </p>
-</div>
-
 <!--------------------------My properties-------------------------------------------->
-<div id="Properties" class="tabcontent" style="padding: 40px;">
-<h2>My Properties</h2>
-<table class="middler">
+<div id="Properties" class="tabcontent">
+<h2 id="propheading">My Properties</h2>
+<table id="legend" class="middler">
     <tr>
         <td style="padding-bottom: 0"><div class="green-status"style="float: left;"></div></td>
         <td style="padding-bottom: 0"><div class="red-status"style="float: left;"></div></td>
@@ -201,6 +200,309 @@
 
 </div>
 
+<!-------------------------------My tenants-------------------------------------------------->
+
+<div id="Tenants" class="tabcontent">
+<center><h2>My Tenants</h2></center>
+
+<div class="row container middler justify-content-center">
+    <div class="col-sm-2"><img src="img/portfolio/1.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcd" data-html="true" data-content="Email:abcdefghijklmnop@gmail.com<br>Phone Number:1234567890">
+    </div>
+    <div class="col-sm-2"><img src="img/portfolio/2.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdedjfnkeff@gmail.com<br>Phone Number:1234567890">
+    </div>
+    <div class="col-sm-2"><img src="img/portfolio/3.jpg" class="mx-auto d-block" id="tenant-pic" style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abclklkdef@gmail.com<br>Phone Number:1234567890">
+    </div>
+    <div class="col-sm-2"><img src="img/portfolio/4.jpg" class="mx-auto d-block"id="tenant-pic"style="width: 80px; height:80px;border-radius: 50%;" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdlkcklknef@gmail.com<br>Phone Number:1234567890">
+    </div>
+</div>
+
+<br>
+<div class="row middler container justify-content-center" style="overflow-x:auto;">
+<table class="tenant-table" border="2"bordercolor="lightgray" style="border-collapse: collapse;">
+    <tr>
+        <th style="padding: 10px;"><h5>Ongoing Guests</h5></th>
+        <th style="padding: 10px;"><h5>Previous Guests</h5></th>
+    </tr>
+    <tr>
+        <td>
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img src="img/arch2.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img src="img/arch3.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        </td>
+    </tr>
+
+    </table>
+</div>
+
+</div>
+
+
+<!-------------------Add New---------------------------------------------->
+<div id="AddNew" class="tabcontent" style="padding: 40px;">
+
+  <h2>Add New Property</h2>
+    <div class="row middler justify-content-around">
+        <div class="col-sm-4">Property Name<br><input type="text"></div>
+        <div class="col-sm-4">Address<br><input type="text"></div>
+        <div class="col-sm-4">Photos<br><input type="file" multiple></div>
+    </div>
+    <br>
+
+    <div class="row middler">
+      <div class="row container">
+         Housing Type
+        <div id="group1" class="center-align"> 
+          <input type="radio" name="group1" id="size_1" value="value1" checked />
+          <label for="size_1">PG</label>
+  
+          <input type="radio" name="group1" id="size_2" value="value2" />
+          <label for="size_2">Hostel</label>
+  
+          <input type="radio" name="group1" id="size_3" value="value3" />
+          <label for="size_3">Flat</label>
+
+          <input type="radio" name="group1" id="size_4" value="value4" />
+          <label for="size_4">Apartment</label>
+
+          <input type="radio" name="group1" id="size_5" value="value5" />
+          <label for="size_5">House</label>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+            Total Beds
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="col">
+          <div id="group2">
+            SheltOwn+ 
+            <input type="radio" name="group2" id="size_6" value="plus1" checked />
+            <label for="size_6">Yes</label>
+  
+            <input type="radio" name="group2" id="size_7" value="plus2" />
+            <label for="size_5">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+            For 
+            <input type="radio" name="gender">Male<br>
+            <input type="radio" name="gender">Female<br>
+      
+      </br><hr>
+
+      
+            <button>Males</button>
+            <button>Females</button>
+        </div>
+        <div class="col">
+            Best Suited For
+            <button>Students</button>
+            <button>Partners</button>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+            Meals
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+        <div class="col">
+            House Keeping
+            <button>Daily</button>
+            <button>Weekly</button>
+        </div>
+      </div>
+
+      <div class="row container">
+        Common Areas
+        <button>Living Room</button>
+        <button>Kitchen</button>
+        <button>Dining Hall</button>
+        <button>Study Room</button>
+      </div>
+      
+      <div class="row container">
+        <div class="col">
+            Owner Stays
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+        <div class="col">
+            Non-Veg Allowed
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+            Sharing Type
+            <select>
+                <option>Private</option>
+                <option>+1</option>
+                <option>+2</option>
+                <option>+3</option>
+                <option>+4</option>
+            </select>
+        </div>
+        <div class="col">
+            Visitors Allowed
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+        <div class="col">
+            Drinking/Smoking
+            <button>Yes</button>
+            <button>No</button>
+            <button>Maybe</button>
+        </div>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+            Maximum Beds in a Room
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+        </div>
+        <div class="col">
+            Rent <input type="text">
+            Security <input type="text">
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="middler row">
+        Amenities 
+        <button>Table and Chair</button>
+        <button>TV</button>
+        <button>AC</button>
+        <button>Cooler</button>
+        <button>Balcony</button>
+        <button>Attached Bathroom</button>
+        <button>Meals included in rent</button>
+        <button>Electricity included in rent</button>
+        <button>CCTV</button>
+        <button>Gated</button>
+        <button>Guard</button>
+        <button>Biometric</button>
+        <button>Fridge</button>
+        <button>Washing Machine</button>
+        <button>Microwave</button>
+        <button>R.O.</button>
+        <button>Coffee Machine</button>
+        <button>Laundry Service</button>
+        <button>Wifi</button>
+        <button>Gym</button>
+        <button>Lift</button>
+        <button>Pool</button>
+        <button>Parking</button>
+        <button>Power Backup</button>
+        
+        
+    </div>
+    
+</div>
+
 
 <!--==========================
     Footer
@@ -230,7 +532,6 @@ We help you to find your match, book rental homes of choice across Indian cities
             <li><a href="policy-page.html">SheltOwn+</a></li>
             <li><a href="policy-page.html">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
-            <li><a href="property-owner.html">Property Owner</a></li>
           </ul>
         </div>
 
@@ -321,200 +622,82 @@ We help you to find your match, book rental homes of choice across Indian cities
       </div>
     </div>
   </section><!-- #footer -->
-  
-    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-    <script type="text/javascript">
-      // <![CDATA[
-      function ShowHide(divId) {
-        var atxt = document.getElementById("atext");
-        if (document.getElementById(divId).style.display == 'none') {
-          document.getElementById(divId).style.display = 'block';
-        } else {
-          document.getElementById(divId).style.display = 'none';
-        }
-      }
-      // ]]>
-    </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/superfish/hoverIntent.js"></script>
-    <script src="lib/superfish/superfish.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-    <script src="lib/sticky/sticky.js"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
-
-    <script>
-function help() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+<script>
+  $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'top',
+      trigger: 'hover'
+   });
+  });
 </script>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
 
-  <script>
-var shoppingCart = (function() {
-  cart = [];
-  
-  // Constructor
-  function Item(name) {
-    this.name = name;
-  }
-  
-  // Save cart
-  function saveCart() {
-    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
-  }
-  
-    // Load cart
-  function loadCart() {
-    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
-  }
-  if (sessionStorage.getItem("shoppingCart") != null) {
-    loadCart();
-  }
-  
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="lib/sticky/sticky.js"></script>
 
-  // =============================
-  // Public methods and propeties
-  // =============================
-  var obj = {};
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
   
-  // Add to cart
-  obj.addItemToCart = function(name) {
-    for(var item in cart) {
-      if(cart[item].name === name) {
-        cart[item].count ++;
-        saveCart();
-        return;
-      }
+<script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
-    var item = new Item(name);
-    cart.push(item);
-    saveCart();
-  }
-  // Set count from item
-  obj.setCountForItem = function(name, count) {
-    for(var i in cart) {
-      if (cart[i].name === name) {
-        cart[i].count = count;
-        break;
-      }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  };
-  // Remove item from cart
-  obj.removeItemFromCart = function(name) {
-      for(var item in cart) {
-        if(cart[item].name === name) {
-          cart[item].count --;
-          if(cart[item].count === 0) {
-            cart.splice(item, 1);
-          }
-          break;
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+    'use strict'
+
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault()
+            event.stopPropagation()
         }
-    }
-    saveCart();
-  }
-
-  // Remove all items from cart
-  obj.removeItemFromCartAll = function(name) {
-    for(var item in cart) {
-      if(cart[item].name === name) {
-        cart.splice(item, 1);
-        break;
-      }
-    }
-    saveCart();
-  }
-
-  // Clear cart
-  obj.clearCart = function() {
-    cart = [];
-    saveCart();
-  }
-
-  // Count cart 
-  obj.totalCount = function() {
-    var totalCount = 0;
-    for(var item in cart) {
-      totalCount += cart[item].count;
-    }
-    return totalCount;
-  }
-
-  // List cart
-  obj.listCart = function() {
-    var cartCopy = [];
-    for(i in cart) {
-      item = cart[i];
-      itemCopy = {};
-      for(p in item) {
-        itemCopy[p] = item[p];
-
-      }
-      itemCopy.total = Number(item.price * item.count).toFixed(2);
-      cartCopy.push(itemCopy)
-    }
-    return cartCopy;
-  }
-
-  return obj;
-})();
-
-
-// *****************************************
-// Triggers / Events
-// ***************************************** 
-// Add item
-$('.add-to-cart').click(function(event) {
-  event.preventDefault();
-  var name = $(this).data('name');
-  shoppingCart.addItemToCart(name, 1);
-  displayCart();
-});
-
-// Clear items
-$('.clear-cart').click(function() {
-  shoppingCart.clearCart();
-  displayCart();
-});
-
-
-function displayCart() {
-  var cartArray = shoppingCart.listCart();
-  var output = "";
-  for(var i in cartArray) {
-    output += "<tr>"
-      + "<td>" + cartArray[i].name + "</td>" 
-      + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
-  }
-  $('.show-cart').html(output);
-}
-
-// Delete item button
-
-$('.show-cart').on("click", ".delete-item", function(event) {
-  var name = $(this).data('name')
-  shoppingCart.removeItemFromCartAll(name);
-  displayCart();
-})
-
-displayCart();
-  </script>
+        form.classList.add('was-validated')
+        }, false)
+    })
+    }, false)
+}())
+</script>
 </body>
 </html>
