@@ -116,12 +116,21 @@
     display: none;
    
 }
+.inv1 {
+    display: none;
+   
+}
+.inv2 {
+    display: none;
+   
+}
 
 .column_ser {
   float: left;
   padding: 10px;
   /* Should be removed. Only for demonstration */
 }
+
 .left{width: 40%;}
 .middle{width: 30%;}
 .right{width: 30%;}
@@ -140,13 +149,19 @@
 }
 @media screen and (max-width: 600px) {
   .column_ser {
-    width: 100%;
+    width: 90%;
     height:100%;
   }
- 
+
 }
       
 .dropdown{
+  border: 1px solid #ff9719;
+  height:30px;
+  width:80%;
+  border-radius:10px;
+      }
+.dropdown1{
   border: 1px solid #ff9719;
   height:30px;
   width:80%;
@@ -223,10 +238,78 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .list-group {
     padding-left: 0;
-    width:35%;
+   
 }
 .list-group-item+.list-group-item {
    border-top-width: 1px;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  top: 50%;
+  left: -200%;
+  
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.cardedu {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+background-color: #fff;
+}
+
+.cardedu:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_edu {
+  padding: 2px 16px;
+background-color: #fff;
 }
 </style>
 </head>
@@ -295,8 +378,10 @@ input[type=number]::-webkit-outer-spin-button {
           
         </select>
          
-          
-        <div id="content_1" class="inv"><div class="container" style="margin-left:50px;">
+         
+        <div id="content_1" class="inv">
+
+<div class="container_opt" >
   <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">Online Personalised Training($40)
@@ -329,9 +414,10 @@ input[type=number]::-webkit-outer-spin-button {
 <a href="3.html.html" class="button_book">Continue to book</a>
 
 <!-----<button class="button_book"> Continue to book </button>  ---->
+
 </div>
 </div>
- <div id="content_2" class="inv"><div class="container" style="margin-left:50px;">
+ <div id="content_2" class="inv"><div class="container_opt" >
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">Online Personalised Training($40)
@@ -367,28 +453,76 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
- <div id="content_3" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_3" class="inv"><br>
+<select id="target1" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_3_1">Waxing</option>
+            <option value="content_3_1">Grooming</option>
+            <option value="content_3_1">Threading</option>
+            <option value="content_3_1">Hair Color</option>
+            <option value="content_3_1">Head Massage</option>
+           <option value="content_3_1">Before Party Hair Touchup</option>
+          
+        </select>
+</div>
+ <div id="content_3_1" class="inv1"><div class="container_opt">
  <h2 ><br>Select the issue</h2>
   <ul class="list-group">
-   <li class="list-group-item">Not Starting($40)
+   <li class="list-group-item">Full Legs($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+ <div class="popup" onclick="popupedu()"><b>Package Details</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class ="container_edu">
+    
+    <p>Mask  & Gloves</p>
+
+    <p>Single use items</p>
+    <p>Sanatized</p>
+
+    <p>Honey Wax</p>
+</div>
+</div> 
+</div></div></div></li>
+        
+<li class="list-group-item">Full Arms($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Water Leakage($40)
+<li class="list-group-item">Under Arms ($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Not Spinning ($40)
+<li class="list-group-item">Stomach($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
       
     </li>
-<li class="list-group-item">Others
+<li class="list-group-item">Back($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Full Body Waxing($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Bikini Line($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <label for="servicess"> Service</label></li>
+      
+    </li>
+<li class="list-group-item">Bikini Wax($40)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
         <label for="servicess"> Service</label></li>
@@ -402,7 +536,7 @@ input[type=number]::-webkit-outer-spin-button {
 <!-----<button class="button_book"> Continue to book </button>  ---->
 </div>
 </div>
-<div id="content_4" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_4" class="inv"><div class="container_opt" >
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">HairCut($40)
@@ -462,7 +596,7 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
-<div id="content_5" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_5" class="inv"><div class="container_opt">
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">Massage-Body & Muscles($40)
@@ -528,7 +662,19 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
-<div id="content_6" class="inv"><div class="container" style="margin-left:50px;">
+<div id="content_6" class="inv"><br>
+<select id="target2" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select...</option>
+            <option value="content_6_1">Facial</option>
+            <option value="content_6_1">Bleach</option>
+            <option value="content_6_1">Detan</option>
+            <option value="content_6_1">Manicure</option>
+            <option value="content_6_1">Pedicure</option>
+           <option value="content_6_1">Complete Beautify</option>
+          
+        </select>
+</div>
+<div id="content_6_1" class="inv2"><div class="container_opt" >
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
    <li class="list-group-item">Display/Screen($40)
@@ -570,8 +716,8 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
-
 </div>
+
  <div class="column_ser middle">
 <div class="container_work" >
 <!---<h1>How it works</h1>
@@ -885,7 +1031,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     </div>
 </div>
-    <div class="pagination" style="margin-left:350px">
+    <div class="pagination">
       <a href="#">&laquo;</a>
       <!----<a href="#" class="active">1</a>--->
       <a  class="tablinks" onclick="openCity(event, 'review1p')" id="defaultOpen">1</a>
@@ -1098,6 +1244,36 @@ We are with you whenever you are in need!
                     }
             });
         </script>
+<script>
+            document
+                .getElementById('target1')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target1 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv1';
+                    }
+                    if (target1 !== null ) {
+                        target1.className = 'vis';
+                    }
+            });
+        </script>
+<script>
+            document
+                .getElementById('target2')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target2 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv2';
+                    }
+                    if (target2 !== null ) {
+                        target2.className = 'vis';
+                    }
+            });
+        </script>
 
 
 <script>
@@ -1170,6 +1346,13 @@ $('.responsive').slick({
   ] });
 //# sourceURL=pen.js
     </script>
+<script>
+// When the user clicks on div, open the popup
+function popupedu() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 </body>
 
 </html>

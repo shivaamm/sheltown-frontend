@@ -22,6 +22,12 @@
 .check{
  float:right;
 }
+.container_opt{
+width:400px;
+margin-left:50px;
+padding-right: 15px;
+padding-left: 15px;
+}
 .container_revmain {
   margin: 16px 0;
   padding-right: 15px;
@@ -68,6 +74,7 @@ float:right;
 
 .pagination {
   display: inline-block;
+  margin-left:350px;
 }
 
 .pagination a {
@@ -91,8 +98,13 @@ float:right;
 @media (max-width: 768px) {
 
   .container_rev{
-      width:400px;
+      width:350px;
+      margin-left:-50px;
   }
+.container_opt{
+width:350px;
+margin-left:0px;
+}
  .mobile{
 margin-left:168px;
 }
@@ -101,6 +113,9 @@ margin-left:168px;
       float: none;
       display: block;
   }
+ .pagination {
+  margin-left:50px;
+}
 }
 
 .container_work{
