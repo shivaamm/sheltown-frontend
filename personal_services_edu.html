@@ -136,6 +136,22 @@
     display: none;
    
 }
+.inv6 {
+    display: none;
+   
+}
+.inv7 {
+    display: none;
+   
+}
+.inv8 {
+    display: none;
+   
+}
+.inv9 {
+    display: none;
+   
+}
 
 .column_ser {
   float: left;
@@ -151,7 +167,17 @@
   padding: 10px;
   /* Should be removed. Only for demonstration */
 }
-
+.col_edu {
+  float: left;
+  width:40%;
+  padding: 10px;
+  /* Should be removed. Only for demonstration */
+}
+.row_edu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* Clear floats after the columns */
 .row_ser:after {
   content: "";
@@ -165,6 +191,7 @@
   }
  
 }
+
       
 .dropdown{
   border: 1px solid #ff9719;
@@ -254,6 +281,74 @@ input[type=number]::-webkit-outer-spin-button {
 .list-group-item+.list-group-item {
    border-top-width: 1px;
 }
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  top: 50%;
+  left: -200%;
+  
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.cardedu {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+background-color: #fff;
+}
+
+.cardedu:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_edu {
+  padding: 2px 16px;
+background-color: #fff;
+}
 </style>
 </head>
 
@@ -312,158 +407,184 @@ input[type=number]::-webkit-outer-spin-button {
 <p style="margin-left:70px;"> Select the Service </p>
         <select id="target" class="dropdown" style="margin-left:70px;">
             <option value="">Select...</option>
-            <option value="content_1">Plumber</option>
-            <option value="content_2">Carpenter</option>
-            <option value="content_3">Electrician</option>
-            <option value="content_4">Full House Deep Cleaning</option>
-            <option value="content_5">Sofa Cleaning</option>
-           <option value="content_6">Kitchen Cleaning</option>
-           <option value="content_7">Bathroom Cleaning</option>
-            <option value="content_8">Painter</option>
-<option value="content_9">Pest Control</option>
+            <option value="content_1">Home Tution(Male)</option>
+            <option value="content_2">Home Tution(FeMale)</option>
+            <option value="content_3">Paper & Magazines</option>
+            <option value="content_4">Sheltown Digest</option>
+            
                 </select>
          
           
         <div id="content_1" class="inv"><br>
             <select id="target1" class="dropdown1" style="margin-left:70px;">
-            <option value="">Select...</option>
-            <option value="content_1_1">Pipe / Tapfitting</option>
-            <option value="content_1_1">Water Leakages</option>
-            <option value="content_1_1">Repair and fixes</option>
-            <option value="content_1_1">Installation Service</option>
+            <option value="">Choose Class</option>
+            <option value="content_1_1">Pre Kg</option>
+            <option value="content_1_1">1st class</option>
+            <option value="content_1_1">2nd class</option>
+            <option value="content_1_1">3rd class</option>
+<option value="content_1_1">4th class</option>
+<option value="content_1_1">5th class</option>
+<option value="content_1_1">6th class</option>
+<option value="content_1_1">7th class</option>
+            <option value="content_1_1">8th class</option>
+<option value="content_1_1">9th class</option>
+<option value="content_1_1">10th class</option>
 </select>
  </div>
-<div id="content_1_1" class="inv1"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Basin & Sink($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Bath Fitting($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Tap & Mixer($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Toilet($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">WaterTank($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Motor($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Minor Installations($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
- <div id="content_2" class="inv"><br>
+ <div id="content_1_1" class="inv1"><br>
 <select id="target2" class="dropdown1" style="margin-left:70px;">
-            <option value="">Select...</option>
-            <option value="content_2_1">Repair & Fixes</option>
-            <option value="content_2_1">New Furniture Making</option>
-            <option value="content_2_1">Other Wood work</option>
+            <option value="">Choose subject</option>
+            <option value="content_1_2">Telugu</option>
+            <option value="content_1_2">Hindi</option>
+            <option value="content_1_2">English</option>
             
 </select>
 </div>
-
-<div id="content_2_1" class="inv2"><div class="container_opt">
+<div id="content_1_2" class="inv2"><div class="container_opt">
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
-   <li class="list-group-item">Balcony($40)
+  
+      
+<li class="list-group-item">Mr.Arjun($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
+        <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
+      
+<li class="list-group-item">Mr.Anand($40/pm)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+         <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ 
+</div></div></div></li>
       
     </li>
-<li class="list-group-item">Bed($40)
+<li class="list-group-item">Mr.shiva($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
+        <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ 
+</div></div></div></li>
     </li>
-<li class="list-group-item">CubBoard & Drawer($40)
+<li class="list-group-item">Mr.Ajay($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
+       <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ 
+</div></div></div></li>
     </li>
-<li class="list-group-item">Door($40)
+<li class="list-group-item">Mr.Avinash($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
+        <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ 
+</div></div></div></li>
     </li>
-<li class="list-group-item">Drill($40)
+<li class="list-group-item">Mr.Jack($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
+        <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ 
+</div></div></div></li>
     </li>
-<li class="list-group-item">Furniture Assembly($40)
+<li class="list-group-item">Mr.Kiran($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Furniture Repair($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Window & Curtain($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">TV($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
+        <div class="popup" onclick="popupedu()"><b>See Profile</b>
+  <div class="popuptext" id="myPopup">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu>"
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+ </div>
+</div></div></div></li>
       
     </li>
     <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
@@ -475,67 +596,390 @@ input[type=number]::-webkit-outer-spin-button {
 
  </div>
 </div>
- <div id="content_3" class="inv"><br>
+
+<div id="content_2" class="inv"><br>
             <select id="target3" class="dropdown1" style="margin-left:70px;">
-            <option value="">Select...</option>
-            <option value="content_3_1">Repair /Fixes</option>
-            <option value="content_3_1">electricity Breakdown</option>
-            <option value="content_3_1">Electrical Wiring</option>
-            <option value="content_3_1">Installation Service</option>
+            <option value="">Choose Class</option>
+            <option value="content_2_1">Pre Kg</option>
+            <option value="content_2_1">1st class</option>
+            <option value="content_2_1">2nd class</option>
+            <option value="content_2_1">3rd class</option>
+<option value="content_2_1">4th class</option>
+<option value="content_2_1">5th class</option>
+<option value="content_2_1">6th class</option>
+<option value="content_2_1">7th class</option>
+            <option value="content_2_1">8th class</option>
+<option value="content_2_1">9th class</option>
+<option value="content_2_1">10th class</option>
+</select>
+ </div>
+ <div id="content_2_1" class="inv3"><br>
+<select id="target4" class="dropdown1" style="margin-left:70px;">
+            <option value="">Choose subject</option>
+            <option value="content_2_2">Telugu</option>
+            <option value="content_2_2">Hindi</option>
+            <option value="content_2_2">English</option>
+            
 </select>
 </div>
-<div id="content_3_1" class="inv3"><div class="container_opt">
+<div id="content_2_2" class="inv4"><div class="container_opt">
    <h2 ><br>Select the issue</h2>
   <ul class="list-group">
-   <li class="list-group-item">Switch & Socket($40)
+   <li class="list-group-item">Ms.Anandi($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
+         <div class="popup" onclick="popupedufem()"><b>See Profile</b>
+  <div class="popuptext" id="myPopupfem">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
       
-    </li>
-<li class="list-group-item">Fan($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Light($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Chandlier($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Inverter & Stablizer($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Wiring($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Door Bell($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
 
-<li class="list-group-item">Others
+<li class="list-group-item">Ms.Anisha($40/pm)
       <div class="check">
         <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
+         <div class="popup" onclick="popupedufem()"><b>See Profile</b>
+  <div class="popuptext" id="myPopupfem">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Ms.Abhirami($40/pm)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedufem()"><b>See Profile</b>
+  <div class="popuptext" id="myPopupfem">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Ms.shivani($40/pm)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+         <div class="popup" onclick="popupedufem()"><b>See Profile</b>
+  <div class="popuptext" id="myPopupfem">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>John Doe</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Ms.Ane($40/pm)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+       <div class="popup" onclick="popupedufem()"><b>See Profile</b>
+  <div class="popuptext" id="myPopupfem">
+  <div class="cardedu">
+<div class="row_edu">
+<div class="col_edu">
+  <img src="img/img_avatar2.png" alt="Avatar" style="height:100px;border-radius:50px;"></div>
+<div class="col_edu">
+    <h4><b>Ms.Ane</b></h4> 
+    <p>Delhi-NCR</p>
+<p>From-Jaipur</p>
+<p>Experience- 3 Years</p>
+<p>Expertise- English</p> 
+  </div>
+</div>
+</div> 
+</div></div></div></li>
+
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+ 
+ <div id="content_3" class="inv"><br>
+            <select id="target5" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select City...</option>
+            <option value="content_3_1_1">Hyderabad</option>
+            <option value="content_3_1_2">Chennai</option>
+            <option value="content_3_1_3">Banglore</option>
+            <option value="content_3_1_4">Delhi</option>
+</select>
+</div>
+ <div id="content_3_1_1" class="inv5"><br>
+            <select id="target6" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select Locality...</option>
+            <option value="content_3_2_1">Shadnagar</option>
+            <option value="content_3_2_1">Ameerpet</option>
+            <option value="content_3_2_1">KPHB</option>
+            <option value="content_3_2_1">Gachibowli</option>
+</select>
+</div>
+ <div id="content_3_1_2" class="inv5"><br>
+            <select id="target7" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select Locality...</option>
+            <option value="content_3_2_2">Anna Nagar</option>
+            <option value="content_3_2_2">T Nagar</option>
+            <option value="content_3_2_2">Tamabarm</option>
+            <option value="content_3_2_2">Gunidy</option>
+</select>
+</div>
+ <div id="content_3_1_3" class="inv5"><br>
+            <select id="target8" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select Locality...</option>
+            <option value="content_3_2_3">Financial Dist</option>
+            <option value="content_3_2_3">ORR</option>
+            
+</select>
+</div>
+ <div id="content_3_1_4" class="inv5"><br>
+            <select id="target9" class="dropdown1" style="margin-left:70px;">
+            <option value="">Select Locality...</option>
+            <option value="content_3_2_4">Assembly</option>
+            <option value="content_3_2_4">Gurgon</option>
+            
+</select>
+</div>
+ 
+<div id="content_3_2_1" class="inv6"><div class="container_opt">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">The Hindu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Times of India($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">EEnadu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+       <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Sakshi($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_3_2_2" class="inv7"><div class="container_opt">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">The Hindu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
       
-    </li>
+     
+<li class="list-group-item">Times of India($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Deccan($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Sakshi($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_3_2_3" class="inv8"><div class="container_opt">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">The Hindu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Times of India($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+
+
+    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
+</ul>
+
+<a href="3.html.html" class="button_book">Continue to book</a>
+
+<!-----<button class="button_book"> Continue to book </button>  ---->
+
+ </div>
+</div>
+<div id="content_3_2_4" class="inv9"><div class="container_opt">
+   <h2 ><br>Select the issue</h2>
+  <ul class="list-group">
+   <li class="list-group-item">The Hindu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">Times of India($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+       <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+<li class="list-group-item">EEnadu($40)
+      <div class="check">
+        <input type="checkbox" id="servicess" name="servicess" value="Bike">
+        <div class="popup" onclick="popupedumag()"><b>See Annual Plan</b>
+  <div class="popuptext" id="myPopupmag">
+  <div class="cardedu">
+<div class ="container_edu">
+    <h4><b>The Hindu</b></h4> 
+    <p>Annual Charge :- Rs 500</p>
+</div>
+</div> 
+</div></div></div></li>
+
+
     <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
 </ul>
 
@@ -546,567 +990,15 @@ input[type=number]::-webkit-outer-spin-button {
  </div>
 </div>
 <div id="content_4" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Home Cleaning Services-2BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Home Cleaning Services-2BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Home Cleaning Services-3BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Home Cleaning Services-4BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Home Cleaning Services-5BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Villa
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_5" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">3 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">4 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">5 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">6 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">7 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">8 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">9 Sofa Set($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">10 Sofa Set
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_6" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Deep Cleaning($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Trolley & Shelf Cleaning($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Deep Cleaning with Chimney($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Chimney Deep Cleaning($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_7" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">2 Bathrooms($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">3 Bathrooms($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">4 Bathrooms($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">5 Bathrooms($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">6 Bathrooms($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_8" class="inv"><br>
-            <select id="target4" class="dropdown1" style="margin-left:70px;">
-            <option value="">Select...</option>
-            <option value="content_8_1">Asian Paints</option>
-            <option value="content_8_1">Burger Paints</option>
-            <option value="content_8_1">Paininting Price/Quality</option>
-            <option value="content_8_1">Color Shade Guide/Others</option>
-</select>
-</div>
-<div id="content_8_1" class="inv4"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Movein/Moveout Painting($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Home Painting($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Water Painting($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Wood Painting($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Wall Texture($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Multiple Services($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
+   
+<br>
+<a href="blog-description-page.html" class="button_book">Sheltown Digest</a>
 
 <!-----<button class="button_book"> Continue to book </button>  ---->
 
  </div>
 </div>
 
-<div id="content_9" class="inv"><br>
-            <select id="target5" class="dropdown1" style="margin-left:70px;">
-            <option value="">Select...</option>
-            <option value="content_9_1">Cockroach Control</option>
-            <option value="content_9_1">Ant Control</option>
-            <option value="content_9_1">Turtle Control</option>
-            <option value="content_9_1">Bed Bugs Control</option>
-</select>
-</div>
-<div id="content_9_1" class="inv5"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">1 BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">2 BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">3 BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">4 BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">5 BHK($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Villa($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_10" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_11" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_12" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_13" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_14" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
-<div id="content_15" class="inv"><div class="container_opt">
-   <h2 ><br>Select the issue</h2>
-  <ul class="list-group">
-   <li class="list-group-item">Display/Screen($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Speaker/Sound($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Power($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Installation($40)
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-<li class="list-group-item">Others
-      <div class="check">
-        <input type="checkbox" id="servicess" name="servicess" value="Bike">
-        <label for="servicess"> Service</label></li>
-      
-    </li>
-    <li class="list-group-item" ><p style="float:right;margin-right:50px;">Total Amount =</p></li> 
-</ul>
-
-<a href="3.html.html" class="button_book">Continue to book</a>
-
-<!-----<button class="button_book"> Continue to book </button>  ---->
-
- </div>
-</div>
 </div>
  <div class="column_ser middle">
 <div class="container_work" >
@@ -1710,6 +1602,68 @@ We are with you whenever you are in need!
                     }
             });
         </script>
+<script>
+            document
+                .getElementById('target6')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target6 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv6';
+                    }
+                    if (target6 !== null ) {
+                        target6.className = 'vis';
+                    }
+            });
+        </script>
+
+<script>
+            document
+                .getElementById('target7')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target7 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv7';
+                    }
+                    if (target7 !== null ) {
+                        target7.className = 'vis';
+                    }
+            });
+        </script>
+<script>
+            document
+                .getElementById('target8')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target8 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv8';
+                    }
+                    if (target8 !== null ) {
+                        target8.className = 'vis';
+                    }
+            });
+        </script>
+
+<script>
+            document
+                .getElementById('target9')
+                .addEventListener('change', function () {
+                    'use strict';
+                    var vis = document.querySelector('.vis'),   
+                        target9 = document.getElementById(this.value);
+                    if (vis !== null) {
+                        vis.className = 'inv9';
+                    }
+                    if (target9 !== null ) {
+                        target9.className = 'vis';
+                    }
+            });
+        </script>
 
 
 <script>
@@ -1782,6 +1736,27 @@ $('.responsive').slick({
   ] });
 //# sourceURL=pen.js
     </script>
+<script>
+// When the user clicks on div, open the popup
+function popupedu() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+// When the user clicks on div, open the popup
+function popupedufem() {
+  var popup = document.getElementById("myPopupfem");
+  popup.classList.toggle("show");
+}
+</script>
+<script>
+// When the user clicks on div, open the popup
+function popupedumag() {
+  var popup = document.getElementById("myPopupmag");
+  popup.classList.toggle("show");
+}
+</script>
 </body>
 
 </html>

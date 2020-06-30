@@ -14,14 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/be7475fd49.js" crossorigin="anonymous"></script>
     <script  src="js/slider-script.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("header").load("./components/navbar.html");
-        });
-        $(document).ready(function () {
-            $("footer").load("./components/footer.html");
-        });
-    </script>
 
     <!--Boostrap Requirements-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -36,102 +28,47 @@
     <meta name=“google-site-verification” content=“BVA1NKpsy9IenrjkPDUVV9naJOgnlX8MpPhV5wT_c0w” />
 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-    <style>
-      .create {
-        background-color: #ff971d;
-        text-align:center;
-        color:white;
-        font-weight: bolder;
-        padding:10px;
-      }
-      .create:hover,
-      .create:focus,
-      .create:active
-       {
-        background-color: #ff971d;
-        text-align:center;
-        color:white;
-        font-weight: bolder;
-        padding:12px;
-      }
-      .form{
-        margin-top: 70px;
-        padding-right: 50px;
-        padding-left: 50px;
-      }
-      .signuptitle{
-        color: #ff971d;
-        text-align:center;
-        font-weight: bolder;
-      }
-      .loginlink:hover,
-      .loginlink:active,
-      .loginlink:focus,
-      .loginlink
-      {
-        color:black;
-        text-align: center;
-        margin-top:50px;
-        text-decoration: none;
-      }
-      .loginlink span{
-        color: #ff971d;
-      }
-      .join_btn{
-        border:none;
-        background-color:white;
-        text-align: center;
-      }
-      .join_btn i{
-        color:black;
-      }
-      .listbox{
-        margin-top: 115px;
-        margin-right:70px;
-        background-color:#ff971d;
-        color:white;
-        border:2px solid #ff971d;
-        border-radius: 8px;
-        font-weight: bolder;
-        font-size: 15px;
-        padding:20px;
-      }
-
-      .fa-check {
-        font-size: 15px;
-      }
-
-      ul li{
-        list-style-type: none;
-        padding: 10px;
-      }
-      i{
-        font-size:60px;
-        color:white;
-      }
-      .confirm-password-msg {
-        font-size: 12px;
-        font-family: 'Montserrat', sans-serif;
-      }
-
-      #joinform label{
-        margin-left:10px;
-        margin-right:10px;
-      }
-
-      .btn-joinus {
-        padding: 10px;
-        background-color: #fff;
-        border: 2px solid #ff9719;
-        border-radius: 8px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
 </head>
-<header class='row'>
-    </header>
+
 <body onload="myFunction()">
+
+<!--==========================
+    Header
+  ============================-->
+  <header id="header" >
+    <div class="container-fluid">
+
+     <div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
+
+<div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+        <p >SheltOwn</p>
+        </a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
 
   <div class="container">
     <div class="row">
@@ -141,7 +78,7 @@
       <div class="col-lg-6">
         <div class="d-none d-lg-block">
           <div class="listbox">
-            <ul>
+            <ul id="listul">
               <li>
                 <i class="fa fa-check"></i>
                   Safety Guaranteed

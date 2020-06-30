@@ -1,0 +1,88 @@
+.create {
+    background-color: #ff971d;
+    text-align:center;
+    color:white;
+    font-weight: bolder;
+    padding:10px;
+  }
+  .create:hover,
+  .create:focus,
+  .create:active
+   {
+    background-color: #ff971d;
+    text-align:center;
+    color:white;
+    font-weight: bolder;
+    padding:12px;
+  }
+  .form{
+    margin-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .signuptitle{
+    color: #ff971d;
+    text-align:center;
+    font-weight: bolder;
+  }
+  .loginlink:hover,
+  .loginlink:active,
+  .loginlink:focus,
+  .loginlink
+  {
+    color:black;
+    text-align: center;
+    margin-top:50px;
+    text-decoration: none;
+  }
+  .loginlink span{
+    color: #ff971d;
+  }
+  .join_btn{
+    border:none;
+    background-color:white;
+    text-align: center;
+  }
+  .join_btn i{
+    color:black;
+  }
+  .listbox{
+    margin-top: 115px;
+    margin-right:70px;
+    background-color:#ff971d;
+    color:white;
+    border:2px solid #ff971d;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 15px;
+    padding:20px;
+  }
+
+  .fa-check {
+    font-size: 15px;
+  }
+
+  #listul li{
+    list-style-type: none;
+    padding: 10px;
+  }
+  i{
+    font-size:60px;
+    color:white;
+  }
+  .confirm-password-msg {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #joinform label{
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+  .btn-joinus {
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ff9719;
+    border-radius: 8px;
+  }

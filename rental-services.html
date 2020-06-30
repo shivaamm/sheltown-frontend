@@ -39,7 +39,20 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="assets/css/rental-style.css" rel="stylesheet">
- <!---- <link href="assets/css/rental-services-details.css" rel="stylesheet">---->
+ 
+ <script>
+ $(document).ready(function(){
+	 $('[data-toggle="popover"]').popover({
+          //trigger: 'focus',
+		  trigger: 'hover',
+          html: true,
+          content: function () {
+				return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
+          },
+          title: 'Toolbox'
+    }) 
+});
+ </script>
 </head>
 
 <body id="body" onload="myFunction()">
