@@ -349,10 +349,7 @@ input[type=submit]:hover {
   .containerr{
     width: 400px;
     margin-left: 0rem;
-    
   }
-
-
 }
 @media all and (max-width: 375px){
   .containerr{

@@ -1,10 +1,11 @@
 /* ============================ 
     property section css
  ===========================*/
-
+@media (min-width: 600px){
  .container-fluid{
   margin-left:60px;
   margin-right:60px;
+}
 }
 .property{
   margin-top:20px;
@@ -35,7 +36,7 @@
   display: inline-block;
 }
 .strikeout {
-  line-height: 1em;
+  line-height: 0.5rem;
   position: relative;
 }
 .strikeout::after {
@@ -131,14 +132,16 @@
   margin-bottom:30px;
 }
  /* Create three equal columns that floats next to each other */
+ 
 .column_amn {
   float: left;
   width:15%;
   padding:5px;
-  height: 60px; /* Should be removed. Only for demonstration */
+  height: 60px; 
 }
 
 /* Clear floats after the columns */
+
 .row_amn:after {
   content: "";
   display: table;
@@ -150,7 +153,11 @@
   padding-right: 15px;
   width:100%;
 }
-
+@media (max-width: 600px){
+  .row_amn{
+    /*display: flex;*/
+  }
+}
 /* ============================ 
     know-section css
  ===========================*/
@@ -170,6 +177,14 @@
   border:1px solid #ff971d;
   border-radius:100px;
 }
+
+@media (max-width: 600px){
+  .know-section span{
+    display: flex;
+    max-width: max-content;
+  }
+}
+
 /* ============================ 
     policy  section css
  ===========================*/
@@ -332,6 +347,38 @@ float:right;
 .pagination a:hover:not(.active) {
   background-color: #ddd;
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+
+  .container_revmain{
+    max-width: max-content;
+  }
+
+  .container_rev{
+      width:350px;
+  }
+ .mobile{
+      margin-left:185px;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+  .container_work{
+    margin-left: -5rem;
+    width: 300px;
+  }
+  .container_rev{
+    margin-left: -6rem;
+    width: 350px;
+  }
+  .pagination{
+    display: inline;
+    margin-left: -3rem;
+  }
+  
 }
 
 @media (max-width: 400px) {
