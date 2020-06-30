@@ -11,10 +11,11 @@
   margin-top:20px;
   margin-bottom:30px;
 }
+/*
 .heading{
   color:#ff9719;
   font-size: 25px;
-}
+}*/
 .offers-carousel{
   margin-top:77px;
 }
@@ -86,7 +87,7 @@
 }
 .info{
   background-color:white;
-  width:150px;
+  width:120px;
   margin: 10px;
   text-align: center;
   font-size: 13px;
@@ -150,12 +151,30 @@
 }
 
 .container_amn{
-  padding-right: 15px;
+  padding-right: 0px;
   width:100%;
 }
 @media (max-width: 600px){
+  .typess{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .info{
+    display: flex;
+    
+  }
+
+
   .row_amn{
-    /*display: flex;*/
+    margin-left: 0rem;
+    
+  }
+  .column_amn{
+    display: flex;
+    width: 11rem;
   }
 }
 /* ============================ 
@@ -179,6 +198,10 @@
 }
 
 @media (max-width: 600px){
+  .know-section p{
+    width: 200px;
+    margin-left: 4rem;
+  }
   .know-section span{
     display: flex;
     max-width: max-content;
@@ -355,9 +378,7 @@ float:right;
     max-width: max-content;
   }
 
-  .container_rev{
-      width:350px;
-  }
+  
  .mobile{
       margin-left:185px;
   }
@@ -371,8 +392,8 @@ float:right;
     width: 300px;
   }
   .container_rev{
-    margin-left: -6rem;
-    width: 350px;
+    margin-left: -2.5rem;
+    width: 400px;
   }
   .pagination{
     display: inline;
