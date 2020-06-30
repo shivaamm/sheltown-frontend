@@ -1,58 +1,364 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>How to Add Deep Linking to the Bootstrap 4 Tabs Component</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<title>SheltOwn</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
 
-    <style>
-    .nav-mytabs {
-  margin-top: 2rem;
-}
- 
-.nav-mytabs li:not(:last-child) {
-  margin-right: 7px;
-}
- 
-.nav-mytabs a {
-  position: relative;
-  top: 4px;
-  padding: 10px 25px;
-  border-radius: 2px 2px 0 0;
-  background: white;
-  color: black;
-  opacity: 0.7;
-  transition: all 0.1s ease-in-out;
-}
- 
-.nav-mytabs a.active, 
-.nav-mytabs a:hover {
-  opacity: 1;
-  top: 0;
-}
- 
-.mytab-content {
-  position: relative;
-  z-index: 2;
-  padding: 25px;
-  border-radius: 0 4px 4px 4px;
-  background: white;
-}
-    </style>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-  </head>
-  <body>
-  <a href="policy-page.html">Sheltown</a>
-  <a href="#">Family+</a>
-  <a href="./policy-page.html/#tab_notice-period">Go to Specific Tab </a>
-  
-     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- custom JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/aboutus.css">
+<link href="css/style.css" rel="stylesheet">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+<body>
+  <!--==========================
+    Header
+  ============================-->
+
+  <header id="header">
+    <div class="container-fluid">
+ <div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
+
+<div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+        <p >SheltOwn</p>
+        </a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+
+  <!-- #header -->
+
+
+<div class="container" style="border: 1px solid black; padding: 50px;">
+<div class="row">
+  <div class="col-sm-12"> 
+    <div class="row">
+      <h1 style="text-align:center;font-family: 'Montserrat', sans-serif;color: #ff9719; font-size: 32px;margin-top: 4rem;"> CONTACT US </h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="las la-map-marker">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Address</h3>
+                <address>India</address>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="las la-phone">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Phone Number</h3>
+                <p><a href="tel:7644080506" style="color:black;">+91 7644080506</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="las la-envelope">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Email</h3>
+                <p><a href="mailto:info@sheltown.com" style="color: black;">info@sheltown.com</a></p>
+              </div>
+            </div>
+          </div>
+        <div class="row align-items-center justify-content-center" style="border: 1px solid black;">
+            <iframe style="height: 480px; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d9913.633211580622!2d77.25411706624713!3d28.539760743888966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ce3dbdccef085%3A0x99333fe6f1b3a237!2sKalkaji%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.539951499999997!2d77.25915789999999!5e0!3m2!1sen!2sin!4v1593072274885!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="container-fluid containerr">
+        <h2 style="text-align:center"> Send Us a Message! </h2>
+        <br>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <br>
+
+        <label for="lname">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email..">
+        <br>
+
+        <label for="country">Contact No</label><br>
+        <input type="number" id="fname" name="contact" placeholder="Your number..">
+        <br>
+
+        <label for="subject">Message</label><br>
+        <textarea id="subject" name="subject" placeholder="Your text here" style="height:100px"></textarea>
+          <br>
+        <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<br>
     
-  </body>
+  <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities.
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="policy-page.html">FAQs</a></li>
+            <li><a href="policy-page.html">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn Family+</a></li>
+            <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog-description-page.html">Blogs</a></li>
+            <li><a href="work-with-us.html">Join our Team</a></li>
+            <li><a href="policy-page.html">List your Property</a></li>
+            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:info@sheltown.com">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/sheltown.india" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="https://twitter.com/OwnShelt?s=20"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://instagram.com/sheltown.india"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/sheltown"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+<script id="rendered-js">
+jQuery(document).ready(function ($) {
+  "use strict";
+  $('#customers-testimonials').owlCarousel({
+    loop: false,
+    center: false,
+    items: 4,
+    margin: 20,
+    autoplay: false,
+    dots: true,
+    nav: false,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      0: {
+        items: 1 },
+
+      768: {
+        items: 2 },
+
+      1170: {
+        items: 4 } } });
+
+
+
+});
+
+    </script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+<script id="rendered-js">
+$('.responsive').slick({
+  dots: true,
+  prevArrow: $('.prev_br'),
+  nextArrow: $('.next_br'),
+  infinite: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 4,
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      dots: true } },
+
+
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2 } },
+
+
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1 } }
+
+
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+  ] });
+//# sourceURL=pen.js
+    </script>
+    <script type="text/javascript">
+      // <![CDATA[
+      function ShowHide(divId) {
+        var atxt = document.getElementById("atext");
+        if (document.getElementById(divId).style.display == 'none') {
+          document.getElementById(divId).style.display = 'block';
+        } else {
+          document.getElementById(divId).style.display = 'none';
+        }
+      }
+      // ]]>
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
 </html>
