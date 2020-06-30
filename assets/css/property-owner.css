@@ -123,24 +123,3 @@ td {
 /* ADD NEW */
 
 
-input[type="radio"]{
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-
-label {
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  background-color: #646464;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 3px;
-  margin-left: 10px;
-}
-
-input[type="radio"]:checked + label{
-  background-color: #ff971d;
-  border: 1px solid grey;
-}

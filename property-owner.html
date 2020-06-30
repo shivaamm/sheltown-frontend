@@ -302,34 +302,37 @@
 
 <!-------------------Add New---------------------------------------------->
 <div id="AddNew" class="tabcontent" style="padding: 40px;">
+
+  <h2>Add New Property</h2>
     <div class="row middler justify-content-around">
         <div class="col-sm-4">Property Name<br><input type="text"></div>
         <div class="col-sm-4">Address<br><input type="text"></div>
-        <div class="col-sm-4">Photos<input type="file" multiple></div>
+        <div class="col-sm-4">Photos<br><input type="file" multiple></div>
     </div>
     <br>
 
     <div class="row middler">
-        Housing Type
-        <div class="center-align"> 
-          <input type="radio" name="size" id="size_1" value="small" checked />
+      <div class="row container">
+         Housing Type
+        <div id="group1" class="center-align"> 
+          <input type="radio" name="group1" id="size_1" value="value1" checked />
           <label for="size_1">PG</label>
   
-          <input type="radio" name="size" id="size_2" value="small" />
+          <input type="radio" name="group1" id="size_2" value="value2" />
           <label for="size_2">Hostel</label>
   
-          <input type="radio" name="size" id="size_3" value="small" />
+          <input type="radio" name="group1" id="size_3" value="value3" />
           <label for="size_3">Flat</label>
 
-          <input type="radio" name="size" id="size_4" value="small" />
+          <input type="radio" name="group1" id="size_4" value="value4" />
           <label for="size_4">Apartment</label>
 
-          <input type="radio" name="size" id="size_5" value="small" />
+          <input type="radio" name="group1" id="size_5" value="value5" />
           <label for="size_5">House</label>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         <div class="col">
             Total Beds
             <select>
@@ -341,15 +344,26 @@
             </select>
         </div>
         <div class="col">
+          <div id="group2">
             SheltOwn+ 
-            <button>Yes</button>
-            <button>No</button>
+            <input type="radio" name="group2" id="size_6" value="plus1" checked />
+            <label for="size_6">Yes</label>
+  
+            <input type="radio" name="group2" id="size_7" value="plus2" />
+            <label for="size_5">No</label>
+          </div>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         <div class="col">
             For 
+            <input type="radio" name="gender">Male<br>
+            <input type="radio" name="gender">Female<br>
+      
+      </br><hr>
+
+      
             <button>Males</button>
             <button>Females</button>
         </div>
@@ -358,9 +372,9 @@
             <button>Students</button>
             <button>Partners</button>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         <div class="col">
             Meals
             <button>Yes</button>
@@ -371,17 +385,17 @@
             <button>Daily</button>
             <button>Weekly</button>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         Common Areas
         <button>Living Room</button>
         <button>Kitchen</button>
         <button>Dining Hall</button>
         <button>Study Room</button>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+      
+      <div class="row container">
         <div class="col">
             Owner Stays
             <button>Yes</button>
@@ -392,9 +406,9 @@
             <button>Yes</button>
             <button>No</button>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         <div class="col">
             Sharing Type
             <select>
@@ -416,9 +430,9 @@
             <button>No</button>
             <button>Maybe</button>
         </div>
-    </div>
-    <br>
-    <div class="row">
+      </div>
+
+      <div class="row container">
         <div class="col">
             Maximum Beds in a Room
             <button>1</button>
@@ -430,9 +444,12 @@
             Rent <input type="text">
             Security <input type="text">
         </div>
+      </div>
     </div>
+
     <br>
-    <div class="row">
+
+    <div class="middler row">
         Amenities 
         <button>Table and Chair</button>
         <button>TV</button>
