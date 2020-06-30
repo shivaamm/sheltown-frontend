@@ -2,16 +2,9 @@
 <html lang="en">
 
 <head>
- 
-  <!-- Google Fonts -->
-
-  
-
-  <!-- Libraries CSS Files -->
- 
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <title>SheltOwn</title>
-  <meta content="width=device-width, initial-scale=1 name=viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -39,23 +32,19 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Main Stylesheet File -->
   <link rel="stylesheet" type="text/css" href="assets/css/blog-description-page.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body id="body" onload="myFunction()">
- <!--==========================
+
+  <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
-<div id="logo" class="pull-left">
+
+     <div id="logo" class="pull-left">
         <a href="index.html">
           <img src="img/favicon.png" alt="logo">
         </a>
@@ -69,10 +58,10 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li ><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
-              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="personal-services.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
             </ul>
           </li>
@@ -84,8 +73,6 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  
-  
 
   <!-- all post -->
   <div class="container-fluid blog-topic">
@@ -263,10 +250,7 @@
   </div>
   <!-- blog section ends-->
   
- 
-
-    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-   <!--==========================
+  <!--==========================
     Footer
   ============================-->
 
@@ -387,66 +371,18 @@ We are with you whenever you are in need!
     </div>
   </section><!-- #footer -->
 
-
-  <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-  <script type="text/javascript">
-    // <![CDATA[
-    function ShowHide(divId) {
-      var atxt = document.getElementById("atext");
-      if (document.getElementById(divId).style.display == 'none') {
-        document.getElementById(divId).style.display = 'block';
-      } else {
-        document.getElementById(divId).style.display = 'none';
+    <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+    <script type="text/javascript">
+      // <![CDATA[
+      function ShowHide(divId) {
+        var atxt = document.getElementById("atext");
+        if (document.getElementById(divId).style.display == 'none') {
+          document.getElementById(divId).style.display = 'block';
+        } else {
+          document.getElementById(divId).style.display = 'none';
+        }
       }
-    }
-    // ]]>
-  </script>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-
-
-  <!-- Optional JavaScript -->
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict'
-
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-      }, false)
-    }())
-  </script>
-  <script src="js/main.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
-  
-<script>
+      // ]]>
       $(document).ready(function(){
         $(".content").slice(0, 3).show();
         $("#loadMore").on("click", function(e){
@@ -459,7 +395,31 @@ We are with you whenever you are in need!
       });
     </script>
 
-   
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+
+    <!-- cdn links  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
