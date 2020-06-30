@@ -47,8 +47,8 @@
     color:black;
   }
   .listbox{
-    margin-top: 115px;
-    margin-right:70px;
+    width: 20rem;
+    margin: 40px;
     background-color:#ff971d;
     color:white;
     border:2px solid #ff971d;
@@ -86,3 +86,9 @@
     border: 2px solid #ff9719;
     border-radius: 8px;
   }
+
+@media screen and (max-width: 1080px){
+    .container-fluid{
+        margin: 0 auto;
+    }
+}
