@@ -25,49 +25,50 @@
   <!-- style sheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="assets/css/rental-services-details.css">
+  <link href="assets/css/personal-style.css" rel="stylesheet">
 
   <style>
   </style>
 </head>
 
-<body>
-  
+<body id="body" onload="myFunction()">
     <!--==========================
-    Header
-  ============================-->
-
-  <header id="header">
-    <div class="container-fluid">
- <div id="logo" class="pull-left">
-        <a href="index.html">
-          <img src="img/favicon.png" alt="logo">
-        </a>
+      Header
+    ============================-->
+    <header id="header">
+      <div class="container-fluid">
+  <div id="logo" class="pull-left">
+          <a href="index.html">
+            <img src="img/favicon.png" alt="logo">
+          </a>
+        </div>
+  
+  <div id="logo" class="pull-left" style="margin-top:8px;">
+          <a href="index.html">
+          <p >SheltOwn</p>
+          </a>
+        </div>
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li class="menu-has-children"><a href="">Our Services</a>
+              <ul>
+                <li><a href="personal_services1.html">Personalised Services</a></li>
+                <li><a href="rental-services.html">Rental Services</a></li>
+              </ul>
+            </li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog-description-page.html">Blogs</a></li>
+            <li><a href="login-user.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
       </div>
-
-<div id="logo" class="pull-left" style="margin-top:8px;">
-        <a href="index.html">
-        <p >SheltOwn</p>
-        </a>
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li class="menu-has-children"><a href="">Our Services</a>
-            <ul>
-              <li><a href="personal_services1.html">Personalised Services</a></li>
-              <li><a href="rental-services.html">Rental Services</a></li>
-            </ul>
-          </li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="blog-description-page.html">Blogs</a></li>
-          <li><a href="login-user.html">Log In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header>
-    <!-- #header -->
+    </header><!-- #header -->
+    
+  
+    
 
   
     <section class="property"> 
@@ -361,12 +362,19 @@
                 <div class="col-md-12">
                     <div class="container_rat">
                         <span class="heading">User Rating</span>
+                       <!-- <span class="fa fa-star checked" style='font-size:25px;'></span>
                         <span class="fa fa-star checked" style='font-size:25px;'></span>
                         <span class="fa fa-star checked" style='font-size:25px;'></span>
                         <span class="fa fa-star checked" style='font-size:25px;'></span>
-                        <span class="fa fa-star checked" style='font-size:25px;'></span>
-                        <span class="fa fa-star" style='font-size:25px;'></span>
-                        <p>4.1 average based on 254 reviews.</p>
+                        <span class="fa fa-star" style='font-size:25px;'></span>  -->
+
+                        
+                        <span class="stars" data-rating="4.5" data-num-stars="5" ></span>
+
+
+
+
+                        <p>4.5 average based on 254 reviews.</p>
                         <hr style="border:1px solid #ff9719">
 
                         <div class="row_rat">
@@ -441,7 +449,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="heading">Guest Reviews</h2>
-                    <div class="container_revmain">
+                   <!-- <div class="container_revmain">
                         <div class="container_rev">
                             <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
                             <div class="container_star">
@@ -495,6 +503,125 @@
                             </div>
                         </center>
                     </div>
+                -->
+
+                <div class="container_revmain" id="review1p" style="margin-left:50px;">
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                     <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Rebecca Flex.</span> CEO at Company.</p>
+                      <p>No one is better than John Doe.</p>
+                    </div>
+                </div>
+                
+                <div class="container_revmain" id="review2p" style="margin-left:50px;">
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                </div>
+                
+                <div class="container_revmain" id="review3p" style="margin-left:50px;">
+                    <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                <div class="container_rev">
+                      <img src="img/img_avatar2.png" alt="Avatar" style="width:90px">
+                      <div class="container_star">
+                       <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> </div>
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>John Doe saved us from a web disaster.</p>
+                
+                    </div>
+                </div>
+                    <div class="pagination">
+                      <a href="#">&laquo;</a>
+                      <!----<a href="#" class="active">1</a>--->
+                      <a  class="tablinks" onclick="openCity(event, 'review1p')" id="defaultOpen">1</a>
+                      <a class="tablinks" onclick="openCity(event, 'review2p')" id="defaultOpen">2</a>
+                      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">3</a>
+                      <a class="tablinks" onclick="openCity(event, 'review3p')" id="defaultOpen">4</a>
+                      <a href="#">&raquo;</a>
+                    </div>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -639,20 +766,81 @@ We help you to find your match, book rental homes of choice across Indian cities
     <script type="text/javascript">
       // <![CDATA[
       function ShowHide(divId) {
-        var atxt = document.getElementById("atext");
-        if (document.getElementById(divId).style.display == 'none') {
-          document.getElementById(divId).style.display = 'block';
-        } else {
-          document.getElementById(divId).style.display = 'none';
-        }
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
       }
+    }
       // ]]>
+
+      function openCity(evt, cityName) {
+  var i, container_revmain, tablinks;
+  container_revmain = document.getElementsByClassName("container_revmain");
+  for (i = 0; i < container_revmain.length; i++) {
+    container_revmain[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
     </script>
     <script>
         $(document).ready(function(){
             $('[data-toggle="popover"]').popover();   
         });
     </script>
+     JavaScript Libraries 
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+
+
+ 
+  <script src="js/main.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+    //ES5
+$.fn.stars = function() {
+return $(this).each(function() {
+var rating = $(this).data("rating");
+var fullStar = new Array(Math.floor(rating + 1)).join('<i class="fas fa-star"></i>');
+var halfStar = ((rating%1) !== 0) ? '<i class="fas fa-star-half-alt"></i>': '';
+var noStar = new Array(Math.floor($(this).data("numStars") + 1 - rating)).join('<i class="far fa-star"></i>');
+$(this).html(fullStar + halfStar + noStar);
+});
+}
+
+//ES6
+$.fn.stars = function() {
+return $(this).each(function() {
+const rating = $(this).data("rating");
+const numStars = $(this).data("numStars");
+const fullStar = '<i class="fas fa-star"></i>'.repeat(Math.floor(rating));
+const halfStar = (rating%1!== 0) ? '<i class="fas fa-star-half-alt"></i>': '';
+const noStar = '<i class="far fa-star"></i>'.repeat(Math.floor(numStars-rating));
+$(this).html(`${fullStar}${halfStar}${noStar}`);
+});
+}
+
+    $(function(){
+        $('.stars').stars();
+    });
+</script>
+   
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>

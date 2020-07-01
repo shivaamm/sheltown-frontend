@@ -12,24 +12,26 @@
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
+ 
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+
+
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
 
   <!-- Libraries CSS Files -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />  
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <!-- slick carousel -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -37,15 +39,21 @@
 </head>
 
 <body id="body" onload="myFunction()">
-
-  <!--==========================
+ <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
+<div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
 
-      <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
+<div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+        <p >SheltOwn</p>
+        </a>
       </div>
 
       <nav id="nav-menu-container">
@@ -53,41 +61,44 @@
           <li class="menu-active"><a href="index.html">Home</a></li>
           <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
-              <li><a href="personal-services.html">Personalised Services</a></li>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
             </ul>
           </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
-          <li><a href="mydetails.html">My Account</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+  
 
-  <!--==========================
+
+ <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
     <div class="overlay">
-      <div class="container-fluid">
+      <div class="container-fluid" >
         <!-- row 1 -->
         <div class="row">
           <div class="col-md-12 intro-content">
-            <h2 class="text-center">SheltOwn</h2>
-            <p class="text-center">Live Like You Own It</p>
+            <!-- <h2>SheltOwn</h2> -->
+            <p>Live Like You Own It</p>
           </div>
         </div>
         <!-- row 2 -->
-        <div class="row">
-          <div class="col-sm-3">
+        <div class="row boxes">
+          <div>
             <select class="search-services">
               <option value="ChooseServices">Choose Services...</option>
               <option value="Personal Services">Personal Services</option>
               <option value="Rental Services">Rental Services</option>
             </select>
           </div>
-          <div class="col-sm-3">
+          <div>
             <select class="search-city">
               <option value="ChooseCity">Choose City...</option>
               <option value="Mumbai">Mumbai</option>
@@ -122,14 +133,23 @@
               <option value="Varanasi">Varanasi</option>
             </select>
           </div>
-          <div class="col-sm-6">
+          <div>
+              <select class="search-locality">
+              <option value="ChooseCity">Choose Locality...</option>
+              <option value="Mumbai">Chandni Chowk</option>
+              <option value="Delhi">Patel Nagar</option>
+              <option value="Bangalore">Kamla Nagar</option>
+              <option value="Hyderabad">Delhi Gate</option>
+              <option value="Ahmedabad">Kahmiri Gate</option>
+            </select>
+          </div>
+          <div>
             <div class="search-box">
-              <input list="browsers" class="search-input" id="global-search" type="text" placeholder="&#xF041;  Search for locality" style="font-family: Montserrat, FontAwesome">
-              <a href="#"><i class="las la-search"></i></a>
-              <span class="sr-only">Global Search</span>
+                <button class="btn search-btn">Search  <i class="las la-search"></i></a>
             </div>
           </div>
-        </div>
+
+        </div><!-- row2 -->
       </div>
     </div>
   </section>
@@ -150,7 +170,7 @@
           <div class="box wow fadeInLeft">
             <div class="icon"><i class="las la-wrench"></i></div>
             <h4 class="title"><a href="">Personalised Services</a></h4>
-            <p class="description">Plumbers & Carpenters, Electricians, Hair Care, Repairs & Maintenance etc.</p>
+            <p class="description">Plumbers & Carpenters, Electricians, Hair Care, Repairs & Maintenance, Edumart and Others.</p>
             <button class="btn-offers btn">Book Now</button>
           </div>
         </div>
@@ -171,50 +191,35 @@
   </section>
   <br>
   <!-- #services -->
+
   <!--==========================
     Offers Carousel == testimonial css same
     ============================-->
   <section id="offers" class="wow fadeInUp">
     <div class="container">
-      <div class="owl-carousel offers-carousel">
+        <div class="owl-carousel offers-carousel">
 
-        <div class="offer-item">
-          <div style="border: 0px;" class="card mb-3" style="max-width: 18rem;">
-
-            <div class="card-body">
-              <img src="img/offers/1.jpg" alt="">
+            <div class="offer-item">
+                <div class="card offer-card">
+                    <img class="card-img-top" src="img/landing_page/offer1.png" alt="Card image">
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="offer-item">
-          <div style="border: 0px;" class="card mb-3" style="max-width: 18rem;">
-
-            <div class="card-body">
-              <img src="img/offers/2.jpg" alt="">
+            <div class="offer-item">
+                <div class="card offer-card">
+                    <img class="card-img-top" src="img/landing_page/offer2.png" alt="Card image">
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="offer-item">
-          <div style="border: 0px;" class="card mb-3" style="max-width: 18rem;">
-
-            <div class="card-body">
-              <img src="img/offers/3.jpg" alt="">
+            <div class="offer-item">
+                <div class="card offer-card">
+                    <img class="card-img-top" src="img/landing_page/offer3.png" alt="Card image">
+                </div>
             </div>
-          </div>
-        </div>
-
-        <div class="offer-item">
-          <div style="border: 0px;" class="card mb-3" style="max-width: 18rem;">
-
-            <div class="card-body">
-              <img src="img/offers/4.jpg" alt="">
+            <div class="offer-item">
+                <div class="card offer-card">
+                    <img class="card-img-top" src="img/landing_page/offer4.png" alt="Card image">
+                </div>
             </div>
-          </div>
         </div>
-
-      </div>
     </div>
   </section>
   <!--end of offers carousel -->
@@ -224,7 +229,7 @@
   ============================-->
   <section id="portfolio" class="wow fadeInUp">
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
 
         <div class="portfolio-bg col-sm-5">
@@ -233,45 +238,45 @@
         <div class="col-sm-7">
           <div class="row">
             <div class="portfolio-cards card-1 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/guarantee.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/guarantee.png" /><br>
               <p>Safety Guaranteed</p>
             </div>
             <div class="portfolio-cards card-2 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/tax.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/tax.png" /><br>
               <p>No Brokerage</p>
             </div>
             <div class="portfolio-cards card-3 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/security-configuration.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/security-configuration.png" /><br>
               <p>Ultimate Privacy</p>
             </div>
 
           </div>
           <div class="row">
             <div class="portfolio-cards card-4 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/company.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/company.png" /><br>
               <p>Good Ambience</p>
             </div>
             <div class="portfolio-cards card-5 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/money-transfer.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/money-transfer.png" /><br>
               <p>Affordable</p>
             </div>
             <div class="portfolio-cards card-6 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/rules.png"/>
+              <img src="https://img.icons8.com/dusk/64/000000/rules.png" />
               <p>Laissez-faire Policy</p>
             </div>
 
           </div>
           <div class="row">
             <div class="portfolio-cards card-7 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/approval.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/approval.png" /><br>
               <p>SheltOwn Verified</p>
             </div>
             <div class="portfolio-cards card-8 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/barbershop.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/barbershop.png" /><br>
               <p>All-in-Home Services</p>
             </div>
             <div class="portfolio-cards card-9 col-sm-4">
-              <img src="https://img.icons8.com/dusk/64/000000/solve.png"/><br>
+              <img src="https://img.icons8.com/dusk/64/000000/solve.png" /><br>
               <p>Round-the-Clock Assistance</p>
             </div>
 
@@ -299,7 +304,7 @@
             They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
             Thank you SheltOwn for providing excellent services.
             <i class="las la-quote-right"></i>
-          </p><br>
+          </p>
           <img
             src="https://scontent.fbom3-2.fna.fbcdn.net/v/t1.0-9/25398638_2084738795089983_3661880245703281949_n.jpg?_nc_cat=100&_nc_sid=09cbfe&_nc_ohc=NQwgux31BeUAX-6jXpr&_nc_ht=scontent.fbom3-2.fna&oh=cff1ade3a71714ddd42d4c85ff70d15a&oe=5F0F376E"
             class="testimonial-img" alt="">
@@ -309,8 +314,8 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            I will recommend SheltOwn to everyone as they offer the best services at very affordable price. You dont have to worry about anything while availing their services because they are well aware about their offerings and fulfills it
-            accordingly. <i class="las la-quote-right"></i>
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services. <i class="las la-quote-right"></i>
           </p>
           <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
           <h3>Ayushi Sidhrao</h3>
@@ -319,9 +324,10 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            I first heard about Sheltown when one of my relatives suggested me when I was searching for an accommodation in Delhi. I was very satisfied with their services and perfect customer service.
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services.
             <i class="las la-quote-right"></i>
-          </p><br>
+          </p>
           <img
             src="https://scontent.fbom3-1.fna.fbcdn.net/v/t1.0-9/102555606_2701231223315913_7713862479071983852_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=n1ClLFB6vP0AX-2pK14&_nc_ht=scontent.fbom3-1.fna&oh=73d9db1348159401799814c96be90ee7&oe=5F0DF45E"
             class="testimonial-img" alt="">
@@ -331,8 +337,9 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            Very good service,I am really impressed with quality of service they provide.The ambience was perfect.Highly recommended👍💯 <i class="las la-quote-right"></i>
-          </p><br><br><br>
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services. <i class="las la-quote-right"></i>
+          </p>
           <img
             src="https://scontent.fbom3-2.fna.fbcdn.net/v/t1.0-9/88097790_2311523815813219_6983838885990105088_o.jpg?_nc_cat=105&_nc_sid=09cbfe&_nc_ohc=DieEn4vjP0gAX8cGUN8&_nc_ht=scontent.fbom3-2.fna&oh=08d7f66fa8e0072d60a18d2349bd302c&oe=5F0CF3AD"
             class="testimonial-img" alt="">
@@ -342,8 +349,8 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            I connected with SheltOwn and after that they provided me best service and now I'm very happy with sheltOwn I had never saw that kind of
-            services of other companies. literally sheltOwn is great platform for home services❣️
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services.
             <i class="las la-quote-right"></i>
           </p>
           <img
@@ -355,7 +362,8 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            So, I was looking for PGs so that I could move to Delhi for higher studies. SheltOwn made it very easy to find PG from me. it was a great experience straight from searches on the website to the ambiance. I highly recommend using SheltOwn.
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services.
             <i class="las la-quote-right"></i>
           </p>
           <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
@@ -365,9 +373,10 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            I recommend sheltown because my younger son was gone to Delhi for his completion of masters and sheltown makes easy for him to find Pg and they provide very good Pg as they use their hastag live like you own it .💯 <i
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services.<i
               class="las la-quote-right"></i>
-          </p><br>
+          </p>
           <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
           <h3>Poonam Singh</h3>
         </div>
@@ -375,8 +384,9 @@
         <div class="testimonial-item">
           <p>
             <i class="las la-quote-left"></i>
-            It is a way that Sheltown provides PG to help students, employees and other people who live in a different city, away from their homes, and once they add and benefit from it.
-            Do Must Try Sheltown. </p><br>
+            They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
+            Thank you SheltOwn for providing excellent services.
+          </p>
           <img
             src="https://scontent.fbom3-1.fna.fbcdn.net/v/t1.0-9/90186246_2764153447013904_1044649102811332608_o.jpg?_nc_cat=101&_nc_sid=09cbfe&_nc_ohc=AcEEVkNto3sAX-NhbcW&_nc_ht=scontent.fbom3-1.fna&oh=c9ad39aeec3ea52cae25915d33668a1b&oe=5F0D8B45"
             class="testimonial-img" alt="">
@@ -389,48 +399,37 @@
   </section>
   <!-- #testimonials -->
 
-  <!--==========================
-  Sheltown plus
-  ============================-->
-  <section id="SheltOwnplus">
-    <div class="container">
-      <div class="row">
-        <div id="background_image_sheltownplus">
-          <div class="content-img">
-            <img src="https://www.mistay.in/travel-blog/content/images/size/w2000/2018/03/romantic-couple-friendly-hotels.jpg" alt="">
-          </div>
-          <div id="content">
-            <h2><strong>SheltOwn +</strong></h2>
-            <strong>Why To book a hotel? when you can invite your <br>loved ones to your own place.
-              Love has no limits and <br> so does our properties.
-              Happiness with Trust.
-              Introducing ShetOwn +</strong> <br><br>
-            <a href="sheltownplus.html"><button class="btn-sheltownplus" type="button" name="button">Book Now <i class="lab la-gratipay"></i></button></a>
-
-          </div>
+    <!--==========================
+    extra carousel
+    ============================-->
+    <section class="extra-carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 heroSlider-fixed">
+                    <div class="slider responsive">
+                        <div>
+                            <img src="img/landing_page/ec1.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="img/landing_page/ec2.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="img/landing_page/ec3.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="prev">
+                        <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="next">
+                        <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="background_image_familyplus">
-          <div class="content-img">
-            <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/249/249123719.jpg" alt="">
-          </div>
-          <div id="content">
-            <h2><strong>Family +</strong></h2>
-            <strong>Family always tends to happiness. Staying with family is super delightful.<br> Spend precious time 
-              with your family and let another family find a home for you. <br>
-              Live like you own it.
-              Introducing Family +</strong> <br><br>
-            <a href="familyplus.html"><button class="btn-sheltownplus" type="button" name="button">Book Now <i class="lab la-gratipay"></i></button></a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
   
 
-  <!--==========================
+<!--==========================
     Footer
   ============================-->
 
@@ -445,7 +444,9 @@ We are bound to provide you the best possible care and support which helps you m
 
 Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities.
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+We are with you whenever you are in need!
  </p>
           <p>Accept our warm SheltOwn hug.</p>
         </div>
@@ -566,9 +567,6 @@ We help you to find your match, book rental homes of choice across Indian cities
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
@@ -576,12 +574,111 @@ We help you to find your match, book rental homes of choice across Indian cities
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
 
+
+ 
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+   
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+
+
+  <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+  <script type="text/javascript">
+    // <![CDATA[
+    function ShowHide(divId) {
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+    // ]]>
+  </script>
+
+  <script>
+    function TapButtonNav(evt, Click) {
+      var i, tabcontent, tablinks;
+      location.replace("./policy-page.html");
+    }
+  </script>
+
+  <script>
+    function redirect(){
+      location.replace("./policy-page.html");
+      function TapButtonNav(evt, Click) {
+      var i, tabcontent, tablinks;
+      }
+    }
+  </script>
+
+
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
 
+  <!--Start of Tawk.to Script-->
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+    <!--End of Tawk.to Script-->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+    <script id="rendered-js">
+        $('.responsive').slick({
+          dots: true,
+          prevArrow: $('.prev'),
+          nextArrow: $('.next'),
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true } },
+
+
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1 } },
+
+
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1 } }
+
+
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+          ] });
+        //# sourceURL=pen.js
+    </script>
 </body>
 
 </html>
