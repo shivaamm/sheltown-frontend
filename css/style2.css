@@ -678,8 +678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box button {
   width: 120px;
-  
-  text-align: center;
+   text-align: center;
   background-color: #ff8c00;
   color: white;
   font-weight: bold;
@@ -713,7 +712,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 0;
     text-align: center;
   }
-  
+  #services .box button{
+    width: 120px;
+   text-align: center;
+  background-color: #ff8c00;
+  color: white;
+  font-weight: bold;
+  }
 }
 
 
