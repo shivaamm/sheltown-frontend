@@ -92,6 +92,12 @@
     </div>
   </header><!-- #header -->
 
+  <div class="container-fluid">
+    <div style="width: 100%; height: 5em; background-image: url('img/owner.jpg'); background-repeat: repeat; background-color: grey; text-align:center; padding-top: 3.2em;">
+        <p style="color: black; font-size: 18px;"><b>PROPERTY OWNER</b></p>
+    </div>
+  </div>
+
 <ul id="tab-bar">
   <li class="tab"><a onclick="openCity(event, 'Properties')" id="defaultOpen">My Properties</a></li>
   <li class="tab"><a onclick="openCity(event, 'Tenants')" id="defaultOpen">My Tenants</a></li>
@@ -331,182 +337,344 @@
 
 
 <!-------------------Add New---------------------------------------------->
-<div id="AddNew" class="tabcontent" style="padding: 40px;">
+<div id="AddNew" class="tabcontent">
 
-  <h2>Add New Property</h2>
-    <div class="row middler justify-content-around">
-        <div class="col-sm-4">Property Name<br><input type="text"></div>
-        <div class="col-sm-4">Address<br><input type="text"></div>
-        <div class="col-sm-4">Photos<br><input type="file" multiple></div>
+  <h2 id="propheading">Add New Property</h2>
+    <div class="row middler">
+        <div class="row container">
+            <div class="col-sm-4">
+                <div class="row">Property Name</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">Address</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">Photos</div>
+                <div class="row"><input type="file" multiple></div>
+            </div>
+        </div>
     </div>
     <br>
 
     <div class="row middler">
-      <div class="row container">
-         Housing Type
-        <div id="group1" class="center-align"> 
-          <input type="radio" name="group1" id="size_1" value="value1" checked />
-          <label for="size_1">PG</label>
-  
-          <input type="radio" name="group1" id="size_2" value="value2" />
-          <label for="size_2">Hostel</label>
-  
-          <input type="radio" name="group1" id="size_3" value="value3" />
-          <label for="size_3">Flat</label>
+        <div class="container">
 
-          <input type="radio" name="group1" id="size_4" value="value4" />
-          <label for="size_4">Apartment</label>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                <p id="category-heading">Housing Type</p>
+                    <div class="col-sm-1 d-flex flex-wrap" id="label">
+                        <label><input type="radio" name="group1" id="1" value="value1" />PG</label>
+                    </div>
+                    <div class="col-sm-1 d-flex flex-wrap" id="label">   
+                        <label><input type="radio" name="group1" id="2" value="value2" />Hostel</label>
+                    </div>
+                    <div class="col-sm-1 d-flex flex-wrap" id="label">
+                        <label><input type="radio" name="group1" id="3" value="value3" />Flat</label>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap" id="label">
+                        <label><input type="radio" name="group1" id="4" value="value4" />Apartment</label>
+                    </div>
+                    <div class="col-sm-1 d-flex flex-wrap" id="label">
+                        <label><input type="radio" name="group1" id="5" value="value5" />House</label>
+                    </div>  
+                </div>
+            </div>
 
-          <input type="radio" name="group1" id="size_5" value="value5" />
-          <label for="size_5">House</label>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Total Beds</p>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">SheltOwn+</p>
+                            <div class="col-sm-2 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group2" value="plus1"/>Yes</label>
+                            </div>  
+                            <div class="col-sm-2 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group2" value="plus2" />No</label>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
 
-      <div class="row container">
-        <div class="col">
-            Total Beds
-            <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="col">
-          <div id="group2">
-            SheltOwn+ 
-            <input type="radio" name="group2" id="size_6" value="plus1" checked />
-            <label for="size_6">Yes</label>
-  
-            <input type="radio" name="group2" id="size_7" value="plus2" />
-            <label for="size_5">No</label>
-          </div>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">For</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                    <label><input type="radio" name="group3" value="male">Male</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group3" value="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Best Suited For</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group4" value="student">Students</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group4" value="partner">Professionals</label>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
 
-      <div class="row container">
-        <div class="col">
-            For 
-            <input type="radio" name="gender">Male<br>
-            <input type="radio" name="gender">Female<br>
-      
-      </br><hr>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                        <p id="category-heading">Meals</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group5" value="meals">Yes</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group5" value="nomeals">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">House Keeping</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group6" value="daily">Daily</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group6" value="weekly">Weekly</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      
-            <button>Males</button>
-            <button>Females</button>
-        </div>
-        <div class="col">
-            Best Suited For
-            <button>Students</button>
-            <button>Partners</button>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <p id="category-heading">Common Areas</p>
+                    <div class="col-sm-2 d-flex flex-wrap" id="label">
+                        <label><input type="checkbox" name="group7" value="living">Living Room</label>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap" id="label">
+                        <label><input type="checkbox" name="group7" value="kitchen">Kitchen</label>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap" id="label">
+                        <label><input type="checkbox" name="group7" value="dining">Dining Hall</label>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap" id="label">
+                        <label><input type="checkbox" name="group7" value="study">Study Room</label>
+                    </div>
+                </div>
+            </div>
 
-      <div class="row container">
-        <div class="col">
-            Meals
-            <button>Yes</button>
-            <button>No</button>
-        </div>
-        <div class="col">
-            House Keeping
-            <button>Daily</button>
-            <button>Weekly</button>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Owner Stays</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group8" value="owner">Yes</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group8" value="noowner">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Non-Veg Allowed</p>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group9" value="nonveg">Yes</label>
+                            </div>
+                            <div class="col-sm-4 d-flex flex-wrap" id="label">
+                                <label><input type="radio" name="group9" value="veg">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="row container">
-        Common Areas
-        <button>Living Room</button>
-        <button>Kitchen</button>
-        <button>Dining Hall</button>
-        <button>Study Room</button>
-      </div>
-      
-      <div class="row container">
-        <div class="col">
-            Owner Stays
-            <button>Yes</button>
-            <button>No</button>
-        </div>
-        <div class="col">
-            Non-Veg Allowed
-            <button>Yes</button>
-            <button>No</button>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-2" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Sharing</p>
+                            <select>
+                                <option>Private</option>
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+3</option>
+                                <option>+4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Visitors Allowed</p>
+                            <div class="col-sm-3" id="label">
+                                <label><input type="radio" name="group10" value="visitors">Yes</label>
+                            </div>
+                            <div class="col-sm-3" id="label">
+                                <label><input type="radio" name="group10" value="novisitors">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="category-in">
+                        <div class="row">
+                            <p id="category-heading">Drinking/Smoking</p>
+                            <div class="col-sm-2" id="label">
+                                    <label><input type="radio" name="group11" value="smoke">Yes</label>
+                            </div>
+                            <div class="col-sm-2" id="label">
+                                <label><input type="radio" name="group11" value="nosmoke">No</label>
+                            </div>
+                            <div class="col-sm-3" id="label">
+                                <label><input type="radio" name="group11" value="maybe">Maybe</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="row container">
-        <div class="col">
-            Sharing Type
-            <select>
-                <option>Private</option>
-                <option>+1</option>
-                <option>+2</option>
-                <option>+3</option>
-                <option>+4</option>
-            </select>
-        </div>
-        <div class="col">
-            Visitors Allowed
-            <button>Yes</button>
-            <button>No</button>
-        </div>
-        <div class="col">
-            Drinking/Smoking
-            <button>Yes</button>
-            <button>No</button>
-            <button>Maybe</button>
-        </div>
-      </div>
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <p id="category-heading">Maximum Beds in a Room</p>
+                    <div class="col-sm-1" id="label">
+                        <label><input type="radio" name="group12" value="1bed">1</label>
+                    </div>
+                    <div class="col-sm-1" id="label">
+                        <label><input type="radio" name="group12" value="2bed">2</label>
+                    </div>
+                    <div class="col-sm-1" id="label">
+                        <label><input type="radio" name="group12" value="3bed">3</label>
+                    </div>
+                    <div class="col-sm-1" id="label">
+                        <label><input type="radio" name="group12" value="4bed">4</label>
+                    </div>     
+                </div>
+            </div>
 
-      <div class="row container">
-        <div class="col">
-            Maximum Beds in a Room
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
         </div>
-        <div class="col">
-            Rent <input type="text">
-            Security <input type="text">
-        </div>
-      </div>
     </div>
 
     <br>
 
     <div class="middler row">
-        Amenities 
-        <button>Table and Chair</button>
-        <button>TV</button>
-        <button>AC</button>
-        <button>Cooler</button>
-        <button>Balcony</button>
-        <button>Attached Bathroom</button>
-        <button>Meals included in rent</button>
-        <button>Electricity included in rent</button>
-        <button>CCTV</button>
-        <button>Gated</button>
-        <button>Guard</button>
-        <button>Biometric</button>
-        <button>Fridge</button>
-        <button>Washing Machine</button>
-        <button>Microwave</button>
-        <button>R.O.</button>
-        <button>Coffee Machine</button>
-        <button>Laundry Service</button>
-        <button>Wifi</button>
-        <button>Gym</button>
-        <button>Lift</button>
-        <button>Pool</button>
-        <button>Parking</button>
-        <button>Power Backup</button>
-        
-        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    Rent <input type="text">
+                </div>
+                <div class="col-sm-4">
+                    Security <input type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="middler row">
+        <div class="col-sm-12">
+            <div class="row container">
+                <p id="category-heading">Amenities (Select all that apply)</p>
+            </div>
+            <div class="row container">
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Table and Chair</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">TV</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">AC</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Cooler</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Balcony</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Attached Bathroom</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Meals included in rent</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Electricity included in rent</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">CCTV</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Gated</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Guard</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Biometric</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Fridge</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Washing Machine</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Microwave</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">R.O.</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Coffee Machine</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Laundry Service</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Wifi</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Gym</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Lift</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Pool</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Parking</label>
+                </div>
+                <div id="label">
+                    <label><input type="checkbox" name="group13">Power Backup</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row middler justify-content-center">
+        <input type="submit" style="padding: 5px;">
     </div>
     
 </div>
@@ -638,6 +806,15 @@ We help you to find your match, book rental homes of choice across Indian cities
       trigger: 'hover'
    });
   });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('input').click(function() {
+            $('input:not(:checked)').parent().removeClass("checked");
+            $('input:checked').parent().addClass("checked");
+        });
+    });
 </script>
 
 <!-- Template Main Javascript File -->

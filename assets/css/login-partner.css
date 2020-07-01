@@ -1,0 +1,56 @@
+.div-log-in-user {
+    padding: 30px 110px 50px 95px;
+  }
+
+  #emailHelp a {
+    color: #ff971d;
+  }
+
+  button a {
+    color: #fff;
+  }
+
+  button a:hover {
+    color: #fff;
+  }
+
+  .btn-login-user {
+    background-color: #ff971d;
+    border-color: #ff971d;
+  }
+
+  #image{
+    width: 20rem; 
+    margin-top:5rem; 
+}
+
+button{
+  margin-bottom: 10px;
+  align-items: center;
+  align-self: center;
+}
+
+@media screen and (max-width: 1080px){
+    #image{
+        display:none;
+    }
+    .div-log-in-user {
+        padding: 20px;
+      }
+    .container-fluid{
+        margin: 0 auto;
+    }
+    h2{
+        text-align:center;
+        font-size: 30px;
+    }
+
+    button{
+        margin-bottom: 10px;
+        align-items: center;
+        align-self: center;
+    }
+    #no{
+      margin-top: 30px;
+    }
+}
