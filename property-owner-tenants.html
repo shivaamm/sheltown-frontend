@@ -25,6 +25,21 @@
     window.parent.postMessage("resize", "*");
   }
 </script>
+
+<script>
+ $(document).ready(function(){
+	 $('[data-toggle="popover"]').popover({
+          //trigger: 'focus',
+		  trigger: 'hover',
+          html: true,
+          content: function () {
+				return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
+          },
+          title: 'Toolbox'
+    }) 
+});
+ </script>
+
 </head>
 <body>
 
@@ -104,29 +119,32 @@ Header
 <center><h2>My Tenants</h2></center>
 
 <div class="row container middler d-flex justify-content-center"><center>
-    <div class="col-lg-2"><img src="img/portfolio/1.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcd" data-html="true" data-content="Email:abcdefghijklmnop@gmail.com<br>Phone Number:1234567890">
-    </div>
-    <div class="col-lg-2"><img src="img/portfolio/2.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdedjfnkeff@gmail.com<br>Phone Number:1234567890">
-    </div>
-    <div class="col-lg-2"><img src="img/portfolio/3.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abclklkdef@gmail.com<br>Phone Number:1234567890">
-    </div>
-    <div class="col-lg-2"><img src="img/portfolio/4.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdlkcklknef@gmail.com<br>Phone Number:1234567890">
-    </div>
-    <div class="col-lg-2"><img src="img/portfolio/4.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdlkcklknef@gmail.com<br>Phone Number:1234567890">
-    </div>
-    <div class="col-lg-2"><img src="img/portfolio/4.jpg" id="tenant-pic" data-toggle="popover" data-placement="bottom" title="Mr. Abcdef" data-html="true" data-content="Email:abcdlkcklknef@gmail.com<br>Phone Number:1234567890">
-    </div>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/1.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/2.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/3.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/4.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
 </center></div>
 
 <br>
-<div class="row middler container justify-content-center" style="overflow-x:auto;">
-<table class="tenant-table" border="2"bordercolor="lightgray" style="border-collapse: collapse;">
-    <tr>
-        <th style="padding: 10px;"><h5>Ongoing Guests</h5></th>
-        <th style="padding: 10px;"><h5>Previous Guests</h5></th>
-    </tr>
-    <tr>
-        <td>
+
+  <div class="row middler container" style="padding: 10px 0;">
+    <div class="row container">
+      <div class="col-sm-6">
+        <center>
+          <div class="row"><h4>Current Guests</h4></div>
+          <div class="row">
             <table id="tenant-table-inner">
                 <tr>
                     <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
@@ -153,12 +171,11 @@ Header
                     <td>29-06-2020</td>
                 </tr>
             </table>
-        </td>
-
-        <td>
+          </div>
+          <div class="row">
             <table id="tenant-table-inner">
                 <tr>
-                    <td><img src="img/arch2.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
                     <td>Property Name</td>
                 </tr>
                 <tr>
@@ -182,14 +199,16 @@ Header
                     <td>29-06-2020</td>
                 </tr>
             </table>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
+          </div>
+        </center>
+      </div>
+      <div class="col-sm-6">
+        <center>
+          <div class="row"><h4>Previous Guests</h4></div>
+          <div class="row">
             <table id="tenant-table-inner">
                 <tr>
-                    <td><img src="img/arch3.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
                     <td>Property Name</td>
                 </tr>
                 <tr>
@@ -213,17 +232,39 @@ Header
                     <td>29-06-2020</td>
                 </tr>
             </table>
-        </td>
-        <td>
-        </td>
-    </tr>
-
-    </table>
-</div>
-
-</div>
-
-
+          </div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
 <!--Content-->
 
 <br><br>

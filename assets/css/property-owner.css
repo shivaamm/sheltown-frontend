@@ -164,6 +164,7 @@ td {
   width: 80px; 
   height:80px;
   border-radius: 50%;
+  margin: 10px 0;
 }
 
 .tenant-table{
@@ -173,8 +174,9 @@ td {
 }
 
 #tenant-table-inner{
-  margin-left: 10%;
-  float: left;
+  margin-bottom: 20px;
+  padding: 90px;
+  background-color: whitesmoke;
 }
 
 /* ADD NEW */
@@ -187,18 +189,17 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-  border: 1px solid rgb(125, 34, 199);
-  background-color: rgb(125, 34, 199);
+  border: 1px solid grey;
+  background-color: grey;
   color: white;
   padding: 5px 20px;
   margin: 10px 0;
   outline: none;
-  border-radius: 20px;
 }
 
 input[type="submit"]:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: grey;
+  border: 1px solid lightslategrey;
 }
 
 select {
@@ -300,6 +301,10 @@ button{
     margin-bottom: 10px;
   }
 
+  textarea{
+    width: 100%!important;
+  }
+
   select {
     height: 10px;
     width: 15.5em;
@@ -316,6 +321,53 @@ button{
     font-size: 18px;
     padding: 10px;
   }
+  #center-verify{
+    float: none!important;
+  }
+  
 }
 
+/* BOOKING */
+
+#verify{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: white; 
+  background-color: rgb(88, 172, 4);
+  cursor: context-menu;
+}
+
+#noverify{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  cursor: context-menu;
+}
+
+#doverify{
+  background-color: rgb(255, 128, 0);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  color: rgb(255, 255, 255);
+}
+
+#doverify:hover{
+  background-color: rgb(252, 173, 94);
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 40px;
+  transition: 1s;
+  color: rgb(255, 255, 255);
+}
+
+#center-verify{
+  float:left;
+}
 
