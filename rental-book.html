@@ -73,10 +73,11 @@
     }
 
     .rating {
-      color: #fab95b;
-      border: 1px solid #fab95b;
+      background-color: #408E3C;
+      color: #fff;
+      border: 1px solid #408E3C;
       border-radius: 3px;
-      padding: 2px;
+      padding: 3px;
     }
   </style>
   <title>SheltOwn</title>
@@ -128,12 +129,11 @@
       <div class="col-md-4 order-md-2 mb-4">
         <br>
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-8">
             <h4 class="heading">Hotel Name</h4>
-            <p><span class="rating">4.7&nbsp;<i class="fa fa-star"></i></p>
-            <p>400 Ratings <br> 4382 Reviews</p>
+            <p><span class="rating">4.7&nbsp;<i class="fa fa-star"></i></span> <span>400 Ratings 4382 Reviews</span> </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <img class="float-right img-fluid" src="img/arch1.jpeg" />
           </div>
         </div>
@@ -142,9 +142,7 @@
           <div class="col-md-12">
             <br>
             <p><i id="fa1-calender-check-o" class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckIn Date : <span id="print_checkin"></span></p>
-            <p><i id="fa2-calendar-check-o" class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckOut Date : <span id="print_checkout"></span></p>
             <p><i id="fa-users" class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Sharing : <span id="print_sharing"></span></p>
-            <p><i id="fa-snowflake" class="fas fa-snowflake"></i>&nbsp;&nbsp;AC/ Non-AC : <span id="print_airtype"></span></p>
             <p><i id="fa-inr" class="fa fa-inr" aria-hidden="true"></i>&nbsp;&nbsp;Total : <span id="print_final_amount"></span></p>
           </div>
         </div>
@@ -190,16 +188,6 @@
                 <input type="time" class="form-control" id="check_in_time" name="check_in_time" required>
               </div>
             </div>
-            <div class="form-row">
-              <div class="col mb-3">
-                <label for="check_out_date">CheckOut Date:</label>
-                <input type="date" class="form-control" id="check_out_date" name="check_out_date" onchange="checkout_date()" required>
-              </div>
-              <div class="col mb-3">
-                <label for="move_out_time">CheckOut Time:</label>
-                <input type="time" class="form-control" id="check_out_time" name="check_out_time" required>
-              </div>
-            </div>
             <hr />
             <h4 class="heading">Preferences:</h4>
             <div class="form-group">
@@ -212,29 +200,23 @@
                 <option>5</option>
               </select>
             </div>
-            <label style="padding-right:10px;">AC/ Non-AC Room:</label>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="AC">AC
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="Non-AC">Non-AC
-              </label>
-            </div>
             <hr />
             <h4 class="heading">Pay Now:</h4>
             <p>Use Sheltic Reference <a href="#" data-toggle="popover" data-trigger="hover" data-content="Join sheltown membership and get 10% discount on each booking."><i class="fa fa-info-circle"></i></a> </p>
             <label>You are paying now:</label>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="pay" onclick="amount1()">Reservation amount &nbsp;&nbsp;<i class="fa fa-inr"></i> 5000
+                <input type="radio" class="form-check-input" name="pay" onclick="amount1()">one month Rent &nbsp;&nbsp;(<i class="fa fa-inr"></i> 5000)
+                <br>
+                <center>
+                  +
+                </center>
+                one month Security &nbsp;&nbsp;(<i class="fa fa-inr"></i> 5000)
               </label>
             </div>
             <div class="form-check">
               <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="pay" onclick="amount2()" value="">Pay full month rent&nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
+                <input type="radio" class="form-check-input" name="pay" onclick="amount2()" value="">Reservation Amount, Just 25% of month Rent
               </label>
             </div>
             <div class="form-check">
@@ -494,12 +476,6 @@
       document.getElementById("fa1-calender-check-o").style.color = '#ff9719';
     }
 
-    function checkout_date() {
-      var x = document.getElementById("check_out_date").value;
-      document.getElementById("print_checkout").innerHTML = x;
-      document.getElementById("fa2-calendar-check-o").style.color = '#ff9719';
-    }
-
     function sharing() {
       var x = document.getElementById("sel1").value;
       document.getElementById("print_sharing").innerHTML = "1 room will be shared by " + x + " persons.";
@@ -514,27 +490,27 @@
     });
 
     function amount1() {
-      document.getElementById("total").innerHTML = " 5000";
+      document.getElementById("total").innerHTML = " 10000/-";
       document.getElementById("fa-inr").style.color = "#ff9719";
-      document.getElementById("print_final_amount").innerHTML = " 5000";
+      document.getElementById("print_final_amount").innerHTML = " 10000/month";
     }
 
     function amount2() {
-      document.getElementById("total").innerHTML = " 15000";
+      document.getElementById("total").innerHTML = " 12500/-";
       document.getElementById("fa-inr").style.color = "#ff9719";
-      document.getElementById("print_final_amount").innerHTML = " 15000";
+      document.getElementById("print_final_amount").innerHTML = " 12500/month";
     }
 
     function redeem() {
-      if(document.getElementById("total").innerHTML == " 5000") {
-        document.getElementById("final_amount").innerHTML =" 3750";
-        document.getElementById("save").innerHTML=" 1250";
-        document.getElementById("print_final_amount").innerHTML = " 3750";
+      if(document.getElementById("total").innerHTML == " 10000/-") {
+        document.getElementById("final_amount").innerHTML =" 7500/-";
+        document.getElementById("save").innerHTML=" 2500/-";
+        document.getElementById("print_final_amount").innerHTML = " 7500/month";
       }
-      else if(document.getElementById("total").innerHTML == " 15000"){
-        document.getElementById("final_amount").innerHTML =" 11250";
-        document.getElementById("save").innerHTML=" 3750";
-        document.getElementById("print_final_amount").innerHTML = " 11250";
+      else if(document.getElementById("total").innerHTML == " 12500/-"){
+        document.getElementById("final_amount").innerHTML =" 11250/-";
+        document.getElementById("save").innerHTML=" 1250/-";
+        document.getElementById("print_final_amount").innerHTML = " 11250/month";
       }
     }
   </script>
