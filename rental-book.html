@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>SheltOwn</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -13,10 +13,14 @@
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -35,232 +39,275 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet"> 
-  <link href="assets/css/rental-book.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    a {
+      color: #ff971d;
+      transition: 0.5s;
+    }
 
+    a:hover,
+    a:active,
+    a:focus {
+      color: #000;
+      outline: none;
+      text-decoration: none;
+    }
+
+    .lh-condensed {
+      line-height: 1.25;
+    }
+
+    .col-md-33 {
+      position: relative;
+
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .display {
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    .rating {
+      color: #fab95b;
+      border: 1px solid #fab95b;
+      border-radius: 3px;
+      padding: 2px;
+    }
+  </style>
   <title>SheltOwn</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
 
-    <!--==========================
-        Header
+      <div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+          <p>SheltOwn</p>
+        </a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
+            <ul>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
+              <li><a href="rental-services.html">Rental Services</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog-description-page.html">Blogs</a></li>
+          <li><a href="login-user.html">Log In</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+
+  <!--==========================
+      Intro Section
     ============================-->
-    <header id="header">
-        <div class="container-fluid" style="margin-left: 0; margin-right: 0;">
-
-            <div id="logo" class="pull-left">
-                <a href="index.html">
-                    <img src="img/favicon.png" alt="logo">
-                </a>
-            </div>
-
-            <div id="logo" class="pull-left" style="margin-top:8px;">
-                <a href="index.html">
-                    <p >SheltOwn</p>
-                </a>
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Home</a></li>
-                    <li class="menu-has-children"><a href="">Our Services</a>
-                        <ul>
-                            <li><a href="personal_services1.html">Personalised Services</a></li>
-                            <li><a href="rental-services.html">Rental Services</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="blog-description-page.html">Blogs</a></li>
-                    <li><a href="login-user.html">Log In</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
-                </ul>
-            </nav><!-- #nav-menu-container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <br>
+        <div class="row">
+          <div class="col-md-7">
+            <h4 class="heading">Hotel Name</h4>
+            <p><span class="rating">4.7&nbsp;<i class="fa fa-star"></i></p>
+            <p>400 Ratings <br> 4382 Reviews</p>
+          </div>
+          <div class="col-md-5">
+            <img class="float-right img-fluid" src="img/arch1.jpeg" />
+          </div>
         </div>
-    </header><!-- #header -->
+        <hr />
+        <div class="row print display">
+          <div class="col-md-12">
+            <br>
+            <p><i id="fa1-calender-check-o" class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckIn Date : <span id="print_checkin"></span></p>
+            <p><i id="fa2-calendar-check-o" class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckOut Date : <span id="print_checkout"></span></p>
+            <p><i id="fa-users" class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Sharing : <span id="print_sharing"></span></p>
+            <p><i id="fa-snowflake" class="fas fa-snowflake"></i>&nbsp;&nbsp;AC/ Non-AC : <span id="print_airtype"></span></p>
+            <p><i id="fa-inr" class="fa fa-inr" aria-hidden="true"></i>&nbsp;&nbsp;Total : <span id="print_final_amount"></span></p>
+          </div>
+        </div>
+      </div>
 
 
-    <section class="pay">
-        <div class="container-fluid">
+      <div class="col-md-8 order-md-1">
+        <div class="person-detail">
+          <form class="needs-validation">
+            <br>
+            <h4 class="heading">Enter Personal details:</h4>
+            <div class="form-row">
+              <div class="col mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback"> Valid first name is required. </div>
+              </div>
+              <div class="col mb-3">
+                <label for="lastName">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback"> Valid last name is required. </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback"> Please enter a valid email address. </div>
+            </div>
+            <div class="mb-3">
+              <label for="phone">Phone no.</label>
+              <input type="tel" class="form-control" id="phone" placeholder="you@example.com" pattern="[0-9]{10}" required>
+              <div class="invalid-feedback"> Please enter a valid phone number. </div>
+            </div>
+            <hr />
+            <h4 class="heading">Schedule your Slot:</h4>
+            <div class="form-row">
+              <div class="col mb-3">
+                <label for="check_in_date">CheckIn Date:</label>
+                <input type="date" class="form-control" id="check_in_date" name="check_in_date" onchange="checkin_date()" required>
+              </div>
+              <div class="col mb-3">
+                <label for="check_in_time">CheckIn Time:</label>
+                <input type="time" class="form-control" id="check_in_time" name="check_in_time" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col mb-3">
+                <label for="check_out_date">CheckOut Date:</label>
+                <input type="date" class="form-control" id="check_out_date" name="check_out_date" onchange="checkout_date()" required>
+              </div>
+              <div class="col mb-3">
+                <label for="move_out_time">CheckOut Time:</label>
+                <input type="time" class="form-control" id="check_out_time" name="check_out_time" required>
+              </div>
+            </div>
+            <hr />
+            <h4 class="heading">Preferences:</h4>
+            <div class="form-group">
+              <label for="sel1">Sharing:</label>
+              <select class="form-control" id="sel1" onchange="sharing()">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <label style="padding-right:10px;">AC/ Non-AC Room:</label>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="AC">AC
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="Non-AC">Non-AC
+              </label>
+            </div>
+            <hr />
+            <h4 class="heading">Pay Now:</h4>
+            <p>Use Sheltic Reference <a href="#" data-toggle="popover" data-trigger="hover" data-content="Join sheltown membership and get 10% discount on each booking."><i class="fa fa-info-circle"></i></a> </p>
+            <label>You are paying now:</label>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="pay" onclick="amount1()">Reservation amount &nbsp;&nbsp;<i class="fa fa-inr"></i> 5000
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="pay" onclick="amount2()" value="">Pay full month rent&nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="pay" value="" checked disabled>Security Deposit &nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
+              </label>
+            </div>
+            <hr />
+
+            <h4 class="mb-3">Payment</h4>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">Credit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">Debit card</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
             <div class="row">
-
-                <div class="col-md-5 hotel-detail">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h4 class="heading">Hotel Name</h4>
-                            <p><span class="rating">4.7&nbsp;<i class="fa fa-star"></i></span>&nbsp;&nbsp;400 Ratings 4382 Reviews</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img class="float-right img-fluid" src="img/arch1.jpeg"/>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="row print">
-                        <div class="col-md-12">
-                            <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckIn Date : <span id="print_checkin"></span></p>
-                            <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckOut Date : <span id="print_checkout"></span></p>
-                            <p><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Sharing : <span id="print_sharing"></span></p>
-                            <p><i class="fas fa-snowflake"></i>&nbsp;&nbsp;AC/ Non-AC : <span id="print_airtype"></span></p>
-                            <p><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;&nbsp;Total : <span id="print_final_amount"></span></p>
-                        </div>
-                    </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback"> Name on card is required </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback"> Credit card number is required </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback"> Expiration date required </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback"> Security code required </div>
+              </div>
+            </div>
+            <h5 class="heading">Total:<span id="total"></span></h5>
+            <div class="input-group mb-3">
+              <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" id="promo" class="form-control" placeholder="Promo code">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn btn-secondary" onclick="redeem()">Redeem</button>
+                  </div>
                 </div>
-
-                <div class="col-md-7">
-                    <div class="person-detail">
-                        <form class="needs-validation">
-                            <h4 class="heading">Enter Personal details:</h4>
-                            <div class="form-row">
-                                <div class="col mb-3">
-                                    <label for="firstName">First name</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                    <div class="invalid-feedback"> Valid first name is required. </div>
-                                </div>
-                                <div class="col mb-3">
-                                    <label for="lastName">Last name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                                    <div class="invalid-feedback"> Valid last name is required. </div>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                                <div class="invalid-feedback"> Please enter a valid email address. </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="phone">Phone no.</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="you@example.com" pattern="[0-9]{10}" required>
-                                <div class="invalid-feedback"> Please enter a valid phone number. </div>
-                            </div>
-                            <hr/>
-                            <h4 class="heading">Schedule your Slot:</h4>
-                            <div class="form-row">
-                                <div class="col mb-3">
-                                    <label for="check_in_date">CheckIn Date:</label>
-                                    <input type="date" class="form-control" id="check_in_date" name="check_in_date" onchange="checkin_date()" required>
-                                </div>
-                                <div class="col mb-3">
-                                    <label for="check_in_time">CheckIn Time:</label>
-                                    <input type="time" class="form-control"id="check_in_time" name="check_in_time" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col mb-3">
-                                    <label for="check_out_date">CheckOut Date:</label>
-                                    <input type="date" class="form-control" id="check_out_date" name="check_out_date" onchange="checkout_date()" required>
-                                </div>
-                                <div class="col mb-3">
-                                    <label for="move_out_time">CheckOut Time:</label>
-                                    <input type="time" class="form-control"id="check_out_time" name="check_out_time" required>
-                                </div>
-                            </div>
-                            <hr/>
-                            <h4 class="heading">Preferences:</h4>
-                            <div class="form-group">
-                                <label for="sel1">Sharing:</label>
-                                <select class="form-control" id="sel1" onchange="sharing()">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div> 
-                            <label style="padding-right:10px;">AC/ Non-AC Room:</label>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="AC">AC
-                                </label>
-                            </div>
-                            <div class="form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="airtype" onclick="airtype(this)" value="Non-AC">Non-AC
-                                </label>
-                            </div>
-                            <hr/>
-                            <h4 class="heading">Pay Now:</h4>
-                            <p>Use Sheltic Reference  <a href="#" data-toggle="popover" data-trigger="hover" data-content="Join sheltown membership and get 10% discount on each booking."><i class="fa fa-info-circle"></i></a> </p>
-                            <label>You are paying now:</label>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="pay" checked>Reservation amount &nbsp;&nbsp;<i class="fa fa-inr"></i> 5000
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="pay" value="">Pay full month rent&nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="pay" value="" checked disabled>Security Deposit &nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
-                                </label>
-                            </div> 
-                            <hr/>
-
-                            <h4 class="mb-3">Payment</h4>
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-              <label class="custom-control-label" for="credit">Credit card</label>
+              </form>
             </div>
-            <div class="custom-control custom-radio">
-              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-              <label class="custom-control-label" for="debit">Debit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-              <label class="custom-control-label" for="paypal">PayPal</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="cc-name">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback"> Name on card is required </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="cc-number">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-              <div class="invalid-feedback"> Credit card number is required </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-              <div class="invalid-feedback"> Expiration date required </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-cvv">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-              <div class="invalid-feedback"> Security code required </div>
-            </div>
-          </div>
-                            <h5 class="heading">Total:<span id="total"></span></h5>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Promo code">
-                                <div class="input-group-append">
-                                    <button class="btn btn-redeem" onclick="redeem()">Redeem</button>
-                                    <!--check redeem function to add backend code -->
-                                </div>
-                            </div>
-                            <h5 class="heading">You Save:<span id="save"></span></h5>
-                            <h5 class="heading">Final Amount:<span id="final_amount" onchange="finalprinting()"></span></h5>
-                            <center>
-                                <button type="submit" class="btn btn-block pay-btn">Pay</button>
-                            </center>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <h5 class="heading">You Save:<span id="save"></span></h5>
+            <h5 class="heading">Final Amount:<span id="final_amount" onchange="finalprinting()"></span></h5>
+            <center>
+              <button type="submit" class="btn btn-block btn-primary">Pay</button>
+            </center>
+            <br>
+          </form>
         </div>
-    </section>
 
-   
-
- <!--==========================
+      </div>
+    </div>
+  </div>
+  <!--==========================
     Footer
   ============================-->
 
@@ -271,16 +318,18 @@
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+            We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities.
- </p>
+            We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+            We are with you whenever you are in need!
+          </p>
           <p>Accept our warm SheltOwn hug.</p>
         </div>
 
-        <div class="col-xs-6 col-md-3 category-text">
+        <div class="col-xs-6 col-md-33 category-text">
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
@@ -291,7 +340,7 @@ We help you to find your match, book rental homes of choice across Indian cities
           </ul>
         </div>
 
-        <div class="col-xs-6 col-md-3 quick-text">
+        <div class="col-xs-6 col-md-33 quick-text">
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
@@ -380,24 +429,24 @@ We help you to find your match, book rental homes of choice across Indian cities
   </section><!-- #footer -->
 
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
 
+  <script type="text/javascript">
+    // <![CDATA[
+    function ShowHide(divId) {
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+    // ]]>
 
- 
-  <script src="js/main.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
+    function myFunction(){
+      var code = document.getElementById("promo");
+      code.value = "Sheltie25";
+    }
+  </script>
   <!-- Optional JavaScript -->
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -435,33 +484,86 @@ We help you to find your match, book rental homes of choice across Indian cities
     // ]]>
   </script>
   <script>
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover();
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
     });
+
     function checkin_date() {
       var x = document.getElementById("check_in_date").value;
-      document.getElementById("print_checkin").innerHTML =x;
+      document.getElementById("print_checkin").innerHTML = x;
+      document.getElementById("fa1-calender-check-o").style.color = '#ff9719';
     }
+
     function checkout_date() {
       var x = document.getElementById("check_out_date").value;
-      document.getElementById("print_checkout").innerHTML =x;
+      document.getElementById("print_checkout").innerHTML = x;
+      document.getElementById("fa2-calendar-check-o").style.color = '#ff9719';
     }
+
     function sharing() {
       var x = document.getElementById("sel1").value;
-      document.getElementById("print_sharing").innerHTML = "1 room will be shared by "+x +" persons.";
+      document.getElementById("print_sharing").innerHTML = "1 room will be shared by " + x + " persons.";
+      document.getElementById("fa-users").style.color = '#ff9719';
     }
+
     $(function() {
-        $('input:radio[name="airtype"]').change(function() {
-            document.getElementById("print_airtype").innerHTML =$(this).val();
-        });
+      $('input:radio[name="airtype"]').change(function() {
+        document.getElementById("print_airtype").innerHTML = $(this).val();
+        document.getElementById("fa-snowflake").style.color = '#ff9719';
+      });
     });
-    function redeem(){
-        // add backend code here to print save and final print value on screen
-        document.getElementById("save").innerHTML = 100;
-        var x = document.getElementById("final_amount").innerHTML =200;
-        document.getElementById("print_final_amount").innerHTML =x;
+
+    function amount1() {
+      document.getElementById("total").innerHTML = " 5000";
+      document.getElementById("fa-inr").style.color = "#ff9719";
+      document.getElementById("print_final_amount").innerHTML = " 5000";
+    }
+
+    function amount2() {
+      document.getElementById("total").innerHTML = " 15000";
+      document.getElementById("fa-inr").style.color = "#ff9719";
+      document.getElementById("print_final_amount").innerHTML = " 15000";
+    }
+
+    function redeem() {
+      if(document.getElementById("total").innerHTML == " 5000") {
+        document.getElementById("final_amount").innerHTML =" 3750";
+        document.getElementById("save").innerHTML=" 1250";
+        document.getElementById("print_final_amount").innerHTML = " 3750";
+      }
+      else if(document.getElementById("total").innerHTML == " 15000"){
+        document.getElementById("final_amount").innerHTML =" 11250";
+        document.getElementById("save").innerHTML=" 3750";
+        document.getElementById("print_final_amount").innerHTML = " 11250";
+      }
     }
   </script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+
+
+
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+
+
+
+
 </body>
 
 </html>
