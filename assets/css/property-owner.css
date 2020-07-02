@@ -157,7 +157,6 @@ td {
   
 }
 
-
 /* MY TENANTS */
 #tenant-pic{
   cursor: pointer;
@@ -371,3 +370,15 @@ button{
   float:left;
 }
 
+/* SERVICE PROVIDER */
+
+.type {
+  display: none;
+}
+
+#select_box{
+  width: 15em; 
+  padding: 3px 5px; 
+  border: 0.2px solid grey; 
+  height: 2em;
+}

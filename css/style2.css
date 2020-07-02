@@ -394,6 +394,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   .overlay {
     background-color: white;
   }
+.overlay_why {
+    background-color: white;
+  }
 
   #intro .intro-content h2 {
     font-size: 20px;
@@ -405,9 +408,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro .intro-content p {
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 400;
+<<<<<<< HEAD
     margin-top:5px;
+=======
+    margin-top:18px;
+>>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
     margin-bottom: 5px;
     padding-top: 5px;
     text-align: center;
@@ -553,7 +560,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 100px;
 }
   .search-services {
+<<<<<<< HEAD
   width: 250px;
+=======
+  width: 300px;
+>>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -562,6 +573,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #444;
   border-radius: 100px ;
   margin-bottom: 5px;
+    margin-left:-70px;
     padding: 0px 5px;
     height: 30px;
     font-size: 15px;
@@ -569,7 +581,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .search-city {
+<<<<<<< HEAD
  width: 250px;
+=======
+ width: 300px;
+>>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -578,6 +594,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #444;
   border-radius: 100px ;
   margin-bottom: 5px;
+ margin-left:-70px;
     padding: 0px 5px;
     height: 30px;
     font-size: 15px;
@@ -588,7 +605,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .search-locality {
+<<<<<<< HEAD
   width: 170px;
+=======
+  width: 220px;
+>>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
   position: relative;
   padding: 0px 40px;
   transition: all 0.5s;
@@ -597,6 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #444;
   border-radius: 100px 0px 0px 100px;
   margin-bottom: 5px;
+ margin-left:-70px;
     padding: 0px 5px;
     height: 30px;
     font-size: 15px;
@@ -684,16 +706,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 12.5rem;
 }
 
-#services .box button:hover,
-#services .box button:focus,
-#services .box button:active {
-  width: 120px;
-  
-  text-align: center;
-  color: white;
-  background-color: #ff8c00;
-  font-weight: bold;
-}
+
 
 @media (max-width: 767px) {
   #services .box .box {
@@ -712,11 +725,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
   #services .box button{
-    width: 120px;
+    width: 80px;
+    height:30px;
+    font-size:9px;
    text-align: center;
-  background-color: #ff8c00;
+   background-color: #ff8c00;
   color: white;
   font-weight: bold;
+  margin-left:120px;
   }
 }
 
@@ -728,13 +744,38 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
+.why {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .why{
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+  }
+}
+.overlay_why {
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(200, 200, 200, 0.6);*/
+}
+
 #portfolio .row {
   margin-left: 0rem;
 }
 
 #portfolio .portfolio-bg {
   box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.1);
-  max-width: max-content;
+ background-image: url("../img/portfolio_why.png");
+ width: 100%;
+ 
 }
 
 #portfolio .portfolio-bg img {
