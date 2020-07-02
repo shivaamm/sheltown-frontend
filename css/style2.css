@@ -410,7 +410,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro .intro-content p {
     font-size: 25px;
     font-weight: 400;
-    margin-top:5px;
+    margin-top:18px;
     margin-bottom: 5px;
     padding-top: 5px;
     text-align: center;
@@ -690,16 +690,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 12.5rem;
 }
 
-#services .box button:hover,
-#services .box button:focus,
-#services .box button:active {
-  width: 120px;
-  
-  text-align: center;
-  color: white;
-  background-color: #ff8c00;
-  font-weight: bold;
-}
+
 
 @media (max-width: 767px) {
   #services .box .box {
@@ -718,11 +709,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
   #services .box button{
-    width: 120px;
+    width: 80px;
+    height:30px;
+    font-size:9px;
    text-align: center;
-  background-color: #ff8c00;
+   background-color: #ff8c00;
   color: white;
   font-weight: bold;
+  margin-left:150px;
   }
 }
 
