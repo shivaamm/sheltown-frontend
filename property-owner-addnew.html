@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+<title>SheltOwn</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/aboutus.css">
+<link href="css/style.css" rel="stylesheet">
+<link href="assets/css/property-owner.css" rel="stylesheet">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body>
+
+<!--==========================
+Header
+============================-->
+
+<header id="header" style="z-index: 1000;">
+<div class="container-fluid">
+<div id="logo" class="pull-left">
+    <a href="index.html">
+        <img src="img/favicon.png" alt="logo">
+    </a>
+    </div>
+
+<div id="logo" class="pull-left" style="margin-top:8px;">
+    <a href="index.html">
+    <p >SheltOwn</p>
+    </a>
+    </div>
+
+    <nav id="nav-menu-container">
+    <ul class="nav-menu">
+        <li class="menu-active"><a href="index.html">Home</a></li>
+        <li class="menu-has-children" style="z-index: 100;"><a href="">Our Services</a>
+        <ul>
+            <li><a href="personal_services1.html">Personalised Services</a></li>
+            <li><a href="rental-services.html">Rental Services</a></li>
+        </ul>
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog-description-page.html">Blogs</a></li>
+        <li><a href="login-user.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    </nav><!-- #nav-menu-container -->
+</div>
+</header>
+<!-- #header -->
+
+<br>
+
+<!-- second fixed navbar-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-secondary container-fluid" id="navbar-two" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-two--links"><span class="sr-only">Property Owner</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Property Owner</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-two--links">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="property-owner-properties.html">My Properties</a></li>
+        <li class="active"><a href="property-owner-tenants.html">My Tenants</a></li>
+        <li class="active"><a href="property-owner-addnew.html">Add New Property</a></li>
+        <li class="active"><a href="property-owner-booking.html">My Bookings</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">My Account<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="z-index: 4;">
+            <li><a href="mydetails.html"><i class="las la-user"></i> Details</a></li>
+            <li><a href="bookings.html"><i class="las la-home"></i> Bookings</a></li>
+            <li><a href="appointments.html"><i class="las la-users-cog"></i> Appointments</a></li>
+            <li><a href="wishlist.html"><i class="lar la-heart"></i> Wishlist</a></li>
+            <li><a href="gifts.html"><i class="las la-gift"></i> Gifts</a></li>
+            <li><a href="notifications.html"><i class="las la-bell"></i> Notifications</a></li>						</li>
+            <li><a href="helpdesk.html"><i class="las la-phone-volume"></i> 24/7 Help</a></li>
+            <li><a href="sheltownverified.html"><i class="las la-check-circle"></i> SheltOwn Verified</a></li>
+            <li><a href="index.html"><i class="las la-sign-in-alt"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+<!--Second nav-->
+
+<br><br><br>
+
+<!--Content-->
+<h2 class="container" id="propheading">Add New Property</h2>
+    <div class="row middler container">
+        <div class="row container" id="inner-row">
+            <div class="col-sm-4">
+                <div class="row">Property Name</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">Address</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">Photos</div>
+                <div class="row"><input type="file" multiple></div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row middler container">
+        <div id="inner-row">
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                        <p id="category-heading">Housing Type</p>
+                    <button>
+                        <label><input type="radio" name="group1" id="1" value="value1" />PG</label>
+                    </button>
+                    <button>   
+                        <label><input type="radio" name="group1" id="2" value="value2" />Hostel</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group1" id="3" value="value3" />Flat</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group1" id="4" value="value4" />Apartment</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group1" id="5" value="value5" />House</label>
+                    </button>  
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <p id="category-heading">Total Beds</p>
+                            <br>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">SheltOwn+</p>
+                     
+                            <button>
+                                <label><input type="radio" name="group2" value="plus1"/>Yes</label>
+                            </button>  
+                            <button>
+                                <label><input type="radio" name="group2" value="plus2" />No</label>
+                            </button>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">For</p>
+                            <button>
+                                    <label><input type="radio" name="group3" value="male">Male</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group3" value="female">Female</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">Best Suited For</p>
+                                                    
+                            <button>
+                                <label><input type="radio" name="group4" value="student">Students</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group4" value="partner">Professionals</label>
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">Meals</p>
+                                        
+                            <button>
+                                <label><input type="radio" name="group5" value="meals">Yes</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group5" value="nomeals">No</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">House Keeping</p>
+                            <button>
+                                <label><input type="radio" name="group6" value="daily">Daily</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group6" value="weekly">Weekly</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container"> 
+                        <p id="category-heading">Common Areas</p>
+                   
+                    <button>
+                        <label><input type="checkbox" name="group7" value="living">Living Room</label>
+                    </button>
+                    <button>
+                        <label><input type="checkbox" name="group7" value="kitchen">Kitchen</label>
+                    </button>
+                    <button>
+                        <label><input type="checkbox" name="group7" value="dining">Dining Hall</label>
+                    </button>
+                    <button>
+                        <label><input type="checkbox" name="group7" value="study">Study Room</label>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">Owner Stays</p>
+                            <button>
+                                <label><input type="radio" name="group8" value="owner">Yes</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group8" value="noowner">No</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                                <p id="category-heading">Non-Veg Allowed</p>
+                            <button>
+                                <label><input type="radio" name="group9" value="nonveg">Yes</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group9" value="veg">No</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <p id="category-heading">Sharing</p>
+                                <select>
+                                <option>Private</option>
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+3</option>
+                                <option>+4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <p id="category-heading">Visitors Allowed</p>
+                            <button>
+                                <label><input type="radio" name="group10" value="visitors">Yes</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group10" value="novisitors">No</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <p id="category-heading">Drinking/Smoking</p>
+                            <button>
+                                    <label><input type="radio" name="group11" value="smoke">Yes</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group11" value="nosmoke">No</label>
+                            </button>
+                            <button>
+                                <label><input type="radio" name="group11" value="maybe">Maybe</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12" id="category">
+                <div class="row container">
+                    <p id="category-heading">Maximum Beds in a Room</p>
+                    <button>
+                        <label><input type="radio" name="group12" value="1bed">1</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group12" value="2bed">2</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group12" value="3bed">3</label>
+                    </button>
+                    <button>
+                        <label><input type="radio" name="group12" value="4bed">4</label>
+                    </button>     
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row middler container">
+        <div class="row container" id="inner-row">
+            <div class="col-sm-4">
+                <div class="row">Rent</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">Security</div>
+                <div class="row"><input type="text" style="width: 15em; padding: 3px 5px; border: 0.2px solid grey;"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="middler row container">
+        <div class="col-sm-12">
+            <div class="row container" id="inner-row">
+                <p id="category-heading">Amenities (Select all that apply)</p>
+            </div>
+            <div class="row container">
+                <button>
+                    <label><input type="checkbox" name="group13">Table and Chair</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">TV</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">AC</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Cooler</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Balcony</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Attached Bathroom</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Meals included in rent</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Electricity included in rent</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">CCTV</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Gated</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Guard</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Biometric</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Fridge</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Washing Machine</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Microwave</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">R.O.</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Coffee Machine</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Laundry Service</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Wifi</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Gym</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Lift</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Pool</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Parking</label>
+                </button>
+                <button>
+                    <label><input type="checkbox" name="group13">Power Backup</label>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row middler justify-content-center container">
+        <center><input id="btn-add" type="submit"></center>
+    </div>
+    
+</div>
+<!--Content-->
+
+<br><br>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 about-text">
+          <h6>About</h6>
+          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+
+We are bound to provide you the best possible care and support which helps you meet your demands.
+
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+
+We help you to find your match, book rental homes of choice across Indian cities.
+ </p>
+          <p>Accept our warm SheltOwn hug.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3 category-text">
+          <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="policy-page.html">Policy</a></li>
+            <li><a href="policy-page.html">FAQs</a></li>
+            <li><a href="policy-page.html">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn Family+</a></li>
+            <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3 quick-text">
+          <ul class="footer-links">
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog-description-page.html">Blogs</a></li>
+            <li><a href="work-with-us.html">Join our Team</a></li>
+            <li><a href="policy-page.html">List your Property</a></li>
+            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section id="footer-two">
+    <div class="container">
+      <a style="color: #ff9719; cursor: pointer;" onclick="javascript:ShowHide('HiddenDiv')">More info</a>
+      <br>
+      <div class="mid" id="HiddenDiv" style="display: none;">
+        <div class="row" id="more">
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Mumbai</a></li>
+              <li><a href="#">Room for rent in Delhi</a></li>
+              <li><a href="#">Room for rent in Bangalore</a></li>
+              <li><a href="#">Room for rent in Hyderabad</a></li>
+              <li><a href="#">Room for rent in Ahmedabad</a></li>
+              <li><a href="#">Room for rent in Chennai</a></li>
+              <li><a href="#">Room for rent in Kolkata</a></li>
+              <li><a href="#">Room for rent in Surat</a></li>
+              <li><a href="#">Room for rent in Pune</a></li>
+              <li><a href="#">Room for rent in Jaipur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Vishakhapatnam</a></li>
+              <li><a href="#">Room for rent in Nagpur</a></li>
+              <li><a href="#">Room for rent in Lucknow</a></li>
+              <li><a href="#">Room for rent in Kanpur</a></li>
+              <li><a href="#">Room for rent in Thane</a></li>
+              <li><a href="#">Room for rent in Bhopal</a></li>
+              <li><a href="#">Room for rent in Indore</a></li>
+              <li><a href="#">Room for rent in Pimpri-Chinchwad</a></li>
+              <li><a href="#">Room for rent in Patna</a></li>
+              <li><a href="#">Room for rent in Vadodara</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <ul class="footer-two-links">
+              <li><a href="#">Room for rent in Gaziabad</a></li>
+              <li><a href="#">Room for rent in Ludhiana</a></li>
+              <li><a href="#">Room for rent in Agra</a></li>
+              <li><a href="#">Room for rent in Nashik</a></li>
+              <li><a href="#">Room for rent in Faridabad</a></li>
+              <li><a href="#">Room for rent in Meerut</a></li>
+              <li><a href="#">Room for rent in Rajkot</a></li>
+              <li><a href="#">Room for rent in Kalyan-Dombivli</a></li>
+              <li><a href="#">Room for rent in Vasai-Virar</a></li>
+              <li><a href="#">Room for rent in Varanasi</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <br>
+          <a href="mailto:info@sheltown.com">info@sheltown.com</a>
+          <br>
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
+
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <br>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/sheltown.india" class="fa fa-facebook"></a></li>
+            <li><a class="twitter" href="https://twitter.com/OwnShelt?s=20"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://instagram.com/sheltown.india"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/sheltown"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- #footer -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+
+<script>
+  $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'top',
+      trigger: 'hover'
+   });
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('input').click(function() {
+            $('input:not(:checked)').parent().removeClass("checked");
+            $('input:checked').parent().addClass("checked");
+        });
+    });
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+
+<!-- JavaScript Libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="lib/sticky/sticky.js"></script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+

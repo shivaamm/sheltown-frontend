@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/aboutus.css">
 <link href="css/style.css" rel="stylesheet">
+<link href="assets/css/property-owner.css" rel="stylesheet">
 <script>
   window.console = window.console || function(t) {};
 </script>
@@ -25,119 +26,250 @@
   }
 </script>
 
+<script>
+ $(document).ready(function(){
+	 $('[data-toggle="popover"]').popover({
+          //trigger: 'focus',
+		  trigger: 'hover',
+          html: true,
+          content: function () {
+				return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
+          },
+          title: 'Toolbox'
+    }) 
+});
+ </script>
+
 </head>
 <body>
-  <!--==========================
-    Header
-  ============================-->
 
-  <header id="header">
-    <div class="container-fluid">
- <div id="logo" class="pull-left">
-        <a href="index.html">
-          <img src="img/favicon.png" alt="logo">
-        </a>
-      </div>
+<!--==========================
+Header
+============================-->
+
+<header id="header" style="z-index: 1000;">
+<div class="container-fluid">
+<div id="logo" class="pull-left">
+    <a href="index.html">
+        <img src="img/favicon.png" alt="logo">
+    </a>
+    </div>
 
 <div id="logo" class="pull-left" style="margin-top:8px;">
-        <a href="index.html">
-        <p >SheltOwn</p>
-        </a>
-      </div>
+    <a href="index.html">
+    <p >SheltOwn</p>
+    </a>
+    </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li class="menu-has-children"><a href="">Our Services</a>
-            <ul>
-              <li><a href="personal_services1.html">Personalised Services</a></li>
-              <li><a href="rental-services.html">Rental Services</a></li>
-            </ul>
-          </li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="blog-description-page.html">Blogs</a></li>
-          <li><a href="login-user.html">Log In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
+    <nav id="nav-menu-container">
+    <ul class="nav-menu">
+        <li class="menu-active"><a href="index.html">Home</a></li>
+        <li class="menu-has-children" style="z-index: 100;"><a href="">Our Services</a>
+        <ul>
+            <li><a href="personal_services1.html">Personalised Services</a></li>
+            <li><a href="rental-services.html">Rental Services</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+        </li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="blog-description-page.html">Blogs</a></li>
+        <li><a href="login-user.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    </nav><!-- #nav-menu-container -->
+</div>
+</header>
+<!-- #header -->
+
+<br>
+
+<!-- second fixed navbar-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-secondary container-fluid" id="navbar-two" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-two--links"><span class="sr-only">Property Owner</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Property Owner</a>
     </div>
-  </header>
-
-
-  <!-- #header -->
-
-
-<div class="container" style="border: 1px solid black; padding: 50px;">
-<div class="row">
-  <div class="col-sm-12"> 
-    <div class="row">
-      <h1 style="text-align:center;font-family: 'Montserrat', sans-serif;color: #ff9719; font-size: 32px;margin-top: 4rem;"> CONTACT US </h1>
+    <div class="navbar-collapse collapse" id="navbar-two--links">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="property-owner-properties.html">My Properties</a></li>
+        <li class="active"><a href="property-owner-tenants.html">My Tenants</a></li>
+        <li class="active"><a href="property-owner-addnew.html">Add New Property</a></li>
+        <li class="active"><a href="property-owner-booking.html">My Bookings</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">My Account<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="z-index: 4;">
+            <li><a href="mydetails.html"><i class="las la-user"></i> Details</a></li>
+            <li><a href="bookings.html"><i class="las la-home"></i> Bookings</a></li>
+            <li><a href="appointments.html"><i class="las la-users-cog"></i> Appointments</a></li>
+            <li><a href="wishlist.html"><i class="lar la-heart"></i> Wishlist</a></li>
+            <li><a href="gifts.html"><i class="las la-gift"></i> Gifts</a></li>
+            <li><a href="notifications.html"><i class="las la-bell"></i> Notifications</a></li>						</li>
+            <li><a href="helpdesk.html"><i class="las la-phone-volume"></i> 24/7 Help</a></li>
+            <li><a href="sheltownverified.html"><i class="las la-check-circle"></i> SheltOwn Verified</a></li>
+            <li><a href="index.html"><i class="las la-sign-in-alt"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <div class="row">
+  </div>
+</nav>  
+<!--Second nav-->
+
+<br><br><br>
+
+<!--Content-->
+<center><h2>My Tenants</h2></center>
+
+<div class="row container middler d-flex justify-content-center"><center>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/1.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/2.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/3.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+    <figure class="col-sm-2">
+      <img src="img/portfolio/4.jpg" id="tenant-pic">
+      <figcaption>Mr. John Doe<br>+91 7382836527<br>johndie123@gmail.com</figcaption>
+    </figure>
+</center></div>
+
+<br>
+
+  <div class="row middler container" style="padding: 10px 0;">
+    <div class="row container">
       <div class="col-sm-6">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="las la-map-marker">
-              <div class="contact-address">
-                <i class="ion-ios-location-outline"></i>
-                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Address</h3>
-                <address>India</address>
-              </div>
-            </div>
+        <center>
+          <div class="row"><h4>Current Guests</h4></div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
           </div>
-          <div class="col-sm-4">
-            <div class="las la-phone">
-              <div class="contact-phone">
-                <i class="ion-ios-telephone-outline"></i>
-                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Phone Number</h3>
-                <p><a href="tel:7644080506" style="color:black;">+91 7644080506</a></p>
-              </div>
-            </div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
           </div>
-          <div class="col-sm-4">
-            <div class="las la-envelope">
-              <div class="contact-email">
-                <i class="ion-ios-email-outline"></i>
-                <h3 style="font-family: 'Lato', sans-serif; color: #ff9719;">Email</h3>
-                <p><a href="mailto:info@sheltown.com" style="color: black;">info@sheltown.com</a></p>
-              </div>
-            </div>
-          </div>
-        <div class="row align-items-center justify-content-center" style="border: 1px solid black;">
-            <iframe style="height: 480px; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d9913.633211580622!2d77.25411706624713!3d28.539760743888966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ce3dbdccef085%3A0x99333fe6f1b3a237!2sKalkaji%2C%20New%20Delhi%2C%20Delhi!3m2!1d28.539951499999997!2d77.25915789999999!5e0!3m2!1sen!2sin!4v1593072274885!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
-        </div>
-        </div>
+        </center>
       </div>
       <div class="col-sm-6">
-        <div class="container-fluid containerr">
-        <h2 style="text-align:center"> Send Us a Message! </h2>
-        <br>
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <br>
-
-        <label for="lname">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="Your email..">
-        <br>
-
-        <label for="country">Contact No</label><br>
-        <input type="number" id="fname" name="contact" placeholder="Your number..">
-        <br>
-
-        <label for="subject">Message</label><br>
-        <textarea id="subject" name="subject" placeholder="Your text here" style="height:100px"></textarea>
-          <br>
-        <input type="submit" value="Submit">
-        </div>
+        <center>
+          <div class="row"><h4>Previous Guests</h4></div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+          </div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td><img onclick="tenant-details()"src="img/arch1.jpeg" style="width: 80px; height:80px;border-radius: 50%;"></td>
+                    <td>Property Name</td>
+                </tr>
+                <tr>
+                    <td>Occupied From: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Occupying Till: </td>
+                    <td>29-06-2020</td>
+                </tr>
+                <tr>
+                    <td>Tenants:</td>
+                    <td>SheltOwn verified<br>Verification Pending</td>
+                </tr>
+                <tr>
+                    <td>Rent Status:</td>
+                    <td>Jan - Paid<br>Feb - Paid<br>Mar - Paid</td>
+                </tr>
+                <tr>
+                    <td>Request to Vacate: </td>
+                    <td>29-06-2020</td>
+                </tr>
+            </table>
+          </div>
+        </center>
       </div>
     </div>
   </div>
+<!--Content-->
 
-</div>
-</div>
+<br><br>
 
-<br>
-    
+
   <!--==========================
     Footer
   ============================-->
@@ -342,6 +474,15 @@ $('.responsive').slick({
       }
       // ]]>
     </script>
+
+    <script>
+  $(document).ready(function() {
+   $('[data-toggle="popover"]').popover({
+      placement: 'top',
+      trigger: 'hover'
+   });
+  });
+</script>
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
