@@ -408,7 +408,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #intro .intro-content p {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     margin-top:5px;
     margin-bottom: 5px;
@@ -593,7 +593,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .search-locality {
-  width: 170px;
+  width: 190px;
   position: relative;
   padding: 0px 40px;
   transition: all 0.5s;
