@@ -1,33 +1,44 @@
-/* ============================ 
+/* ============================
     property section css
  ===========================*/
-@media (min-width: 600px){
- .container-fluid{
-  margin-left:60px;
-  margin-right:60px;
+@media (min-width: 600px) {
+  .container-fluid {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
+
+.property {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-.property{
-  margin-top:20px;
-  margin-bottom:30px;
-}
-/*
+
+
 .heading{
-  color:#ff9719;
-  font-size: 25px;
-}*/
-.offers-carousel{
-  margin-top:77px;
+  font-size: 20px;
+  font-weight: bold;
 }
-.rent-price-box{
-  margin-top:50px;
-  border:1px solid #ff9719;
+
+.heading-background {
+  background-color: #7fffbf;
+  padding: 10px;
+}
+
+.offers-carousel {
+  margin-top: 77px;
+}
+
+.rent-price-box {
+  margin-top: 50px;
+  border: 1px solid #ff9719;
   border-radius: 5px;
-  padding:20px;
+  padding: 20px;
 }
-.rent-price-box h4{
-  color:#ff9719;
+
+.rent-price-box h4 {
+  color: #ff9719;
 }
+
 #info-button {
   background: white;
   border-radius: 3rem;
@@ -36,10 +47,12 @@
   color: black;
   display: inline-block;
 }
+
 .strikeout {
   line-height: 0.5rem;
   position: relative;
 }
+
 .strikeout::after {
   border-bottom: 3px solid red;
   content: "";
@@ -50,173 +63,185 @@
   right: 0;
   top: 50%;
 }
+
 .button_book {
   color: white;
-  padding:5px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
-  border-radius:100px;
+  border-radius: 100px;
   background-color: #ff9719;
-  border:1px solid #ff9719;
+  border: 1px solid #ff9719;
 }
+
 .button_book:hover,
 .button_book:focus,
-.button_book:active
-{
+.button_book:active {
   color: white;
-  padding:5px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 15px;
-  border-radius:100px;
+  border-radius: 100px;
   background-color: #ff9719;
-  border:1px solid #ff9719;
+  border: 1px solid #ff9719;
 }
 
-/* ============================ 
+/* ============================
     description section css
  ===========================*/
+.description {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
-.description{
-  margin-top:20px;
-  margin-bottom:30px;
+.description p {
+  text-align: justify;
 }
-.description p{
-  text-align:justify;
-}
-.info{
-  background-color:white;
-  width:120px;
+
+.info {
+  background-color: white;
+  width: 120px;
   margin: 10px;
   text-align: center;
   font-size: 13px;
   padding: 5px;
 }
-.pg-info{
+
+.pg-info {
   color: grey;
-  border:1px solid grey;
-  border-radius: 100px;
-}
-.sheltown-info{
-  color:#f76a8c;
-  border:1px solid #f76a8c;
-  border-radius: 100px;
-}
-.male-info{
-  color: #3578eb;
-  border:1px solid #3578eb;
-  border-radius: 100px;
-}
-.meal-info{
-  color: brown;
-  border:1px solid brown;
-  border-radius: 100px;
-}
-.furnished-info{
-  color:#ff971d;
-  border:1px solid #ff971d;
-  border-radius: 100px;
-}
-.available-info{
-  color:  #29e823;
-  border:1px solid  #29e823;
+  border: 1px solid grey;
   border-radius: 100px;
 }
 
-/* ============================ 
+.sheltown-info {
+  color: #f76a8c;
+  border: 1px solid #f76a8c;
+  border-radius: 100px;
+}
+
+.male-info {
+  color: #3578eb;
+  border: 1px solid #3578eb;
+  border-radius: 100px;
+}
+
+.meal-info {
+  color: brown;
+  border: 1px solid brown;
+  border-radius: 100px;
+}
+
+.furnished-info {
+  color: #ff971d;
+  border: 1px solid #ff971d;
+  border-radius: 100px;
+}
+
+.available-info {
+  color: #29e823;
+  border: 1px solid #29e823;
+  border-radius: 100px;
+}
+
+/* ============================
     amenity section css
  ===========================*/
-
-.amenity{
-  margin-top:20px;
-  margin-bottom:30px;
+.amenity {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
- /* Create three equal columns that floats next to each other */
- 
+
+/* Create three equal columns that floats next to each other */
 .column_amn {
   float: left;
-  width:15%;
-  padding:5px;
-  height: 60px; 
+  width: 15%;
+  padding: 5px;
+  height: 60px;
 }
 
 /* Clear floats after the columns */
-
 .row_amn:after {
   content: "";
   display: table;
   clear: both;
-
 }
 
-.container_amn{
+.container_amn {
   padding-right: 0px;
-  width:100%;
+  width: 100%;
 }
-@media (max-width: 600px){
-  .typess{
+
+@media (max-width: 600px) {
+  .typess {
     width: 300px;
     display: flex;
     justify-content: center;
     text-align: center;
-
   }
-  .info{
+
+  .info {
     display: flex;
-    
   }
 
-
-  .row_amn{
+  .row_amn {
     margin-left: 0rem;
-    
   }
-  .column_amn{
+
+  .column_amn {
     display: flex;
     width: 11rem;
   }
 }
-/* ============================ 
+
+/* ============================
     know-section css
  ===========================*/
-.know-section{
-  margin-top:20px;
-  margin-bottom:30px;
-}
-.know-section p{
-  margin:20px 0px 20px 0px;
-}
-.know-section span
-{
-  background-color:white;
-  color:#ff971d;
-  padding:5px 30px;
-  margin:5px;
-  border:1px solid #ff971d;
-  border-radius:100px;
+.know-section {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 600px){
-  .know-section p{
+.know-section p {
+  margin: 20px 0px 20px 0px;
+}
+
+.know-section button {
+  background-color: white;
+  color: #ff971d;
+  padding: 5px 30px;
+  margin: 5px;
+  border: 1px solid #ff971d;
+  border-radius: 100px;
+  width: 150px;
+}
+
+@media (max-width: 600px) {
+  .know-section table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .know-section p {
     width: 200px;
     margin-left: 4rem;
   }
-  .know-section span{
+
+  .know-section span {
     display: flex;
-    max-width: max-content;
+    width: 50px;
   }
 }
 
-/* ============================ 
+/* ============================
     policy  section css
  ===========================*/
-
-
-.policy{
-  margin-top:20px;
-  margin-bottom:30px;
-} 
+.policy {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
 ul_de {
   list-style: none;
@@ -226,25 +251,27 @@ ul_de li::before {
   content: "\2022";
   color: #ff9719;
   font-weight: bold;
-  font-size:25px;
+  font-size: 25px;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
-
-/* ============================ 
+/* ============================
     user-rating  section css
  ===========================*/
-.user-rating{
-  margin-top:20px;
-  margin-bottom:30px;
-} 
-.container_rat {
-  max-width: 800px; /* Max width */
-  padding: 20px;
-  padding-left:0px;
+.user-rating {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
+
+.container_rat {
+  max-width: 800px;
+  /* Max width */
+  padding: 20px;
+  padding-left: 0px;
+}
+
 .checked {
   color: orange;
 }
@@ -253,11 +280,11 @@ ul_de li::before {
 .side {
   float: left;
   width: 15%;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .middle {
-  margin-top:10px;
+  margin-top: 10px;
   float: left;
   width: 70%;
 }
@@ -283,194 +310,51 @@ ul_de li::before {
 }
 
 /* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+.bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #4CAF50;
+}
+
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #2196F3;
+}
+
+.bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #00bcd4;
+}
+
+.bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #ff9800;
+}
+
+.bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #f44336;
+}
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media (max-width: 400px) {
   .side, .middle {
     width: 100%;
   }
+
   .right {
     display: none;
   }
 }
 
-/* ============================ 
+/* ============================
     guest  section css
  ===========================*/
-.guest{
-  margin-top:20px;
-  margin-bottom:30px;
+.guest {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-/*
-.container_revmain {
-  width: 100rem;
-  
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-  padding-right:20px;
-  padding-left:20px;
-}
-.container_rev {
-  border: 2px solid #ff9719;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.container_rev::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.container_rev img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-.container_rev span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-.container_star{
-width:25px;
-height:25px;
-background-color: #ff9719;
-border-radius:5px;
-float:right;
-
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.pagination a.active {
-  background-color: #ff9719;
-  color: white;
-  border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-@media (max-width: 600px) {
-
-  .container_revmain{
-    max-width: max-content;
-  }
-
-  
- .mobile{
-      margin-left:185px;
-  }
-  .container img {
-      margin: auto;
-      float: none;
-      display: block;
-  }
-  .container_work{
-    margin-left: -5rem;
-    width: 300px;
-  }
-  .container_rev{
-    margin-left: -2.5rem;
-    width: 400px;
-  }
-  .pagination{
-    display: inline;
-    margin-left: -3rem;
-  }
-  
-}
-
-@media (max-width: 400px) {
-  .container_rev {
-      text-align: center;
-  }
-  .container img {
-      margin: auto;
-      float: none;
-      display: block;
-  }
-}
-*/
-/* ============================ 
-    address  section css
- ===========================*/
-.address{
-  margin-top:20px;
-  margin-bottom:30px;
-}
-
-
-/* ============================ 
-      end
- ===========================*/
-
-
-/* ============================ 
-    not used css
- ===========================*/
-/*
-.column_ta {
-  float: left;
-  padding: 10px;
-}
-.middle_ta{
-width:22%;
-}
-.right_ta{
-width:22%;
-}
-
-.left_ta{
-width:52%;
-}
-.row_ta:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .column_ta {
-    width: 100%;
-    margin:10px;
-    height:100%;
-  }
-}
-.groove {
-border-style: groove;
-border:1px solid orange;
-border-radius:5px;
-padding:10px;
-width:200px;
-}
-
-.text-box{
-width:1100px;
-text-align:justify;
-padding-right: 15px;
-padding-left: 15px;
-margin-left:50px;
-
-}*/
