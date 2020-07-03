@@ -870,6 +870,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #portfolio .portfolio-cards{
     margin-right: 2rem;
   }
+  #testimonials .owl-dots {
+   display: none !important;
+  }
 }
 
 @media (max-width: 450px) {
