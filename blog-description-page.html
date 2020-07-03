@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
   <!-- Libraries CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -34,6 +33,9 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -81,9 +83,9 @@
 
   <!-- all post -->
   <div class="container-fluid blog-topic">
-    <div class="row">
-      <a class="d-inline link" href="#">All Posts</a>
-      <button type="button" class="btn link dropdown-toggle" data-toggle="dropdown">
+    <div class="row" style="padding-left: 30px;">
+      <a class="d-inline link" href="blog-description-page.html">All Posts</a>
+      <button class="btn link dropdown-toggle" type="button" data-toggle="dropdown">
         Indian Cities
       </button>
 
@@ -102,7 +104,7 @@
       <div class="col-md-8">
 
         <!-- row 1 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -117,7 +119,7 @@
         </div>
 
         <!-- row 2 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -132,7 +134,7 @@
         </div>
 
         <!-- row 3 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -147,7 +149,7 @@
         </div>
 
         <!-- row 4 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -162,7 +164,7 @@
         </div>
 
         <!-- row 5 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -177,7 +179,7 @@
         </div>
 
         <!-- row 6 -->
-        <div class="row" style="border:1px solid #ff971d;border-radius: 5px;margin:20px;">
+        <div class="row content" id="card">
           <div class="col-sm-4">
            <img src="img/portfolio/1.jpg" style="width: 100%; height: 180px; padding: 2px;"> 
           </div>
@@ -190,6 +192,8 @@
             </center>
           </div>
         </div>
+
+        <center><a href="#" id="loadMore">Load More</a></center>
 
         
       </div>
