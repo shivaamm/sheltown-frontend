@@ -410,11 +410,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro .intro-content p {
     font-size: 25px;
     font-weight: 400;
-<<<<<<< HEAD
-    margin-top:5px;
-=======
+
     margin-top:18px;
->>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
+
     margin-bottom: 5px;
     padding-top: 5px;
     text-align: center;
@@ -560,11 +558,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 100px;
 }
   .search-services {
-<<<<<<< HEAD
-  width: 250px;
-=======
+
+  
   width: 300px;
->>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
+
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -581,11 +578,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .search-city {
-<<<<<<< HEAD
- width: 250px;
-=======
+
  width: 300px;
->>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
+
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -605,11 +600,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .search-locality {
-<<<<<<< HEAD
-  width: 170px;
-=======
+
   width: 220px;
->>>>>>> b0eb08d0861aa8c5b42658f8ec2aa34712876ad3
+
   position: relative;
   padding: 0px 40px;
   transition: all 0.5s;
