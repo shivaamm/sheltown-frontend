@@ -339,8 +339,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .heading-background {
-    
-    padding: 10px;
+     padding: 10px;
 }
 .heading {
     font-size: 20px;
@@ -353,7 +352,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 8em;
   position: relative;
   <!---background-image: url("../img/1.jpg");--->
-  
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -395,7 +393,13 @@ background-color: #0073FF;
 }
 
 @media (max-width: 767px) {
- 
+ .heading-background {
+     padding: 10px;
+}
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+}
 #intro {
   height: 11em;
   position: relative;
