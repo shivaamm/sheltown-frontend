@@ -6,14 +6,7 @@ body {
   background-color: #f2f2f2;
 }
 
-#intro{
-  height: 100px;
-}
 
-#intro .intro-content > p{
-  margin-bottom: 0px;
-  
-}
 
 /* SEARCH BAR */
 #search-bar-rental {
