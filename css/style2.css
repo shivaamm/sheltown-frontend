@@ -787,6 +787,7 @@ width:70%;
 #portfolio .portfolio-bg {
   box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.1);
  background-image: url("../img/portfolio_why.png");
+  background-repeat: no-repeat;
  width: 100%;
  
 }
