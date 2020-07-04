@@ -476,12 +476,17 @@ background-color: #0073FF;
 }
 
 .boxes {
-  margin: auto;
-width:70%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width:70%
 }
 .boxes_rental {
-  margin: auto;
-width:50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%
+ 
 }
 
 .boxes select {
@@ -593,6 +598,9 @@ width:50%;
   .boxes {
   margin-left: 100px;
 }
+  .boxes_rental {
+  margin-left: 100px;
+}
   .search-services {
   width: 300px;
   position: relative;
@@ -651,7 +659,6 @@ width: 300px;
   .search-locality {
 
   width: 220px;
-
   position: relative;
   padding: 0px 40px;
   transition: all 0.5s;
