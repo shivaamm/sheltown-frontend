@@ -84,7 +84,6 @@ Header
             <li><a href="mydetails.html"><i class="las la-user"></i> Details</a></li>
             <li><a href="bookings.html"><i class="las la-home"></i> Bookings</a></li>
             <li><a href="appointments.html"><i class="las la-users-cog"></i> Appointments</a></li>
-            <li><a href="wishlist.html"><i class="lar la-heart"></i> Wishlist</a></li>
             <li><a href="gifts.html"><i class="las la-gift"></i> Gifts</a></li>
             <li><a href="notifications.html"><i class="las la-bell"></i> Notifications</a></li>						</li>
             <li><a href="helpdesk.html"><i class="las la-phone-volume"></i> 24/7 Help</a></li>
@@ -160,15 +159,15 @@ Header
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
-                                <p id="category-heading">SheltOwn+</p>
-                     
+                                <p id="category-heading">SheltOwn+ <i onmouseover="mouseOver()" onmouseout="mouseOut()" class="fa fa-info-circle"></i></p>
                             <button>
                                 <label><input type="radio" name="group2" value="plus1"/>Yes</label>
                             </button>  
                             <button>
                                 <label><input type="radio" name="group2" value="plus2" />No</label>
                             </button>
-                        </div>              
+                        </div>   
+                        <p id="sinfo" style="display: none;">sheltown + is ... text text text</p>           
                     </div>
                 </div>
             </div>
@@ -810,6 +809,16 @@ We help you to find your match, book rental homes of choice across Indian cities
             $('input:checked').parent().addClass("checked");
         });
     });
+</script>
+
+<script>
+  function mouseOver() {
+    document.getElementById("sinfo").style.display = "block";
+  }
+
+  function mouseOut() {
+    document.getElementById("sinfo").style.display = "none";
+  }
 </script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

@@ -25,6 +25,19 @@
     window.parent.postMessage("resize", "*");
   }
 </script>
+
+<script>
+$(document).ready(function(){
+  $("#accept").click(function(){
+    $("declineRow").hide();
+    $("acceptRow").show();
+  });
+  $("#decline").click(function(){
+    $("declineRow").show();
+    $("acceptRow").hide();
+  });
+});
+</script>
 </head>
 <body>
 
@@ -83,7 +96,6 @@ Header
             <li><a href="mydetails.html"><i class="las la-user"></i> Details</a></li>
             <li><a href="bookings.html"><i class="las la-home"></i> Bookings</a></li>
             <li><a href="appointments.html"><i class="las la-users-cog"></i> Appointments</a></li>
-            <li><a href="wishlist.html"><i class="lar la-heart"></i> Wishlist</a></li>
             <li><a href="gifts.html"><i class="las la-gift"></i> Gifts</a></li>
             <li><a href="notifications.html"><i class="las la-bell"></i> Notifications</a></li>						</li>
             <li><a href="helpdesk.html"><i class="las la-phone-volume"></i> 24/7 Help</a></li>
@@ -99,56 +111,111 @@ Header
 <br><br><br>
 
 <!--Content-->
-  <h2 id="propheading" class="container">My Bookings</h2>
-  <div class="row middler container" style="padding: 10px 0;">
-    <div class="row container">
-      <div class="col-sm-6">
-        <center>
-          <div class="row"><h4>Ongoing</h4></div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-        </center>
-      </div>
-      <div class="col-sm-6">
-        <center>
-          <div class="row"><h4>Previous</h4></div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-        </center>
-      </div>
-    </div>
-  </div>
-    <br>
-
-    <h2 id="propheading" class="container">My Appointments</h2>
-  <div class="row middler container" style="padding: 10px 0;">
+<h2 id="propheading" class="container">My Appointments</h2>
+<div class="row middler container" style="padding: 10px 0;">
     <div class="row container">
       <div class="col-sm-6">
         <center>
           <div class="row"><h4>Upcoming/Scheduled</h4></div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td>Person Details: </td>
+                    <td>Name, Phone Number</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123, village street, city place</td>
+                </tr>
+                <tr>
+                    <td>Service Provided: </td>
+                    <td>Hair Salon for Male</td>
+                </tr>
+                <tr>
+                    <td>Date and Time </td>
+                    <td>29-06-2020  5:30pm</td>
+                </tr>
+                <tr id="checkRow">
+                    <td colspan="2">
+                      <button id="accept" onclick="showAccept()"class="btn-success"><i class="fa fa-check"></i></button>
+                      <button id="decline" onclick="showDecline()"class="btn-danger"><i class="fa fa-times"></i></button>
+                    </td>
+                </tr>
+                <tr id="acceptRow">
+                    <td colspan="2"> 
+                      <center>Accepting Appointment?<br>
+                      <button onclick="mark()" class="btn btn-success">Yes</button>
+                      <button class="btn btn-danger">No</button></center>
+                    </td>
+                </tr>
+                <tr id="declineRow">
+                    <td colspan="2">
+                      <form>
+                      Reason for declining &nbsp<button class="btn btn-warning">Submit</button><br>
+                      <textarea required></textarea><br>
+                      </form>
+                    </td>
+                </tr>
+                <tr id="mark">
+                    <td colspan="2">
+                      <center>
+                      <button class="btn btn-success">Mark as Complete</button>
+                      </center>
+                    </td>
+                </tr>
+            </table>
+          </div>
         </center>
       </div>
       <div class="col-sm-6">
         <center>
           <div class="row"><h4>Previous</h4></div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
-          <div class="row">12-06-2020: Details</div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td>Person Details: </td>
+                    <td>Name, Phone Number</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123, village street, city place</td>
+                </tr>
+                <tr>
+                    <td>Service Provided: </td>
+                    <td>Hair Salon for Male</td>
+                </tr>
+                <tr>
+                    <td>Date and Time </td>
+                    <td>29-06-2020  5:30pm</td>
+                </tr>
+            </table>
+          </div>
+          <div class="row">
+            <table id="tenant-table-inner">
+                <tr>
+                    <td>Person Details: </td>
+                    <td>Name, Phone Number</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>123, village street, city place</td>
+                </tr>
+                <tr>
+                    <td>Service Provided: </td>
+                    <td>Hair Salon for Male</td>
+                </tr>
+                <tr>
+                    <td>Date and Time </td>
+                    <td>29-06-2020  5:30pm</td>
+                </tr>
+            </table>
+          </div>
         </center>
       </div>
     </div>
   </div>
-    <br>
 
+<br>
     <h2 id="propheading" class="container">Raise a Request</h2>
     <div class="row middler container" style="padding: 10px 0;">
         <div class="row container">
@@ -404,6 +471,23 @@ $('.responsive').slick({
         }
       }
       // ]]>
+    </script>
+
+    <script>
+      function showAccept(){
+        document.getElementById("acceptRow").style.display = "table-row";
+        document.getElementById("declineRow").style.display = "none";
+      }
+      function showDecline(){
+        document.getElementById("acceptRow").style.display = "none";
+        document.getElementById("declineRow").style.display = "table-row";
+      }
+      function mark(){
+        document.getElementById("acceptRow").style.display = "none";
+        document.getElementById("declineRow").style.display = "none";
+        document.getElementById("checkRow").style.display = "none";
+        document.getElementById("mark").style.display = "table-row";
+      }
     </script>
 
     <!-- JavaScript Libraries -->

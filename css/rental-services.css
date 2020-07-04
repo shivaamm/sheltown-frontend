@@ -1,0 +1,91 @@
+
+html, body {
+	height: 100%;
+}
+h1 {
+	font-size: 70px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+p {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	color: #707079;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0 0 15px 0;
+}
+img {
+	max-width: 100%;
+}
+input:focus, select:focus, button:focus, textarea:focus {
+	outline: none;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+/*---------------------
+  Property Section
+-----------------------*/
+.property-pic img {
+	min-width: 100%;
+	height: auto;
+  padding-top: 18px;
+}
+.property-text h5.r-title {
+	font-size: 20px;
+	color: #19191a;
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 16px;
+}
+.property-text .properties-location {
+	font-size: 14px;
+	color: #19191a;
+	margin-bottom: 15px;
+}
+.property-text .properties-location i {
+	color: #ff9719;
+	margin-right: 4px;
+}
+.property-text p {
+	margin-bottom: 18px;
+}
+.property-text .room-features li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 45px;
+}
+.property-text .room-features li:last-child {
+	margin-right: 0;
+}
+.property-text .room-features li i {
+	font-size: 24px;
+	color: #ff9719;
+}
+.property-text .room-features li p {
+	font-size: 14px;
+	color: #19191a;
+	margin-bottom: 0;
+	margin-top: 4px;
+}

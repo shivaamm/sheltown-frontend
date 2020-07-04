@@ -34,6 +34,7 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -79,7 +80,7 @@
     </div>
   </header><!-- #header -->
 
-<div class="row container-fluid justify-content-center">
+<div class="row container-fluid justify-content-around">
   <div class="col-sm-4 div-log-in-user">
     <div class="d-none d-lg-block">
       <div class="listbox">
@@ -138,26 +139,26 @@
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" class="form-control" placeholder="someone@example.com" name="email" required>
+        <input type="email" class="form-control" placeholder="someone@example.com" name="email" required/>
       </div>
       <div class="form-group">
         <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="password" placeholder="********" name="pswd" autocomplete="off" required >
+        <input type="password" class="form-control" id="password" placeholder="********" name="pswd" autocomplete="off" required>
       </div>
       <div class="form-group">
         <label for="pwd">Confirm Password:</label>
-        <input type="password" class="form-control" id="confirm_password" placeholder="*********" name="conpswd" autocomplete="off" required>
+        <input type="password" class="form-control" id="confirm_password" placeholder="*********" name="conpswd" autocomplete="off" required/>
         <span id='message'></span>
         <p class="confirm-password-msg">Enter the same password.</p>
       </div>
       <div class="form-group form-check">
         <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" name="agree">By creating an account you agree to the terms and conditions and our privacy policy.
+          <input class="form-check-input" type="checkbox" name="agree" required>By creating an account you agree to the terms and conditions and our privacy policy.
         </label>
       </div>
       <div>
       <center>
-        <button onclick="window.location.href='index2.html'" type="submit" class="btn create">Create an account</button>
+        <button type="submit" class="btn create" data-toggle="modal" data-target="#modal-1">Create account</button>
       </center>
       </div>
     </form>
@@ -165,7 +166,7 @@
     <!-- form ends -->
     <!-- join partner section -->
     <div style="text-align:center;">
-      <button class="btn-joinus"><a onclick="join()" class="join_btn">Join as a partner<i style="font-size: 1.3rem;" class="las la-question-circle"></i></a></button>
+      <button class="btn-joinus"><a class="join_btn" type="button" data-toggle="modal" data-target="#modal-2">Join as a partner</a></button>
       <div id="joinform" style="display:none">
         <form class="form-inline">
           <label style="margin-left:70px">Join Us </label>
@@ -178,13 +179,108 @@
         </form>
       </div>
       <br><br>
-      <a href="login.html" class="loginlink">Already have an account? <span>Login</span></a>
+      <a href="login-user.html" class="loginlink">Already have an account? <span>Login</span></a>
       <br>
       <br>
     </div>
   </div>
 </div>
 
+<!--user modal-->  
+<div class="modal fade" id="modal-1">
+  <div class="modal-dialog container">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4>Create Account</h4>
+            <label for="tel1">Enter your phone number</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
+            <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
+          </div>
+        </div>
+        <center><button type="submit" href="#modal-3" data-toggle="modal" data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
+      </form>       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->  
+
+<!--partner modal-->  
+<div class="modal fade" id="modal-2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4>Create Account</h4>
+            <input type="radio" name="ser">Property Owner
+            <input type="radio" name="ser" style="margin-left: 15px">Service Provider
+            <br><br>
+            <label for="tel1">Enter your phone number</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
+            <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
+          </div>
+        </div>
+        <center><button type="submit" href="#modal-4" data-toggle="modal" data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
+      </form>       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->  
+  
+  
+<!-- otp -->
+<div class="modal fade" id="modal-3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form onsubmit="location.replace('login-user.html')">
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4>Create Account</h4
+            <label for="tel1">Phone Number:</label>
+            <small id="telHelp" class="form-text text-muted">1234567890</small>
+            <br>
+            <label for="tel1">OTP</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
+          </div>
+        </div>
+        <center><button type="submit" class="btn btn-success">Log In</button></center>
+      </form> 
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- otp-partner -->
+<div class="modal fade" id="modal-4">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form action="#" onsubmit="location.replace('login-partner.html')">
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4>Create Account</h4
+            <label for="tel1">Phone Number:</label>
+            <small id="telHelp" class="form-text text-muted">1234567890</small>
+            <br>
+            <label for="tel1">OTP</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
+          </div>
+        </div>
+        <center><button type="submit" class="btn btn-success">Log In</button></center>
+      </form> 
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--==========================
     Footer

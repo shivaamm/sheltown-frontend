@@ -85,9 +85,7 @@ table{
     text-align:center;
     align-items:center;
     justify-items: center;
-    padding: 5px;
     margin: 0 auto;
-    border: 1px solid transparent;
 }
 
 td {
@@ -126,7 +124,7 @@ td {
 .black-status {
   height: 20px;
   width: 70px;
-  background-color: black;
+  background-color:rgb(231, 231, 5);
   margin: 10px;
   margin: 0 auto;
 }
@@ -194,6 +192,10 @@ input[type="submit"] {
   padding: 5px 20px;
   margin: 10px 0;
   outline: none;
+}
+
+.fa-info{
+  cursor:pointer;
 }
 
 input[type="submit"]:hover {
@@ -326,6 +328,105 @@ button{
   
 }
 
+/* SELECT MULTIPLE */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.multiselect {
+  width: 170px;
+  font-size: 15px;
+  padding-bottom: 4px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.multiselect > .title {
+  cursor: pointer;
+  height: 16px;
+}
+
+.multiselect > .title > .text {
+  max-width: 130px;
+  max-height: 25px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  line-height: 1.3em;
+}
+
+.multiselect > .title > .expand-icon,
+.multiselect > .title > .close-icon {
+  float: right;
+  display: none;
+}
+
+.multiselect.selection > .title > .expand-icon {
+  display: none;
+}
+
+.multiselect > .title > .expand-icon,
+.multiselect.selection > .title > .close-icon {
+  display: block;
+}
+
+.multiselect > .title > .close-icon:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgb(203, 32, 32);
+  color: #fff;
+}
+
+.multiselect > .containers {
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 8.9px;
+  margin-left: -5px;
+  width: 200px;
+  position: absolute;
+  z-index: 99;
+  background: #fff;
+  border: 0px solid black;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.multiselect.active > .containers {
+  border-top-color: rgba(0, 0, 0, 0.3); 
+}
+
+.multiselect:hover > .containers {
+  border-top-color: rgba(0, 0, 0, 0.3);
+}
+
+.multiselect > .containers > option {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.multiselect > .containers > option.selected {
+  background:dodgerblue;
+  border: 1px solid black;
+  color: #fff;
+}
+
+.multiselect > .containers > option:hover {
+  background:dodgerblue;
+  border: 1px solid black;
+  color: #fff;
+}
+
+.multiselect.active > .containers > option {
+  display: block;
+}
+
 /* BOOKING */
 
 #verify{
@@ -369,14 +470,31 @@ button{
 #center-verify{
   float:left;
 }
+
+#accept{
+  padding: 3px 5px;
+  margin: 0 5px;
+  font-size: smaller;
+  border-radius: 50%;
+}
+
+#decline{
+  padding:3px 7px;
+  margin: 0 5px;
+  font-size: smaller;
+  border-radius: 50%;
+}
+
+#acceptRow, #declineRow, #mark{
+  display: none;
+}
  
 /* SERVICE PROVIDER */
-
 .type {
   display: none;
 }
 
-#select_box{
+.select_box{
   width: 15em; 
   padding: 3px 5px; 
   border: 0.2px solid grey; 
