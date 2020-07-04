@@ -195,75 +195,37 @@
         <div class="modal-body">
           <div class="form-group">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <form>
             <h4>Create Account</h4>
+              <div class="row" style="font-size: 12px; margin-top: 5px; margin-bottom: 5px;"> 
+                <div class="col-sm-3">
+                  <input type="radio" name="user" checked>User
+                </div>
+                <div class="col-sm-4">
+                  <input type="radio" name="user">Property Owner
+                </div>
+                <div class="col-sm-4">
+                      <input type="radio" name="user">Service Provider
+                </div>
+              </div>
             <label for="tel1">Enter your phone number</label>
             <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
             <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
           </div>
         </div>
-        <center><button type="submit" href="#modal-3" data-toggle="modal" data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
+        <center><button type="submit" data-toggle="modal" href="#modal-2"  data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
       </form>       
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->  
-
-<!--partner modal-->  
-<div class="modal fade" id="modal-2">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form>
-        <div class="modal-body">
-          <div class="form-group">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4>Create Account</h4>
-            <input type="radio" name="ser">Property Owner
-            <input type="radio" name="ser" style="margin-left: 15px">Service Provider
-            <br><br>
-            <label for="tel1">Enter your phone number</label>
-            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
-            <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
-          </div>
-        </div>
-        <center><button type="submit" href="#modal-4" data-toggle="modal" data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
-      </form>       
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->  
-  
-  
-<!-- otp -->
-<div class="modal fade" id="modal-3">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form onsubmit="location.replace('login-user.html')">
-        <div class="modal-body">
-          <div class="form-group">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4>Create Account</h4
-            <label for="tel1">Phone Number:</label>
-            <small id="telHelp" class="form-text text-muted">1234567890</small>
-            <br>
-            <label for="tel1">OTP</label>
-            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
-          </div>
-        </div>
-        <center><button type="submit" class="btn btn-success">Log In</button></center>
-      </form> 
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
 <!-- otp-partner -->
-<div class="modal fade" id="modal-4">
+<div class="modal fade" id="modal-2">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <form action="#" onsubmit="location.replace('login-partner.html')">
+        <form action="#" onsubmit="location.replace('rental-services.html')">
         <div class="modal-body">
           <div class="form-group">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -273,6 +235,7 @@
             <br>
             <label for="tel1">OTP</label>
             <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
+            <div style="font-size: 14px;">Time left = xx:xx<span id="timer">
           </div>
         </div>
         <center><button type="submit" class="btn btn-success">Log In</button></center>
@@ -281,6 +244,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 <!--==========================
     Footer
