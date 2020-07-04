@@ -36,38 +36,61 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/rental-services.css" type="text/css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Main style sheet -->
+  <link href="assets/css/rental-services.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   <!-- Main Stylesheet File -->
   <link href="css/style2.css" rel="stylesheet">
-  <link href="assets/css/rental-style.css" rel="stylesheet">
 
-  <style media="screen">
-    .fa-check {
+  <style>
+
+    #aa-properties {
+      background-color: #fff;
+    }
+
+    .price {
+      width: 50px;
+      height: 40px;
+      padding: 5px;
+      border: none;
+    }
+
+    .check {
       background-color: blue;
       color: #fff;
-      font-size: 10px;
-      padding: 5px;
+      font-size: 18px;
+      padding: 3px;
       border-radius: 50px;
     }
 
-    .btn-dark:hover {
+    .btn-primary {
+      background-color: #ff9719;
+      border-color: #ff9719;
+    }
+
+    .ratings {
+      background-color: green;
       color: white;
+      padding: 5px;
+      border-radius: 5px;
     }
 
-    .btn-light {
-      border-color: blue;
-      font-weight: bold;
+    .btn {
+      font-size: 18px;
     }
 
-    .card-property {
-      border: none;
-      padding: 50px;
-    }
+    .btn-block {
 
-    .card-property:hover {
-      -webkit-box-shadow: -11px 11px 13px -12px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -11px 11px 13px -12px rgba(0, 0, 0, 0.75);
-      box-shadow: -11px 11px 13px -12px rgba(0, 0, 0, 0.75);
     }
   </style>
 
@@ -127,738 +150,332 @@
   <!--==========================
       Intro Section
     ============================-->
-<section id="intro">
-      <div class="overlay" >
-        <div class="container-fluid">
-          <!--row 1 -->
-          <div class="row">
-            <div class="col-md-12 intro-content"  ">
-              
-              <p>Live Like You Own It </p>
+  <section id="intro">
+    <div class="overlay">
+      <div class="container-fluid">
+        <!--row 1 -->
+        <div class="row">
+          <div class="col-md-12 intro-content">
+
+            <p>Live Like You Own It </p>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row boxes_rental">
+          <div>
+            <select class="search-city_rental">
+              <option value="ChooseCity">Choose City...</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Surat">Surat</option>
+              <option value="Pune">Pune</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Vishakhapatnam">Vishakhapatanam</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Kanput">Kanput</option>
+              <option value="Thane">Thane</option>
+              <option value="Bhopal">Bhopal</option>
+              <option value="Indore">Indore</option>
+              <option value="Patna">Patna</option>
+              <option value="Vadodara">Vadodara</option>
+              <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+              <option value="Gaziabad">Gaziabad</option>
+              <option value="Ludhiana">Ludhiana</option>
+              <option value="Agra">Agra</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Faridabad">Faridbad</option>
+              <option value="Meerut">Meerut</option>
+              <option value="Rajkot">Rajkot</option>
+              <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+              <option value="Vasai-Virar">Vasai-Virar</option>
+              <option value="Varanasi">Varanasi</option>
+            </select>
+          </div>
+          <div>
+            <select class="search-locality_rental">
+              <option value="ChooseCity">Choose Locality...</option>
+              <option value="Mumbai">Chandni Chowk</option>
+              <option value="Delhi">Patel Nagar</option>
+              <option value="Bangalore">Kamla Nagar</option>
+              <option value="Hyderabad">Delhi Gate</option>
+              <option value="Ahmedabad">Kahmiri Gate</option>
+            </select>
+          </div>
+          <div>
+            <div class="search-box">
+              <button class="btn search-btn">Search <i class="las la-search"></i></a>
             </div>
           </div>
-          <!-- row 2 -->
-          <div class="row boxes_rental" >
-            <div>
-              <select class="search-city_rental" >
-                <option value="ChooseCity">Choose City...</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Bangalore">Bangalore</option>
-                <option value="Hyderabad">Hyderabad</option>
-                <option value="Ahmedabad">Ahmedabad</option>
-                <option value="Chennai">Chennai</option>
-                <option value="Kolkata">Kolkata</option>
-                <option value="Surat">Surat</option>
-                <option value="Pune">Pune</option>
-                <option value="Jaipur">Jaipur</option>
-                <option value="Vishakhapatnam">Vishakhapatanam</option>
-                <option value="Nagpur">Nagpur</option>
-                <option value="Lucknow">Lucknow</option>
-                <option value="Kanput">Kanput</option>
-                <option value="Thane">Thane</option>
-                <option value="Bhopal">Bhopal</option>
-                <option value="Indore">Indore</option>
-                <option value="Patna">Patna</option>
-                <option value="Vadodara">Vadodara</option>
-                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
-                <option value="Gaziabad">Gaziabad</option>
-                <option value="Ludhiana">Ludhiana</option>
-                <option value="Agra">Agra</option>
-                <option value="Nashik">Nashik</option>
-                <option value="Faridabad">Faridbad</option>
-                <option value="Meerut">Meerut</option>
-                <option value="Rajkot">Rajkot</option>
-                <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
-                <option value="Vasai-Virar">Vasai-Virar</option>
-                <option value="Varanasi">Varanasi</option>
-              </select>
-            </div>
-            <div>
-                <select class="search-locality_rental">
-                <option value="ChooseCity">Choose Locality...</option>
-                <option value="Mumbai">Chandni Chowk</option>
-                <option value="Delhi">Patel Nagar</option>
-                <option value="Bangalore">Kamla Nagar</option>
-                <option value="Hyderabad">Delhi Gate</option>
-                <option value="Ahmedabad">Kahmiri Gate</option>
-              </select>
-            </div>
-            <div>
-              <div class="search-box">
-                  <button class="btn search-btn">Search  <i class="las la-search"></i></a>
+
+        </div><!-- row2 -->
+      </div>
+    </div>
+  </section>
+  <!-- intro ends -->
+
+  <!-- Start Properties  -->
+    <section id="aa-properties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="aa-properties-content">
+              <!-- start properties content head -->
+              <div class="aa-properties-content-head">
+                <div class="aa-properties-content-head-left">
+                  <form action="" class="aa-sort-form">
+                    <label for="">Sort by</label>
+                    <select name="">
+                      <option value="1" selected="Default">Most Recent</option>
+                      <option value="2">Popularity</option>
+                      <option value="3">Price Low to High</option>
+                      <option value="4">Price High to Low</option>
+                    </select>
+                  </form>
+                </div>
+                <div class="aa-properties-content-head-right">
+                  <!-- Button trigger modal -->
+                  <a type="button" class="btn btn-primary" href="filters.html">
+                    <i class="fa fa-filter"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Start properties content body -->
+              <div class="aa-properties-content-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <article class="aa-properties-item">
+                      <a class="aa-properties-item-img" href="#">
+                        <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                      </a>
+                      <div class="aa-properties-item-content">
+                        <div class="aa-properties-info">
+                          <span>Nearby:</span>
+                          <span><i class="fa fa-train"></i>Metro</span>
+                          <span><i class="fa fa-shopping-basket"></i>Market</span>
+                          <span><i class="fa fa-building"></i>Mall</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Amenities:</span>
+                          <span><i class="fa fa-home"></i>5 Rooms</span>
+                          <span><i class="fa fa-bed"></i>2 Beds</span>
+                          <span><i class="fa fa-shower"></i>3 Baths</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Male only</span>
+                          <span>Fully Furnished</span>
+                          <span>Available Now</span>
+                        </div>
+                        <div class="aa-properties-about">
+                          <h3><a href="#">Appartment Title</a> <i class="fa fa-check check"></i> </h3>
+                          <p><i class="fa fa-map-marker"></i> Location</p>
+                          <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                        </div>
+                        <div class="aa-properties-detial">
+                          <span>
+                            <s>$35k</s>&nbsp;&nbsp;$25k
+                          </span>
+                          <a class="btn btn-primary btn-sm" href="#">Book Now</a>
+                          <a class="btn btn-info btn-sm" href="#">View More</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <article class="aa-properties-item">
+                      <a class="aa-properties-item-img" href="#">
+                        <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                      </a>
+                      <div class="aa-properties-item-content">
+                        <div class="aa-properties-info">
+                          <span>Nearby:</span>
+                          <span><i class="fa fa-train"></i>Metro</span>
+                          <span><i class="fa fa-shopping-basket"></i>Market</span>
+                          <span><i class="fa fa-building"></i>Mall</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Amenities:</span>
+                          <span><i class="fa fa-home"></i>5 Rooms</span>
+                          <span><i class="fa fa-bed"></i>2 Beds</span>
+                          <span><i class="fa fa-shower"></i>3 Baths</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Male only</span>
+                          <span>Fully Furnished</span>
+                          <span>Available Now</span>
+                        </div>
+                        <div class="aa-properties-about">
+                          <h3><a href="#">Appartment Title</a> <i class="fa fa-check check"></i> </h3>
+                          <p><i class="fa fa-map-marker"></i> Location</p>
+                          <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                        </div>
+                        <div class="aa-properties-detial">
+                          <span>
+                            <s>$35k</s>&nbsp;&nbsp;$25k
+                          </span>
+                          <a class="btn btn-primary btn-sm" href="#">Book Now</a>
+                          <a class="btn btn-info btn-sm" href="#">View More</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <article class="aa-properties-item">
+                      <a class="aa-properties-item-img" href="#">
+                        <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                      </a>
+                      <div class="aa-properties-item-content">
+                        <div class="aa-properties-info">
+                          <span>Nearby:</span>
+                          <span><i class="fa fa-train"></i>Metro</span>
+                          <span><i class="fa fa-shopping-basket"></i>Market</span>
+                          <span><i class="fa fa-building"></i>Mall</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Amenities:</span>
+                          <span><i class="fa fa-home"></i>5 Rooms</span>
+                          <span><i class="fa fa-bed"></i>2 Beds</span>
+                          <span><i class="fa fa-shower"></i>3 Baths</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Male only</span>
+                          <span>Fully Furnished</span>
+                          <span>Available Now</span>
+                        </div>
+                        <div class="aa-properties-about">
+                          <h3><a href="#">Appartment Title</a> <i class="fa fa-check check"></i> </h3>
+                          <p><i class="fa fa-map-marker"></i> Location</p>
+                          <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                        </div>
+                        <div class="aa-properties-detial">
+                          <span>
+                            <s>$35k</s>&nbsp;&nbsp;$25k
+                          </span>
+                          <a class="btn btn-primary btn-sm" href="#">Book Now</a>
+                          <a class="btn btn-info btn-sm" href="#">View More</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <article class="aa-properties-item">
+                      <a class="aa-properties-item-img" href="#">
+                        <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                      </a>
+                      <div class="aa-properties-item-content">
+                        <div class="aa-properties-info">
+                          <span>Nearby:</span>
+                          <span><i class="fa fa-train"></i>Metro</span>
+                          <span><i class="fa fa-shopping-basket"></i>Market</span>
+                          <span><i class="fa fa-building"></i>Mall</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Amenities:</span>
+                          <span><i class="fa fa-home"></i>5 Rooms</span>
+                          <span><i class="fa fa-bed"></i>2 Beds</span>
+                          <span><i class="fa fa-shower"></i>3 Baths</span>
+                        </div>
+                        <div class="aa-properties-info">
+                          <span>Male only</span>
+                          <span>Fully Furnished</span>
+                          <span>Available Now</span>
+                        </div>
+                        <div class="aa-properties-about">
+                          <h3><a href="#">Appartment Title</a> <i class="fa fa-check check"></i> </h3>
+                          <p><i class="fa fa-map-marker"></i> Location</p>
+                          <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                        </div>
+                        <div class="aa-properties-detial">
+                          <span>
+                            <s>$35k</s>&nbsp;&nbsp;$25k
+                          </span>
+                          <a class="btn btn-primary btn-sm" href="#">Book Now</a>
+                          <a class="btn btn-info btn-sm" href="#">View More</a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <!-- Start properties content bottom -->
+              <div class="aa-properties-content-bottom">
+                <br>
+                <a class="btn btn-primary" href="#">Load More</a>
               </div>
             </div>
-
-          </div><!-- row2 -->
-        </div>
-      </div>
-    </section>
-    <!-- intro ends -->
-  
-
- 
-
-
-  <!-- filter button -->
-  <div class="navbar navbar-light visible-xs">
-    <div class="container">
-      <button class="btn btn-default" data-toggle="collapse" data-target="#filter-sidebar">
-        <i class="fa fa-filter"></i>Filter
-      </button>
-
-      <select id="sort-option" class="custom-select custom-select-lg">
-        <option>Sort By</option>
-        <option>Popularity</option>
-        <option>Price high to low</option>
-        <option>Price low to high</option>
-      </select>
-    </div>
-  </div>
-
-
-  <!--FILTERS-->
-  <div class="container-fluid" style="margin-top: 15px;">
-    <div class="row">
-      <!-- filters -->
-      <div id="filter-sidebar" class="col-xs-8 col-sm-4 col-md-4 visible-sm visible-md visible-lg collapse sliding-sidebar">
-
-        <div class="container-filter" id="filters">
-          <form>
-            <!-- <div class="container"> -->
-            <!-- row 1 -->
-            <div class="row">
-              <p id="filter-heading"><b>Filters</b></p>
-            </div>
-            <hr style="margin-left:-15px;">
-            <!-- row 2 -->
-            <div class="row">
-              <p id="filter-heading" style="color: #7268a6;">Categories</p>
-              <div class="col-md-12">
-                <form class="bs-example" action="">
-                  <div class="panel-group" id="accordion" style="width: 15em;">
-                    <!-- panel 1-->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <label for='r11' style='width: 15em'>
-                            <input type='radio' id='r11' name='occupation' value='Working' required /> PG
-                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></p>
-                          </label>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <input type="radio" id="1mate" name="pg-mate" value="1mate"><label for="1mate">&nbsp1 mate</label><br>
-                          <input type="radio" id="2mates" name="pg-mate" value="2mates"><label for="2mates">&nbsp2 mates</label><br>
-                          <input type="radio" id="3mates" name="pg-mate" value="3mates"><label for="3mates">&nbsp3 mates</label><br>
-                          <input type="radio" id="4mates" name="pg-mate" value="4mates"><label for="4mates">&nbsp4 mates</label><br>
-                        </div>
-                      </div>
+          </div>
+          <!-- Start properties sidebar -->
+          <div class="col-md-4 filters">
+            <aside class="aa-properties-sidebar">
+              <!-- Start Single properties sidebar -->
+              <div class="aa-properties-single-sidebar">
+                <h4>FILTERS</h4>
+                <form action="">
+                  <div class="aa-single-advance-search">
+                    <input type="text" placeholder="Type Your City">
+                    <br><br>
+                    <input type="text" placeholder="Type Your Location">
+                  </div>
+                  <div class="aa-single-advance-search">
+                    <h5>Catagories:</h5>
+                    <select id="" name="">
+                      <option value="1">PG</option>
+                      <option value="2">Flat</option>
+                      <option value="3">House</option>
+                    </select>
+                  </div>
+                  <div class="aa-single-advance-search">
+                    <h5>Preference:</h5>
+                    <select id="" name="">
+                      <option value="1">Family +</option>
+                      <option value="2">Male Only</option>
+                      <option value="3">Female Only</option>
+                      <option value="4">SheltOwn +</option>
+                    </select>
+                  </div>
+                  <div class="aa-single-advance-search">
+                    <h5>Furnishing type:</h5>
+                    <select id="" name="">
+                      <option value="1">Fully Furnished</option>
+                      <option value="2">Semi Furnished</option>
+                      <option value="3">Unfurnished</option>
+                    </select>
+                  </div>
+                  <div class="aa-single-advance-search">
+                    <h5>Security Deposit:</h5>
+                    <select id="" name="">
+                      <option value="1">Monthly</option>
+                      <option value="2">Quaterly</option>
+                      <option value="3">Half yearly</option>
+                      <option value="3">Yearly</option>
+                    </select>
+                  </div>
+                  <div class="aa-single-filter-search">
+                    <span>PRICE ($)</span>
+                    <span>FROM</span>
+                    <span id="skip-value-lower2" class="example-val"><input type="text" class="price" name="" value="$40"> </span>
+                    <span>TO</span>
+                    <span id="skip-value-upper2" class="example-val"><input type="text" class="price" name="" value="$35k"> </span>
                     </div>
-                    <!-- panel 2-->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <label for='r12' style='width: 15em'>
-                            <input type='radio' id='r12' name='occupation' value='Working' required /> Flat/Apartment
-                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"></p>
-                          </label>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <input type="radio" id="1mate" name="pg-mate" value="1mate"><label for="1mate">&nbsp1 BHK</label><br>
-                          <input type="radio" id="2mates" name="pg-mate" value="2mates"><label for="2mates">&nbsp2 BHK</label><br>
-                          <input type="radio" id="3mates" name="pg-mate" value="3mates"><label for="3mates">&nbsp3 BHK</label>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- panel 3-->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <label for='r13' style='width: 15em'>
-                            <input type='radio' id='r13' name='occupation' value='Working' required /> House
-                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree"></p>
-                          </label>
-                        </h4>
-                      </div>
-                    </div>
-                  </div><!-- panel over -->
+                  </div>
+                  <div class="aa-single-advance-search">
+                    <input type="submit" value="Search" class="btn btn-primary btn-block">
+                  </div>
                 </form>
               </div>
-            </div>
-            <hr style="margin-left: -15px;">
-            <!-- row 3 -->
-            <div class="row">
-              <p id="filter-heading" style="color: #f67280">Price Range</p>
-              <div class="col-md-12">
-                <table class="table-responsive">
-                  <tr>
-                    <td style="padding: 5px;"><input type="number" id="from" name="from" min="0" step="1000"></td>
-                    <td style="padding: 5px;">to</td>
-                    <td style="padding: 5px;"><input type="number" id="to" name="to" min="0" step="1000"></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <hr style="margin-left: -15px;">
-            <!-- row 4 -->
-            <div class="row">
-              <p id="filter-heading" style="color: #3578eb">Preference</p>
-              <div class="col-md-12">
-                <input style="margin-left: 5px;" type="radio" id="family" name="pref" value="family">
-                <label for="1mate">&nbspFamily</label>
-                <br>
-                <input style="margin-left: 5px;" type="radio" id="male" name="pref" value="male">
-                <label for="2mates">&nbspMale Only</label>
-                <br>
-                <input style="margin-left: 5px;" type="radio" id="female" name="pref" value="female">
-                <label for="3mates">&nbspFemale Only</label>
-                <br>
-                <input style="margin-left: 5px;" type="radio" id="shel" name="pref" value="shel">
-                <label for="4mates">&nbspSheltOwn +</label>
-                <br>
-              </div>
-            </div>
-            <hr style="margin-left: -15px;">
-            <!-- row 5 -->
-            <div class="row">
-              <p id="filter-heading" style="color: #29e823">Booking Dates</p>
-              <div class="col-md-12">
-                <table class="table-responsive">
-                  <tr>
-                    <td style="padding: 5px;"><input type="date" id="fromdate" name="fromdate"></td>
-                    <td style="padding: 5px;">to</td>
-                    <td style="padding: 5px;"><input type="date" id="todate" name="todate"></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <hr style="margin-left: -15px;">
-            <!-- row 6 -->
-            <div class="row">
-              <p id="filter-heading" style="color: #ff971d">Furnishing Type</p>
-              <div class="col-md-12">
-                <select id="check-option">
-                  <option value="" disabled selected>Furnished type</option>
-                  <option>Fully Furnished</option>
-                  <option>Semi Furnished</option>
-                  <option>Unfurnished</option>
-                </select>
-              </div>
-            </div>
-            <!-- row 7 -->
-            <hr style="margin-left: -15px;">
-            <div class="row">
-              <p id="filter-heading" style="color: #6bb6bc">Security Deposit</p>
-              <div class="col-md-12">
-                <select id="check-option">
-                  <option value="" disabled selected>Security Deposit</option>
-                  <option>1 month</option>
-                  <option>2 months</option>
-                  <option>3 months</option>
-                  <option>4 months</option>
-                </select>
-              </div>
-            </div>
-            <hr style="margin-left: -15px;">
-            <!-- row 8 -->
-            <div class="row">
-              <div class="col-md-12">
-                <center>
-                  <input type="submit" value="Apply">
-                </center>
-              </div>
-            </div>
-            <!--  </div>      -->
-          </form>
+          </div>
+          </aside>
         </div>
       </div>
-      <!-- filters ends -->
+      </div>
+    </section>
+    <!-- / Properties  -->
 
-      <!--CARDS-->
-      <div class="col-md-8 container-cards" style="background-color: white;">
-        <div class="result-line">
-          <p class="d-none d-md-block d-lg-block d-xl-block">xxx Results Found
-            <select id="check-option" style="float:right;" class="custom-select custom-select-lg">
-              <option>Sort By</option>
-              <option>Popularity</option>
-              <option>Price high to low</option>
-              <option>Price low to high</option>
-            </select>
-          </p>
-        </div>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <!-- card 1 -->
-        <div class="card card-property content">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="property-pic">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Townhouses_in_Victoria_Australia.jpg/657px-Townhouses_in_Victoria_Australia.jpg" alt="">
-                <br><br>
-                <div class="room-price">
-                  <p><span>Price:&nbsp;</span><s>$3.000.000</s>&nbsp;$2.500.000</p>
-                </div>
-                <center>
-                  <a href="rental-services-details.html"><button type="button" class="btn-dark" name="button"><b>Book Now</b></button> </a>
-                </center>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="property-text">
-                <div>
-                  <h5 class="r-title">Villa 9721 Glen Creek &nbsp;<i class="fa fa-check"></i></h5>
-                </div>
-                <div class="properties-location">
-                  <button type="button" class="btn-sm" style="color:#fff; font-weight:bold; background-color:green;" name="button">4.3 <i class="fa fa-star" style="color: #fff;"></i></button> &nbsp; 349 Ratings 212 Reviews
-                </div>
-                <div class="properties-location">
-                  <i class="fa fa-map-marker"></i> 9721 Avenue, India
-                </div>
-                <b>Nearby:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-subway"></i>
-                    <p>Metro Stn</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-building"></i>
-                    <p>XYZ Mall</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-shopping-basket"></i>
-                    <p>Market Place</p>
-                  </li>
-                </ul>
-                <b>Amenities:</b>
-                <ul class="room-features">
-                  <li>
-                    <i class="fa fa-arrows"></i>
-                    <p>5201 sqft</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bed"></i>
-                    <p>8 Bed Room</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-bath"></i>
-                    <p>7 Baths Bed</p>
-                  </li>
-                  <li>
-                    <i class="fa fa-car"></i>
-                    <p>1 Garage</p>
-                  </li>
-                </ul>
-                <a class="btn btn-light btn-sm">Male Only</a>&nbsp;<a class="btn btn-light btn-sm">Fully Furnished</a>&nbsp;<a class="btn btn-light btn-sm">Available Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" id="loadMore">Load More</a>
-      </div><!-- col 8 -->
-    </div><!-- main row -->
-  </div><!-- main container -->
-
-  <br>
 
   <!--==========================
     Footer
@@ -868,6 +485,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 about-text">
+          <br>
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
@@ -881,6 +499,7 @@
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
+          <br>
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
@@ -892,6 +511,7 @@
         </div>
 
         <div class="col-xs-6 col-md-3 quick-text">
+          <br>
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
@@ -1225,18 +845,17 @@
   </script>
 
   <script>
-    $(document).ready(function(){
-        $(".content").slice(0, 3).show();
-        $("#loadMore").on("click", function(e){
-          e.preventDefault();
-          $(".content:hidden").slice(0, 3).slideDown();
-          if($(".content:hidden").length == 0) {
-            $("#loadMore").text("No More Results").addClass("noContent");
-          }
-        });
+    $(document).ready(function() {
+      $(".content").slice(0, 3).show();
+      $("#loadMore").on("click", function(e) {
+        e.preventDefault();
+        $(".content:hidden").slice(0, 3).slideDown();
+        if ($(".content:hidden").length == 0) {
+          $("#loadMore").text("No More Results").addClass("noContent");
+        }
       });
+    });
   </script>
-
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
@@ -1292,6 +911,12 @@
       return !!('ontouchstart' in window || navigator.msMaxTouchPoints);
     }
   </script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   <!--End of Tawk.to Script-->
 </body>
 

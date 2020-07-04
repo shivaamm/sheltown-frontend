@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rental</title>
+
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- Main style sheet -->
+  <link href="assets/css/rental-services.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <style media="screen">
+    .check {
+      background-color: blue;
+      color: #fff;
+      font-size: 18px;
+      padding: 3px;
+      border-radius: 50px;
+    }
+
+    .btn-primary {
+      background-color: #ff9719;
+      border-color: #ff9719;
+    }
+
+    .ratings {
+      background-color: green;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body class="aa-price-range">
+  <!-- Start Properties  -->
+  <section id="aa-properties">
+    <div class="container">
+      <a type="button" class="btn btn-primary" href="rental-services.html">
+        Close
+      </a><br><br>
+      <!-- Start properties content body -->
+      <div class="aa-properties-content-body">
+        <aside class="aa-properties-sidebar">
+          <!-- Start Single properties sidebar -->
+          <div class="aa-properties-single-sidebar">
+            <h4>FILTERS</h4>
+            <form action="">
+              <div class="aa-single-advance-search">
+                <input type="text" placeholder="Type Your City">
+                <br><br>
+                <input type="text" placeholder="Type Your Location">
+              </div>
+              <div class="aa-single-advance-search">
+                <h5>Catagories:</h5>
+                <select id="" name="">
+                  <option value="1">PG</option>
+                  <option value="2">Flat</option>
+                  <option value="3">House</option>
+                </select>
+              </div>
+              <div class="aa-single-advance-search">
+                <h5>Preference:</h5>
+                <select id="" name="">
+                  <option value="1">Family +</option>
+                  <option value="2">Male Only</option>
+                  <option value="3">Female Only</option>
+                  <option value="4">SheltOwn +</option>
+                </select>
+              </div>
+              <div class="aa-single-advance-search">
+                <h5>Furnishing type:</h5>
+                <select id="" name="">
+                  <option value="1">Fully Furnished</option>
+                  <option value="2">Semi Furnished</option>
+                  <option value="3">Unfurnished</option>
+                </select>
+              </div>
+              <div class="aa-single-advance-search">
+                <h5>Security Deposit:</h5>
+                <select id="" name="">
+                  <option value="1">Monthly</option>
+                  <option value="2">Quaterly</option>
+                  <option value="3">Half yearly</option>
+                  <option value="3">Yearly</option>
+                </select>
+              </div>
+              <div class="aa-single-filter-search">
+                <span>AREA (Sq.)</span>
+                <span>FROM</span>
+                <span id="skip-value-lower" class="example-val">30.00</span>
+                <span>TO</span>
+                <span id="skip-value-upper" class="example-val">100.00</span>
+                <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                </div>
+              </div>
+              <div class="aa-single-filter-search">
+                <span>PRICE ($)</span>
+                <span>FROM</span>
+                <span id="skip-value-lower2" class="example-val">30.00</span>
+                <span>TO</span>
+                <span id="skip-value-upper2" class="example-val">100.00</span>
+                <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                </div>
+              </div>
+              <div class="aa-single-advance-search">
+                <input type="submit" value="Search" class="btn btn-primary btn-block">
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Properties  -->
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="assets/js/nouislider.js"></script>
+
+</body>
+
+</html>
