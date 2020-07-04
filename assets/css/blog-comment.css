@@ -1,0 +1,21 @@
+.reply h3{
+	color:#ff971d;
+	margin:20px;
+}
+.reply .Submit-btn{
+	color:white;
+	background-color: #ff971d;
+	padding:10px 40px;
+	margin:10px;
+	margin-bottom:30px;
+}
+.reply .Submit-btn:hover,
+.reply .Submit-btn:focus
+.reply .Submit-btn:active
+{
+	color:white;
+	background-color: #ff971d;
+	padding:10px 40px;
+	margin:10px;
+	margin-bottom:30px;
+}
