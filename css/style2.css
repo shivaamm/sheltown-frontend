@@ -401,7 +401,7 @@ background-color: #0073FF;
     font-weight: bold;
 }
 #intro {
-  height: 11em;
+  height: 13em;
   position: relative;
 
 }
@@ -476,7 +476,8 @@ background-color: #0073FF;
 }
 
 .boxes {
-  margin-left: 220px;
+  margin: auto;
+width:70%;
 }
 
 .boxes select {
