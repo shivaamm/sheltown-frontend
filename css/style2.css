@@ -479,6 +479,10 @@ background-color: #0073FF;
   margin: auto;
 width:70%;
 }
+.boxes_rental {
+  margin: auto;
+width:50%;
+}
 
 .boxes select {
   background: white;
@@ -487,7 +491,13 @@ width:70%;
   appearance: none;
   color: #000;
 }
-
+.boxes_rental select {
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #000;
+}
 .search-services {
   width: 100%;
   height: 50px;
@@ -512,7 +522,18 @@ width:70%;
   color: #444;
   margin-bottom: 5px;
 }
-
+.search-city_rental {
+  width: 100%;
+  height: 50px;
+  padding: 0px 40px;
+  position: relative;
+  transition: all 0.5s;
+  background-color: white;
+  border-radius: 30px 0 0 30px;
+  border: 2px solid #ff8c00;
+  color: #444;
+  margin-bottom: 5px;
+}
 .search-locality {
   width: 100%;
   height: 50px;
@@ -573,10 +594,7 @@ width:70%;
   margin-left: 100px;
 }
   .search-services {
-
-  
   width: 300px;
-
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -593,9 +611,7 @@ width:70%;
   }
 
   .search-city {
-
- width: 300px;
-
+width: 300px;
   position: relative;
   transition: all 0.5s;
   padding: 0px 40px;
@@ -613,7 +629,25 @@ width:70%;
     height: 30px;
     
   }
-
+.search-city_rental {
+ width: 300px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0px 40px;
+  background-color: white;
+  border: 2px solid #ff8c00;
+  color: #444;
+  border-radius: 100px ;
+  margin-bottom: 5px;
+ margin-left:-70px;
+    padding: 0px 5px;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #ff8c00;
+    padding: 0px 5px;
+    height: 30px;
+    
+  }
   .search-locality {
 
   width: 220px;
