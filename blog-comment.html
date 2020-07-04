@@ -33,11 +33,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/blog-details.css">
+    <link rel="stylesheet" href="assets/css/blog-comment.css">
 
 </head>
-<body id="body" onload="myFunction()">
-
+<body>
+</body id="body" onload="myFunction()">
   <!--==========================
     Header
   ============================-->
@@ -77,195 +77,35 @@
     </div>
   </header><!-- #header -->
 
-  <!-- all post -->
-  <div class="container-fluid blog-topic">
-    <div class="row" style="padding-left: 30px;">
-      <a class="d-inline link" href="blog-description-page.html">All Posts</a>
-    </div>
-  </div>
-  <!-- all post ends -->
+  <!-- leave comment section -->
+  <section class="reply">
 
-  <!-- header -->
-  <div class="container-fluid middle">
-    <div class="row">
-      <div class="col-md-12 heading">
-        <h3 id="name"> NOSTALGIC JOURNEY</h3>
-        <p id="author"> author name |<span id="date"> 20 May 2020</span></p>
+    <div class="container">
+
+      <div class="row">
+        <h3>Leave a Comment here</h3>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="blog_image">
-          <img src="img/flat.png" class="img-thumbnail img-fluid"/>
-        </div>
-        <div class="blog_text">
-          <p class="drop-cap text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, debitis. Dicta quisquam doloribus sequi. Ullam expedita id debitis. Commodi alias incidunt autem voluptatum officiis voluptate labore in id facilis, neque, veniam, velit libero ducimus eveniet dolore. Illum maiores assumenda in pariatur distinctio delectus, et molestias cumque debitis dolores. Quam animi, consequatur illum voluptatibus a commodi quis repudiandae provident blanditiis quo dolor consectetur nobis omnis voluptates ipsam molestias sit nemo tenetur maiores iure vel? Itaque architecto perspiciatis dignissimos odit, ex non impedit aliquid aliquam at exercitationem?
-          <p/>
-          <p class="text-justify">Accusamus, voluptatum. Odit dignissimos distinctio sapiente iste magnam ipsum quia labore ducimus assumenda pariatur ut error blanditiis dolorem quo aliquam, excepturi sunt eaque est, quas temporibus consequatur perspiciatis magni iure? Sunt corrupti veniam quibusdam aspernatur laboriosam? Possimus, aliquam exercitationem optio cum animi eos nihil ea aperiam velit id est consequuntur beatae repudiandae quisquam neque? Repellendus, quasi. Voluptatum tenetur doloribus dolore? Officiis obcaecati laudantium labore delectus. Dolore eligendi iusto aliquid doloribus animi repudiandae, porro architecto, nesciunt dignissimos ipsa cupiditate necessitatibus laudantium laborum! Omnis quaerat culpa laborum, soluta quis ex nulla ducimus. Rerum minima vitae esse dolores! Porro debitis quas repudiandae tempore eos. Laudantium natus tempora et libero quas dolores commodi esse aut laboriosam quos. Animi quis facere nisi quisquam explicabo dicta alias iste, iusto sequi aut. Consequuntur deserunt hic cumque ipsa delectus dolores voluptatem ad earum ullam libero vitae quos eveniet voluptates cupiditate optio, accusamus expedita id facilis voluptatum aperiam animi omnis quaerat soluta qui! Officiis, hic ex? Aperiam, fugiat est fugit neque eum minus, iste a expedita, explicabo incidunt non quia sequi laudantium consequatur voluptatibus? Iste, eos neque modi adipisci nesciunt dolorum exercitationem veniam cupiditate amet distinctio praesentium quia tempora repudiandae esse hic quisquam veritatis sequi error animi. Dolorum repellat alias praesentium dolore officiis at cum, temporibus culpa accusamus impedit neque blanditiis ut aperiam sint.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="signupbox">
-          <h4>Sign up for Updates!</h4>
-          <p>Join our email list tp recieve updates and information.</p>
-          <form>
-            <input type="email" placeholder="Enter email" required/>
-            <center>
-              <button type="submit" class="btn create">Sign up</button>
-            </center>
+
+      <div class="row">
+        <div class="col-md-12">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn Submit-btn">Submit</button>
           </form>
         </div>
-        <div class="sharebox">
-          <h4>Share this blog !</h4>
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
-          </ul>
-        </div>
-        <div class="recent-post">
-          <h4>Recent Posts!</h4>
-          <p>See our lastest blogs here.</p>
-          <div class="container-fluid recent-box">
-            <div class="row">
-              <div class="col">
-                <a href="#"><img src="img/flat.png" class="img-thumbnail "></a>
-              </div>
-              <div class="col">
-                <h5>title</h5>
-                <p>author name | date</p>
-              </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                <a href="#"><img src="img/flat.png" class="img-thumbnail img-fluid"></a>
-              </div>
-              <div class="col">
-                <h5>title</h5>
-                <p>author name | date</p>
-              </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                <a href="#"><img src="img/flat.png" class="img-thumbnail img-fluid"></a>
-              </div>
-              <div class="col">
-                <h5>title</h5>
-                <p>author name | date</p>
-              </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                <a href="#"><img src="img/flat.png" class="img-thumbnail img-fluid"></a>
-              </div>
-              <div class="col">
-                <h5>title</h5>
-                <p>author name | date</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
-  </div>
-  <!-- header ends -->
 
-  <!-- share buttons -->
-  <div class="container-fluid share">
-    <div clas="row">
-      <div class="col-md-12">
-        <h6>Share this blog with you friends!</h6>
-        <ul class="social-icons">
-          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- share buttons ends here -->
-
-  <!-- comment box -->
-  <div class="container-fluid comments">
-    <div class="row">
-      <div class="col-md-12">
-        <h6>90 comments on <i class="las la-quote-left"></i> What is a Blog? <i class="las la-quote-right"></i> </h6>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div class="media border p-3 content">
-          <div class="media-body">
-            <h5>John Doe </h5>
-            <p><small><i>Posted on February 19, 2016 at 3:16 am</i></small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-          </div>
-        </div>
-        <div>
-          <a href="#" id="loadMore">Load More Comments</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- comment box ends -->
-
-  <div class="container-fluid reply">
-    <div class="row">
-      <div class="col-md-12">
-        <h6>Want to leave a reply? <a href="blog-comment.html" class="click"> click here</a></h6>
-      </div>
-    </div>
-  </div>
-  
-  <!-- share buttons -->
-  <div class="container-fluid share">
-    <div clas="row">
-      <div class="col-md-12">
-        <h6>Share this blog with you friends!</h6>
-        <ul class="social-icons">
-          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- share buttons ends here -->
+  </section>
+  <!-- leave comment section ends here -->
 
 
   <!--==========================
@@ -623,16 +463,6 @@ We help you to find your match, book rental homes of choice across Indian cities
       }
       // ]]>
 
-      $(document).ready(function(){
-        $(".content").slice(0, 3).show();
-        $("#loadMore").on("click", function(e){
-          e.preventDefault();
-          $(".content:hidden").slice(0, 3).slideDown();
-          if($(".content:hidden").length == 0) {
-            $("#loadMore").text("No More Results").addClass("noContent");
-          }
-        });
-      });
     </script>
 
     <!-- JavaScript Libraries -->
@@ -652,8 +482,4 @@ We help you to find your match, book rental homes of choice across Indian cities
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
-
-  <script>
-  </script>
-</body>
 </html>
