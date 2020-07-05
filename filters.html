@@ -39,6 +39,12 @@
       padding: 5px;
       border-radius: 5px;
     }
+    .price {
+      width: 50px;
+      height: 40px;
+      padding: 5px;
+      border: none;
+    }
   </style>
 </head>
 
@@ -96,22 +102,11 @@
                 </select>
               </div>
               <div class="aa-single-filter-search">
-                <span>AREA (Sq.)</span>
-                <span>FROM</span>
-                <span id="skip-value-lower" class="example-val">30.00</span>
-                <span>TO</span>
-                <span id="skip-value-upper" class="example-val">100.00</span>
-                <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>
-              </div>
-              <div class="aa-single-filter-search">
                 <span>PRICE ($)</span>
                 <span>FROM</span>
-                <span id="skip-value-lower2" class="example-val">30.00</span>
+                <span id="skip-value-lower2" class="example-val"><input type="text" class="price" name="" value="$40"> </span>
                 <span>TO</span>
-                <span id="skip-value-upper2" class="example-val">100.00</span>
-                <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>
+                <span id="skip-value-upper2" class="example-val"><input type="text" class="price" name="" value="$35k"> </span>
               </div>
               <div class="aa-single-advance-search">
                 <input type="submit" value="Search" class="btn btn-primary btn-block">
