@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@1,600&family=PT+Sans+Narrow:wght@700&family=Source+Sans+Pro&display=swap');
 
 body {
-  background: #fff;
+  background: #f1f1f1;
   color: #444;
   font-family: "Montserrat", sans-serif;
 }
@@ -49,7 +49,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   padding: 3px 0;
-  height: 45px;
+  height: 50px;
   transition: all 0.5s;
   z-index: 997;
   background: #ff8c00;
@@ -176,7 +176,7 @@ h6 {
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
 
@@ -193,7 +193,7 @@ h6 {
   margin: 2px 0 0 0;
   padding: 5px;
   box-shadow: 0px 0px 30px rgb(200, 200, 200);
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .nav-menu ul li {
@@ -339,21 +339,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .heading-background {
-     padding: 10px;
+  padding: 10px;
 }
+
 .heading {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-
-
 #intro {
-  height: 6.5em;
+  height: 12em;
   position: relative;
-  background-color: #aaa;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -365,14 +365,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-
 }
 
 #intro h3 {
-  color: #fff;
+  color: #000;
+}
+
+#intro .fa-check {
+  color: #05dfd7;
 }
 
 .search-container select {
+  background-color: #f1f1f1;
   width: 10px;
   padding: 5px;
   margin: 0 10px 0 10px;
@@ -461,12 +465,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro-mobile {
-  height: 14em;
+  height: 18em;
   position: relative;
-  background-color: #aaa;
+  background-color: #eee;
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
+}
+
+#intro-mobile .fa-check {
+  color: #05dfd7;
 }
 
 #intro-mobile .col-sm-12 select {
@@ -506,300 +514,85 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #intro {
     display: none;
   }
+
   #intro-mobile {
     display: block;
   }
 }
+
 /*--------------------------------------------------------------
-# Sections
+# Intro list property
 --------------------------------------------------------------*/
-/* Sections Header
---------------------------------*/
-#nav-header-our-services {
-  margin: 0px;
-  padding: 0px;
-}
-
-.section-header h2 {
-  margin: 20px;
+#intro-list-property .list-your-property {
+  background-color: #fa26a0;
+  color: #fff;
+  width: 30%;
   text-align: center;
-  font-size: 28px;
-  color: #222831;
-  text-transform: uppercase;
-  font-weight: 700;
+  position: relative;
+  left: 35%;
+  min-height: 50px;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  display: block;
 }
 
-.section-header p {
-  padding: 0;
-  margin: 0;
+#intro-list-property .list-your-property .fa-home {
+  color: #fff591;
+  font-size: 26px;
+  position: relative;
+  top: 3px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.main {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.boxes {
-
-  margin-left: auto;
-  margin-right: auto;
-  width:70%
-}
-.boxes_rental {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width:50%
-
-}
-
-.boxes select {
-  background: white;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+#intro-list-property .list-your-property .fa-arrow-right {
   color: #000;
 }
-.boxes_rental select {
-  background: white;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #000;
+
+#intro-list-property .list-your-property-2 {
+  background-color: #fa26a0;
+  color: #fff;
+  border-left: 10px solid #f1f1f1;
+  border-right: 10px solid #f1f1f1;
+  padding-left: 20px;
+  min-height: 150px;
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: 14px;
+  display: none;
 }
-.search-services {
-  width: 100%;
-  height: 50px;
+
+#intro-list-property .list-your-property-2 .fa-home {
+  color: #fff591;
+  font-size: 48px;
   position: relative;
-  transition: all 0.5s;
-  padding: 0px 40px;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px 0px 0px 100px;
-  margin-bottom: 5px;
+  top: 20px;
 }
 
-.search-city {
-  width: 100%;
-  height: 50px;
-  padding: 0px 40px;
+#intro-list-property .list-your-property-2 small {
   position: relative;
-  transition: all 0.5s;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  margin-bottom: 5px;
-}
-.search-city_rental {
-  width: 100%;
-  height: 50px;
-  padding: 0px 40px;
-  position: relative;
-  transition: all 0.5s;
-  background-color: white;
-  border-radius: 30px 0 0 30px;
-  border: 2px solid #ff8c00;
-  color: #444;
-  margin-bottom: 5px;
-}
-.search-locality {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  padding: 0px 40px;
-  transition: all 0.5s;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 5px;
-}
-.search-locality_rental {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  padding: 0px 40px;
-  transition: all 0.5s;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 0px 0px 0px 0px;
-  margin-bottom: 5px;
+  left: 55px;
 }
 
-.search-btn {
-  padding: 0px 40px;
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
-  background-color: #ff8c00;
-  border: 2px solid #ff971d;
-  color: white;
-  font-weight: bolder;
-  border-radius: 0px 100px 100px 0px;
-  outline: none;
-  font-family: "Raleway", sans-serif;
+#intro-list-property .list-your-property-2 button {
+  background-color: #000;
 }
 
-.search-btn:hover,
-.search-btn:active,
-.search-btn:focus {
-  width: 100%;
-  height: 50px;
-  font-size: 15px;
-  background-color: #ff8c00;
-  border: 2px solid #ff971d;
-  color: white;
-  font-weight: bolder;
-  border-radius: 0px 100px 100px 0px;
-  outline: none;
-  font-family: "Raleway", sans-serif;
-}
-
-.search-box i {
-  font-size: 20px;
-  -webkit-text-stroke: 1px white;
-  margin-left: 5px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.search-box i:hover {
-  transition: scale(1.1);
-}
-
-@media (max-width:768px) {
-
-  .boxes {
-  margin-left: 100px;
-}
-  .boxes_rental {
-  margin-left: 100px;
-}
-  .search-services {
-  width: 300px;
-  position: relative;
-  transition: all 0.5s;
-  padding: 0px 40px;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px ;
-  margin-bottom: 5px;
-    margin-left:-70px;
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid #ff8c00;
+@media only screen and (max-width: 1020px) {
+  #intro-list-property .list-your-property-2 {
+    display: block;
   }
 
-  .search-city {
-width: 300px;
-  position: relative;
-  transition: all 0.5s;
-  padding: 0px 40px;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px ;
-  margin-bottom: 5px;
- margin-left:-70px;
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid #ff8c00;
-    padding: 0px 5px;
-    height: 30px;
-
-  }
-.search-city_rental {
- width: 300px;
-  position: relative;
-  transition: all 0.5s;
-  padding: 0px 40px;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px ;
-  margin-bottom: 5px;
- margin-left:-70px;
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid #ff8c00;
-    padding: 0px 5px;
-    height: 30px;
-
-  }
-  .search-locality {
-
-  width: 220px;
-  position: relative;
-  padding: 0px 40px;
-  transition: all 0.5s;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px 0px 0px 100px;
-  margin-bottom: 5px;
- margin-left:-70px;
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid #ff8c00;
-  }
-  .search-locality_rental {
-
-  width: 190px;
-  position: relative;
-  padding: 0px 40px;
-  transition: all 0.5s;
-  background-color: white;
-  border: 2px solid #ff8c00;
-  color: #444;
-  border-radius: 100px 0px 0px 100px;
-  margin-bottom: 5px;
- margin-left:-70px;
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 15px;
-    border: 1px solid #ff8c00;
-  }
-
-  .search-btn {
-    padding: 0px 5px;
-    height: 30px;
-    font-size: 13px;
-  }
-
-  .search-btn:hover,
-  .search-btn:active,
-  .search-btn:focus {
-    height: 30px;
-    padding: 0px 5px;
-    font-size: 13px;
-  }
-
-  .search-box i {
-    font-size: 13px;
-    padding: 1px;
+  #intro-list-property .list-your-property {
+    display: none;
   }
 }
+
 
 
 /*------------------------------
@@ -808,13 +601,15 @@ width: 300px;
 #services {
   padding: 3px 0 0 0;
 }
+
 .row_service {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -10px;
 }
+
 #services .box {
   padding: 15px;
   margin-bottom: 10px;
@@ -861,14 +656,12 @@ width: 300px;
 
 #services .box button {
   width: 120px;
-   text-align: center;
+  text-align: center;
   background-color: #ff8c00;
   color: white;
   font-weight: bold;
   margin-left: 12.5rem;
 }
-
-
 
 @media (max-width: 767px) {
   #services .box .box {
@@ -886,54 +679,114 @@ width: 300px;
     margin-left: 0;
     text-align: center;
   }
-  #services .box button{
+
+  #services .box button {
     width: 80px;
-    height:30px;
-    font-size:9px;
-   text-align: center;
-   background-color: #ff8c00;
-  color: white;
-  font-weight: bold;
-  margin-left:120px;
+    height: 30px;
+    font-size: 9px;
+    text-align: center;
+    background-color: #ff8c00;
+    color: white;
+    font-weight: bold;
+    margin-left: 120px;
   }
 }
+
 /*extra carousel parts */
 #introduction-section,
 #introduction-section-1,
 #introduction-section-2 {
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+#introduction-section img,
+#introduction-section-1 img,
+#introduction-section-2 img {
+  border-radius: 10px;
 }
 
 #introduction-section,
 #introduction-section-1 {
-  display:none;
+  display: none;
 }
 
 #introduction-section-2 {
-  display:block;
-  margin-left: 50px;
-  margin-right: 50px;
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
   #introduction-section-1 {
-    display:block;
+    display: block;
   }
+
   #introduction-section-2 {
-    display:none;
+    display: none;
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   #introduction-section {
-    display:block;
+    display: block;
   }
+
   #introduction-section-1 {
     display: none;
   }
+
   #introduction-section-2 {
-    display:none;
+    display: none;
+  }
+}
+
+/*Refer and Earn */
+
+#refer-and-earn .btn-info {
+  background-color: #61E5FA;
+  color: #000;
+  border-radius: 50px;
+  padding: 10px;
+  border: 0;
+}
+
+#refer-and-earn .btn-info small {
+  background-color: yellow;
+  color: #000;
+  font-size: 10px;
+  font-weight:bold;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+#refer-and-earn-2 {
+  background-color: #61E5FA;
+  border-left: 10px solid #f1f1f1;
+  border-right: 10px solid #f1f1f1;
+  display: none;
+}
+
+#refer-and-earn-2 .btn-info {
+  background-color: #61E5FA;
+  color: #000;
+  padding: 10px;
+  border: 0;
+}
+
+#refer-and-earn-2 .btn-info small {
+  background-color: yellow;
+  color: #000;
+  font-size: 10px;
+  font-weight:bold;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #refer-and-earn-2 {
+    display: block;
+  }
+
+  #refer-and-earn {
+    display: none;
   }
 }
 
@@ -943,21 +796,24 @@ width: 300px;
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
 .row_why {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1000px) {
   .portfolio-bg {
     display: none;
   }
+
   .portfolio-cards {
     width: 100%;
   }
 }
+
 .overlay_why {
   width: 100%;
   height: 100%;
@@ -970,10 +826,10 @@ width: 300px;
 
 #portfolio .portfolio-bg {
   box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.1);
- background-image: url("../img/portfolio_why.png");
+  background-image: url("../img/portfolio_why.png");
+  background-size: 470px;
   background-repeat: no-repeat;
- width: 100%;
-
+  width: 100%;
 }
 
 #portfolio .portfolio-bg img {
@@ -1003,6 +859,46 @@ width: 300px;
   background-image: url("img/portfolio/1.jpg");
 }
 
+/* Why SheltOwn? Section mobile and mobile-desktop view
+--------------------------------*/
+#why-sheltown {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+#why-sheltown .row {
+  margin-left: 0rem;
+}
+
+#why-sheltown img {
+  width: 50px;
+  height: auto;
+}
+
+#why-sheltown p {
+  color: black;
+  font-size: 12px;
+}
+
+#why-sheltown .col-4 {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(187, 241, 200, 0.5);
+  box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.3);
+}
+
+@media only screen and (max-width: 1200px) {
+  #why-sheltown {
+    display: block;
+  }
+  #portfolio {
+    display: none;
+  }
+}
+
+
+
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
@@ -1016,6 +912,7 @@ width: 300px;
   text-align: center;
   min-height: 350px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #E8E8EE;
 }
 
 #testimonials .testimonial-item .testimonial-img {
@@ -1071,8 +968,9 @@ width: 300px;
   #testimonials .testimonial-item {
     margin: 30px 10px;
   }
+
   #testimonials .owl-dots {
-   display: none !important;
+    display: none !important;
   }
 }
 
@@ -1108,93 +1006,31 @@ width: 300px;
   padding: 0px 0px;
   margin: 0px;
 }
-#offers .card{
-  height: 10rem;
-  margin:10px;
+
+#offers .card {
+  height: auto;
+  margin: 10px;
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.5);
 }
-#offers img{
-  width:100%;
-  height:100%;
+
+#offers img {
+  width: 100%;
+  height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  #offers .card {
+    height: auto;
+    margin: 30px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
 /*#offers .offer-item {
   box-sizing: content-box;
   margin: 10px 15px;
   min-height: 200px;
 }*/
-
-/*--------------------------------------------------------------
-# extra carousel css
---------------------------------------------------------------*/
-.extra-carousel img {
-  width: 100%;
-  height: 150px;
-  padding: 5px;
-}
-
-.extra-carousel h2 {
-  text-align: center;
-  padding-bottom: 1em;
-}
-
-.slick-dots {
-  text-align: center;
-  margin: 0 0 10px 0;
-  padding: 0;
-}
-.slick-dots li {
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.slick-dots li.slick-active button {
-  background-color:#ff971d;
-}
-.slick-dots li button {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  background-color:#ddd;
-  border: none;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-.slick-dots li :hover {
-  background-color:#ff971d;
-}
-
-/* Custom Arrow */
-.extra-carousel .prev {
-  color: #ddd;
-  position: absolute;
-  top: 38%;
-  left: -2em;
-  font-size: 1.5em;
-}
-.extra-carousel .prev :hover {
-  cursor: pointer;
-  color: #ddd;
-}
-
-.extra-carousel .next {
-  color: #ddd;
-  position: absolute;
-  top: 38%;
-  right: -2em;
-  font-size: 1.5em;
-}
-.extra-carousel .next :hover {
-  cursor: pointer;
-  color:#ddd;
-}
-
-@media screen and (max-width: 800px) {
-  .extra-carousel .next {
-    display: none !important;
-  }
-}
-
-
 /*-------------------------------
  SheltOwnplus
 --------------------------------*/
@@ -1245,7 +1081,6 @@ width: 300px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }*/
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
