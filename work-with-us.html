@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<body>
-<!-- Main -->
-    
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -85,59 +78,136 @@
     </div>
   </header><!-- #header -->
 
-<!-- Job Alerts -->
-<div class="container-fluid middle" style="padding: 10px;">
-    <div class="container">
-        <div class="row justify-content-around">
-            <div class="col-sm-6">
-                <h3>Sign Up for Job Alerts!</h3>
-                <p>Not ready to apply? Take just a minute to sign up for job alerts</p>
-            </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <input type="email" placeholder="Enter email">
-                </div>
-                <div class="row">
-                    <button id="alert" style="float: right; margin: 0 0 10px 0;"><i class="fa fa-bell"></i>&nbsp&nbspSign up for Job Alerts</button>
-                </div>
-                <div class="row">
-                    <button id="alert" onclick="help()" style="float: right;">Help</button>
-                </div>
-            </div>
-        </div>
+<!-- Job Alertss -->
+<section id="job-alert">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <h2>Sign Up for Job Alerts!</h2>
+                  <p>Not ready to apply? Take just a minute to sign up for job alerts</p>
+              </div>
+              <div class="col-md-4">
+                  <div class="row">
+                      <input type="email" placeholder="Enter email">
+                  </div>
+                  <div class="row">
+                      <button class="btn btn-dark" id="sign-up"><i class="fa fa-bell"> &nbsp;</i>Sign up for Job Alerts</button>
+                  </div>
+                  <div class="row">
+                      <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Help</button>
+                  </div>
+              </div>
+              <div class="small-view">
+                  <center>
+                      <input type="email" placeholder="Enter email">
+                  </center>
+                  <center>
+                      <button class="btn btn-dark" id="sign-up"><i class="fa fa-bell"> &nbsp;</i>Sign up for Job Alerts</button>
+                  </center>
+                  <center>
+                      <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Help</button>
+                  </center>
+              </div>
+          </div>
+      </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Cantact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Join Our Team - You can reach out to HR for any help.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info btn-call" onclick="window.location.href='tel:7644080506'">Contact HR at <i class="fa fa-phone"></i> </button>
+        <button type="button" onclick="window.location.href='https://wa.me/7644080506/?text=Emergengy%20Text%20Messege!'" class="btn btn-success btn-wapp">Chat with us at <i class="fa fa-whatsapp"></i></button>
+      </div>
     </div>
+  </div>
 </div>
-
 <br>
 
-<div id="myDIV" class="container middle" style="padding: 10px; margin-bottom: 20px;display:none;">
-    <h5>Contact US</h5>
-    <p style="font-size: 13px;">Join Our Team - You can reach out to HR for any help.
-        Contact HR at +91 7007970069
-    </p>
-</div>
+<!-- Image -->
+<section id="job-image-1">
+  <div class="container">
+    <img src="Apply.png" alt="" style="width: 100%;">
+  </div>
+</section>
+<section id="job-image-2">
+  <div class="container">
+    <img src="Apply Now.jpg" alt="" style="width: 100%;">
+  </div>
+</section>
+
 
 <!--Search Bar -->
-<div class="container">
-   <div class="row image-card" style="background-color: white;">
-        <img id="image-top" src="../img/hire.jpg">
-        <img id="image-top" src="../img/hire.jpg">
-   </div> 
-   <div id="search-bar" class="row justify-content-around">
-        <form>
-            <input class="job-keyword fa" type="text" placeholder="&#xF002; Find jobs by keyword">
-            <input class="job-keyword fa" type="text" placeholder='&#xf041; Location (e.g. "Delhi")'>
-            <input type="submit" id="search" value="Search">
-        </form>
-   </div>
-</div>
+<section id="search-jobs">
+  <div class="container">
+     <br>
+       <div class="search-container" id="search-job-1">
+         <select class="" name="">
+           <option type="text" class="search">Find Jobs by Keyword</option>
+           <option value="Mumbai">Sales</option>
+           <option value="Delhi">Full-stack Developer</option>
+           <option value="Bangalore">Digital Marketing</option>
+         </select>
+         <select class="" name="">
+           <option type="text" class="search">Locality (eg. Delhi NCR)</option>
+           <option value="Mumbai">Mumbai</option>
+           <option value="Delhi">Delhi</option>
+           <option value="Bangalore">Bangalore</option>
+           <option value="Hyderabad">Hyderabad</option>
+           <option value="Ahmedabad">Ahmedabad</option>
+           <option value="Chennai">Chennai</option>
+           <option value="Kolkata">Kolkata</option>
+         </select>
+         <button type="submit" class="btn btn-warning">Search <i class="fa fa-search"></i> </button>
+       </div>
+
+       <div class="row" id="search-job-2">
+         <div class="col-sm-12">
+           <select class="" name="">
+             <option type="text" class="search">Find Jobs by Keyword</option>
+             <option value="Mumbai">Sales</option>
+             <option value="Delhi">Full-stack Developer</option>
+             <option value="Bangalore">Digital Marketing</option>
+           </select>
+         </div>
+         <div class="col-sm-12">
+           <select class="" name="">
+             <option type="text" class="search"> Locality (eg. Delhi NCR)</option>
+             <option value="Mumbai">Mumbai</option>
+             <option value="Delhi">Delhi</option>
+             <option value="Bangalore">Bangalore</option>
+             <option value="Hyderabad">Hyderabad</option>
+             <option value="Ahmedabad">Ahmedabad</option>
+             <option value="Chennai">Chennai</option>
+             <option value="Kolkata">Kolkata</option>
+           </select>
+         </div>
+         <div class="col-sm-12">
+           <br>
+           <center>
+             <button type="submit" class="btn btn-warning btn-sm">Search <i class="fa fa-search"></i> </button>
+           </center>
+         </div>
+       </div>
+  </div>
+</section>
 
 <br>
 
 <!-- Jobs -->
 <div class="container">
     <div class="row justify-content-between">
-        <div id="jobs-card" class="col-sm-8 middle">
+        <div id="jobs-card" class="col-md-8 middle">
             <div id="heading" class="row" style="border-bottom: 1px solid #dee2e6;">
                 Featured Jobs
             </div>
@@ -153,12 +223,12 @@
                     <ul class="col-sm-6">
                         <li><i class="fa fa-black-tie"></i> Relevant Experience: Freshers may apply</li>
                         <li><i class="fa fa-calendar"></i> No date</li>
-                        <button id="submission-btn" style="margin-left: 0; margin-top: 5px;">Apply</button>
+                        <button class="btn btn-success btn-sm" style="margin-left: 0; margin-top: 5px;">Apply</button>
                     </ul>
                 </div>
-            </div>    
+            </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3" id="card-2">
             <div class="middle row">
                 <div class="col">
                     <div class="row" id="profile-heading">
@@ -171,13 +241,13 @@
                         <input type="file">
                     </div>
                 </div>
-            </div>     
-            <br>  
+            </div>
+            <br>
         </div>
     </div>
 </div>
 
-<br>  
+<br>
 
 <!--==========================
     Footer
@@ -520,7 +590,7 @@ We help you to find your match, book rental homes of choice across Indian cities
       </div>
     </div>
   </section><!-- #footer -->
-  
+
     <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
     <script type="text/javascript">
       // <![CDATA[
