@@ -173,65 +173,6 @@
   </div>
 </div>
 
-<!--user modal-->  
-<div class="modal fade" id="modal-1">
-  <div class="modal-dialog container">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form>
-        <div class="modal-body">
-          <div class="form-group">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <form>
-            <h4>Create Account</h4>
-              <div class="row" style="font-size: 12px; margin-top: 5px; margin-bottom: 5px;"> 
-                <div class="col-sm-3">
-                  <input type="radio" name="user" checked>User
-                </div>
-                <div class="col-sm-4">
-                  <input type="radio" name="user">Property Owner
-                </div>
-                <div class="col-sm-4">
-                      <input type="radio" name="user">Service Provider
-                </div>
-              </div>
-            <label for="tel1">Enter your phone number</label>
-            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
-            <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
-          </div>
-        </div>
-        <center><button type="submit" data-toggle="modal" href="#modal-2"  data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
-      </form>       
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- otp-partner -->
-<div class="modal fade" id="modal-2">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form action="#" onsubmit="location.replace('rental-services.html')">
-        <div class="modal-body">
-          <div class="form-group">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4>Create Account</h4
-            <label for="tel1">Phone Number:</label>
-            <small id="telHelp" class="form-text text-muted">1234567890</small>
-            <br>
-            <label for="tel1">OTP</label>
-            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
-            <div style="font-size: 14px;">Time left = xx:xx<span id="timer">
-          </div>
-        </div>
-        <center><button type="submit" class="btn btn-success">Log In</button></center>
-      </form> 
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
 
 <!--==========================
     Footer
@@ -244,12 +185,14 @@
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+            We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities.
- </p>
+            We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+            We are with you whenever you are in need!
+          </p>
           <p>Accept our warm SheltOwn hug.</p>
         </div>
 
@@ -258,7 +201,7 @@ We help you to find your match, book rental homes of choice across Indian cities
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
             <li><a href="policy-page.html">FAQs</a></li>
-            <li><a onclick="redirect()">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn+</a></li>
             <li><a href="policy-page.html">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
           </ul>
@@ -555,7 +498,7 @@ We help you to find your match, book rental homes of choice across Indian cities
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <br>
-          <a href="mailto:info@sheltown.com">info@sheltown.com</a>
+          <a href="mailto:info@sheltown.com" style="color: #ff9719">info@sheltown.com</a>
           <br>
           <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved
 
@@ -574,6 +517,80 @@ We help you to find your match, book rental homes of choice across Indian cities
       </div>
     </div>
   </section><!-- #footer -->
+
+
+    <script type="text/javascript">
+      // <![CDATA[
+      function ShowHide(divId) {
+        var atxt = document.getElementById("atext");
+        if (document.getElementById(divId).style.display == 'none') {
+          document.getElementById(divId).style.display = 'block';
+        } else {
+          document.getElementById(divId).style.display = 'none';
+        }
+      }
+      // ]]>
+    </script>
+
+
+<!--user modal-->  
+<div class="modal fade" id="modal-1">
+  <div class="modal-dialog container">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <form>
+            <h4>Create Account</h4>
+              <div class="row" style="font-size: 12px; margin-top: 5px; margin-bottom: 5px;"> 
+                <div class="col-sm-3">
+                  <input type="radio" name="user" checked>User
+                </div>
+                <div class="col-sm-4">
+                  <input type="radio" name="user">Property Owner
+                </div>
+                <div class="col-sm-4">
+                      <input type="radio" name="user">Service Provider
+                </div>
+              </div>
+            <label for="tel1">Enter your phone number</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="+91" required>
+            <small id="telHelp" class="form-text text-muted">Your information is safe with us.</small>
+          </div>
+        </div>
+        <center><button type="submit" data-toggle="modal" href="#modal-2"  data-dismiss="modal" class="btn btn-success">Send OTP</button></center>
+      </form>       
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- otp-partner -->
+<div class="modal fade" id="modal-2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form action="#" onsubmit="location.replace('rental-services.html')">
+        <div class="modal-body">
+          <div class="form-group">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4>Create Account</h4
+            <label for="tel1">Phone Number:</label>
+            <small id="telHelp" class="form-text text-muted">1234567890</small>
+            <br>
+            <label for="tel1">OTP</label>
+            <input type="tel" class="form-control" id="tel1" aria-describedby="telHelp" placeholder="x x x x x x" required>
+            <div style="font-size: 14px;">Time left = xx:xx<span id="timer">
+          </div>
+        </div>
+        <center><button type="submit" class="btn btn-success">Log In</button></center>
+      </form> 
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
