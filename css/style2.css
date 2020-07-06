@@ -372,7 +372,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .fa-check {
-  color: #05dfd7;
+  color: #66D39E;
 }
 
 .search-container select {
@@ -474,7 +474,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro-mobile .fa-check {
-  color: #05dfd7;
+  color: #66D39E;
 }
 
 #intro-mobile .col-sm-12 select {
@@ -536,9 +536,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 35%;
   min-height: 50px;
   border-radius: 50px;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 8px 5px 0px 5px;
   font-size: 14px;
   display: block;
 }
@@ -745,7 +743,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #61E5FA;
   color: #000;
   border-radius: 50px;
-  padding: 10px;
+  padding: 15px 30px;
   border: 0;
 }
 
@@ -804,16 +802,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 1000px) {
-  .portfolio-bg {
-    display: none;
-  }
-
-  .portfolio-cards {
-    width: 100%;
-  }
-}
-
 .overlay_why {
   width: 100%;
   height: 100%;
@@ -827,7 +815,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-bg {
   box-shadow: 10px 10px 15px rgba(114, 27, 101, 0.1);
   background-image: url("../img/portfolio_why.png");
-  background-size: 470px;
+  background-size: 470px 620px;
   background-repeat: no-repeat;
   width: 100%;
 }
