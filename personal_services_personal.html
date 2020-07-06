@@ -338,6 +338,52 @@ background-color: #fff;
     margin-left:65px;
 }
 
+#introduction-section,
+#introduction-section-1,
+#introduction-section-2 {
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+#introduction-section img,
+#introduction-section-1 img,
+#introduction-section-2 img {
+  border-radius: 10px;
+}
+
+#introduction-section,
+#introduction-section-1 {
+  display: none;
+}
+
+#introduction-section-2 {
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  #introduction-section-1 {
+    display: block;
+  }
+
+  #introduction-section-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #introduction-section {
+    display: block;
+  }
+
+  #introduction-section-1 {
+    display: none;
+  }
+
+  #introduction-section-2 {
+    display: none;
+  }
+}
+
 </style>
 </head>
 
@@ -389,8 +435,8 @@ background-color: #fff;
 <div class ="row_ser">
 <div class="column_ser left">
 <h3 style="margin-left:65px;">Need an "Service Expert" for? </h2>
- <div class="mobile" style="margin-left:180px;">
- <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-115px;">
+ <div class="mobile" style="margin-left:70px;">
+ <input type="checkbox" id="myCheck" data-toggle="modal" data-target="#myModal" style="margin-left:-55px;">
    <label for="myCheck" style="color:#ff9719;">or Request a Call Back from our Executive</label> 
 </div>
 <p style="margin-left:70px;"> Select the Service </p>
@@ -911,8 +957,9 @@ background-color: #fff;
 </div>
 </div> 
 </div>
-<div class="container">
-<div class="row">
+
+
+<!--
 <div class="col-md-12 heroSlider-fixed">
 
 
@@ -950,8 +997,113 @@ background-color: #fff;
 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 </div>
 </div>
+
+-->
+
+<div id="introduction-section" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Sheltie (2).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="SheltOwn+ (1).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Family (1).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#introduction-section" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#introduction-section" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+<!--==========================
+ extra carousel desktop-mobile
+ ============================-->
+<div id="introduction-section-1" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Sheltie (3).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="SheltOwn+ (2).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Family (2).png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#introduction-section-1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#introduction-section-1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+<!--==========================
+  extra carousel
+  ============================-->
+<div id="introduction-section-2" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Sheltie.png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="SheltOwn+.png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+    <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+      <center>
+        <img src="Family.png" class="d-block w-100" alt="...">
+      </center>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#introduction-section-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#introduction-section-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
 
 
 
