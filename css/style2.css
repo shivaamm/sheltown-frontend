@@ -465,9 +465,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro-mobile {
-  height: 18em;
+  height: 20em;
   position: relative;
-  background-color: #eee;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
@@ -478,6 +478,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro-mobile .col-sm-12 select {
+  background-color: #f1f1f1;
   width: 95%;
   padding: 5px;
   margin: 0 10px 0 10px;
@@ -521,6 +522,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #intro-mobile {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  #intro-mobile small {
+    display: none;
   }
 }
 
