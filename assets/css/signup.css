@@ -47,25 +47,19 @@
     color:black;
   }
   .listbox{
-    width: 20rem;
-    margin: 40px;
+    width: 100%;
     background-color:#ff971d;
     color:white;
     border:2px solid #ff971d;
     border-radius: 8px;
-    font-weight: bolder;
-    font-size: 15px;
-    padding:20px;
+    font-size: 13px;
+    padding:10px;
   }
 
   .fa-check {
-    font-size: 15px;
+    font-size: 13px;
   }
 
-  #listul li{
-    list-style-type: none;
-    padding: 10px;
-  }
   i{
     font-size:60px;
     color:white;
@@ -91,18 +85,45 @@
     .container-fluid{
         margin: 0 auto;
     }
-}
+  }
 
-/* Modal */
 
-input[type="tel"]{
-  padding: 5px;
+/*Modal*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 }
-input[type="submit"]{
-  padding: 7px 15px;
-  border: none;
-  background-color: rgb(223, 219, 219);
+.google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
 }
-input[type="radio"]{
-  margin-right: 5px;
+.google-btn .google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+}
+.google-btn .btn-text {
+  float: right;
+  margin: 13px 9px 0 0;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.google-btn:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+  background: #1669F2;
 }
