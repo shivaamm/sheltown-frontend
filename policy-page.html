@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>SheltOwn</title>
-  <meta content="width=device-width, initial-scale=1 name=viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -30,132 +27,28 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/privacy.css">
   <title>SheltOwn</title>
-  <style media="screen">
-    /* 2. Make nav sticky */
-    main>nav {
-      position: sticky;
-      top: 2rem;
-      align-self: start;
-    }
-
-    /* 3. ScrollSpy active styles (see JS tab for activation) */
-    .section-nav li.active>a {
-      color: #fff;
-      font-weight: 500;
-      background-color: #157AF6;
-      padding: 10px;
-      border: 2px solid white;
-      border-radius: 7px;
-    }
-
-    .section-nav a:hover,
-    .section-nav a.active {
-      color: #fff;
-      font-weight: 500;
-      background-color: #157AF6;
-      padding: 7px;
-      border: 2px solid white;
-      border-radius: 7px;
-    }
-
-    /* Sidebar Navigation */
-    .section-nav {
-      margin-bottom: 2.5em;
-      border-left: 2px solid #efefef;
-    }
-
-    .section-nav a {
-      text-decoration: none;
-      display: block;
-      color: #323232;
-      transition: all 50ms ease-in-out;
-      background-color: #eee;
-      padding: 7px;
-      border: 2px solid white;
-      border-radius: 7px;
-      /* 💡 This small transition makes setting of the active state smooth */
-    }
-
-    /** Poor man's reset **/
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      background: #fff;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    ol {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      margin-left: 1rem;
-      line-height: 2rem;
-    }
-
-    h1 {
-      font-weight: bold;
-      color: #323232;
-    }
-
-    h2 {
-      font-family: 'PT Sans Narrow', sans-serif;
-    }
-
-    /** page layout **/
-    main {
-      display: grid;
-      grid-template-columns: 1fr 25em;
-      max-width: 100em;
-      width: 95%;
-      margin: 0 auto;
-    }
-
-    section {
-      padding-right: 2.5em;
-    }
-
-    table {
-      margin: 1em;
-      border: 1px solid;
-    }
-
-    th,
-    td {
-      padding: 1em 1em;
-      border: 1px solid;
-    }
-  </style>
 </head>
 
-<body id="body" onload="TapButton(event, 'booking-tenant')">
-
+<body>
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
-<div id="logo" class="pull-left">
+      <div id="logo" class="pull-left">
         <a href="index.html">
           <img src="img/favicon.png" alt="logo">
         </a>
       </div>
 
-<div id="logo" class="pull-left" style="margin-top:8px;">
+      <div id="logo" class="pull-left" style="margin-top:8px;">
         <a href="index.html">
-        <p >SheltOwn</p>
+          <p>SheltOwn</p>
         </a>
       </div>
 
@@ -170,241 +63,593 @@
           </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
-          <li><a href="login-user.html">Log In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  <!-- policy scroll spy -->
-  <main>
-    <div>
-      <br>
-      <h1>Privacy Policy</h1>
-      <section id="booking-tenant" class="tabcontent">
-        <h2>Booking & Tenant</h2>
-        <p>
-        <ul>
-          <li>The Owner of the property has the right to accept or reject the booking of tenants. In such cases the tenant will get full refund of the booking amount.
-          </li>
-          <li>In case any tenant provides any invalid documents, the owner has the right to deny the booking. Tenant must show his\her valid documents like Aadhar card, Voter id, Passport or other proofs of identity, on the day of check-in at the
-            property.
-          </li>
-          <li>The tenant will have to pay 1-month security deposits and pro-rata rent (rent calculated proportionally). In other word, Tenant will deposit rent based on the number of days he/she used the rental that month. We will make sure your stay
-            is comfortable for you as we believe #livelikeyouownit. </li>
-          <li>We make sure that we or the owner, are not asking for long term commitment, so that there is <b>no lock-in period</b> for the Tenant. </li>
-          <li>Tenant must deposit the security amount a week prior to moving in, and KYC documents to be verified online by uploading scanned documents.
-          </li>
-          <li>In case of cancellation by tenant, the <b><a onclick="TapButtonNav(event, 'notice-period')">Cancellation and Refund Policy</a></b> will apply.
-          </li>
-          <li>The tenant is required to deposit the rent before the due date as mentioned.
-          </li>
-          <li>The tenant can make payment through online mediums by using SheltOwn payment options and they may earn discounts.
-          </li>
-          <li>In case of delay in payment of rent our T&C allows us to charge Rs.50/day which will be charged till 15th of every month. Mandatory displacements will come into effect on the 16th day or 25% forfeit of security deposits, whichever comes
-            earlier.
-          </li>
-          <li>In case of shared plans, <b>Utility Usage Charges</b> (i.e. Electricity, Water etc.) at common premises is apportioned on actuals to all the residents of the property.
-          </li>
-          <li>Utility Usage Charges will be added in rental for Rs.500 in one-month advance and will be managed in the next billing month.</li>
-          <li>Any late payment will affect your tenant’s credit score.
-          </li>
-          <li> In case of bed-level bookings, we reserve the right to shift guests with bed-level bookings to other rooms at any time in the same property in case of availability of space.
-          </li>
-          <li>As markets evolve, costs modify and so does rents. However, we do assure you of best deals than others and affordable prices throughout.
-          </li>
-          <li>All residents are expected to acceptance by the local law of land. Residents or Property should not use premises for any commercial activity.
-          </li>
-          <li>The tenant’s guests are welcome like our own guest as tradeline says <b>live_like_you_own_it</b>! And for your convenience and safety, we would take their KYC IDs proofs and keep records updated and we suggest you to keep us updated. We
-            consider you responsible to make sure your guests follow all house rules.
-          </li>
-          <li> Love your home to get your love back. We make sure it loves you more. </li>
-          <li>A meal is something which should not be standardized at every Property. So, it depends on the tenants booking, whether they book or not.
-            In all other conditions, meals are not included in the rent if there is no standardize menu available and owner has not mentioned about meals in the deal but where the meal can be standardized in menu and owner has mentioned in the deal,
-            there it is included in the rent.
-          </li>
-          <li>Do take care of your own belongings, we will also try to take care of your belongings but we are not responsible for any theft.</li>
-          <li>Any damages to property, amenities will come under <b> <a onclick="TapButtonNav(event, 'theft-damage')">Theft and Damage Policy</a> </b> and Tenant may be asked to pay for the same damages.
-          </li>
-          <li>Our 24x7 care focuses on resolving your in-stay related issues, ensure you quick resolution each time.
-          </li>
-          <ul>
-            <br>
-            <h4>In Case of Rent Agreements:</h4>
-            <li>The renewal of rent agreement is required after each 12 months of stay. You don’t need to worry about that, we offer full assistance for that.</li>
-            <li>The tenant is required to pay for the rent agreement.</li>
-            <li>The rent includes fixed furnishing charges and apartment\society maintenance
-              charges if there is any</li>
-            <li>The rent doesn’t include Electricity, Water, Cooking, DTH and Internet charges, any additional furniture that is not a part of package, Club house charges, Cleaning and Maid charges.</li>
-            <li>The food charges are separate from rent charges and need to pay according to desired requirements.</li>
-          </ul>
-        </ul>
-        </p>
-      </section>
-      <section id="notice-period" class="tabcontent">
-        <h2>Notice Period &amp; Cancellation Refund</h2>
-        <p>
-        <ul>
-          <li>
-            Tenant has to inform the owner of the property prior to 1 month before moving out. If the tenant moves out without informing, the owner has the right to deny him with the security deposit.
-          </li>
-          <li>
-            Any unpaid utility bill and rent will be ducted from security deposits.</li>
-          <li>
-            Payment for the full 30 days of notice period is mandatory.
-          </li>
-          <li>
-            Extension request of stay will be acceptable only on the basis of availability.
-          </li>
-          <li>
-            Any kind of outstanding amount payable by tenant will be deducted from security deposits.
-          </li>
-          <li>
-            If the tenants decide to cancel the booking through SheltOwn platform after paying online, then the amount will be refunded in customer account within 48 hours. In other cases, it will be collected through Owner.</li>
-          <li>
-            Cancellation to all those confirmed bookings where tenant want to cancel a confirmed booking prior to 1-15 days of Move-In date, a charge of Rs. 2,999 per bed will be levied and full amount of booking amount will be refunded after
-            deduction of Rs.500, In case tenant want to cancel 30 days prior to Move-In.
-          </li>
-          <li>
-            We consider your full refund only when you notify us before 1 month.
-            <br>
-            <table>
-              <tr>
-                <th>Notification days before move out</th>
-                <th>Considered amount of Refund</th>
-              </tr>
-              <tr>
-                <td>30 days</td>
-                <td>Full</td>
-              </tr>
-              <tr>
-                <td>15-30 days</td>
-                <td>40%</td>
-              </tr>
-              <tr>
-                <td>Less than 15 days</td>
-                <td>No Refund</td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-        </p>
-      </section>
-      <section id="renewal-inclusion" class="tabcontent">
-        <h2>Renewal &amp; Inclusion</h2>
-        <p>
-        <ul>
-          <li>
-            The renewal of rent agreement is required after 11 months of tenants stays.
-          </li>
-          <li>
-            The tenant is required to pay for the rent agreement.
-          </li>
-          <li>
-            The rent will start on the date mentioned in rent agreement err respective of tenant has move in or not.
-          </li>
-          <li>
-            The rent includes fixed furnishing charges and apartment\society maintenance charges if there is any.
-          </li>
-          <li>
-            The rent doesn’t include electricity, water, cooking, DTH and Internet charges, any additional furniture that is not a part of SheltOwn package, Club house charges, cleaning and maid charges.
-          </li>
-          <li>
-            The food charges are separate from rent charges and need to pay according to desired requirements.
-          </li>
-        </ul>
-        </p>
-      </section>
-      <section id="theft-damage" class="tabcontent">
-        <h2>Theft &amp; Damages</h2>
-        <p>
-        <ul>
-          <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
-          <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
-        </ul>
-        </p>
-      </section>
-      <section id="tenant-guest-policy" class="tabcontent">
-        <h2>Tenant's Guest Policy</h2>
-        <p>
-        <ul>
-          <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own safety.</li>
-          <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
-          <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
-        </ul>
-        </p>
-      </section>
-      <section id="personal" class="tabcontent">
-        <h2>Personal Services Booking</h2>
-        <p>…</p>
-      </section>
-      <section id="offers" class="tabcontent">
-        <h2>Offers</h2>
-        <p>…</p>
-      </section>
-      <section id="refer-earn" class="tabcontent">
-        <h2>Refer &amp; Earn</h2>
-        <p>…</p>
-      </section>
-      <section id="sheltownplus" class="tabcontent">
-        <h2>SheltOwn+</h2>
-        <p>…</p>
-      </section>
-      <section id="sheltownfamilyplus" class="tabcontent">
-        <h2>SheltOwn Family+</h2>
-        <p>…</p>
-      </section>
-      <section id="safety-security" class="tabcontent">
-        <h2>Safety &amp; Security</h2>
-        <p>…</p>
-      </section>
-      <section id="terms-of-use" class="tabcontent">
-        <h2>Terms of Use</h2>
-        <p>…</p>
-      </section>
-      <section id="faq-tenants" class="tabcontent">
-        <h2>FAQ Tenants</h2>
-        <p>…</p>
-      </section>
-      <section id="faq-partners" class="tabcontent">
-        <h2>FAQ Partners</h2>
-        <p>…</p>
-      </section>
-      </section>
-      <section id="payment" class="tabcontent">
-        <h2>Payment</h2>
-        <p>…</p>
-      </section>
-      <section id="Others" class="tabcontent">
-        <h2>Others</h2>
-        <p>…</p>
-      </section>
+  <section id="desktop-tab">
+    <center>
+      <h2>Privacy Policy</h2>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 col-sm-4">
+          <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+            <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+              <i class="mdi mdi-help-circle"></i> Booking & Tenant
+            </a>
+            <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+              <i class="mdi mdi-account"></i> Personal Services Booking
+            </a>
+            <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+              <i class="mdi mdi-account-settings"></i> Notice Period &amp; Cancellation Refund
+            </a>
+            <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
+              <i class="mdi mdi-heart"></i> Renewal &amp; Inclusion
+            </a>
+            <a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
+              <i class="mdi mdi-coin"></i> Theft &amp; Damages
+            </a>
+            <a href="#tab6" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab6" aria-selected="false">
+              <i class="mdi mdi-help"></i> Tenant's Guest Policy
+            </a>
+            <a href="#tab7" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab7" aria-selected="false">
+              <i class="mdi mdi-help"></i> Offers
+            </a>
+            <a href="#tab8" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab8" aria-selected="false">
+              <i class="mdi mdi-help"></i> Refer &amp; Earn
+            </a>
+            <a href="#tab9" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab9" aria-selected="false">
+              <i class="mdi mdi-help"></i> SheltOwn+
+            </a>
+            <a href="#tab10" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab10" aria-selected="false">
+              <i class="mdi mdi-help"></i> SheltOwn Family+
+            </a>
+            <a href="#tab11" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab11" aria-selected="false">
+              <i class="mdi mdi-help"></i> Safety &amp; Security
+            </a>
+            <a href="#tab12" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab12" aria-selected="false">
+              <i class="mdi mdi-help"></i> Terms of Use
+            </a>
+            <a href="#tab13" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab13" aria-selected="false">
+              <i class="mdi mdi-help"></i> FAQ Tenants
+            </a>
+            <a href="#tab14" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab14" aria-selected="false">
+              <i class="mdi mdi-help"></i> FAQ Partners
+            </a>
+            <a href="#tab15" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab15" aria-selected="false">
+              <i class="mdi mdi-help"></i> Payment
+            </a>
+          </div>
+        </div>
+        <div class="col-8 col-sm-8">
+          <div class="tab-content" id="faq-tab-content">
+            <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+              <div class="accordion" id="accordion-tab-1">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-1-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Booking & Tenant</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+                    <div class="card-body">
+                      <p>
+                      <ul>
+                        <li>The Owner of the property has the right to accept or reject the booking of tenants. In such cases the tenant will get full refund of the booking amount.
+                        </li>
+                        <li>In case any tenant provides any invalid documents, the owner has the right to deny the booking. Tenant must show his\her valid documents like Aadhar card, Voter id, Passport or other proofs of identity, on the day of
+                          check-in at the
+                          property.
+                        </li>
+                        <li>The tenant will have to pay 1-month security deposits and pro-rata rent (rent calculated proportionally). In other word, Tenant will deposit rent based on the number of days he/she used the rental that month. We will make
+                          sure your stay
+                          is comfortable for you as we believe #livelikeyouownit. </li>
+                        <li>We make sure that we or the owner, are not asking for long term commitment, so that there is <b>no lock-in period</b> for the Tenant. </li>
+                        <li>Tenant must deposit the security amount a week prior to moving in, and KYC documents to be verified online by uploading scanned documents.
+                        </li>
+                        <li>In case of cancellation by tenant, the <b><a onclick="TapButtonNav(event, 'notice-period')">Cancellation and Refund Policy</a></b> will apply.
+                        </li>
+                        <li>The tenant is required to deposit the rent before the due date as mentioned.
+                        </li>
+                        <li>The tenant can make payment through online mediums by using SheltOwn payment options and they may earn discounts.
+                        </li>
+                        <li>In case of delay in payment of rent our T&C allows us to charge Rs.50/day which will be charged till 15th of every month. Mandatory displacements will come into effect on the 16th day or 25% forfeit of security deposits,
+                          whichever comes
+                          earlier.
+                        </li>
+                        <li>In case of shared plans, <b>Utility Usage Charges</b> (i.e. Electricity, Water etc.) at common premises is apportioned on actuals to all the residents of the property.
+                        </li>
+                        <li>Utility Usage Charges will be added in rental for Rs.500 in one-month advance and will be managed in the next billing month.</li>
+                        <li>Any late payment will affect your tenant’s credit score.
+                        </li>
+                        <li> In case of bed-level bookings, we reserve the right to shift guests with bed-level bookings to other rooms at any time in the same property in case of availability of space.
+                        </li>
+                        <li>As markets evolve, costs modify and so does rents. However, we do assure you of best deals than others and affordable prices throughout.
+                        </li>
+                        <li>All residents are expected to acceptance by the local law of land. Residents or Property should not use premises for any commercial activity.
+                        </li>
+                        <li>The tenant’s guests are welcome like our own guest as tradeline says <b>live_like_you_own_it</b>! And for your convenience and safety, we would take their KYC IDs proofs and keep records updated and we suggest you to keep
+                          us updated. We
+                          consider you responsible to make sure your guests follow all house rules.
+                        </li>
+                        <li> Love your home to get your love back. We make sure it loves you more. </li>
+                        <li>A meal is something which should not be standardized at every Property. So, it depends on the tenants booking, whether they book or not.
+                          In all other conditions, meals are not included in the rent if there is no standardize menu available and owner has not mentioned about meals in the deal but where the meal can be standardized in menu and owner has mentioned
+                          in the deal,
+                          there it is included in the rent.
+                        </li>
+                        <li>Do take care of your own belongings, we will also try to take care of your belongings but we are not responsible for any theft.</li>
+                        <li>Any damages to property, amenities will come under <b> <a onclick="TapButtonNav(event, 'theft-damage')">Theft and Damage Policy</a> </b> and Tenant may be asked to pay for the same damages.
+                        </li>
+                        <li>Our 24x7 care focuses on resolving your in-stay related issues, ensure you quick resolution each time.
+                        </li>
+                        <ul>
+                          <br>
+                          <h4>In Case of Rent Agreements:</h4>
+                          <li>The renewal of rent agreement is required after each 12 months of stay. You don’t need to worry about that, we offer full assistance for that.</li>
+                          <li>The tenant is required to pay for the rent agreement.</li>
+                          <li>The rent includes fixed furnishing charges and apartment\society maintenance
+                            charges if there is any</li>
+                          <li>The rent doesn’t include Electricity, Water, Cooking, DTH and Internet charges, any additional furniture that is not a part of package, Club house charges, Cleaning and Maid charges.</li>
+                          <li>The food charges are separate from rent charges and need to pay according to desired requirements.</li>
+                        </ul>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+              <div class="accordion" id="accordion-tab-2">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-2-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Personal Services Booking</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+                    <div class="card-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+              <div class="accordion" id="accordion-tab-3">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-3-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Notice Period &amp; Cancellation Refund</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+                    <div class="card-body">
+                      <p>
+                      <ul>
+                        <li>
+                          Tenant has to inform the owner of the property prior to 1 month before moving out. If the tenant moves out without informing, the owner has the right to deny him with the security deposit.
+                        </li>
+                        <li>
+                          Any unpaid utility bill and rent will be ducted from security deposits.</li>
+                        <li>
+                          Payment for the full 30 days of notice period is mandatory.
+                        </li>
+                        <li>
+                          Extension request of stay will be acceptable only on the basis of availability.
+                        </li>
+                        <li>
+                          Any kind of outstanding amount payable by tenant will be deducted from security deposits.
+                        </li>
+                        <li>
+                          If the tenants decide to cancel the booking through SheltOwn platform after paying online, then the amount will be refunded in customer account within 48 hours. In other cases, it will be collected through Owner.</li>
+                        <li>
+                          Cancellation to all those confirmed bookings where tenant want to cancel a confirmed booking prior to 1-15 days of Move-In date, a charge of Rs. 2,999 per bed will be levied and full amount of booking amount will be refunded
+                          after
+                          deduction of Rs.500, In case tenant want to cancel 30 days prior to Move-In.
+                        </li>
+                        <li>
+                          We consider your full refund only when you notify us before 1 month.
+                          <br>
+                          <table>
+                            <tr>
+                              <th>Notification days before move out</th>
+                              <th>Considered amount of Refund</th>
+                            </tr>
+                            <tr>
+                              <td>30 days</td>
+                              <td>Full</td>
+                            </tr>
+                            <tr>
+                              <td>15-30 days</td>
+                              <td>40%</td>
+                            </tr>
+                            <tr>
+                              <td>Less than 15 days</td>
+                              <td>No Refund</td>
+                            </tr>
+                          </table>
+                        </li>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+              <div class="accordion" id="accordion-tab-4">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-4-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">Renewal &amp; Inclusion</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+                    <div class="card-body">
+                      <p>
+                      <ul>
+                        <li>
+                          The renewal of rent agreement is required after 11 months of tenants stays.
+                        </li>
+                        <li>
+                          The tenant is required to pay for the rent agreement.
+                        </li>
+                        <li>
+                          The rent will start on the date mentioned in rent agreement err respective of tenant has move in or not.
+                        </li>
+                        <li>
+                          The rent includes fixed furnishing charges and apartment\society maintenance charges if there is any.
+                        </li>
+                        <li>
+                          The rent doesn’t include electricity, water, cooking, DTH and Internet charges, any additional furniture that is not a part of SheltOwn package, Club house charges, cleaning and maid charges.
+                        </li>
+                        <li>
+                          The food charges are separate from rent charges and need to pay according to desired requirements.
+                        </li>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5">
+              <div class="accordion" id="accordion-tab-5">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-5-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">Theft &amp; Damages</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
+                    <div class="card-body">
+                      <p>
+                      <ul>
+                        <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
+                        <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab6" role="tabpanel" aria-labelledby="tab6">
+              <div class="accordion" id="accordion-tab-6">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-6-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-6-content-1" aria-expanded="false" aria-controls="accordion-tab-6-content-1">Tenant's Guest Policy</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-6-content-1" aria-labelledby="accordion-tab-6-heading-1" data-parent="#accordion-tab-6">
+                    <div class="card-body">
+                      <p>
+                      <ul>
+                        <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own
+                          safety.</li>
+                        <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
+                        <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
+                      </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab7" role="tabpanel" aria-labelledby="tab7">
+              <div class="accordion" id="accordion-tab-7">
+                <div class="card">
+                  <div class="card-header" id="accordion-tab-7-heading-1">
+                    <h5>
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-7-content-1" aria-expanded="false" aria-controls="accordion-tab-7-content-1">Offers</button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="accordion-tab-7-content-1" aria-labelledby="accordion-tab-7-heading-1" data-parent="#accordion-tab-7">
+                    <div class="card-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav class="section-nav">
-      <br>
-      <ol id="myTab">
-        <li><a class="tablinks active" href="#booking-tenant" onclick="TapButtonNav(event, 'booking-tenant')">Booking & Tenant</a></li>
-         <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'personal')">Personal Services Booking</a></li>
-        <li><a class="tablinks" id="noticeperiod" href="#notice-period" onclick="TapButtonNav(event, 'notice-period')">Notice Period &amp; Cancellation Refund</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'renewal-inclusion')">Renewal &amp; Inclusion</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'theft-damage')">Theft &amp; Damages</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'tenant-guest-policy')">Tenant's Guest Policy</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'offers')">Offers</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'refer-earn')">Refer &amp; Earn</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'sheltownplus')">SheltOwn+</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'sheltownfamilyplus')">SheltOwn Family+</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'safety-security')">Safety &amp; Security</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'terms-of-use')">Terms of Use</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'faq-tenants')">FAQ Tenants</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'faq-partners')">FAQ Partners</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'payment')">Payment</a></li>
-        <li><a class="tablinks" href="#top" onclick="TapButtonNav(event, 'Others')">Others</a></li>
-      </ol>
-      <br>
-    </nav>
-  </main>
-  
-<!--==========================
+    <br>
+  </section>
+
+
+  <!----- Mobile  screen 768---->
+  <section class="faq-section" id="mobile-screen">
+    <div class="container">
+      <div class="row">
+        <!-- ***** FAQ Start ***** -->
+        <div class="col-sm-6 offset-sm-3">
+
+          <div class="faq-title text-center pb-3">
+            <h2>Privacy Policy</h2>
+          </div>
+        </div>
+        <div class="col-sm-6 offset-sm-3">
+          <div class="faq" id="accordion">
+            <div class="card">
+              <div class="card-header" id="faqHeading-1">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                    <span class="badge">1</span>Booking & Tenant
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                  <ul>
+                    <li>The Owner of the property has the right to accept or reject the booking of tenants. In such cases the tenant will get full refund of the booking amount.
+                    </li>
+                    <li>In case any tenant provides any invalid documents, the owner has the right to deny the booking. Tenant must show his\her valid documents like Aadhar card, Voter id, Passport or other proofs of identity, on the day of check-in at the
+                      property.
+                    </li>
+                    <li>The tenant will have to pay 1-month security deposits and pro-rata rent (rent calculated proportionally). In other word, Tenant will deposit rent based on the number of days he/she used the rental that month. We will make sure your stay
+                      is comfortable for you as we believe #livelikeyouownit. </li>
+                    <li>We make sure that we or the owner, are not asking for long term commitment, so that there is <b>no lock-in period</b> for the Tenant. </li>
+                    <li>Tenant must deposit the security amount a week prior to moving in, and KYC documents to be verified online by uploading scanned documents.
+                    </li>
+                    <li>In case of cancellation by tenant, the <b><a onclick="TapButtonNav(event, 'notice-period')">Cancellation and Refund Policy</a></b> will apply.
+                    </li>
+                    <li>The tenant is required to deposit the rent before the due date as mentioned.
+                    </li>
+                    <li>The tenant can make payment through online mediums by using SheltOwn payment options and they may earn discounts.
+                    </li>
+                    <li>In case of delay in payment of rent our T&C allows us to charge Rs.50/day which will be charged till 15th of every month. Mandatory displacements will come into effect on the 16th day or 25% forfeit of security deposits, whichever comes
+                      earlier.
+                    </li>
+                    <li>In case of shared plans, <b>Utility Usage Charges</b> (i.e. Electricity, Water etc.) at common premises is apportioned on actuals to all the residents of the property.
+                    </li>
+                    <li>Utility Usage Charges will be added in rental for Rs.500 in one-month advance and will be managed in the next billing month.</li>
+                    <li>Any late payment will affect your tenant’s credit score.
+                    </li>
+                    <li> In case of bed-level bookings, we reserve the right to shift guests with bed-level bookings to other rooms at any time in the same property in case of availability of space.
+                    </li>
+                    <li>As markets evolve, costs modify and so does rents. However, we do assure you of best deals than others and affordable prices throughout.
+                    </li>
+                    <li>All residents are expected to acceptance by the local law of land. Residents or Property should not use premises for any commercial activity.
+                    </li>
+                    <li>The tenant’s guests are welcome like our own guest as tradeline says <b>live_like_you_own_it</b>! And for your convenience and safety, we would take their KYC IDs proofs and keep records updated and we suggest you to keep us updated. We
+                      consider you responsible to make sure your guests follow all house rules.
+                    </li>
+                    <li> Love your home to get your love back. We make sure it loves you more. </li>
+                    <li>A meal is something which should not be standardized at every Property. So, it depends on the tenants booking, whether they book or not.
+                      In all other conditions, meals are not included in the rent if there is no standardize menu available and owner has not mentioned about meals in the deal but where the meal can be standardized in menu and owner has mentioned in the deal,
+                      there it is included in the rent.
+                    </li>
+                    <li>Do take care of your own belongings, we will also try to take care of your belongings but we are not responsible for any theft.</li>
+                    <li>Any damages to property, amenities will come under <b> <a onclick="TapButtonNav(event, 'theft-damage')">Theft and Damage Policy</a> </b> and Tenant may be asked to pay for the same damages.
+                    </li>
+                    <li>Our 24x7 care focuses on resolving your in-stay related issues, ensure you quick resolution each time.
+                    </li>
+                    <ul>
+                      <br>
+                      <h4>In Case of Rent Agreements:</h4>
+                      <li>The renewal of rent agreement is required after each 12 months of stay. You don’t need to worry about that, we offer full assistance for that.</li>
+                      <li>The tenant is required to pay for the rent agreement.</li>
+                      <li>The rent includes fixed furnishing charges and apartment\society maintenance
+                        charges if there is any</li>
+                      <li>The rent doesn’t include Electricity, Water, Cooking, DTH and Internet charges, any additional furniture that is not a part of package, Club house charges, Cleaning and Maid charges.</li>
+                      <li>The food charges are separate from rent charges and need to pay according to desired requirements.</li>
+                    </ul>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-8">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8" data-aria-expanded="true" data-aria-controls="faqCollapse-8">
+                    <span class="badge">2 </span>Notice Period &amp; Cancellation Refund
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                  <ul>
+                    <li>
+                      Tenant has to inform the owner of the property prior to 1 month before moving out. If the tenant moves out without informing, the owner has the right to deny him with the security deposit.
+                    </li>
+                    <li>
+                      Any unpaid utility bill and rent will be ducted from security deposits.</li>
+                    <li>
+                      Payment for the full 30 days of notice period is mandatory.
+                    </li>
+                    <li>
+                      Extension request of stay will be acceptable only on the basis of availability.
+                    </li>
+                    <li>
+                      Any kind of outstanding amount payable by tenant will be deducted from security deposits.
+                    </li>
+                    <li>
+                      If the tenants decide to cancel the booking through SheltOwn platform after paying online, then the amount will be refunded in customer account within 48 hours. In other cases, it will be collected through Owner.</li>
+                    <li>
+                      Cancellation to all those confirmed bookings where tenant want to cancel a confirmed booking prior to 1-15 days of Move-In date, a charge of Rs. 2,999 per bed will be levied and full amount of booking amount will be refunded after
+                      deduction of Rs.500, In case tenant want to cancel 30 days prior to Move-In.
+                    </li>
+                    <li>
+                      We consider your full refund only when you notify us before 1 month.
+                      <br>
+                      <table>
+                        <tr>
+                          <th>Notification days before move out</th>
+                          <th>Considered amount of Refund</th>
+                        </tr>
+                        <tr>
+                          <td>30 days</td>
+                          <td>Full</td>
+                        </tr>
+                        <tr>
+                          <td>15-30 days</td>
+                          <td>40%</td>
+                        </tr>
+                        <tr>
+                          <td>Less than 15 days</td>
+                          <td>No Refund</td>
+                        </tr>
+                      </table>
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-2">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                    <span class="badge">3 </span> Renewal &amp; Inclusion
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                  <ul>
+                    <li>
+                      The renewal of rent agreement is required after 11 months of tenants stays.
+                    </li>
+                    <li>
+                      The tenant is required to pay for the rent agreement.
+                    </li>
+                    <li>
+                      The rent will start on the date mentioned in rent agreement err respective of tenant has move in or not.
+                    </li>
+                    <li>
+                      The rent includes fixed furnishing charges and apartment\society maintenance charges if there is any.
+                    </li>
+                    <li>
+                      The rent doesn’t include electricity, water, cooking, DTH and Internet charges, any additional furniture that is not a part of SheltOwn package, Club house charges, cleaning and maid charges.
+                    </li>
+                    <li>
+                      The food charges are separate from rent charges and need to pay according to desired requirements.
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-3">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                    <span class="badge"> 4</span> Theft &amp; Damages
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                  <ul>
+                    <li>The tenants are responsible for her/his personal belongings in the rented premises, neither owner or nor SheltOwn will be held responsible for any theft of the tenant.</li>
+                    <li>In case of any damage to property, Tenant may be asked to pay for the same damages.</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-4">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                    <span class="badge">6</span> Tenant's Guest Policy
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                  <ul>
+                    <li>SheltOwn has Open Guest Policy, for hosting Guest the tenant is required to inform SheltOwn & Owner and can get their consent on WhatsApp, through telephonic conversation or any messaging platform. It’s for your own safety.</li>
+                    <li>If the tenant lives in a society then he/she has to inform the concerned person of the society and must abide by the rules and regulations of the society.</li>
+                    <li>We believe in having fun with your friends at your stay but tenants must be responsible that it doesn’t affect the neighbor’s and their privacy.</li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-5">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                    <span class="badge">7</span> Personal Services Booking
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                <div class="card-body">
+                  <p> ... </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-6">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                    <span class="badge">8</span> Where does it come from?
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                <div class="card-body">
+                  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form,
+                    accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="faqHeading-7">
+                <div class="mb-0">
+                  <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                    <span class="badge">9</span> Why do we use it?
+                  </h5>
+                </div>
+              </div>
+              <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
+                    years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==========================
     Footer
   ============================-->
 
@@ -415,12 +660,14 @@
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+            We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities. 
- </p>
+            We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+            We are with you whenever you are in need!
+          </p>
           <p>Accept our warm SheltOwn hug.</p>
         </div>
 
@@ -428,9 +675,9 @@ We help you to find your match, book rental homes of choice across Indian cities
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
-            <li><a href="#top" onclick="TapButtonNav(event, 'faq-tenants')">FAQs</a></li>
-            <li><a href="#top" onclick="TapButtonNav(event, 'sheltownplus')">SheltOwn+</a></li>
-            <li><a href="#top" onclick="TapButtonNav(event, 'sheltownfamilyplus')">SheltOwn Family+</a></li>
+            <li><a href="policy-page.html">FAQs</a></li>
+            <li><a href="policy-page.html">SheltOwn+</a></li>
+            <li><a href="policy-page.html">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
           </ul>
         </div>
@@ -440,8 +687,8 @@ We help you to find your match, book rental homes of choice across Indian cities
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
             <li><a href="work-with-us.html">Join our Team</a></li>
-            <li><a href="#top" onclick="TapButtonNav(event, 'faq-partners')">List your Property</a></li>
-            <li><a href="#top" onclick="TapButtonNav(event, 'faq-tenants')">Become our Service Partner</a></li>
+            <li><a href="policy-page.html">List your Property</a></li>
+            <li><a href="policy-page.html">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
@@ -746,49 +993,9 @@ We help you to find your match, book rental homes of choice across Indian cities
     </div>
   </section><!-- #footer -->
 
-  <script>
-  function TapButton(evt, Click) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    document.getElementById(Click).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-    function TapButtonNav(evt, Click) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(Click).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
-
-  <script >
-     var hash = document.location.hash;
-var prefix = "tab_";
-if (hash) {
-    $('.tablinks a[href="'+hash.replace(prefix,"")+'"]').tab('show');
-} 
-
-// Change hash for page-reload
-$('.tablinks a').on('shown', function (e) {
-    window.location.hash = e.target.hash.replace("#", "#" + prefix);
-});
-    </script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
@@ -796,11 +1003,71 @@ $('.tablinks a').on('shown', function (e) {
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+  <script id="rendered-js">
+    $('.responsive').slick({
+      dots: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+
+
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    //# sourceURL=pen.js
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
