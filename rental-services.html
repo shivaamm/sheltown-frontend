@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>SheltOwn</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -11,34 +13,23 @@
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
-
+  
   <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet">
+
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+ 
   <link rel="stylesheet" href="css/rental-services.css" type="text/css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -54,9 +45,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style2.css" rel="stylesheet">
-
-  <style>
-    .content {
+<style>
+.content {
       display: none;
     }
 
@@ -98,27 +88,34 @@
     .btn {
       font-size: 18px;
     }
+  /** page layout **/
+    main {
+      display: grid;
+      
+      max-width: 100em;
+      width: 100%;
+     
+    }
 
   </style>
+
 </head>
 
 <body id="body" onload="myFunction()">
-
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
-
-      <div id="logo" class="pull-left">
+<div id="logo" class="pull-left">
         <a href="index.html">
           <img src="img/favicon.png" alt="logo">
         </a>
       </div>
 
-      <div id="logo" class="pull-left" style="margin-top:8px;">
+<div id="logo" class="pull-left" style="margin-top:8px;">
         <a href="index.html">
-          <p>SheltOwn</p>
+        <p >SheltOwn</p>
         </a>
       </div>
 
@@ -139,12 +136,13 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+  
+  
+ <main>
   <!-- Start Properties  -->
   <section id="aa-properties">
     <div class="container">
       <div class="row">
-        <!-- Start properties sidebar -->
         <div class="col-md-4 filters">
           <aside class="aa-properties-sidebar">
             <!-- Start Single properties sidebar -->
@@ -243,6 +241,9 @@
             </div>
             </form>
         </div>
+           </aside>
+    
+
         <div class="col-md-8">
           <div class="aa-properties-content">
             <!-- start properties content head -->
@@ -294,15 +295,15 @@
                     <div class="aa-properties-item-content">
                       <div class="aa-properties-info">
                         <span>Nearby:</span>
-                        <span>Metro</span>
-                        <span>Market</span>
-                        <span>Mall</span>
+                        <span><i class="fa fa-train"></i>Metro</span>
+                        <span><i class="fa fa-shopping-basket"></i>Market</span>
+                        <span><i class="fa fa-building"></i>Mall</span>
                       </div>
                       <div class="aa-properties-info">
                         <span>Amenities:</span>
-                        <span>5 Rooms</span>
-                        <span>2 Beds</span>
-                        <span>3 Baths</span>
+                        <span><i class="fa fa-home"></i>5 Rooms</span>
+                        <span><i class="fa fa-bed"></i>2 Beds</span>
+                        <span><i class="fa fa-shower"></i>3 Baths</span>
                       </div>
                       <div class="aa-properties-info">
                         <span>Male only</span>
@@ -795,16 +796,13 @@
           </div>
         </div>
 
-      </div>
-      </aside>
-    </div>
+        <!-- Start properties sidebar -->
+        
     </div>
     </div>
   </section>
-  <!-- / Properties  -->
-
-
-  <!--==========================
+</main>
+<!--==========================
     Footer
   ============================-->
 
@@ -812,21 +810,21 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 about-text">
-          <br>
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-            We are bound to provide you the best possible care and support which helps you meet your demands.
+We are bound to provide you the best possible care and support which helps you meet your demands.
 
-            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-            We help you to find your match, book rental homes of choice across Indian cities.
-          </p>
+We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+
+We are with you whenever you are in need!
+ </p>
           <p class="text-justify">Accept our warm SheltOwn hug.</p>
         </div>
 
         <div class="col-xs-6 col-md-3 category-text">
-          <br>
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
@@ -835,11 +833,9 @@
             <li><a href="policy-page.html">SheltOwn Family+</a></li>
             <li><a href="about-us.html#contactus-scroll" class="scrollto">Contact Us</a></li>
           </ul>
-          <br>
         </div>
 
         <div class="col-xs-6 col-md-3 quick-text">
-          <br>
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
@@ -848,7 +844,6 @@
             <li><a href="policy-page.html">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
-          <br>
         </div>
       </div>
     </div>
@@ -1151,7 +1146,43 @@
     </div>
   </section><!-- #footer -->
 
-  <script>
+
+  <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+  <script type="text/javascript">
+    // <![CDATA[
+    function ShowHide(divId) {
+      var atxt = document.getElementById("atext");
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+      } else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+    // ]]>
+  </script>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+
+
+ 
+  <script src="js/main.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+   
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+ <script>
     $(document).ready(function() {
       $(".content").slice(0, 1).show();
       $("#loadMore").on("click", function(e) {
@@ -1163,33 +1194,6 @@
       });
     });
   </script>
-
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
@@ -1254,6 +1258,14 @@
     }
   </script>
   <!--End of Tawk.to Script-->
+ <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 </body>
 
 </html>
+

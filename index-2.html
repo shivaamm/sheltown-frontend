@@ -13,37 +13,48 @@
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  
+
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
 
 
- <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
- 
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
-</head>
 
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
+
+</head>
+<style>
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: -15px;
+}
+</style>
 <body id="body" onload="myFunction()">
   <!--==========================
     Header
   ============================-->
   <header id="header">
     <div class="container-fluid">
-<div id="logo" class="pull-left">
+      <div id="logo" class="pull-left">
         <a href="index.html">
           <img src="img/favicon.png" alt="logo">
         </a>
       </div>
 
-<div id="logo" class="pull-left" style="margin-top:8px;">
+      <div id="logo" class="pull-left" style="margin-top:8px;">
         <a href="index.html">
-        <p >SheltOwn</p>
+          <p>SheltOwn</p>
         </a>
       </div>
 
@@ -58,121 +69,256 @@
           </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
-          
-         <!--- <li><a href="signup.html">Sign Up</a></li>------------>
+          <li><a href="login-user.html">Log In</a></li>
+          <!-----<li><a href="signup.html">Sign Up</a></li>------>
           <li><a href="profile.html">My Account</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  
+
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
-    <div class="overlay">
-      <div class="container-fluid" >
-        <!-- row 1 -->
-        <div class="row">
-          <div class="col-md-12 intro-content">
-            <!-- <h2>SheltOwn</h2> -->
-            <p>Live Like You Own It</p>
-          </div>
-        </div>
-        <!-- row 2 -->
-        <div class="row boxes">
-          <div>
-            <select class="search-services">
-              <option value="ChooseServices">Choose Services...</option>
-              <option value="Personal Services">Personal Services</option>
-              <option value="Rental Services">Rental Services</option>
-            </select>
-          </div>
-          <div>
-            <select class="search-city">
-              <option value="ChooseCity">Choose City...</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Bangalore">Bangalore</option>
-              <option value="Hyderabad">Hyderabad</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Chennai">Chennai</option>
-              <option value="Kolkata">Kolkata</option>
-              <option value="Surat">Surat</option>
-              <option value="Pune">Pune</option>
-              <option value="Jaipur">Jaipur</option>
-              <option value="Vishakhapatnam">Vishakhapatanam</option>
-              <option value="Nagpur">Nagpur</option>
-              <option value="Lucknow">Lucknow</option>
-              <option value="Kanput">Kanput</option>
-              <option value="Thane">Thane</option>
-              <option value="Bhopal">Bhopal</option>
-              <option value="Indore">Indore</option>
-              <option value="Patna">Patna</option>
-              <option value="Vadodara">Vadodara</option>
-              <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
-              <option value="Gaziabad">Gaziabad</option>
-              <option value="Ludhiana">Ludhiana</option>
-              <option value="Agra">Agra</option>
-              <option value="Nashik">Nashik</option>
-              <option value="Faridabad">Faridbad</option>
-              <option value="Meerut">Meerut</option>
-              <option value="Rajkot">Rajkot</option>
-              <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
-              <option value="Vasai-Virar">Vasai-Virar</option>
-              <option value="Varanasi">Varanasi</option>
-            </select>
-          </div>
-          <div>
-              <select class="search-locality">
-              <option value="ChooseCity">Choose Locality...</option>
-              <option value="Mumbai">Chandni Chowk</option>
-              <option value="Delhi">Patel Nagar</option>
-              <option value="Bangalore">Kamla Nagar</option>
-              <option value="Hyderabad">Delhi Gate</option>
-              <option value="Ahmedabad">Kahmiri Gate</option>
-            </select>
-          </div>
-          <div>
-            <div class="search-box">
-                <button class="btn search-btn">Search  <i class="las la-search"></i></a>
-            </div>
-          </div>
+    <br>
+    <center>
+      <h3>Live Like You Own It</h3>
+      <small><i class="fa fa-check"></i>Exclusive services</small>&nbsp;&nbsp;<small><i class="fa fa-check"></i>Ultimate Privacy</small>&nbsp;&nbsp;<small><i class="fa fa-check"></i>Brokerage Free</small>
+    </center>
+    <br>
+    <div class="search-container">
+      <select class="" name="">
+        <option type="text" class="search">Choose City..</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Surat">Surat</option>
+        <option value="Pune">Pune</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Vishakhapatnam">Vishakhapatanam</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Kanput">Kanpur</option>
+        <option value="Thane">Thane</option>
+        <option value="Bhopal">Bhopal</option>
+        <option value="Indore">Indore</option>
+        <option value="Patna">Patna</option>
+        <option value="Vadodara">Vadodara</option>
+        <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+        <option value="Gaziabad">Gaziabad</option>
+        <option value="Ludhiana">Ludhiana</option>
+        <option value="Agra">Agra</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Faridabad">Faridbad</option>
+        <option value="Meerut">Meerut</option>
+        <option value="Rajkot">Rajkot</option>
+        <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+        <option value="Vasai-Virar">Vasai-Virar</option>
+        <option value="Varanasi">Varanasi</option>
+      </select>
+      <select class="" name="">
+        <option type="text" class="search">Choose Locality..</option>
+        <option value="Mumbai">Chandni Chowk</option>
+        <option value="Delhi">Patel Nagar</option>
+        <option value="Bangalore">Kamla Nagar</option>
+        <option value="Hyderabad">Delhi Gate</option>
+        <option value="Ahmedabad">Kahmiri Gate</option>
+      </select>
+      <select class="" name="">
+        <option type="text" class="search">Choose Services..</option>
+        <option value="Personal Services">Personal Services</option>
+        <option value="Rental Services">Rental Services</option>
+      </select>
+      <button type="submit" class="button">Search <i class="fa fa-search"></i> </button>
+    </div>
+  </section>
 
-        </div><!-- row2 -->
+  <section id="intro-mobile">
+    <br>
+    <center>
+      <h3>Live Like You Own It</h3>
+      <small><i class="fa fa-check"></i>Exclusive services</small>&nbsp;&nbsp;<small><i class="fa fa-check"></i>Ultimate Privacy</small>&nbsp;&nbsp;<small><i class="fa fa-check"></i>Brokerage Free</small>
+    </center>
+    <br>
+    <div class="row">
+      <div class="col-sm-12">
+        <select class="" name="">
+          <option type="text" class="search">Choose City..</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Surat">Surat</option>
+          <option value="Pune">Pune</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Vishakhapatnam">Vishakhapatanam</option>
+          <option value="Nagpur">Nagpur</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Kanput">Kanpur</option>
+          <option value="Thane">Thane</option>
+          <option value="Bhopal">Bhopal</option>
+          <option value="Indore">Indore</option>
+          <option value="Patna">Patna</option>
+          <option value="Vadodara">Vadodara</option>
+          <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+          <option value="Gaziabad">Gaziabad</option>
+          <option value="Ludhiana">Ludhiana</option>
+          <option value="Agra">Agra</option>
+          <option value="Nashik">Nashik</option>
+          <option value="Faridabad">Faridbad</option>
+          <option value="Meerut">Meerut</option>
+          <option value="Rajkot">Rajkot</option>
+          <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+          <option value="Vasai-Virar">Vasai-Virar</option>
+          <option value="Varanasi">Varanasi</option>
+        </select>
+      </div>
+      <div class="col-sm-12">
+        <select class="" name="">
+          <option type="text" class="search">Choose Locality..</option>
+          <option value="Mumbai">Chandni Chowk</option>
+          <option value="Delhi">Patel Nagar</option>
+          <option value="Bangalore">Kamla Nagar</option>
+          <option value="Hyderabad">Delhi Gate</option>
+          <option value="Ahmedabad">Kahmiri Gate</option>
+        </select>
+      </div>
+      <div class="col-sm-12">
+        <select class="" name="">
+          <option type="text" class="search">Choose Services..</option>
+          <option value="Personal Services">Personal Services</option>
+          <option value="Rental Services">Rental Services</option>
+        </select>
+      </div>
+      <div class="col-sm-12">
+        <br>
+        <center>
+          <button type="submit" class="button">Search <i class="fa fa-search"></i> </button>
+        </center>
       </div>
     </div>
   </section>
+
+
+  <br>
+
+  <section id="intro-list-property">
+    <a href="property-owner-addnew.html">
+      <div class="list-your-property">
+        <p><i class="fa fa-home"></i>&nbsp;&nbsp; I Own A Property. <u>Become Our Partner!</u> &nbsp;<i class="fa fa-arrow-right"></i> </p>
+      </div>
+    </a>
+
+    <a href="property-owner-addnew.html">
+      <div class="list-your-property-2">
+        <p><i class="fa fa-home"></i>&nbsp;&nbsp; I Own A Property.<br>
+          <small>Get verified tenants and timely rents</small></p>
+        <button type="button" class="btn btn-dark" name="button">List your property</button>
+      </div>
+    </a>
+  </section>
+
+  <br>
+
+
   <!-- intro ends -->
+  <!--==========================
+    Offers Carousel == testimonial css same
+    ============================-->
+  <section id="offers" class="wow fadeInUp">
+    <div class="container">
+      <div class="owl-carousel offers-carousel">
+
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="sheltownplus.html"><img class="card-img-top" src="img/landing_page/offer1.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="rental-services.html"><img class="card-img-top" src="img/landing_page/offer2.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="personal_services1.html"><img class="card-img-top" src="img/landing_page/offer3.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="#services"><img class="card-img-top" src="img/landing_page/offer4.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="sheltownplus.html"><img class="card-img-top" src="img/landing_page/offer1.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="rental-services.html"><img class="card-img-top" src="img/landing_page/offer2.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="personal_services1.html"><img class="card-img-top" src="img/landing_page/offer3.png" alt="Card image"></a>
+          </div>
+        </div>
+        <div class="offer-item">
+          <div class="card offer-card">
+            <a href="#services"><img class="card-img-top" src="img/landing_page/offer4.png" alt="Card image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of offers carousel -->
+  <!--==========================
+      Refer and Earn
+    ============================-->
+    <!--refer and earn desktop -->
+  <section id="refer-and-earn">
+    <center>
+      <a href="#">
+        <button type="button" class="btn btn-info" name="button">Refer and Earn
+          &nbsp;&nbsp;<small>HURRY</small>
+        </button>
+      </a>
+    </center>
+  </section>
+  <!--refer and earn mobile and mobile desktop -->
+  <section id="refer-and-earn-2">
+    <center>
+      <a href="#">
+        <button type="button" class="btn btn-info" name="button">Refer and Earn
+          &nbsp;&nbsp;<small>HURRY</small>
+        </button>
+      </a>
+    </center>
+  </section>
   <!--==========================
       Services Section
     ============================-->
   <section id="services">
     <div class="container">
-      <div class="section-header">
-        <br>
-        <h2>Services</h2>
-      </div>
-
-      <div class="row">
+      <br>
+      <h2 class="heading heading-background">Services we provide</h2>
+      <div class="row_service">
 
         <div class="col-lg-6">
-          <div class="box wow fadeInLeft">
-            <div class="icon"><i class="las la-wrench"></i></div>
-            <h4 class="title"><a href="">Personalised Services</a></h4>
-            <p class="description">Plumbers & Carpenters, Electricians, Hair Care, Repairs & Maintenance, Edumart and Others.</p>
-            <button class="btn-offers btn">Book Now</button>
-          </div>
+          <a href="personal_services1.html"><img src="ps.png" alt="" style="width:100%; height: auto; box-shadow: 5px 10px rgba(200,200,200,0.3); margin: 10px;"></a>
         </div>
 
         <div class="col-lg-6">
-          <div class="box wow fadeInRight">
-            <div class="icon"><i class="las la-home"></i></div>
-            <h4 class="title"><a href="">Rental Services</a></h4>
-            <p class="description">PG, Hostel, Flats, Apartment, House for Rent</p><br>
-            <button class="btn-offers btn">Book Now</button>
-            <br />
-          </div>
+          <a href="rental-services.html"><img src="rs.png" alt="" style="width:100%; height: auto; box-shadow: 5px 10px rgba(200,200,200,0.3); margin: 10px;"></a>
         </div>
 
       </div>
@@ -181,38 +327,6 @@
   </section>
   <br>
   <!-- #services -->
-  <!--==========================
-    Offers Carousel == testimonial css same
-    ============================-->
-  <section id="offers" class="wow fadeInUp">
-    <div class="container">
-        <div class="owl-carousel offers-carousel">
-
-            <div class="offer-item">
-                <div class="card offer-card">
-                    <img class="card-img-top" src="img/landing_page/offer1.png" alt="Card image">
-                </div>
-            </div>
-            <div class="offer-item">
-                <div class="card offer-card">
-                    <img class="card-img-top" src="img/landing_page/offer2.png" alt="Card image">
-                </div>
-            </div>
-            <div class="offer-item">
-                <div class="card offer-card">
-                    <img class="card-img-top" src="img/landing_page/offer3.png" alt="Card image">
-                </div>
-            </div>
-            <div class="offer-item">
-                <div class="card offer-card">
-                    <img class="card-img-top" src="img/landing_page/offer4.png" alt="Card image">
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!--end of offers carousel -->
-
 
 
   <!-- #portfolio -->
@@ -221,9 +335,9 @@
     ============================-->
   <section id="testimonials" class="wow fadeInUp">
     <div class="container">
-      <div class="section-header">
-        <h2>Testimonials</h2>
-      </div>
+
+      <h2 class="heading heading-background">Testimonials</h2>
+
       <div class="owl-carousel testimonials-carousel">
 
         <div class="testimonial-item">
@@ -302,8 +416,7 @@
           <p>
             <i class="las la-quote-left"></i>
             They are providing very good services,it is like your second home without thinking much you can come and enjoy the services and stay at the peaceful location.
-            Thank you SheltOwn for providing excellent services.<i
-              class="las la-quote-right"></i>
+            Thank you SheltOwn for providing excellent services.<i class="las la-quote-right"></i>
           </p>
           <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
           <h3>Poonam Singh</h3>
@@ -326,87 +439,164 @@
     </div>
   </section>
   <!-- #testimonials -->
- <!--==========================
+  <!--==========================
+     extra carousel mobile
+     ============================-->
+  <div id="introduction-section" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Sheltie (2).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="SheltOwn+ (1).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Family (1).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#introduction-section" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#introduction-section" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--==========================
+   extra carousel desktop-mobile
+   ============================-->
+  <div id="introduction-section-1" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Sheltie (3).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="SheltOwn+ (2).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Family (2).png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#introduction-section-1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#introduction-section-1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--==========================
     extra carousel
     ============================-->
-    <section class="extra-carousel">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 heroSlider-fixed">
-                    <div class="slider responsive">
-                        <div>
-                            <img src="img/landing_page/ec1.png" alt="" />
-                        </div>
-                        <div>
-                            <img src="img/landing_page/ec2.png" alt="" />
-                        </div>
-                        <div>
-                            <img src="img/landing_page/ec3.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="prev">
-                        <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                    </div>
-                    <div class="next">
-                        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   <!--==========================
+  <div id="introduction-section-2" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Sheltie.png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="SheltOwn+.png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+      <div class="carousel-item" style="padding: 20px; width: 100%; height: auto;">
+        <center>
+          <img src="Family.png" class="d-block w-100" alt="...">
+        </center>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#introduction-section-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#introduction-section-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--==========================
     Our Why SheltOwn? Section
   ============================-->
-  <section id="portfolio" class="wow fadeInUp">
+  <section id="portfolio">
 
     <div class="container">
       <div class="row">
-             
-        <div class="portfolio-bg col-sm-5"><div class="overlay_why">
-<div class="why"> Why Sheltown? </div>
-          <!---<img src="img/portfolio.png" alt="">---></div>
+
+        <div class="portfolio-bg col-sm-5">
+          <div class="overlay_why">
+          </div>
         </div>
-        <div class="col-sm-7">
-          <div class="row">
-            <div class="portfolio-cards card-1 col-sm-4">
+        <div class="col-sm-12 col-md-12 col-lg-7">
+          <div class="row_why">
+            <div class="portfolio-cards card-1 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/guarantee.png" /><br>
               <p>Safety Guaranteed</p>
             </div>
-            <div class="portfolio-cards card-2 col-sm-4">
+            <div class="portfolio-cards card-2 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/tax.png" /><br>
               <p>No Brokerage</p>
             </div>
-            <div class="portfolio-cards card-3 col-sm-4">
+            <div class="portfolio-cards card-3 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/security-configuration.png" /><br>
               <p>Ultimate Privacy</p>
             </div>
 
           </div>
-          <div class="row">
-            <div class="portfolio-cards card-4 col-sm-4">
+          <div class="row_why">
+            <div class="portfolio-cards card-4 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/company.png" /><br>
               <p>Good Ambience</p>
             </div>
-            <div class="portfolio-cards card-5 col-sm-4">
+            <div class="portfolio-cards card-5 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/money-transfer.png" /><br>
               <p>Affordable</p>
             </div>
-            <div class="portfolio-cards card-6 col-sm-4">
+            <div class="portfolio-cards card-6 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/rules.png" />
               <p>Laissez-faire Policy</p>
             </div>
 
           </div>
-          <div class="row">
-            <div class="portfolio-cards card-7 col-sm-4">
+          <div class="row_why">
+            <div class="portfolio-cards card-7 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/approval.png" /><br>
               <p>SheltOwn Verified</p>
             </div>
-            <div class="portfolio-cards card-8 col-sm-4">
+            <div class="portfolio-cards card-8 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/barbershop.png" /><br>
               <p>All-in-Home Services</p>
             </div>
-            <div class="portfolio-cards card-9 col-sm-4">
+            <div class="portfolio-cards card-9 col-lg-4">
               <img src="https://img.icons8.com/dusk/64/000000/solve.png" /><br>
               <p>Round-the-Clock Assistance</p>
             </div>
@@ -417,7 +607,58 @@
 
     </div>
   </section>
-<!--==========================
+  <!--==========================
+    Our Why SheltOwn? Section-Mobile and Mobile-desktop view
+  ============================-->
+  <section id="why-sheltown">
+
+    <div class="container">
+      <h2 class="heading heading-background">Why SheltOwn?</h2>
+      <div class="row">
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/guarantee.png" /><br>
+          <p>Safety Guaranteed</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/tax.png" /><br>
+          <p>No Brokerage</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/security-configuration.png" /><br>
+          <p>Ultimate Privacy</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/company.png" /><br>
+          <p>Good Ambience</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/money-transfer.png" /><br>
+          <p>Affordable</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/rules.png" />
+          <p>Laissez-faire Policy</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/approval.png" /><br>
+          <p>SheltOwn Verified</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/barbershop.png" /><br>
+          <p>All-in-Home Services</p>
+        </div>
+        <div class="col-4 col-sm-4">
+          <img src="https://img.icons8.com/dusk/64/000000/solve.png" /><br>
+          <p>Round-the-Clock Assistance</p>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </section>
+  <!--==========================
     Footer
   ============================-->
 
@@ -428,14 +669,14 @@
           <h6>About</h6>
           <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
-We are bound to provide you the best possible care and support which helps you meet your demands.
+            We are bound to provide you the best possible care and support which helps you meet your demands.
 
-Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
+            Our core values- “Honesty, Authenticity, Concerns for Customer’s Privacy and Safety” are all closely interwoven into the fibre of our efforts.
 
-We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
+            We help you to find your match, book rental homes of choice across Indian cities. We assist with "Move-in, Personalised services, Transportation and Appliances & Furniture rentals".
 
-We are with you whenever you are in need!
- </p>
+            We are with you whenever you are in need!
+          </p>
           <p>Accept our warm SheltOwn hug.</p>
         </div>
 
@@ -786,69 +1027,78 @@ We are with you whenever you are in need!
   <script src="lib/sticky/sticky.js"></script>
 
 
- 
+
   <script src="js/main.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-   
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
-    <script id="rendered-js">
-        $('.responsive').slick({
-          dots: true,
-          prevArrow: $('.prev'),
-          nextArrow: $('.next'),
-          infinite: false,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true } },
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+  <script id="rendered-js">
+    $('.responsive').slick({
+      dots: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
 
 
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1 } },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
 
 
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1 } }
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
 
 
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-          ] });
-        //# sourceURL=pen.js
-    </script>
-<!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>
-    <!--End of Tawk.to Script-->
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    //# sourceURL=pen.js
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
+
