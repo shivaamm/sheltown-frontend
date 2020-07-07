@@ -1,51 +1,4 @@
-.create {
-    background-color: #ff971d;
-    text-align:center;
-    color:white;
-    font-weight: bolder;
-    padding:10px;
-  }
-  .create:hover,
-  .create:focus,
-  .create:active
-   {
-    background-color: #ff971d;
-    text-align:center;
-    color:white;
-    font-weight: bolder;
-    padding:12px;
-  }
-  .form{
-    margin-top: 70px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-  .signuptitle{
-    color: #ff971d;
-    text-align:center;
-    font-weight: bolder;
-  }
-  .loginlink:hover,
-  .loginlink:active,
-  .loginlink:focus,
-  .loginlink
-  {
-    color:black;
-    text-align: center;
-    margin-top:50px;
-    text-decoration: none;
-  }
-  .loginlink span{
-    color: #ff971d;
-  }
-  .join_btn{
-    border:none;
-    background-color:white;
-    text-align: center;
-  }
-  .join_btn i{
-    color:black;
-  }
+
   .listbox{
     width: 100%;
     background-color:#ff971d;
@@ -68,25 +21,6 @@
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
   }
-
-  #joinform label{
-    margin-left:10px;
-    margin-right:10px;
-  }
-
-  .btn-joinus {
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid #ff9719;
-    border-radius: 8px;
-  }
-
-@media screen and (max-width: 1080px){
-    .container-fluid{
-        margin: 0 auto;
-    }
-  }
-
 
 /*Modal*/
 
@@ -134,7 +68,6 @@
 
 /* ====== testimonials =========*/
 .testimonials{
-       
   margin-bottom: 30px;
 }
 .testimonials h2 {
