@@ -781,7 +781,7 @@ button,
         font-size: 1.1rem;
         z-index: 1; }
       #sidebar .toggle:after {
-        background: rgba(222, 225, 226, 0.75);
+        background: rgba(29, 30, 31, 0.75);
         border-radius: 0.375em;
         content: '';
         height: 3.5em;
