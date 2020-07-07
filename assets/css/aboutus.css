@@ -52,78 +52,7 @@ body {
   color:black;
 }
 
-.column_ser {
-  float: left;
-  width: 16%;
-}
 
-.row_ser{
-  max-width: max-content;
-  width: 100%;
-}
-
-/* Clear floats after the columns */
-.row_ser:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column_ta {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.column_taa {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.column_serr {
-  float: left;
-  width: 16%;
-}
-
-/* Clear floats after the columns */
-.row_ta:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.card_ser {
-  padding: 16px;
-  margin-top: -1rem;
-  text-align: center;
-}
-
-.zoomin img {
-  height: 50%;
-  width: 60%;
-    
-  margin-left:5px;
-  margin-bottom:5px;
-  margin-top:20px;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  transition: all 2s ease;
-}
-
-.zoomin img:hover {
-  width: 70%;
-  height:60%;
-}
-
-.dot_ser {
-  height:85px;
-  width: 85px;
-  background-color: #ffff;
-  border-radius:20px;
-  display: inline-block;
-}
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1080px) {
