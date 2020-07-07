@@ -287,7 +287,7 @@ body {
   }
 }
 
-input[type=text],input[type=email],input[type=number], select, textarea {
+input[type=text],input[type=email],input[type=number],input[type=password] select, textarea {
   width: 300px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -298,7 +298,7 @@ input[type=text],input[type=email],input[type=number], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+#subs {
   background-color: #fff;
   color: #ff9719;
   padding: 12px 20px;
@@ -308,7 +308,7 @@ input[type=submit] {
   font-size:18px;
 }
 
-input[type=submit]:hover {
+#subs:hover {
   background-color: #ffff;
 }
 
