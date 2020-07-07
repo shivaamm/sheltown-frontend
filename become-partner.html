@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SheltOwn</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta name="description" content="">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -20,70 +18,35 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <!-- Bootstrap CSS File -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-  <!-- Libraries CSS Files -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-  <!-- Main Stylesheet File -->
   <link href="css/style2.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
+
   <style>
-    a {
-      color: #ff971d;
-      transition: 0.5s;
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 
-    a:hover,
-    a:active,
-    a:focus {
-      color: #000;
-      outline: none;
-      text-decoration: none;
-    }
-
-    .lh-condensed {
-      line-height: 1.25;
-    }
-
-    .col-md-33 {
-      position: relative;
-
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
-    .display {
-      border: 1px solid #aaa;
-      border-radius: 5px;
-    }
-
-    .rating {
-      background-color: #408E3C;
-      color: #fff;
-      border: 1px solid #408E3C;
-      border-radius: 3px;
-      padding: 3px;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
     }
   </style>
-  <title>SheltOwn</title>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/become-partner.css" rel="stylesheet">
 </head>
 
-<body id="body" onload="myFunction()">
+<body>
   <!--==========================
     Header
   ============================-->
@@ -103,8 +66,8 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class=""><a href="index.html">Home</a></li>
-          <li class="menu-has-children menu-active"><a href="">Our Services</a>
+          <li><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
               <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
@@ -118,178 +81,174 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+  <main role="main">
 
-
-
-  <!--==========================
-      Intro Section
-    ============================-->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 order-md-2 mb-4">
-        <br>
-        <div class="row">
-          <div class="col-md-9" >
-            <h4 class="heading">Hotel Name</h4>
-            <p><span class="rating">4.7&nbsp;<i class="fa fa-star"></i></span><span>400 Ratings 4382 Reviews</span> </p>
-          </div>
-          <div class="col-md-3">
-         
-            <img class="float-right img-fluid" src="img/arch1.jpeg" />
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="home.png" alt="">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>List Your property</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Sign up today</a></p>
+            </div>
           </div>
         </div>
-        <hr />
-        <div class="row print display">
-          <div class="col-md-12">
-            <br>
-            <p><i id="fa1-calender-check-o" class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;&nbsp;CheckIn Date : <span id="print_checkin"></span></p>
-            <p><i id="fa-users" class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Sharing : <span id="print_sharing"></span></p>
-            <p><i id="fa-inr" class="fa fa-inr" aria-hidden="true"></i>&nbsp;&nbsp;Total : <span id="print_final_amount"></span></p>
+        <div class="carousel-item">
+          <img src="service.png" alt="">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>List your Service</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Sign up today</a></p>
+            </div>
           </div>
         </div>
       </div>
-
-
-      <div class="col-md-8 order-md-1">
-        <div class="person-detail">
-          <form class="needs-validation">
-            <br>
-            <h4 class="heading">Enter Personal details:</h4>
-            <div class="form-row">
-              <div class="col mb-3">
-                <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback"> Valid first name is required. </div>
-              </div>
-              <div class="col mb-3">
-                <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback"> Valid last name is required. </div>
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-              <div class="invalid-feedback"> Please enter a valid email address. </div>
-            </div>
-            <div class="mb-3">
-              <label for="phone">Phone no.</label>
-              <input type="tel" class="form-control" id="phone" placeholder="you@example.com" pattern="[0-9]{10}" required>
-              <div class="invalid-feedback"> Please enter a valid phone number. </div>
-            </div>
-            <hr />
-            <h4 class="heading">Schedule your Slot:</h4>
-            <div class="form-row">
-              <div class="col mb-3">
-                <label for="check_in_date">CheckIn Date:</label>
-                <input type="date" class="form-control" id="check_in_date" name="check_in_date" onchange="checkin_date()" required>
-              </div>
-              <div class="col mb-3">
-                <label for="check_in_time">CheckIn Time:</label>
-                <input type="time" class="form-control" id="check_in_time" name="check_in_time" required>
-              </div>
-            </div>
-            <hr />
-            <h4 class="heading">Preferences:</h4>
-            <div class="form-group">
-              <label for="sel1">Sharing:</label>
-              <select class="form-control" id="sel1" onchange="sharing()">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <hr />
-            <h4 class="heading">Pay Now:</h4>
-            <p>Use Sheltic Reference <a href="#" data-toggle="popover" data-trigger="hover" data-content="Join sheltown membership and get 10% discount on each booking."><i class="fa fa-info-circle"></i></a> </p>
-            <label>You are paying now:</label>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="pay" onclick="amount1()">one month Rent &nbsp;&nbsp;(<i class="fa fa-inr"></i> 5000)
-                <br>
-                <center>
-                  +
-                </center>
-                one month Security &nbsp;&nbsp;(<i class="fa fa-inr"></i> 5000)
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="pay" onclick="amount2()" value="">Reservation Amount, Just 25% of month Rent
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="pay" value="" checked disabled>Security Deposit &nbsp;&nbsp;<i class="fa fa-inr"></i> 15000
-              </label>
-            </div>
-            <hr />
-
-            <h4 class="mb-3">Payment</h4>
-            <div class="d-block my-3">
-              <div class="custom-control custom-radio">
-                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-                <label class="custom-control-label" for="credit">Credit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                <label class="custom-control-label" for="debit">Debit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                <label class="custom-control-label" for="paypal">PayPal</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="cc-name">Name on card</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                <small class="text-muted">Full name as displayed on card</small>
-                <div class="invalid-feedback"> Name on card is required </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="cc-number">Credit card number</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                <div class="invalid-feedback"> Credit card number is required </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 mb-3">
-                <label for="cc-expiration">Expiration</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                <div class="invalid-feedback"> Expiration date required </div>
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="cc-cvv">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                <div class="invalid-feedback"> Security code required </div>
-              </div>
-            </div>
-            <h5 class="heading">Total:<span id="total"></span></h5>
-            <div class="input-group mb-3">
-              <form class="card p-2">
-                <div class="input-group">
-                  <input type="text" id="promo" class="form-control" placeholder="Promo code">
-                  <div class="input-group-append">
-                    <button type="submit" class="btn btn-secondary" onclick="redeem()">Redeem</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <h5 class="heading">You Save:<span id="save"></span></h5>
-            <h5 class="heading">Final Amount:<span id="final_amount" onchange="finalprinting()"></span></h5>
-            <center>
-              <button type="submit" class="btn btn-block btn-primary">Pay</button>
-            </center>
-            <br>
-          </form>
-        </div>
-
-      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row counter">
+        <div class="col-3 col-sm-3">
+          <center>
+            <h5>500+</h5>
+            <p>Partners</p>
+          </center>
+        </div>
+        <div class="col-3 col-sm-3">
+          <center>
+            <h5>1100+</h5>
+            <p>Rooms</p>
+          </center>
+        </div>
+        <div class="col-3 col-sm-3">
+          <center>
+            <h5>2000+</h5>
+            <p>Beds</p>
+          </center>
+        </div>
+        <div class="col-3 col-sm-3">
+          <center>
+            <h5>25</h5>
+            <p>Cities across India</p>
+          </center>
+        </div>
+      </div><!-- /.row -->
+    </div>
+
+    <!-- START THE FEATURETTES -->
+    <div class="container marketing">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Not just a Partner, <span>You are Family to us.</span></h2>
+          <p class="lead">Every Partner with SheltOwn gets <i class="fa fa-arrow-right"></i></p>
+          <p><b>How to join SheltOwn Family?</b></p>
+          <small> Step 1: <a href="signup.html" class="btn btn-success btn-sm">Sign up</a> or Call us at <a href="#"> <i class="fa fa-phone"></i> </a> </small>
+          <br><small> Step 2: Hassle Free Agreement.</small>
+          <br><small> Step 3: Increased occupency, online Rent, Branding <i class="fa fa-check"></i></small>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-5">
+          <img src="become-partner-property.png" alt="...">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row counter" style="background-color: #5FDDE0;">
+          <div class="col-12 col-sm-12">
+            <center>
+              <small><b>We make sure you get your worth</b></small>
+            </center>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <hr class="featurette-divider">
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row counter">
+          <div class="col-4 col-sm-4">
+            <center>
+              <h5>5000+</h5>
+              <p>Partners</p>
+            </center>
+          </div>
+          <div class="col-4 col-sm-4">
+            <center>
+              <h5>8000+</h5>
+              <p>Services</p>
+            </center>
+          </div>
+          <div class="col-4 col-sm-4">
+            <center>
+              <h5>2000+</h5>
+              <p>Cities across India</p>
+            </center>
+          </div>
+        </div><!-- /.row -->
+      </div>
+
+<hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Your Skills, <span>Our Support.</span></h2>
+          <p class="lead"><i class="fa fa-arrow-left"></i> Every Service Partner with SheltOwn gets</p>
+          <p><b>How to join SheltOwn Family?</b></p>
+          <small> Step 1: <a href="signup.html" class="btn btn-success btn-sm">Sign up</a> or Call us at <a href="#"> <i class="fa fa-phone"></i> </a> </small>
+          <br><small> Step 2: Hassle Free Agreement.</small>
+          <br><small> Step 3: Get Bookings and Rewards <i class="fa fa-check"></i></small>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="become-service-partner.png" alt="....">
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row counter" style="background-color: #5FDDE0;">
+          <div class="col-12 col-sm-12">
+            <center>
+              <small><b>We make sure you get your work</b></small>
+            </center>
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <!-- /END THE FEATURETTES -->
+<hr class="featurette-divider">
+    </div><!-- /.container -->
+
+  </main>
   <!--==========================
     Footer
   ============================-->
@@ -299,7 +258,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 about-text">
           <h6>About</h6>
-          <p class="text-justify">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
+          <p class="text-justify" style="color: #fff;">We are a strong team focused on building a network where we could serve you regarding all your needs of having your own shelter.
 
             We are bound to provide you the best possible care and support which helps you meet your demands.
 
@@ -309,10 +268,10 @@
 
             We are with you whenever you are in need!
           </p>
-          <p>Accept our warm SheltOwn hug.</p>
+          <p style="color: #fff;">Accept our warm SheltOwn hug.</p>
         </div>
 
-        <div class="col-xs-6 col-md-33 category-text">
+        <div class="col-xs-6 col-md-3 category-text">
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="policy-page.html">Policy</a></li>
@@ -323,13 +282,13 @@
           </ul>
         </div>
 
-        <div class="col-xs-6 col-md-33 quick-text">
+        <div class="col-xs-6 col-md-3 quick-text">
           <ul class="footer-links">
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
             <li><a href="work-with-us.html">Join our Team</a></li>
-            <li><a href="policy-page.html">List your Property</a></li>
-            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="become-partner.html">List your Property</a></li>
+            <li><a href="become-partner.html">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
         </div>
@@ -635,47 +594,6 @@
   </section><!-- #footer -->
 
 
-
-  <script type="text/javascript">
-    // <![CDATA[
-    function ShowHide(divId) {
-      var atxt = document.getElementById("atext");
-      if (document.getElementById(divId).style.display == 'none') {
-        document.getElementById(divId).style.display = 'block';
-      } else {
-        document.getElementById(divId).style.display = 'none';
-      }
-    }
-    // ]]>
-
-    function myFunction(){
-      var code = document.getElementById("promo");
-      code.value = "Sheltie25";
-    }
-  </script>
-  <!-- Optional JavaScript -->
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict'
-
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-      }, false)
-    }());
-  </script>
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">
     // <![CDATA[
@@ -688,55 +606,6 @@
       }
     }
     // ]]>
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('[data-toggle="popover"]').popover();
-    });
-
-    function checkin_date() {
-      var x = document.getElementById("check_in_date").value;
-      document.getElementById("print_checkin").innerHTML = x;
-      document.getElementById("fa1-calender-check-o").style.color = '#ff9719';
-    }
-
-    function sharing() {
-      var x = document.getElementById("sel1").value;
-      document.getElementById("print_sharing").innerHTML = "1 room will be shared by " + x + " persons.";
-      document.getElementById("fa-users").style.color = '#ff9719';
-    }
-
-    $(function() {
-      $('input:radio[name="airtype"]').change(function() {
-        document.getElementById("print_airtype").innerHTML = $(this).val();
-        document.getElementById("fa-snowflake").style.color = '#ff9719';
-      });
-    });
-
-    function amount1() {
-      document.getElementById("total").innerHTML = " 10000/-";
-      document.getElementById("fa-inr").style.color = "#ff9719";
-      document.getElementById("print_final_amount").innerHTML = " 10000/month";
-    }
-
-    function amount2() {
-      document.getElementById("total").innerHTML = " 12500/-";
-      document.getElementById("fa-inr").style.color = "#ff9719";
-      document.getElementById("print_final_amount").innerHTML = " 12500/month";
-    }
-
-    function redeem() {
-      if(document.getElementById("total").innerHTML == " 10000/-") {
-        document.getElementById("final_amount").innerHTML =" 7500/-";
-        document.getElementById("save").innerHTML=" 2500/-";
-        document.getElementById("print_final_amount").innerHTML = " 7500/month";
-      }
-      else if(document.getElementById("total").innerHTML == " 12500/-"){
-        document.getElementById("final_amount").innerHTML =" 11250/-";
-        document.getElementById("save").innerHTML=" 1250/-";
-        document.getElementById("print_final_amount").innerHTML = " 11250/month";
-      }
-    }
   </script>
 
   <!-- JavaScript Libraries -->
@@ -759,11 +628,67 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js'></script>
+  <script id="rendered-js">
+    $('.responsive').slick({
+      dots: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
 
 
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
 
 
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
 
+
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    //# sourceURL=pen.js
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5ee991aa9e5f69442290b6fb/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
