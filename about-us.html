@@ -16,8 +16,8 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/aboutus.css">
 <link href="css/style2.css" rel="stylesheet">
+<link href="assets/css/aboutus.css" rel="stylesheet">
 <script>
   window.console = window.console || function(t) {};
 </script>
@@ -30,7 +30,8 @@
  .heading-background {
   padding: 10px;
 }
-
+.why {
+  display: block;
 .heading {
   font-size: 30px;
     margin-left:40px;
@@ -42,8 +43,11 @@
   font-weight: bold;
 }  
     </style>
+<<<<<<< HEAD
 <link href="assets/css/signup-modal.css" rel="stylesheet">
 
+=======
+>>>>>>> 9c2077905be6654612c425d69ea9db895ec26e01
 </head>
 
 <body id="body" onload="myFunction()" style="background-color: white;">
@@ -68,14 +72,14 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
               <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
             </ul>
           </li>
-          <li><a href="about-us.html">About Us</a></li>
+          <li class="menu-active"><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
           <li><a href="login-user.html">Log In</a></li>
           <li><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
@@ -111,107 +115,91 @@
       </div>
     </section>
 
-<!----<h1 style="font-family: 'Montserrat', sans-serif; font-size: 32px;"> OUR SERVICES </h1>----->
-     <h2 class="heading heading-background">Our Services</h2>
-<div class ="row">
- <div class="col-md-6">
- <div class="row" style="background-color: #ffff00;">
-  <h3 style="text-align: center;padding-top:10px;color: black;"><a href="rentalservices.html">Rental Services</a></h3>
-  
-  <div class=" col-sm-2">
-          <center>
-            <img src="https://img.icons8.com/clouds/100/000000/4-star-hotel.png"/>
-            <small><b>PG</b> </small>
-          </center>
+<!--==========================
+  Our Why SheltOwn? Section-Mobile and Mobile-desktop view
+============================-->
+<section id="why-sheltown" class="why">
 
-        </div>
+  <div class="container">
+    <h2 class="heading heading-background">Rental Services</h2>
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/4-star-hotel.png"/>
+        <small><b>PG</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/hotel-room-key--v1.png"/>
 
-        <div class=" col-sm-2">
-          <center>
-            <img src="https://img.icons8.com/clouds/100/000000/hotel-room-key--v1.png"/>
+          <small><b>Flat</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/apartment.png"/>
 
-              <small><b>Flat</b> </small>
-            </center>
-        </div>
-        <div class=" col-sm-2">
-          <center>
-          <img src="https://img.icons8.com/clouds/100/000000/apartment.png"/>
+          <small><b>Appartment</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/home-page.png"/>
 
-            <small><b>Appartment</b> </small>
-          </center>
-        </div>
+          <small><b>House</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/building.png"/>
 
-        <div class=" col-sm-2">
-            <center>
-              <img src="https://img.icons8.com/clouds/100/000000/home-page.png"/>
-              
-                <small><b>House</b> </small>
-              </center>
-        </div>
+          <small><b>Commercial Rentals</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/bed.png"/>
 
-        <div class=" col-sm-2">
-          <center>
-              <img src="https://img.icons8.com/clouds/100/000000/building.png"/>
+          <small><b>Hostels</b> </small>
+      </div>
 
-                <small><b>Commercial Rentals</b> </small>
-              </center>
-        </div>
-
-        <div class=" col-sm-2">
-          <center>
-              <img src="https://img.icons8.com/clouds/100/000000/bed.png"/>
-
-                <small><b>Hostels</b> </small>
-              </center>
-        </div>
-  
+    </div>
   </div>
- </div>
+  </div>
 
-<div class="col-md-6" >
- <div class="row" style="background-color: #00ffff;">
-   <h3 style="text-align: center;padding-top:10px;"><a href="personelservices.html">Personal Services </a></h3>
- 
-  <div class=" col-sm-2">
-          <center>
-              <img src="https://img.icons8.com/clouds/100/000000/perfume-bottle.png"/>
+  </div>
+</section>
 
-                <small><b>Personal Care</b> </small>
-              </center>
-        </div>
+<section id="why-sheltown" class="why">
 
-        <div class=" col-sm-2">
-            <center>
-                <img src="https://img.icons8.com/clouds/100/000000/broom.png"/>
+  <div class="container">
+    <h2 class="heading heading-background">Personal Services</h2>
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/perfume-bottle.png"/>
 
-                <small><b>Home care</b> </small>
-              </center>
-        </div>
-        <div class=" col-sm-2">
-          <center>
-              <img src="https://img.icons8.com/clouds/100/000000/hammer.png"/>
+          <small><b>Personal Care</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/broom.png"/>
 
-                <small><b>Reapair and Maintenance</b> </small>
-              </center>
-        </div>
+        <small><b>Home care</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/hammer.png"/>
 
-        <div class="text-center col-sm-2">
-              <img src="https://img.icons8.com/clouds/100/000000/contract.png"/>
-            <small><b>Edu Smart</b> </small>
-        </div>
+          <small><b>Reapair and Maintenance</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/contract.png"/>
+      <small><b>Edu Smart</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/earbud-headphones.png"/>
+        <small><b>iListen</b> </small>
+      </div>
+      <div class="col-12 col-sm-4">
+        <img src="https://img.icons8.com/clouds/100/000000/missed-call.png"/>
+        <small><b>Value-added Services</b> </small>
+      </div>
 
-        <div class="text-center col-sm-2">
-            <img src="https://img.icons8.com/clouds/100/000000/earbud-headphones.png"/>
-            <small><b>iListen</b> </small>
-        </div>
-        <div class="text-center col-sm-2">
-            <img src="https://img.icons8.com/clouds/100/000000/missed-call.png"/>
-            <small><b>Value-added Services</b> </small>
-        </div>
+    </div>
+  </div>
+  </div>
 
-</div>
-</div>
-</div>
+  </div>
+  <br><br>
+</section>
 
  <section id="about">
       <div class="container">
@@ -515,8 +503,8 @@ We help you to find your match, book rental homes of choice across Indian cities
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="blog-description-page.html">Blogs</a></li>
             <li><a href="work-with-us.html">Join our Team</a></li>
-            <li><a href="policy-page.html">List your Property</a></li>
-            <li><a href="policy-page.html">Become our Service Partner</a></li>
+            <li><a href="become-partner">List your Property</a></li>
+            <li><a href="become-partner.html">Become our Service Partner</a></li>
             <li><a href="#">SiteMap</a></li>
           </ul>
         </div>

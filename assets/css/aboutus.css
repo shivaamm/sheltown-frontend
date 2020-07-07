@@ -7,6 +7,14 @@ body {
   margin:0;
 }
 
+#why-sheltown {
+  display: block;
+}
+
+#why-sheltown img {
+  width: 70px;
+}
+
 #about {
   background: #fff;
   background-size: cover;
