@@ -105,6 +105,33 @@
 {
 padding:1px;
 }
+.pagination {
+  display: inline-block;
+  margin-left:235px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color:#ff9719;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+.pagination {
+  
+  margin-left:50px;
+}
+}
 
   </style>
 
@@ -769,39 +796,29 @@ padding:1px;
                   </article>
                 </div>
               </div>
-            
+           
             <!-- Start properties content bottom -->
             
           </div>
+ <div class="pagination">
+      <a href="#">&laquo;</a>
+      <!----<a href="#" class="active">1</a>--->
+      <a  class="tablinks" onclick="openCity(event, 'rent1')" id="defaultOpen">1</a>
+      <a class="tablinks" onclick="openCity(event, 'rent2')" id="defaultOpen">2</a>
+      <a class="tablinks" onclick="openCity(event, 'rent3')" id="defaultOpen">3</a>
+      <a class="tablinks" onclick="openCity(event, 'rent1')" id="defaultOpen">4</a>
+      <a href="#">&raquo;</a>
+    </div> 
         </div>
+
         </div>
         <!-- Start properties sidebar -->
-        
+       
     </div>
     </div>
   </section>
 </main>
-<nav>
-  <ul class="pagination">
-    <li class="prev">
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a class="tablinks" onclick="openCity(event, 'rent1')" id="defaultOpen">1</a>
-    </li>
-    <li><a class="tablinks" onclick="openCity(event, 'rent2')" id="defaultOpen">2</a>
-    </li>
-    <li><a class="tablinks" onclick="openCity(event, 'rent3')" id="defaultOpen">3</a>
-    </li>
-    
-    <li class="next">
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+
 
 
 <!--==========================
@@ -1294,3 +1311,4 @@ document.getElementById("defaultOpen").click();
 </body>
 
 </html>
+
