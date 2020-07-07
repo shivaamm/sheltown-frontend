@@ -45,17 +45,28 @@
 </style>
 </head>
 
-<body>
-  <!--==========================
+<link href="assets/css/signup-modal.css" rel="stylesheet">
+
+</head>
+
+<body id="body" onload="myFunction()" style="background-color: white;">
+
+   <!--==========================
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"> <img src="img/favicon.png" alt="logo"> </a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <a href="index.html">
+          <img src="img/favicon.png" alt="logo">
+        </a>
+      </div>
+
+<div id="logo" class="pull-left" style="margin-top:8px;">
+        <a href="index.html">
+        <p >SheltOwn</p>
+        </a>
       </div>
 
       <nav id="nav-menu-container">
@@ -63,14 +74,14 @@
           <li class="menu-active"><a href="index.html">Home</a></li>
           <li class="menu-has-children"><a href="">Our Services</a>
             <ul>
-              <li><a href="personal-services.html">Personalised Services</a></li>
+              <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
             </ul>
           </li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
           <li><a href="login-user.html">Log In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
+          <li><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -428,6 +439,125 @@ We help you to find your match, book rental homes of choice across Indian cities
       </div>
     </div>
   </section><!-- #footer -->
+
+       <!--Modal-->
+<div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <form id="first">
+                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;"> 
+                            <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
+                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
+                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
+                        </div>
+                        Enter your Phone Number<br>
+                        <input required type="tel" placeholder="+91" pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" title="Enter a valid phone number" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"><br>
+                        <small>Your information is safe with us</small>
+                        <br><br>
+                        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="policy-page.html">Terms and Conditions</a>
+                        <br>
+                        <center><input type="submit" class="btn btn-success" value="Send OTP" style="margin: 5px 0;"></center>
+                        <center><small>Already have an account? <a href="login-user.html">Log In now</a></small></center>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="second" style="display:none;">
+                        <p>Phone Number: +91-1234567890 <button type="button" class="btn btn-secondary" id="back" style="float: right;">Change Number</button></p>
+                        <br>
+                        Enter OTP
+                        <input required type="text" placeholder="xxxxxx" minlength="6" maxlength="6" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;">
+                        <center><input type="submit" class="btn btn-success" value="Verify"></center>
+                        <br>
+                        <p>xx:xx time left<button type="button" class="btn btn-warning" style="float: right; padding: 3px;"><small>Resend OTP</small></button></p>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="third" style="display: none;">
+                        <p>Verified Phone Number: +91 1234567890</p>
+                        <table style="width: 100%">
+                            <tr>
+                                <td>Name&nbsp</td>
+                                <td><input required type="text" placeholder="Name" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                            <tr>
+                                <td>Email&nbsp</td>
+                                <td><input required type="email" placeholder="e-mail" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                            <tr>
+                                <td>Password&nbsp</td>
+                                <td><input required type="password" placeholder="Password" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <center><input type="submit" class="btn btn-success" value="Create Account"></center>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="fourth" style="display:none;">
+                        <hr>
+                        <div class="google-btn" style="margin: 0 auto;">
+                            <div class="google-icon-wrapper">
+                                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                            </div>
+                            <a href="#" class="btn-text"><b>Sign in with google</b></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group"> 
+                <hr>
+                <form id="fifth">
+                  <div class="row listbox" style="margin: 0 auto;">
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$('#first').submit(function(e){
+    $('#first').hide(); 
+    $('#second').show(); 
+    $('#third').hide(); 
+    $('#fourth').hide(); 
+    e.preventDefault();
+    // Or with: return false;        
+});
+$('#second').submit(function(e){
+    $('#first').hide(); 
+    $('#second').hide();
+    $('#third').show(); 
+     $('#fourth').show(); 
+     $('#fifth').hide();
+    e.preventDefault();
+    // Or with: return false;        
+});
+
+$('#back').click(function(e){
+    $('#first').show(); 
+    $('#second').hide(); 
+    $('#third').hide(); 
+    $('#fourth').hide(); 
+    e.preventDefault();
+    // Or with: return false;        
+});
+</script>
 
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">
