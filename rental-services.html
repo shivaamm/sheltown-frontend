@@ -45,6 +45,11 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style2.css" rel="stylesheet">
+
+
+<!------pagination------->
+<!----<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>---->
+<!----<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />----->
 <style>
 .content {
       display: none;
@@ -96,6 +101,10 @@
       width: 100%;
      
     }
+.container_rent
+{
+padding:1px;
+}
 
   </style>
 
@@ -121,8 +130,8 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li class="menu-has-children"><a href="">Our Services</a>
+          <li ><a href="index.html">Home</a></li>
+          <li class="menu-has-children"><a href="" class="menu-active">Our Services</a>
             <ul>
               <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
@@ -229,11 +238,11 @@
                   </select>
                 </div>
                 <div class="aa-single-filter-search">
-                  <span>PRICE ($)</span>
+                  <span>PRICE (Rs)</span>
                   <span>FROM</span>
-                  <span id="skip-value-lower2" class="example-val"><input type="text" class="price" name="" value="$40"> </span>
+                  <span id="skip-value-lower2" class="example-val"><input type="text" class="price" name="" value="Rs40"> </span>
                   <span>TO</span>
-                  <span id="skip-value-upper2" class="example-val"><input type="text" class="price" name="" value="$35k"> </span>
+                  <span id="skip-value-upper2" class="example-val"><input type="text" class="price" name="" value="Rs35k"> </span>
                 </div>
             </div>
             <div class="aa-single-advance-search">
@@ -266,9 +275,13 @@
                 </a>
               </div>
             </div>
+
+
+
             <!-- Start properties content body -->
             <div class="aa-properties-content-body">
-              <div class="row content">
+              <div class="container_rent" id ="rent1">
+              <div class="row">
                 <div class="col-lg-6">
                   <article class="aa-properties-item">
                     <div class="aa-properties-item-img carousel slide" id="carouselExampleControls1" data-ride="carousel">
@@ -381,9 +394,10 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-lg-6">
+
+                  <div class="col-lg-6">
                   <article class="aa-properties-item">
-                    <div class="aa-properties-item-img carousel slide" id="carouselExampleControls3" data-ride="carousel">
+                    <div class="aa-properties-item-img carousel slide" id="carouselExampleControls1" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="https://q-cf.bstatic.com/images/hotel/max1024x768/141/141396523.jpg" class="d-block w-100" alt="...">
@@ -395,11 +409,11 @@
                           <img src="https://www.westplaza.co.nz/sites/default/files/styles/large/public/2019-06/HQ1666.jpg?itok=Y7UiXP8M" class="d-block w-100" alt="...">
                         </div>
                       </div>
-                      <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                      <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                       </a>
-                      <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                      <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                       </a>
@@ -420,7 +434,7 @@
                       <div class="aa-properties-info">
                         <span>Male only</span>
                         <span>Fully Furnished</span>
-                        <span>Available Now</span>
+                         <span>Available Now</span>
                       </div>
                       <div class="aa-properties-about">
                         <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
@@ -437,7 +451,7 @@
                     </div>
                   </article>
                 </div>
-
+               
                 <div class="col-lg-6">
                   <article class="aa-properties-item">
                     <a class="aa-properties-item-img" href="#">
@@ -477,163 +491,11 @@
                   </article>
                 </div>
               </div>
+               </div>
 
-              <div class="row content">
-                <div class="col-lg-6">
-                  <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="#">
-                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
-                    </a>
-                    <div class="aa-properties-item-content">
-                      <div class="aa-properties-info">
-                        <span>Nearby:</span>
-                        <span><i class="fa fa-train"></i>Metro</span>
-                        <span><i class="fa fa-shopping-basket"></i>Market</span>
-                        <span><i class="fa fa-building"></i>Mall</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Amenities:</span>
-                        <span><i class="fa fa-home"></i>5 Rooms</span>
-                        <span><i class="fa fa-bed"></i>2 Beds</span>
-                        <span><i class="fa fa-shower"></i>3 Baths</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Male only</span>
-                        <span>Fully Furnished</span>
-                        <span>Available Now</span>
-                      </div>
-                      <div class="aa-properties-about">
-                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
-                        <p><i class="fa fa-map-marker"></i> Location</p>
-                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
-                      </div>
-                      <div class="aa-properties-detial">
-                        <span>
-                          <s>$35k</s>&nbsp;&nbsp;$25k
-                        </span>
-                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
-                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-lg-6">
-                  <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="#">
-                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
-                    </a>
-                    <div class="aa-properties-item-content">
-                      <div class="aa-properties-info">
-                        <span>Nearby:</span>
-                        <span><i class="fa fa-train"></i>Metro</span>
-                        <span><i class="fa fa-shopping-basket"></i>Market</span>
-                        <span><i class="fa fa-building"></i>Mall</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Amenities:</span>
-                        <span><i class="fa fa-home"></i>5 Rooms</span>
-                        <span><i class="fa fa-bed"></i>2 Beds</span>
-                        <span><i class="fa fa-shower"></i>3 Baths</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Male only</span>
-                        <span>Fully Furnished</span>
-                        <span>Available Now</span>
-                      </div>
-                      <div class="aa-properties-about">
-                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
-                        <p><i class="fa fa-map-marker"></i> Location</p>
-                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
-                      </div>
-                      <div class="aa-properties-detial">
-                        <span>
-                          <s>$35k</s>&nbsp;&nbsp;$25k
-                        </span>
-                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
-                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-lg-6">
-                  <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="#">
-                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
-                    </a>
-                    <div class="aa-properties-item-content">
-                      <div class="aa-properties-info">
-                        <span>Nearby:</span>
-                        <span><i class="fa fa-train"></i>Metro</span>
-                        <span><i class="fa fa-shopping-basket"></i>Market</span>
-                        <span><i class="fa fa-building"></i>Mall</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Amenities:</span>
-                        <span><i class="fa fa-home"></i>5 Rooms</span>
-                        <span><i class="fa fa-bed"></i>2 Beds</span>
-                        <span><i class="fa fa-shower"></i>3 Baths</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Male only</span>
-                        <span>Fully Furnished</span>
-                        <span>Available Now</span>
-                      </div>
-                      <div class="aa-properties-about">
-                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
-                        <p><i class="fa fa-map-marker"></i> Location</p>
-                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
-                      </div>
-                      <div class="aa-properties-detial">
-                        <span>
-                          <s>$35k</s>&nbsp;&nbsp;$25k
-                        </span>
-                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
-                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div class="col-lg-6">
-                  <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="#">
-                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
-                    </a>
-                    <div class="aa-properties-item-content">
-                      <div class="aa-properties-info">
-                        <span>Nearby:</span>
-                        <span><i class="fa fa-train"></i>Metro</span>
-                        <span><i class="fa fa-shopping-basket"></i>Market</span>
-                        <span><i class="fa fa-building"></i>Mall</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Amenities:</span>
-                        <span><i class="fa fa-home"></i>5 Rooms</span>
-                        <span><i class="fa fa-bed"></i>2 Beds</span>
-                        <span><i class="fa fa-shower"></i>3 Baths</span>
-                      </div>
-                      <div class="aa-properties-info">
-                        <span>Male only</span>
-                        <span>Fully Furnished</span>
-                        <span>Available Now</span>
-                      </div>
-                      <div class="aa-properties-about">
-                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
-                        <p><i class="fa fa-map-marker"></i> Location</p>
-                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
-                      </div>
-                      <div class="aa-properties-detial">
-                        <span>
-                          <s>$35k</s>&nbsp;&nbsp;$25k
-                        </span>
-                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
-                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
 
-              <div class="row content">
+              <div class="container_rent" id ="rent2">
+                <div class="row" >
                 <div class="col-lg-6">
                   <article class="aa-properties-item">
                     <a class="aa-properties-item-img" href="#">
@@ -787,21 +649,161 @@
                   </article>
                 </div>
               </div>
-            </div>
+                   </div>
+
+<div class="container_rent" id ="rent3">
+              <div class="row ">
+                <div class="col-lg-6">
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                    </a>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>Nearby:</span>
+                        <span><i class="fa fa-train"></i>Metro</span>
+                        <span><i class="fa fa-shopping-basket"></i>Market</span>
+                        <span><i class="fa fa-building"></i>Mall</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Amenities:</span>
+                        <span><i class="fa fa-home"></i>5 Rooms</span>
+                        <span><i class="fa fa-bed"></i>2 Beds</span>
+                        <span><i class="fa fa-shower"></i>3 Baths</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Male only</span>
+                        <span>Fully Furnished</span>
+                        <span>Available Now</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
+                        <p><i class="fa fa-map-marker"></i> Location</p>
+                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span>
+                          <s>$35k</s>&nbsp;&nbsp;$25k
+                        </span>
+                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
+                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-6">
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                    </a>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>Nearby:</span>
+                        <span><i class="fa fa-train"></i>Metro</span>
+                        <span><i class="fa fa-shopping-basket"></i>Market</span>
+                        <span><i class="fa fa-building"></i>Mall</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Amenities:</span>
+                        <span><i class="fa fa-home"></i>5 Rooms</span>
+                        <span><i class="fa fa-bed"></i>2 Beds</span>
+                        <span><i class="fa fa-shower"></i>3 Baths</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Male only</span>
+                        <span>Fully Furnished</span>
+                        <span>Available Now</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
+                        <p><i class="fa fa-map-marker"></i> Location</p>
+                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span>
+                          <s>$35k</s>&nbsp;&nbsp;$25k
+                        </span>
+                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
+                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                
+                <div class="col-lg-6">
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="https://5.imimg.com/data5/EC/SP/MY-13018244/simple-and-spaceful-flat-at-vesu-vip-roa-with-full-furnished-500x500.jpg">
+                    </a>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>Nearby:</span>
+                        <span><i class="fa fa-train"></i>Metro</span>
+                        <span><i class="fa fa-shopping-basket"></i>Market</span>
+                        <span><i class="fa fa-building"></i>Mall</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Amenities:</span>
+                        <span><i class="fa fa-home"></i>5 Rooms</span>
+                        <span><i class="fa fa-bed"></i>2 Beds</span>
+                        <span><i class="fa fa-shower"></i>3 Baths</span>
+                      </div>
+                      <div class="aa-properties-info">
+                        <span>Male only</span>
+                        <span>Fully Furnished</span>
+                        <span>Available Now</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Apartment Title</a> <i class="fa fa-check check"></i> </h3>
+                        <p><i class="fa fa-map-marker"></i> Location</p>
+                        <p><span class="ratings">4.3 <i class="fa fa-star"></i></span> 345 Reviews 475 Ratings</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span>
+                          <s>$35k</s>&nbsp;&nbsp;$25k
+                        </span>
+                        <a class="btn btn-primary btn-sm" href="rental-services-details.html">Book Now</a>
+                        <a class="btn btn-info btn-sm" href="rental-services-details.html">View More</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            
             <!-- Start properties content bottom -->
-            <div class="aa-properties-content-bottom">
-              <br>
-              <center><a href="#" class=" btn btn-primary" id="loadMore">Load More</a></center>
-            </div>
+            
           </div>
         </div>
-
+        </div>
         <!-- Start properties sidebar -->
         
     </div>
     </div>
   </section>
 </main>
+<nav>
+  <ul class="pagination">
+    <li class="prev">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a class="tablinks" onclick="openCity(event, 'rent1')" id="defaultOpen">1</a>
+    </li>
+    <li><a class="tablinks" onclick="openCity(event, 'rent2')" id="defaultOpen">2</a>
+    </li>
+    <li><a class="tablinks" onclick="openCity(event, 'rent3')" id="defaultOpen">3</a>
+    </li>
+    
+    <li class="next">
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
 <!--==========================
     Footer
   ============================-->
@@ -1146,6 +1148,24 @@ We are with you whenever you are in need!
     </div>
   </section><!-- #footer -->
 
+<script>
+function openCity(evt, cityName) {
+  var i, container_rent, tablinks;
+  container_rent = document.getElementsByClassName("container_rent");
+  for (i = 0; i < container_rent.length; i++) {
+    container_rent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">
@@ -1182,18 +1202,7 @@ We are with you whenever you are in need!
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
 
- <script>
-    $(document).ready(function() {
-      $(".content").slice(0, 1).show();
-      $("#loadMore").on("click", function(e) {
-        e.preventDefault();
-        $(".content:hidden").slice(0, 1).slideDown();
-        if ($(".content:hidden").length == 0) {
-          $("#loadMore").text("No More Results").addClass("noContent");
-        }
-      });
-    });
-  </script>
+
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
@@ -1258,14 +1267,30 @@ We are with you whenever you are in need!
     }
   </script>
   <!--End of Tawk.to Script-->
- <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/popper.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+  <script type="text/javascript">
+        $(document).ready(function() {
+  var pageItem = $(".pagination li").not(".prev,.next");
+  var prev = $(".pagination li.prev");
+  var next = $(".pagination li.next");
+
+  pageItem.click(function() {
+    pageItem.removeClass("active");
+    $(this).not(".prev,.next").addClass("active");
+  });
+
+  next.click(function() {
+    $('li.active').removeClass('active').next().addClass('active');
+  });
+
+  prev.click(function() {
+    $('li.active').removeClass('active').prev().addClass('active');
+  });
+
+
+});
+    </script>
 </body>
 
 </html>
-
