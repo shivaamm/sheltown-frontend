@@ -555,6 +555,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 3px;
 }
 
+#intro-list-property .list-your-property .fa-gear {
+  color: #70F7C0;
+}
+
 #intro-list-property .list-your-property .fa-arrow-right {
   color: #000;
 }
@@ -579,6 +583,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 20px;
 }
 
+#intro-list-property .list-your-property-2 .fa-gear {
+  color: #70F7C0;
+  font-size: 24px;
+}
+
+#intro-list-property .list-your-property-2 .fa-arrow-right {
+  color: #000;
+}
+
 #intro-list-property .list-your-property-2 small {
   position: relative;
   left: 55px;
@@ -597,6 +610,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: none;
   }
 }
+
 
 
 
