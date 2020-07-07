@@ -27,6 +27,8 @@ h2 {
   background-color: white;
   border: 1px solid #dee2e6;
   border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .tabcontent{
@@ -43,14 +45,53 @@ h2 {
 /* SECOND NAV */
 .navbar-secondary {
   min-height: 50px;
-  top: 45px;
+  top: 3em;
   z-index: 1;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 991px){
+  .navbar a{
+    font-size: 14px!important;
+  }
   .navbar-secondary {
     padding: 0;
-    top: 40px!important;
+    top: 4.9em!important;
+    margin-left: 0;
+    max-width: 100vw;
+    z-index: 1;
+  }
+  .navbar-secondary .navbar-collapse {
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 767px){
+  .navbar a{
+    font-size: 14px!important;
+  }
+  .navbar-secondary {
+    padding: 0;
+    top: 5em!important;
+    margin-left: 0;
+    max-width: 100vw;
+    z-index: 1;
+  }
+  .navbar-secondary .navbar-collapse {
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar a{
+    font-size: 14px!important;
+  }
+  .navbar-secondary {
+    padding: 0;
+    top: 2.6em!important;
     margin-left: 0;
     max-width: 100vw;
     z-index: 1;
@@ -257,8 +298,8 @@ label.checked:before {
   border: 1px solid rgb(194, 193, 193);
   background-color: rgb(241, 240, 240);
   padding: 10px;
-  margin-bottom: 10px;
-  padding-left: 10px;
+  width: 98.5%;
+  margin: 10px;
 }
 
 #category-heading{
@@ -267,8 +308,8 @@ label.checked:before {
 }
 
 .cat-container{
-  width: 100%;
-  margin: 0px;
+  width: 90%;
+  margin: 0px 10px!important;
 }
 
 #label{
@@ -286,17 +327,12 @@ button{
     text-align:center;
   }
 
-  #category{
-    margin-bottom: 0;
-    padding: 10px;
-  }
-
   #inner-row{
     padding-bottom: 10px;
   }
 
   input[type="text"]{
-    width: 10em;
+    width: 10%;
     float: left;
     margin-top: 0;
     margin-bottom: 10px;
@@ -326,6 +362,21 @@ button{
     float: none!important;
   }
   
+}
+
+@media (max-width: 500px){
+  #category{
+    border: 1px solid rgb(194, 193, 193);
+    background-color: rgb(241, 240, 240);
+    padding: 10px;
+    margin: 10px 0 10px 3px;
+  }
+  input[type="text"]{
+    width: 100px;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* SELECT MULTIPLE */

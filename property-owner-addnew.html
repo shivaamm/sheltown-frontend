@@ -68,7 +68,7 @@ Header
 <br>
 
 <!-- second fixed navbar-->
-<nav class="navbar navbar-default navbar-fixed-top navbar-secondary container-fluid" id="navbar-two" role="navigation">
+<center><nav class="navbar navbar-default navbar-fixed-top navbar-secondary container-fluid" id="navbar-two" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-two--links"><span class="sr-only">Property Owner</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Property Owner</a>
@@ -95,13 +95,14 @@ Header
     </div>
   </div>
 </nav>  
+</center>
 <!--Second nav-->
 
 <br><br><br>
 
 <!--Content-->
 <h2 class="container" id="propheading">Add New Property</h2>
-    <div class="row middler container">
+    <div class="row middler">
         <div class="row container" id="inner-row">
             <div class="col-sm-4">
                 <div class="row">Property Name</div>
@@ -119,7 +120,7 @@ Header
     </div>
     <br>
 
-    <div class="row middler container">
+    <div class="row middler">
         <div id="inner-row">
             <div class="col-sm-12" id="category">
                 <div class="row container">
@@ -339,7 +340,7 @@ Header
 
     <br>
 
-    <div class="row middler container">
+    <div class="row middler">
         <div class="row container" id="inner-row">
             <div class="col-sm-4">
                 <div class="row">Rent</div>
@@ -354,7 +355,7 @@ Header
 
     <br>
 
-    <div class="middler row container">
+    <div class="middler row">
         <div class="col-sm-12">
             <div class="row container" id="inner-row">
                 <p id="category-heading">Amenities (Select all that apply)</p>
@@ -438,7 +439,7 @@ Header
 
     <br>
 
-    <div class="row middler justify-content-center container">
+    <div class="row middler justify-content-center">
         <center><input id="btn-add" type="submit"></center>
     </div>
     
@@ -791,6 +792,125 @@ Header
       </div>
     </div>
   </section><!-- #footer -->
+
+  <!--Modal-->
+<div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <form id="first">
+                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;"> 
+                            <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
+                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
+                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
+                        </div>
+                        Enter your Phone Number<br>
+                        <input required type="tel" placeholder="+91" pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" title="Enter a valid phone number" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"><br>
+                        <small>Your information is safe with us</small>
+                        <br><br>
+                        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="policy-page.html">Terms and Conditions</a>
+                        <br>
+                        <center><input type="submit" class="btn btn-success" value="Send OTP" style="margin: 5px 0;"></center>
+                        <center><small>Already have an account? <a href="login-user.html">Log In now</a></small></center>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="second" style="display:none;">
+                        <p>Phone Number: +91-1234567890 <button type="button" class="btn btn-secondary" id="back" style="float: right;">Change Number</button></p>
+                        <br>
+                        Enter OTP
+                        <input required type="text" placeholder="xxxxxx" minlength="6" maxlength="6" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;">
+                        <center><input type="submit" class="btn btn-success" value="Verify"></center>
+                        <br>
+                        <p>xx:xx time left<button type="button" class="btn btn-warning" style="float: right; padding: 3px;"><small>Resend OTP</small></button></p>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="third" style="display: none;">
+                        <p>Verified Phone Number: +91 1234567890</p>
+                        <table style="width: 100%">
+                            <tr>
+                                <td>Name&nbsp</td>
+                                <td><input required type="text" placeholder="Name" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                            <tr>
+                                <td>Email&nbsp</td>
+                                <td><input required type="email" placeholder="e-mail" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                            <tr>
+                                <td>Password&nbsp</td>
+                                <td><input required type="password" placeholder="Password" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <center><input type="submit" class="btn btn-success" value="Create Account"></center>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <form id="fourth" style="display:none;">
+                        <hr>
+                        <div class="google-btn" style="margin: 0 auto;">
+                            <div class="google-icon-wrapper">
+                                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                            </div>
+                            <a href="#" class="btn-text"><b>Sign in with google</b></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group"> 
+                <hr>
+                <form id="fifth">
+                  <div class="row listbox" style="margin: 0 auto;">
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
+                    <div class="col-sm-6"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$('#first').submit(function(e){
+    $('#first').hide(); 
+    $('#second').show(); 
+    $('#third').hide(); 
+    $('#fourth').hide(); 
+    e.preventDefault();
+    // Or with: return false;        
+});
+$('#second').submit(function(e){
+    $('#first').hide(); 
+    $('#second').hide();
+    $('#third').show(); 
+     $('#fourth').show(); 
+     $('#fifth').hide();
+    e.preventDefault();
+    // Or with: return false;        
+});
+
+$('#back').click(function(e){
+    $('#first').show(); 
+    $('#second').hide(); 
+    $('#third').hide(); 
+    $('#fourth').hide(); 
+    e.preventDefault();
+    // Or with: return false;        
+});
+</script>
 
 
     <script type="text/javascript">
