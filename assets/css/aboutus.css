@@ -7,12 +7,22 @@ body {
   margin:0;
 }
 
-#why-sheltown {
-  display: block;
+#intro-pic{
+  height: 350px;width: 100%;
 }
 
-#why-sheltown img {
-  width: 70px;
+#ser {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 576px){
+  #intro-pic{
+    height: 200px!important;
+    width: 100%!important;
+  }
+  #some {
+    margin-top: 20px;
+  }
 }
 
 #about {
@@ -22,12 +32,6 @@ body {
   position: relative;
   color: #fff;
   padding: 50px 0 40px 0;
-}
-  
-.brokerage{
-  float:right; 
-  height: 300px;
-  width: 550px;
 }
   
 #about:before {
@@ -58,34 +62,6 @@ body {
   font-size: 14px;
   margin-bottom: 20px;
   color:black;
-}
-
-
-
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1080px) {
-  #about .family{
-    display: none;
-  }
-  .column_ta {
-    width: 100%;
-    margin:0px;
-    height:100%;
-  }
-  .column_ser {
-    width: 100%;
-    height:100%;
-  }
-  .column_taa {
-    width: 100%;
-    margin:0px;
-    height:100%;
-  }
-  .column_serr {
-    width: 100%;
-    height:100%;
-  }
- 
 }
 
 .testimonials {
@@ -170,13 +146,6 @@ body {
   right: -60px;
 }
 
-.column_team {
-  float: left;
-  width: 16.66%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
 .container_team {
   padding: 0 16px;
 }
@@ -217,43 +186,23 @@ body {
   background-color: #555;
 }
 
-@media screen and (max-width: 1080px) {
-  .column_team {
-    width: 100%;
-    display: block;
-  }
-}
-
 input[type=text],input[type=email],input[type=number],input[type=password] select, textarea {
   width: 300px;
-  padding: 12px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
   resize: vertical;
 }
 
 #subs {
   background-color: #fff;
   color: #ff9719;
-  padding: 12px 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size:18px;
-}
-
-#subs:hover {
-  background-color: #ffff;
-}
-
-.containerr {
-  border-radius: 5px;
-  background-color: #ff9719;
-  margin: 0 20px; 
-  padding: 20px;
 }
 
 .container_br{
@@ -327,9 +276,6 @@ input[type=text],input[type=email],input[type=number],input[type=password] selec
 
 
 @media screen and (max-width: 1080px) {
-  #about {
-    background-attachment: fixed;
-  }
   .next_br {
     display: none !important;
   }
@@ -342,9 +288,5 @@ input[type=text],input[type=email],input[type=number],input[type=password] selec
   }
   #stuff{
     text-align:center;
-  }
-  #about img{
-    height: 250px;
-    width: 300px;
   }
 }
