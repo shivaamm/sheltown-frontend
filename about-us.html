@@ -44,6 +44,18 @@
   <link href="css/style2.css" rel="stylesheet">
   <link href="assets/css/aboutus.css" rel="stylesheet">
   <link href="assets/css/signup-modal.css" rel="stylesheet">
+
+  <style>
+    #b-link{
+      color: white;
+      cursor: pointer;
+    }
+
+    #b-link:hover{
+      color: black;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body id="body" onload="myFunction()" style="background-color: white;">
@@ -69,7 +81,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li class="menu-has-children"><a>Our Services</a>
+          <li class="menu-has-children"><a id="b-link">Our Services</a>
             <ul>
               <li><a href="personal_services1.html">Personalised Services</a></li>
               <li><a href="rental-services.html">Rental Services</a></li>
@@ -78,7 +90,7 @@
           <li class="menu-active"><a href="about-us.html">About Us</a></li>
           <li><a href="blog-description-page.html">Blogs</a></li>
           <li><a href="login-user.html">Log In</a></li>
-          <li><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+          <li><a id="b-link" data-toggle="modal" data-target="#myModal">Sign Up</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
