@@ -12,7 +12,7 @@
 </head>
 
 <style>
-    
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 :root {
   --primary: #323232;
@@ -30,7 +30,7 @@
 }
 
 body {
-  background-color: var(--light-bg);
+  background-color: #fff;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,7 +47,6 @@ body {
 .card {
   width: 100%;
   max-width: 1100px;
-  background-color: #fff;
   padding: 3rem;
 }
 
@@ -93,29 +92,9 @@ body {
 	background-color: #fff;
 	border: 2px solid #EF6969;
 	border-radius: 5px;
-	}	
+	}
 .card__button {
   margin-left: auto;
-}
-
-.card__button button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.05rem;
-  background-color: var(--primary);
-  color: white;
-  font-weight: bold;
-  border: none;
-  height: 40px;
-  width: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
 }
 
 .card__button button:active {
@@ -284,6 +263,10 @@ span.circle {
   width: 15px;
 }
 
+#edit {
+	display: none;
+}
+
 @media (max-width: 1381px) {
   .insights {
     -webkit-box-pack: center;
@@ -317,15 +300,13 @@ span.circle {
 }
 
 @media (max-width: 545px) {
-  .card__button button {
-    width: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .card__button button span {
+  .card__button button{
     display: none;
   }
+	#edit {
+		display: block;
+	}
+
   .card__button button svg {
     margin-right: 0;
   }
@@ -360,7 +341,7 @@ span.circle {
 				</header>
 
 				<!-- Banner -->
-			
+
 <div class="card">
       <div class="card__header">
         <div class="card__profile">
@@ -374,36 +355,17 @@ span.circle {
           <div class="card__handle">
             <span class="handle">@leo_bai</span>
             <span class="circle"></span>
-            <span class="category">Male</span>
+            <span class="category">Male</span>&nbsp;<span id="edit"><i class="fa fa-pencil-square-o" style="color:#EF6969;"></i></span>
           </div>
         </div>
         <div class="card__button">
           <button>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#fff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-edit"
-            >
-              <path
-                d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
-              ></path>
-              <path
-                d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
-              ></path>
-            </svg>
-		  <span><a btn btn-sm btn-light>Edit</a></span>
+						<i class="fa fa-pencil-square-o"></i> Edit
           </button>
         </div>
       </div>
       <hr class="border" />
-      
+
       <div class="card__insights">
         <div class="card__heading">
           <div class="heading">Insights</div>
@@ -430,8 +392,8 @@ span.circle {
             <div class="heading">
               SheltOwn+
               <div class="score">
-                
-                
+
+
               </div>
             </div>
             <div class="number">
@@ -459,7 +421,7 @@ span.circle {
             <div class="heading">
               Your Orders
               <div class="score">
-                
+
               </div>
             </div>
             <div class="number">
@@ -487,7 +449,7 @@ span.circle {
             <div class="heading">
               My Address
               <div class="score">
-                
+
               </div>
             </div>
             <div class="number">
@@ -531,7 +493,7 @@ span.circle {
 						<li><a href="mydetails.html"><i class="las la-book"></i> Details</a></li>
 						<li><a href="bookings.html"><i class="las la-home"></i> Bookings</a></li>
 						<li><a href="appointments.html"><i class="las la-users-cog"></i> Appointments</a></li>
-						
+
 						<li><a href="gifts.html"><i class="las la-gift"></i> Gifts</a></li>
 						<!-- IF ANY LIST OF MENU IS REQUIRED
 										<li>
