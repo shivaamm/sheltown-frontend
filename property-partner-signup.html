@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SheltOwn</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- Libraries CSS Files -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    .container{
+      margin-top:40px;
+      margin-bottom:40px;
+    }
+    .heading{
+      color:#ff971d;
+      font-weight:bold;
+    }
+    label{
+      color:black;
+      font-weight:bold;
+    }
+    label[for='person_img']{
+      margin-bottom:0px;
+    }
+    label[for='identity']{
+      margin-bottom:0px;
+    }
+    label[for='cancel_cheque']{
+      margin-bottom:0px;
+    }
+    .classlimit{
+      margin:0px;
+      padding:0px; 
+    }
+    span{
+      color:red;
+    }
+    #person_img_show{
+      width:300px;
+      height:200px;
+    }
+    #identity_show{
+      width:300px;
+      height:200px;
+    }
+    #cancel_cheque_show{
+      width:300px;
+      height:200px;
+    }
+    .submit-btn{
+      padding:10px 40px;
+    }
+    @media (max-width:450px) {
+      .heading{
+        font-size:25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="heading">Complete Sign up Process</h2>
+    <form class="needs-validation" novalidate>
+
+      <div class="form-row my-4">
+        <div class="col-sm-6">
+          <label>Enter First Name</label>
+          <input type="text" class="form-control" id="fname" placeholder="" name="fname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-sm-6">
+          <label>Enter Last Name</label>
+          <input type="text" class="form-control" id="lname" placeholder="" name="lname" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+      </div>
+
+      <div class="form-group my-4">
+        <label>I am :</label>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="owner" name="persontype" value="owner" required>
+          <label class="custom-control-label" for="owner">Owner</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" id="manager" name="persontype" value="manager">
+          <label class="custom-control-label" for="manager">Manager</label>
+        </div>
+        <div class="invalid-feedback">Please select one to continue.</div>
+      </div>
+
+      <div class="form-group my-4">
+        <label for="person_img">Select image(Owner/Manager)</label>
+        <div><span class="filelimit"><small>(Max size allowed is 10KB)</small></span></div>
+        <br/>
+        <input type="file" id="person_img" name="person_img" accept="image/*" required>
+        <img id="person_img_show" src="#" alt="your image" />
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div  class="form-group my-4">
+         <label>Date of Birth</label>
+         <input type="date" class="form-control" id="dob" name="dob" required> 
+         <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group my-4">
+         <label for="phone">Whatsapp number:</label>
+         <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required> 
+         <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-row my-4">
+        <div class="col-sm-6">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-sm-6">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+      </div>
+
+      <div class="form-row my-4">
+        <div class="col-sm-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control" required>
+            <option selected disabled>Choose...</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>Goa</option>
+            <option>Gujrat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <option>Uttar Pradesh</option>
+            <option>Uttarakhand</option>
+            <option>West Bengal</option>
+          </select>
+          <div class="invalid-feedback">Please select one option.</div>
+        </div>
+        <div class="col-sm-4">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="col-sm-4">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip" required>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+      </div>
+
+      <div class="form-group my-4">
+        <label for="indentiy">Identity Proof(Aadhaar Card/ PAN Card/ Driving License)</label>
+        <div><span class="filelimit"><small>(Max size allowed is 400KB)</small></span></div>
+        <br/>
+        <input type="file" id="identity" name="indentiy" accept="image/*" required>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        <img id="identity_show" src="#" alt=" image" />
+      </div>
+
+      <div class="form-group my-4">
+         <label for="account">Bank Acoount Number:</label>
+         <input type="text" class="form-control" id="account" name="account" required> 
+         <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+
+      <div class="form-group my-4">
+        <label for="cancel_cheque">Image of Cancelled Cheque</label>
+        <div><span class="filelimit"><small>(Max size allowed is 100KB)</small></span></div>
+        <br/>
+        <input type="file" id="cancel_cheque" name="cancel_cheque" accept="image/*" required>
+        <img id="cancel_cheque_show" src="#" alt="image" />
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      
+      <center>
+        <button type="submit" class="btn btn-success submit-btn">Submit</button>
+      </center>
+
+    </form>
+  </div>
+
+
+  <script>
+    // to check person image file limit and to uplaod it
+    var Person = document.getElementById("person_img");
+
+    Person.onchange = function() {
+      let filesize = (this.files[0].size/1024).toFixed(4); // KB
+      // var filesize = ((this.files[0].size/1024)/1024).toFixed(4); //  for MB
+      if(filesize <= 10){
+        //upload code
+        var reader = new FileReader();
+        reader.onload = function(){
+          var output = document.getElementById('person_img_show');
+          output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      }
+      else{
+        alert("File is too big!");
+         this.value = "";
+      }
+    };
+
+    // to check identity image limit and to uplaod it
+    var Identity = document.getElementById("identity");
+
+    Identity.onchange = function() {
+      let filesize = (this.files[0].size/1024).toFixed(4); // for KB
+      // var filesize = ((this.files[0].size/1024)/1024).toFixed(4); //  for MB
+      if(filesize <= 400){
+        //upload code
+        var reader = new FileReader();
+        reader.onload = function(){
+          var output = document.getElementById('identity_show');
+          output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      }
+      else{
+        alert("File is too big!");
+         this.value = "";
+      }
+    };
+
+    // to check cancel check image and to uplaod it
+    var Identity = document.getElementById("cancel_cheque");
+
+    Identity.onchange = function() {
+      let filesize = (this.files[0].size/1024).toFixed(4); // for KB
+      // var filesize = ((this.files[0].size/1024)/1024).toFixed(4); //  for MB
+      if(filesize <= 100){
+        //upload code
+        var reader = new FileReader();
+        reader.onload = function(){
+          var output = document.getElementById('cancel_cheque_show');
+          output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      }
+      else{
+        alert("File is too big!");
+         this.value = "";
+      }
+    };
+
+
+    // function of validations 
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+</html>
